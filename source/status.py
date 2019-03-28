@@ -16,12 +16,12 @@ import glob
 import os.path
 import xml.etree.ElementTree as ET
 
-local_root_path = "/home/olly/git/"
+local_root_path = "./"
 remote_root_path = "http://github.com/datashield/"
 repo_name = "dsBetaTestClient"
 output_file_name = "status.html"
 # devtools_test_output_file = "logs/Job/6_Devtools tests.txt"
-devtools_test_output_file = "output"
+devtools_test_output_file = "test_results.xml"
 
 local_repo_path = local_root_path + repo_name
 remote_repo_path = remote_root_path + repo_name
