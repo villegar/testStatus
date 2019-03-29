@@ -11,14 +11,21 @@
 # options(testthat.output_file = "somefile")
 # devtools::test('/home/vagrant/dsdev/dsbetatestclient', reporter = "junit")
 
+# To do:
+# - pass in repo and branch name as arguements
+
 
 import glob
 import os.path
 import xml.etree.ElementTree as ET
 
+__author__ = "Olly Butters"
+__date__ = 28/3/19
+
 local_root_path = "./"
 remote_root_path = "http://github.com/datashield/"
 repo_name = "dsBetaTestClient"
+branch_name = "master"
 output_file_name = "status.html"
 # devtools_test_output_file = "logs/Job/6_Devtools tests.txt"
 devtools_test_output_file = "test_results.xml"
@@ -102,13 +109,13 @@ h.write("<table border=1>")
 h.write("<tr><th>Function name</th><th>Test file exist</th><th>Number of tests</th><th>Test pass</th></tr>")
 for this_function in ds_functions:
     h.write("<tr>")
-    h.write("<td><a href=" + remote_repo_path + "/R/" + this_function + ">" + this_function + "</td>")
+    h.write("<td><a href=" + remote_repo_path + "/blob/" + branch_name + "/R/" + this_function + ">" + this_function + "</a></td>")
 
     # See if test exists
     expected_test_name = "test-"+this_function
     print(expected_test_name)
     if expected_test_name in ds_tests:
-        h.write('<td class="good">Y</td>')
+        h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '">' + expected_test_name + '</a></td>')
     else:
         h.write("<td></td>")
 
