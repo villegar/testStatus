@@ -1,118 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="dsBetaTestClient::ds.asFactor.o" timestamp="2019-03-22 21:54:11" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.asFactor.o()" timestamp="2019-03-22 21:54:14" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.asFactor.o(force.factor.levels)" timestamp="2019-03-22 21:54:15" hostname="fv-az592" tests="20" skipped="0" failures="0" errors="0" time="20.3">
-    <testcase time="5.26" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_no_force_factor_levels"/>
-    <testcase time="0.57" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_no_force_factor_levels"/>
-    <testcase time="0.55" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_no_force_factor_levels"/>
-    <testcase time="0.81" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_no_force_factor_levels"/>
-    <testcase time="1.43" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_forced_factor_levels_of_1:6"/>
-    <testcase time="0.55" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_forced_factor_levels_of_1:6"/>
-    <testcase time="0.54" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_forced_factor_levels_of_1:6"/>
-    <testcase time="0.97" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_forced_factor_levels_of_1:6"/>
-    <testcase time="1.34" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_0:10"/>
-    <testcase time="0.53" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_0:10"/>
-    <testcase time="0.54" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_0:10"/>
-    <testcase time="0.81" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_0:10"/>
-    <testcase time="1.36" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_2:3"/>
-    <testcase time="0.54" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_2:3"/>
-    <testcase time="0.53" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_2:3"/>
-    <testcase time="0.79" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_2:3"/>
-    <testcase time="1.34" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_c(1,2,3,4,'a','h',5)"/>
-    <testcase time="0.52" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_c(1,2,3,4,'a','h',5)"/>
-    <testcase time="0.53" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_c(1,2,3,4,'a','h',5)"/>
-    <testcase time="0.79" classname="dsBetaTestClient::ds_asFactor_o(force_factor_levels)" name="with_force_factor_levels_of_c(1,2,3,4,'a','h',5)"/>
+  <testsuite name="Returns expected numerical value" timestamp="2019-05-16 12:02:09" hostname="fv-az598" tests="4" skipped="0" failures="0" errors="0" time="13.68">
+    <testcase time="5.21" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="2.89" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="2.79" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="2.79" classname="Returns_expected_numerical_value" name="split_dataset"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.asFactor.o(fixed.dummy.vars)" timestamp="2019-03-22 21:54:32" hostname="fv-az592" tests="6" skipped="0" failures="0" errors="0" time="4.75">
-    <testcase time="1.33" classname="dsBetaTestClient::ds_asFactor_o(fixed_dummy_vars)" name="with_fixed_dummy_vars_of_TRUE"/>
-    <testcase time="0.52" classname="dsBetaTestClient::ds_asFactor_o(fixed_dummy_vars)" name="with_fixed_dummy_vars_of_TRUE"/>
-    <testcase time="0.52" classname="dsBetaTestClient::ds_asFactor_o(fixed_dummy_vars)" name="with_fixed_dummy_vars_of_TRUE"/>
-    <testcase time="1.33" classname="dsBetaTestClient::ds_asFactor_o(fixed_dummy_vars)" name="with_fixed_dummy_vars_of_TRUE_and_baseline_level_of_6"/>
-    <testcase time="0.52" classname="dsBetaTestClient::ds_asFactor_o(fixed_dummy_vars)" name="with_fixed_dummy_vars_of_TRUE_and_baseline_level_of_6"/>
-    <testcase time="0.53" classname="dsBetaTestClient::ds_asFactor_o(fixed_dummy_vars)" name="with_fixed_dummy_vars_of_TRUE_and_baseline_level_of_6"/>
+  <testsuite name="Mathematical properties" timestamp="2019-05-16 12:02:23" hostname="fv-az598" tests="1" skipped="0" failures="0" errors="0" time="5.13">
+    <testcase time="5.13" classname="Mathematical_properties" name="every_factor_should_be_unique"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.asFactor.o done" timestamp="2019-03-22 21:54:37" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.dataFrame.o" timestamp="2019-03-22 21:54:37" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.dataFrame.o() create a dataframe" timestamp="2019-03-22 21:54:39" hostname="fv-az592" tests="6" skipped="0" failures="0" errors="0" time="4.03">
-    <testcase time="4.03" classname="dsBetaTestClient::ds_dataFrame_o()_create_a_dataframe" name="dataframe_exists"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_dataFrame_o()_create_a_dataframe" name="dataframe_exists"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_dataFrame_o()_create_a_dataframe" name="dataframe_exists"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_dataFrame_o()_create_a_dataframe" name="dataframe_exists"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_dataFrame_o()_create_a_dataframe" name="dataframe_exists"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_dataFrame_o()_create_a_dataframe" name="dataframe_exists"/>
+  <testsuite name="Returns expected numerical value" timestamp="2019-05-16 12:02:32" hostname="fv-az598" tests="32" skipped="0" failures="0" errors="0" time="17.28">
+    <testcase time="5.24" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.88" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.81" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.8" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.8" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.81" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.79" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.8" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.8" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.8" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.79" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.8" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.79" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.79" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.79" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.79" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.dataFrame.o() errors" timestamp="2019-03-22 21:54:41" hostname="fv-az592" tests="1" skipped="0" failures="0" errors="0" time="0">
-    <testcase time="0" classname="dsBetaTestClient::ds_dataFrame_o()_errors" name="dataframe_errors"/>
+  <testsuite name="Mathematical properties" timestamp="2019-05-16 12:02:45" hostname="fv-az598" tests="8" skipped="0" failures="0" errors="0" time="6.4">
+    <testcase time="0.81" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.8" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.79" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.81" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.8" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.8" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.79" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.8" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.dataFrame.o done" timestamp="2019-03-22 21:54:41" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.glm.o 1" timestamp="2019-03-22 21:54:41" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.glm.o(): Standard Poisson regression model for piecewise exponential regression analysis" timestamp="2019-03-22 21:54:43" hostname="fv-az592" tests="3" skipped="0" failures="0" errors="0" time="4.93">
-    <testcase time="4.93" classname="dsBetaTestClient::ds_glm_o():_Standard_Poisson_regression_model_for_piecewise_exponential_regression_analysis" name="glm_poisson"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_glm_o():_Standard_Poisson_regression_model_for_piecewise_exponential_regression_analysis" name="glm_poisson"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_glm_o():_Standard_Poisson_regression_model_for_piecewise_exponential_regression_analysis" name="glm_poisson"/>
+  <testsuite name="dsBetaTestClient::ds.asFactor.o:smoke" timestamp="2019-05-16 12:02:52" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.asFactor.o():smoke" timestamp="2019-05-16 12:02:56" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.asFactor.o(force.factor.levels):smoke" timestamp="2019-05-16 12:02:57" hostname="fv-az598" tests="20" skipped="0" failures="0" errors="0" time="15.52">
+    <testcase time="7.02" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_no_force.factor.levels"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_no_force.factor.levels"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_no_force.factor.levels"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_no_force.factor.levels"/>
+    <testcase time="2.12" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_forced.factor.levels_of_1_6"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_forced.factor.levels_of_1_6"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_forced.factor.levels_of_1_6"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_forced.factor.levels_of_1_6"/>
+    <testcase time="2.13" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_0_10"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_0_10"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_0_10"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_0_10"/>
+    <testcase time="2.12" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_2_3"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_2_3"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_2_3"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_2_3"/>
+    <testcase time="2.13" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.glm.o() errors" timestamp="2019-03-22 21:54:45" hostname="fv-az592" tests="1" skipped="0" failures="0" errors="0" time="0.27">
-    <testcase time="0.27" classname="dsBetaTestClient::ds_glm_o()_errors" name="glm_errors"/>
+  <testsuite name="dsBetaTestClient::ds.asFactor.o(fixed.dummy.vars):smoke" timestamp="2019-05-16 12:03:07" hostname="fv-az598" tests="6" skipped="0" failures="0" errors="0" time="2.7">
+    <testcase time="1.34" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE"/>
+    <testcase time="1.36" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.glm.o 1 done" timestamp="2019-03-22 21:54:46" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.glm.o 2" timestamp="2019-03-22 21:54:46" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.glm.o(): Standard Gaussian regression model for piecewise exponential regression analysis" timestamp="2019-03-22 21:54:48" hostname="fv-az592" tests="3" skipped="0" failures="0" errors="0" time="3.71">
-    <testcase time="3.71" classname="dsBetaTestClient::ds_glm_o():_Standard_Gaussian_regression_model_for_piecewise_exponential_regression_analysis" name="glm_gaussian"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_glm_o():_Standard_Gaussian_regression_model_for_piecewise_exponential_regression_analysis" name="glm_gaussian"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_glm_o():_Standard_Gaussian_regression_model_for_piecewise_exponential_regression_analysis" name="glm_gaussian"/>
+  <testsuite name="dsBetaTestClient::ds.asFactor.o 1:smoke done" timestamp="2019-05-16 12:03:10" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrame.o:smoke" timestamp="2019-05-16 12:03:10" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrame.o():smoke create a dataframe" timestamp="2019-05-16 12:03:14" hostname="fv-az598" tests="3" skipped="0" failures="0" errors="0" time="5.49">
+    <testcase time="5.49" classname="dsBetaTestClient_ds.dataFrame.o_smoke_create_a_dataframe" name="dataframe_exists"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.dataFrame.o_smoke_create_a_dataframe" name="dataframe_exists"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.dataFrame.o_smoke_create_a_dataframe" name="dataframe_exists"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.glm.o 2 done" timestamp="2019-03-22 21:54:50" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.listOpals.o" timestamp="2019-03-22 21:54:50" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.listOpals.o()" timestamp="2019-03-22 21:54:52" hostname="fv-az592" tests="1" skipped="1" failures="0" errors="0" time="2.23">
-    <testcase time="2.23" classname="dsBetaTestClient::ds_listOpals_o()" name="check_list_opals">
-      <skipped/>
-    </testcase>
+  <testsuite name="dsBetaTestClient::ds.dataFrame.o() errors:smoke" timestamp="2019-05-16 12:03:15" hostname="fv-az598" tests="1" skipped="0" failures="0" errors="0" time="0.09">
+    <testcase time="0.09" classname="dsBetaTestClient_ds.dataFrame.o_errors_smoke" name="dataframe_errors"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.listOpals.o done" timestamp="2019-03-22 21:54:52" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.mean.o" timestamp="2019-03-22 21:54:52" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.mean.o(type=combine)" timestamp="2019-03-22 21:54:54" hostname="fv-az592" tests="2" skipped="0" failures="0" errors="0" time="2.54">
-    <testcase time="2.54" classname="dsBetaTestClient::ds_mean_o(type=combine)" name="mean_values_[combine]"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_mean_o(type=combine)" name="mean_values_[combine]"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrame.o:smoke done" timestamp="2019-05-16 12:03:16" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dim.o:smoke" timestamp="2019-05-16 12:03:16" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dim.o():smoke" timestamp="2019-05-16 12:03:19" hostname="fv-az598" tests="4" skipped="0" failures="0" errors="0" time="4.16">
+    <testcase time="4.16" classname="dsBetaTestClient_ds.dim.o_smoke" name="simple_dim"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.dim.o_smoke" name="simple_dim"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.dim.o_smoke" name="simple_dim"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.dim.o_smoke" name="simple_dim"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.mean.o(type=combine) loose" timestamp="2019-03-22 21:54:54" hostname="fv-az592" tests="2" skipped="0" failures="0" errors="0" time="0.41">
-    <testcase time="0.41" classname="dsBetaTestClient::ds_mean_o(type=combine)_loose" name="mean_values_[combine]_loose"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_mean_o(type=combine)_loose" name="mean_values_[combine]_loose"/>
+  <testsuite name="dsBetaTestClient::ds.dim.o:smoke done" timestamp="2019-05-16 12:03:20" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.glm.o 2:smoke" timestamp="2019-05-16 12:03:20" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.glm.o(): Standard Gaussian regression model for piecewise exponential regression analysis:smoke" timestamp="2019-05-16 12:03:24" hostname="fv-az598" tests="2" skipped="0" failures="0" errors="0" time="4.99">
+    <testcase time="4.99" classname="dsBetaTestClient_ds.glm.o_Standard_Gaussian_regression_model_for_piecewise_exponential_regression_analysis_smoke" name="glm_gaussian"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.glm.o_Standard_Gaussian_regression_model_for_piecewise_exponential_regression_analysis_smoke" name="glm_gaussian"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.mean.o(type=split)" timestamp="2019-03-22 21:54:55" hostname="fv-az592" tests="6" skipped="0" failures="0" errors="0" time="0.27">
-    <testcase time="0.27" classname="dsBetaTestClient::ds_mean_o(type=split)" name="mean_values_[split]"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_mean_o(type=split)" name="mean_values_[split]"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_mean_o(type=split)" name="mean_values_[split]"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_mean_o(type=split)" name="mean_values_[split]"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_mean_o(type=split)" name="mean_values_[split]"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_mean_o(type=split)" name="mean_values_[split]"/>
+  <testsuite name="dsBetaTestClient::ds.glm.o:smoke done" timestamp="2019-05-16 12:03:25" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.glmSLMA.o:smoke" timestamp="2019-05-16 12:03:25" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.glmSLMA.o():smoke" timestamp="2019-05-16 12:03:29" hostname="fv-az598" tests="8" skipped="0" failures="0" errors="0" time="4.48">
+    <testcase time="4.37" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
+    <testcase time="0.03" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
+    <testcase time="0.03" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
+    <testcase time="0.05" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.mean.o() test errors" timestamp="2019-03-22 21:54:55" hostname="fv-az592" tests="1" skipped="0" failures="0" errors="0" time="1.08">
-    <testcase time="1.08" classname="dsBetaTestClient::ds_mean_o()_test_errors" name="mean_erros"/>
+  <testsuite name="dsBetaTestClient::ds.glmSLMA.o:smoke done" timestamp="2019-05-16 12:03:29" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.length.o:smoke" timestamp="2019-05-16 12:03:29" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.length.o():smoke" timestamp="2019-05-16 12:03:33" hostname="fv-az598" tests="4" skipped="0" failures="0" errors="0" time="4.14">
+    <testcase time="4.14" classname="dsBetaTestClient_ds.length.o_smoke" name="basic_length"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.length.o_smoke" name="basic_length"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.length.o_smoke" name="basic_length"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.length.o_smoke" name="basic_length"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.mean.o done" timestamp="2019-03-22 21:54:56" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.recodeValues.o" timestamp="2019-03-22 21:54:56" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.recodeValues.o(...) valid arguments" timestamp="2019-03-22 21:54:58" hostname="fv-az592" tests="2" skipped="0" failures="0" errors="0" time="3.45">
-    <testcase time="3.45" classname="dsBetaTestClient::ds_recodeValues_o(___)_valid_arguments" name="recodeValues_checks"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_recodeValues_o(___)_valid_arguments" name="recodeValues_checks"/>
+  <testsuite name="dsBetaTestClient::ds.length.o:smoke done" timestamp="2019-05-16 12:03:33" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.mean.o:smoke" timestamp="2019-05-16 12:03:33" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.mean.o:(type=combine):smoke" timestamp="2019-05-16 12:03:37" hostname="fv-az598" tests="2" skipped="0" failures="0" errors="0" time="4.09">
+    <testcase time="4.09" classname="dsBetaTestClient_ds.mean.o_type_combine_smoke" name="mean_values_combine_"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_combine_smoke" name="mean_values_combine_"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.recodeValues.o(...) invalid arguments" timestamp="2019-03-22 21:54:59" hostname="fv-az592" tests="5" skipped="0" failures="0" errors="0" time="0.06">
-    <testcase time="0.06" classname="dsBetaTestClient::ds_recodeValues_o(___)_invalid_arguments" name="recodeValues_erros"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_recodeValues_o(___)_invalid_arguments" name="recodeValues_erros"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_recodeValues_o(___)_invalid_arguments" name="recodeValues_erros"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_recodeValues_o(___)_invalid_arguments" name="recodeValues_erros"/>
-    <testcase time="0" classname="dsBetaTestClient::ds_recodeValues_o(___)_invalid_arguments" name="recodeValues_erros"/>
+  <testsuite name="dsBetaTestClient::ds.mean.o(type=combine) loose:smoke" timestamp="2019-05-16 12:03:37" hostname="fv-az598" tests="2" skipped="0" failures="0" errors="0" time="0.27">
+    <testcase time="0.27" classname="dsBetaTestClient_ds.mean.o_type_combine_loose_smoke" name="mean_values_combine_loose"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_combine_loose_smoke" name="mean_values_combine_loose"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.recodeValues.o done" timestamp="2019-03-22 21:55:00" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rm.o" timestamp="2019-03-22 21:55:00" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rm.o()" timestamp="2019-03-22 21:55:02" hostname="fv-az592" tests="1" skipped="0" failures="0" errors="0" time="2.46">
-    <testcase time="2.46" classname="dsBetaTestClient::ds_rm_o()" name="mean_values_[combine]"/>
+  <testsuite name="dsBetaTestClient::ds.mean.o(type=split):smoke" timestamp="2019-05-16 12:03:38" hostname="fv-az598" tests="6" skipped="0" failures="0" errors="0" time="0.27">
+    <testcase time="0.27" classname="dsBetaTestClient_ds.mean.o_type_split_smoke" name="mean_values_split_"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_split_smoke" name="mean_values_split_"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_split_smoke" name="mean_values_split_"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_split_smoke" name="mean_values_split_"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_split_smoke" name="mean_values_split_"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_split_smoke" name="mean_values_split_"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.rm.o done" timestamp="2019-03-22 21:55:02" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.setDefaultOpals.o" timestamp="2019-03-22 21:55:02" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.setDefaultOpals.o()" timestamp="2019-03-22 21:55:04" hostname="fv-az592" tests="2" skipped="0" failures="0" errors="0" time="2.2">
-    <testcase time="2.19" classname="dsBetaTestClient::ds_setDefaultOpals_o()" name="check_set_default_opals"/>
-    <testcase time="0.01" classname="dsBetaTestClient::ds_setDefaultOpals_o()" name="check_set_default_opals"/>
+  <testsuite name="dsBetaTestClient::ds.mean.o() test errors:smoke" timestamp="2019-05-16 12:03:38" hostname="fv-az598" tests="1" skipped="0" failures="0" errors="0" time="0.8">
+    <testcase time="0.8" classname="dsBetaTestClient_ds.mean.o_test_errors_smoke" name="mean_erros"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.setDefaultOpals.o done" timestamp="2019-03-22 21:55:04" hostname="fv-az592" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.mean.o:smoke done" timestamp="2019-05-16 12:03:39" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.var.o:smoke" timestamp="2019-05-16 12:03:39" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.var.o():smoke" timestamp="2019-05-16 12:03:43" hostname="fv-az598" tests="3" skipped="0" failures="0" errors="0" time="4.12">
+    <testcase time="4.12" classname="dsBetaTestClient_ds.var.o_smoke" name="simple_var"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.var.o_smoke" name="simple_var"/>
+    <testcase time="0" classname="dsBetaTestClient_ds.var.o_smoke" name="simple_var"/>
+  </testsuite>
+  <testsuite name="dsBetaTestClient::ds.var.o:smoke done" timestamp="2019-05-16 12:03:43" hostname="fv-az598" tests="0" skipped="0" failures="0" errors="0" time="0"/>
 </testsuites>
