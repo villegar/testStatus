@@ -22,7 +22,7 @@ import os.path
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 28/3/19
+__date__ = 31/5/19
 
 # local_root_path = "./"
 local_root_path = "/home/olly/git/"
@@ -68,6 +68,8 @@ for this_function in ds_functions:
 # Make the test status dictionary
 ds_test_status = {}
 for this_function in ds_functions:
+    # Drop the .R part from the end.
+    this_function = this_function.replace('.R', '')
     ds_test_status[this_function] = {}
 
 
@@ -92,8 +94,6 @@ ds_tests.sort()
 for this_test in ds_tests:
     print(this_test)
 
-# See if test files exist for all the functions
-
 
 ################################################################################
 # Parse the devtools::tests() log file, this is the output of the testthat tests
@@ -114,14 +114,30 @@ print(root.tag)
 #     ds_test_status[this_test] = {'number':0, 'errors':0}
 
 # Cycle through the xml line by line. This will have data for ALL tests.
+# The 'context' in testthat is the 'name' in the xml file.
+# The expected format of the context is:
+# <function name>::<test type>
+# ds.asFactor.o::smoke
 for child in root:
-    print(child.attrib['name'], child.attrib['tests'], child.attrib['errors'])
+    print('\n', child.attrib['name'], child.attrib['tests'], child.attrib['errors'])
 
-    temp_name = child.attrib['name']
-    temp_name = temp_name[18:]   # Drop the dsBetaTestClient:: prefix
-    re.sub("([\(\[]).*?([\)\]])", "\g<1>\g<2>", temp_name)   # Drop brackets and contents
+    context = child.attrib['name']
+    # temp_name = temp_name[18:]   # Drop the dsBetaTestClient:: prefix
+    context = context.replace('dsBetaTestClient::','')
+    #re.sub("([\(\[]).*?([\)\]])", "\g<1>\g<2>", temp_name)   # Drop brackets and contents
 
-    print(temp_name)
+    print(context)
+
+    # Just pasrsing contexts with (): as a delimiter. NEEDS UPDATING WHEN TESTS CHANGED.
+    context_parts = context.split('():')
+
+    try:
+        function_name = context_parts[0]
+        test_type = context_parts[1]
+        print(function_name)
+        print(test_type)
+    except:
+        pass
 
     # Look to see if this test has a match in the existing list of tests
     #for this_test in ds_tests:
@@ -130,9 +146,11 @@ for child in root:
     #        ds_test_status[this_test]['number'] = int(ds_test_status[this_test]['number']) +int(child.attrib['tests'])
     #        ds_test_status[this_test]['errors'] = int(ds_test_status[this_test]['errors']) +int(child.attrib['errors'])
 
+    # Build the dictionary ds_test_status[function_name][test_type]{number, error}
     try:
-        ds_test_status[this_test]['number'] = int(ds_test_status[this_test]['number']) +int(child.attrib['tests'])
-        ds_test_status[this_test]['errors'] = int(ds_test_status[this_test]['errors']) +int(child.attrib['errors'])
+        ds_test_status[function_name][test_type] = {}
+        ds_test_status[function_name][test_type]['number'] = int(child.attrib['tests'])
+        ds_test_status[function_name][test_type]['errors'] = int(child.attrib['errors'])
     except:
         pass
 
@@ -140,8 +158,8 @@ pp.pprint(ds_test_status)
 
 
 ################################################################################
-#Make some html
-#
+# Make an HTML table of the results.
+# Currently hard coding test types, but could automatically pull these out.
 print("\n\n##########")
 
 h = open(output_file_name, "w")
@@ -150,24 +168,40 @@ h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="status.cs
 h.write("<h2>" + repo_name + "</h2>")
 
 h.write("<table border=1>")
-h.write("<tr><th>Function name</th><th>Smoke test file exist</th><th>Test file exist</th><th>Number of tests</th><th>Test pass</th></tr>")
-for this_function in ds_functions:
+h.write("<tr><th>Function name</th><th>Smoke test file exist</th><th>Number</th><th>Errors</th><th>Test file exist</th><th>Number of tests</th><th>Test pass</th></tr>")
+
+for this_function in ds_test_status.keys():
+    print('===', this_function)
+
+    # Function name with link to repo
     h.write("<tr>")
-    h.write("<td><a href=" + remote_repo_path + "/blob/" + branch_name + "/R/" + this_function + ">" + this_function + "</a></td>")
+    h.write("<td><a href=" + remote_repo_path + "/blob/" + branch_name + "/R/" + this_function + ".R>" + this_function + "</a></td>")
 
     ####################
     # Smoke test
-    # See if test exists
-    expected_test_name = "test-smk-"+this_function
+    # See if test file exists
+    expected_test_name = "test-smk-"+this_function+'.R'
     print(expected_test_name)
     if expected_test_name in ds_tests:
         h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '">' + expected_test_name + '</a></td>')
     else:
         h.write("<td></td>")
 
-    # dsBetaTestClient::ds.cor.o():smoke
+    # See how many tests exist
+    try:
+        h.write("<td>" + str(ds_test_status[this_function]['smoke']['number']) + "</td>")
+    except:
+        h.write("<td></td>")
+
+    # See how many tests fail
+    try:
+        h.write("<td>" + str(ds_test_status[this_function]['smoke']['errors']) + "</td>")
+    except:
+        h.write("<td></td>")
 
 
+    ####################
+    # Other tests
     # See if test exists
     expected_test_name = "test-"+this_function
     print(expected_test_name)
