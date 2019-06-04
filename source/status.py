@@ -22,7 +22,7 @@ import os.path
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 31/5/19
+__date__ = 4/6/19
 
 # local_root_path = "./"
 local_root_path = "/home/olly/git/"
@@ -116,35 +116,28 @@ print(root.tag)
 # Cycle through the xml line by line. This will have data for ALL tests.
 # The 'context' in testthat is the 'name' in the xml file.
 # The expected format of the context is:
-# <function name>::<test type>
+# <function name>()::<test type>::<Optional other info>
 # ds.asFactor.o::smoke
 for child in root:
     print('\n', child.attrib['name'], child.attrib['tests'], child.attrib['errors'])
 
     context = child.attrib['name']
-    # temp_name = temp_name[18:]   # Drop the dsBetaTestClient:: prefix
-    context = context.replace('dsBetaTestClient::','')
+    context = context.replace('dsBetaTestClient::','')        # Drop dsBetaTestClient:: from context. Factor this out of real code.
     #re.sub("([\(\[]).*?([\)\]])", "\g<1>\g<2>", temp_name)   # Drop brackets and contents
 
     print(context)
 
-    # Just pasrsing contexts with (): as a delimiter. NEEDS UPDATING WHEN TESTS CHANGED.
-    context_parts = context.split('():')
+    # Split by :: delimiter
+    context_parts = context.split('::')
 
     try:
         function_name = context_parts[0]
+        function_name = function_name.replace('()','') # Drop the brackets from the function name
         test_type = context_parts[1]
         print(function_name)
         print(test_type)
     except:
         pass
-
-    # Look to see if this test has a match in the existing list of tests
-    #for this_test in ds_tests:
-        # Dont need the 'test-' and the '.R' bit of the test name
-    #    if this_test[5:-2] in child.attrib['name']:
-    #        ds_test_status[this_test]['number'] = int(ds_test_status[this_test]['number']) +int(child.attrib['tests'])
-    #        ds_test_status[this_test]['errors'] = int(ds_test_status[this_test]['errors']) +int(child.attrib['errors'])
 
     # Build the dictionary ds_test_status[function_name][test_type]{number, error}
     try:
@@ -168,7 +161,7 @@ h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="status.cs
 h.write("<h2>" + repo_name + "</h2>")
 
 h.write("<table border=1>")
-h.write("<tr><th>Function name</th><th>Smoke test file exist</th><th>Number</th><th>Errors</th><th>Test file exist</th><th>Number of tests</th><th>Test pass</th></tr>")
+h.write("<tr><th>Function name</th><th>Smoke test<br/>file exist</th><th>Test file exist</th><th>Smoke test<br/>pass rate</th><th>Functional<br/>pass rate</th><th>Mathematical<br/>pass rate</th></tr>")
 
 for this_function in ds_test_status.keys():
     print('===', this_function)
@@ -187,18 +180,6 @@ for this_function in ds_test_status.keys():
     else:
         h.write("<td></td>")
 
-    # See how many tests exist
-    try:
-        h.write("<td>" + str(ds_test_status[this_function]['smoke']['number']) + "</td>")
-    except:
-        h.write("<td></td>")
-
-    # See how many tests fail
-    try:
-        h.write("<td>" + str(ds_test_status[this_function]['smoke']['errors']) + "</td>")
-    except:
-        h.write("<td></td>")
-
 
     ####################
     # Other tests
@@ -210,17 +191,25 @@ for this_function in ds_test_status.keys():
     else:
         h.write("<td></td>")
 
-    # See how many tests exist
+
+    ###################
+    # Work out the pass rate
     try:
-        h.write("<td>" + str(ds_test_status[expected_test_name]['number']) + "</td>")
+        this_error = int(ds_test_status[this_function]['smoke']['errors'])
+        this_number = int(ds_test_status[this_function]['smoke']['number'])
+
+        if this_error == 0:
+            h.write("<td>" + str(this_number) + "/" + str(this_number) + "</td>")
+        elif this_error > 0:
+            h.write("<td>" + str(this_number - this_error) + "/" + str(this_number) + "</td>")
     except:
         h.write("<td></td>")
 
-    # See how many tests fail
-    try:
-        h.write("<td>" + str(ds_test_status[expected_test_name]['errors']) + "</td>")
-    except:
-        h.write("<td></td>")
+
+
+    h.write("<td></td>")
+    h.write("<td></td>")
+
 
 
     h.write("</tr>\n")
