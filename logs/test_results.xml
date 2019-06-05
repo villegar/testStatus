@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Returns expected numerical value" timestamp="2019-06-04 13:05:10" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="14.77">
-    <testcase time="5.68" classname="Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="3.15" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="2.98" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="2.96" classname="Returns_expected_numerical_value" name="split_dataset"/>
+  <testsuite name="Returns expected numerical value" timestamp="2019-06-05 10:21:40" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="14.59">
+    <testcase time="5.64" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="3.11" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="2.91" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="2.93" classname="Returns_expected_numerical_value" name="split_dataset"/>
   </testsuite>
-  <testsuite name="Mathematical properties" timestamp="2019-06-04 13:05:24" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.55">
-    <testcase time="5.55" classname="Mathematical_properties" name="every_factor_should_be_unique"/>
+  <testsuite name="Mathematical properties" timestamp="2019-06-05 10:21:55" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.53">
+    <testcase time="5.53" classname="Mathematical_properties" name="every_factor_should_be_unique"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.listDisclosureSettings.o:smoke" timestamp="2019-06-04 13:05:30" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.listDisclosureSettings.o():smoke check results" timestamp="2019-06-04 13:05:34" hostname="fv-az679" tests="31" skipped="0" failures="0" errors="0" time="4.72">
-    <testcase time="4.72" classname="dsBetaTestClient_ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
+  <testsuite name="dsBetaTestClient::ds.listDisclosureSettings.o:smoke" timestamp="2019-06-05 10:22:00" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.listDisclosureSettings.o():smoke check results" timestamp="2019-06-05 10:22:05" hostname="fv-az679" tests="31" skipped="0" failures="0" errors="0" time="4.62">
+    <testcase time="4.62" classname="dsBetaTestClient_ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="dsBetaTestClient_ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="dsBetaTestClient_ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="dsBetaTestClient_ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
@@ -43,10 +43,10 @@
     <testcase time="0" classname="dsBetaTestClient_ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="dsBetaTestClient_ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.listDisclosureSettings.o:smoke done" timestamp="2019-06-04 13:05:35" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.listServersideFunctions.o:smoke" timestamp="2019-06-04 13:05:35" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.listServersideFunctions.o():smoke check results" timestamp="2019-06-04 13:05:39" hostname="fv-az679" tests="15" skipped="0" failures="0" errors="0" time="4.53">
-    <testcase time="4.53" classname="dsBetaTestClient_ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
+  <testsuite name="dsBetaTestClient::ds.listDisclosureSettings.o:smoke done" timestamp="2019-06-05 10:22:05" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.listServersideFunctions.o:smoke" timestamp="2019-06-05 10:22:05" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.listServersideFunctions.o():smoke check results" timestamp="2019-06-05 10:22:09" hostname="fv-az679" tests="15" skipped="0" failures="0" errors="0" time="4.37">
+    <testcase time="4.37" classname="dsBetaTestClient_ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="dsBetaTestClient_ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="dsBetaTestClient_ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="dsBetaTestClient_ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
@@ -62,28 +62,16 @@
     <testcase time="0" classname="dsBetaTestClient_ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="dsBetaTestClient_ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.listServersideFunctions.o:smoke done" timestamp="2019-06-04 13:05:39" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="Returns expected numerical value" timestamp="2019-06-04 13:05:44" hostname="fv-az679" tests="32" skipped="0" failures="0" errors="0" time="17.92">
-    <testcase time="5.63" classname="Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.93" classname="Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.82" classname="Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.82" classname="Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.83" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+  <testsuite name="dsBetaTestClient::ds.listServersideFunctions.o:smoke done" timestamp="2019-06-05 10:22:09" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="Returns expected numerical value" timestamp="2019-06-05 10:22:14" hostname="fv-az679" tests="32" skipped="0" failures="0" errors="0" time="17.82">
+    <testcase time="5.56" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.91" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.81" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.81" classname="Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.81" classname="Returns_expected_numerical_value" name="combined_data_set"/>
     <testcase time="0.82" classname="Returns_expected_numerical_value" name="combined_data_set"/>
     <testcase time="0.81" classname="Returns_expected_numerical_value" name="combined_data_set"/>
     <testcase time="0.8" classname="Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.81" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.8" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.8" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.01" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.8" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0.83" classname="Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
@@ -96,83 +84,95 @@
     <testcase time="0.81" classname="Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.82" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.82" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.81" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.8" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="Returns_expected_numerical_value" name="split_dataset"/>
   </testsuite>
-  <testsuite name="Mathematical properties" timestamp="2019-06-04 13:05:57" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="6.46">
-    <testcase time="0.81" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
-    <testcase time="0.81" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+  <testsuite name="Mathematical properties" timestamp="2019-06-05 10:22:27" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="6.43">
+    <testcase time="0.82" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.8" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.8" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.8" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
     <testcase time="0.8" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
     <testcase time="0.81" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
-    <testcase time="0.81" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
     <testcase time="0.8" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
-    <testcase time="0.81" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
-    <testcase time="0.81" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.8" classname="Mathematical_properties" name="residual_deviation_tends_to_0"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.asCharacter.o:smoke" timestamp="2019-06-04 13:06:04" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.asCharacter.o():smoke simple test" timestamp="2019-06-04 13:06:08" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="5.15">
-    <testcase time="5.15" classname="dsBetaTestClient_ds.asCharacter.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="dsBetaTestClient::ds.asCharacter.o:smoke" timestamp="2019-06-05 10:22:34" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.asCharacter.o():smoke simple test" timestamp="2019-06-05 10:22:38" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="5.1">
+    <testcase time="5.1" classname="dsBetaTestClient_ds.asCharacter.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asCharacter.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asCharacter.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.asCharacter.o 1:smoke done" timestamp="2019-06-04 13:06:09" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.asFactor.o:smoke" timestamp="2019-06-04 13:06:09" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.asFactor.o():smoke" timestamp="2019-06-04 13:06:13" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.asFactor.o(force.factor.levels):smoke" timestamp="2019-06-04 13:06:14" hostname="fv-az679" tests="20" skipped="0" failures="0" errors="0" time="16.08">
-    <testcase time="7.44" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_no_force.factor.levels"/>
+  <testsuite name="dsBetaTestClient::ds.asCharacter.o 1:smoke done" timestamp="2019-06-05 10:22:39" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.asFactor.o:smoke" timestamp="2019-06-05 10:22:39" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.asFactor.o():smoke" timestamp="2019-06-05 10:22:43" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.asFactor.o(force.factor.levels):smoke" timestamp="2019-06-05 10:22:44" hostname="fv-az679" tests="20" skipped="0" failures="0" errors="0" time="16.02">
+    <testcase time="7.35" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_no_force.factor.levels"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_no_force.factor.levels"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_no_force.factor.levels"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_no_force.factor.levels"/>
-    <testcase time="2.2" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_forced.factor.levels_of_1_6"/>
+    <testcase time="2.16" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_forced.factor.levels_of_1_6"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_forced.factor.levels_of_1_6"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_forced.factor.levels_of_1_6"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_forced.factor.levels_of_1_6"/>
-    <testcase time="2.15" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_0_10"/>
+    <testcase time="2.22" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_0_10"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_0_10"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_0_10"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_0_10"/>
-    <testcase time="2.16" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_2_3"/>
+    <testcase time="2.15" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_2_3"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_2_3"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_2_3"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_2_3"/>
-    <testcase time="2.13" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
+    <testcase time="2.14" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_force.factor.levels_smoke" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.asFactor.o(fixed.dummy.vars):smoke" timestamp="2019-06-04 13:06:25" hostname="fv-az679" tests="6" skipped="0" failures="0" errors="0" time="2.73">
-    <testcase time="1.37" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE"/>
+  <testsuite name="dsBetaTestClient::ds.asFactor.o(fixed.dummy.vars):smoke" timestamp="2019-06-05 10:22:55" hostname="fv-az679" tests="6" skipped="0" failures="0" errors="0" time="2.7">
+    <testcase time="1.36" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE"/>
-    <testcase time="1.36" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
+    <testcase time="1.34" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asFactor.o_fixed.dummy.vars_smoke" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.asFactor.o 1:smoke done" timestamp="2019-06-04 13:06:28" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.asInteger.o:smoke" timestamp="2019-06-04 13:06:28" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.asInteger.o():smoke simple test" timestamp="2019-06-04 13:06:32" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="5.1">
-    <testcase time="5.1" classname="dsBetaTestClient_ds.asInteger.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="dsBetaTestClient::ds.asFactor.o 1:smoke done" timestamp="2019-06-05 10:22:58" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.asInteger.o:smoke" timestamp="2019-06-05 10:22:58" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.asInteger.o():smoke simple test" timestamp="2019-06-05 10:23:02" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="5.09">
+    <testcase time="5.09" classname="dsBetaTestClient_ds.asInteger.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asInteger.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asInteger.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.asInteger.o 1:smoke done" timestamp="2019-06-04 13:06:33" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.asNumeric.o:smoke" timestamp="2019-06-04 13:06:33" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.asNumeric.o():smoke simple test" timestamp="2019-06-04 13:06:37" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="5.14">
-    <testcase time="5.14" classname="dsBetaTestClient_ds.asNumeric.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="dsBetaTestClient::ds.asInteger.o 1:smoke done" timestamp="2019-06-05 10:23:03" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.asNumeric.o:smoke" timestamp="2019-06-05 10:23:03" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.asNumeric.o():smoke simple test" timestamp="2019-06-05 10:23:07" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="5.06">
+    <testcase time="5.06" classname="dsBetaTestClient_ds.asNumeric.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asNumeric.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.asNumeric.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.asNumeric.o 1:smoke done" timestamp="2019-06-04 13:06:38" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.cbind.o:smoke" timestamp="2019-06-04 13:06:38" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.cbind.o():smoke" timestamp="2019-06-04 13:06:42" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="6.82">
-    <testcase time="6.29" classname="dsBetaTestClient_ds.cbind.o_smoke" name="simple_test"/>
+  <testsuite name="dsBetaTestClient::ds.asNumeric.o 1:smoke done" timestamp="2019-06-05 10:23:08" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.cbind.o:smoke" timestamp="2019-06-05 10:23:08" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.cbind.o():smoke" timestamp="2019-06-05 10:23:12" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="6.7">
+    <testcase time="6.17" classname="dsBetaTestClient_ds.cbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.cbind.o_smoke" name="simple_test"/>
     <testcase time="0.53" classname="dsBetaTestClient_ds.cbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.cbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.cbind.o_smoke" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.cbind.o():smoke done" timestamp="2019-06-04 13:06:45" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.cor.o:smoke" timestamp="2019-06-04 13:06:45" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.cor.o():smoke" timestamp="2019-06-04 13:06:49" hostname="fv-az679" tests="19" skipped="0" failures="0" errors="0" time="5.82">
-    <testcase time="5.82" classname="dsBetaTestClient_ds.cor.o_smoke" name="simple_test"/>
+  <testsuite name="dsBetaTestClient::ds.cbind.o():smoke done" timestamp="2019-06-05 10:23:14" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.cor.o:smoke" timestamp="2019-06-05 10:23:14" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.cor.o():smoke" timestamp="2019-06-05 10:23:19" hostname="fv-az679" tests="19" skipped="0" failures="0" errors="0" time="5.73">
+    <testcase time="5.73" classname="dsBetaTestClient_ds.cor.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.cor.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.cor.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.cor.o_smoke" name="simple_test"/>
@@ -192,10 +192,10 @@
     <testcase time="0" classname="dsBetaTestClient_ds.cor.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.cor.o_smoke" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.cor.o 1:smoke done" timestamp="2019-06-04 13:06:51" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.cov.o:smoke" timestamp="2019-06-04 13:06:51" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.cov.o():smoke" timestamp="2019-06-04 13:06:55" hostname="fv-az679" tests="19" skipped="0" failures="0" errors="0" time="5.79">
-    <testcase time="5.79" classname="dsBetaTestClient_ds.cov.o_smoke" name="simple_test"/>
+  <testsuite name="dsBetaTestClient::ds.cor.o 1:smoke done" timestamp="2019-06-05 10:23:20" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.cov.o:smoke" timestamp="2019-06-05 10:23:20" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.cov.o():smoke" timestamp="2019-06-05 10:23:24" hostname="fv-az679" tests="19" skipped="0" failures="0" errors="0" time="5.68">
+    <testcase time="5.68" classname="dsBetaTestClient_ds.cov.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.cov.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.cov.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.cov.o_smoke" name="simple_test"/>
@@ -215,47 +215,47 @@
     <testcase time="0" classname="dsBetaTestClient_ds.cov.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.cov.o_smoke" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.cov.o 1:smoke done" timestamp="2019-06-04 13:06:56" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.dataFrame.o:smoke" timestamp="2019-06-04 13:06:56" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.dataFrame.o():smoke create a dataframe" timestamp="2019-06-04 13:07:01" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="5.92">
-    <testcase time="5.92" classname="dsBetaTestClient_ds.dataFrame.o_smoke_create_a_dataframe" name="dataframe_exists"/>
+  <testsuite name="dsBetaTestClient::ds.cov.o 1:smoke done" timestamp="2019-06-05 10:23:26" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrame.o:smoke" timestamp="2019-06-05 10:23:26" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrame.o():smoke create a dataframe" timestamp="2019-06-05 10:23:30" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="5.82">
+    <testcase time="5.82" classname="dsBetaTestClient_ds.dataFrame.o_smoke_create_a_dataframe" name="dataframe_exists"/>
     <testcase time="0" classname="dsBetaTestClient_ds.dataFrame.o_smoke_create_a_dataframe" name="dataframe_exists"/>
     <testcase time="0" classname="dsBetaTestClient_ds.dataFrame.o_smoke_create_a_dataframe" name="dataframe_exists"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.dataFrame.o() errors:smoke" timestamp="2019-06-04 13:07:02" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.1">
-    <testcase time="0.1" classname="dsBetaTestClient_ds.dataFrame.o_errors_smoke" name="dataframe_errors"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrame.o() errors:smoke" timestamp="2019-06-05 10:23:32" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.09">
+    <testcase time="0.09" classname="dsBetaTestClient_ds.dataFrame.o_errors_smoke" name="dataframe_errors"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.dataFrame.o:smoke done" timestamp="2019-06-04 13:07:02" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.dataFrameSort.o:smoke" timestamp="2019-06-04 13:07:02" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.dataFrameSort.o():smoke create a sorted dataframe" timestamp="2019-06-04 13:07:07" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="6.5">
-    <testcase time="6.5" classname="dsBetaTestClient_ds.dataFrameSort.o_smoke_create_a_sorted_dataframe" name="dataFrameSort_exists"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrame.o:smoke done" timestamp="2019-06-05 10:23:32" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrameSort.o:smoke" timestamp="2019-06-05 10:23:32" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrameSort.o():smoke create a sorted dataframe" timestamp="2019-06-05 10:23:36" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="6.35">
+    <testcase time="6.35" classname="dsBetaTestClient_ds.dataFrameSort.o_smoke_create_a_sorted_dataframe" name="dataFrameSort_exists"/>
     <testcase time="0" classname="dsBetaTestClient_ds.dataFrameSort.o_smoke_create_a_sorted_dataframe" name="dataFrameSort_exists"/>
     <testcase time="0" classname="dsBetaTestClient_ds.dataFrameSort.o_smoke_create_a_sorted_dataframe" name="dataFrameSort_exists"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.dataFrameSort.o:smoke done" timestamp="2019-06-04 13:07:09" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.dataFrameSubset.o:smoke" timestamp="2019-06-04 13:07:09" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.dataFrameSubset.o():smoke create a subset dataframe" timestamp="2019-06-04 13:07:13" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="7.53">
-    <testcase time="7.53" classname="dsBetaTestClient_ds.dataFrameSubset.o_smoke_create_a_subset_dataframe" name="dataFrameSubset_exists"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrameSort.o:smoke done" timestamp="2019-06-05 10:23:38" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrameSubset.o:smoke" timestamp="2019-06-05 10:23:38" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrameSubset.o():smoke create a subset dataframe" timestamp="2019-06-05 10:23:43" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="7.5">
+    <testcase time="7.5" classname="dsBetaTestClient_ds.dataFrameSubset.o_smoke_create_a_subset_dataframe" name="dataFrameSubset_exists"/>
     <testcase time="0" classname="dsBetaTestClient_ds.dataFrameSubset.o_smoke_create_a_subset_dataframe" name="dataFrameSubset_exists"/>
     <testcase time="0" classname="dsBetaTestClient_ds.dataFrameSubset.o_smoke_create_a_subset_dataframe" name="dataFrameSubset_exists"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.dataFrameSubset.o:smoke done" timestamp="2019-06-04 13:07:17" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.dim.o:smoke" timestamp="2019-06-04 13:07:17" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.dim.o():smoke" timestamp="2019-06-04 13:07:21" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="4.54">
-    <testcase time="4.54" classname="dsBetaTestClient_ds.dim.o_smoke" name="simple_dim"/>
+  <testsuite name="dsBetaTestClient::ds.dataFrameSubset.o:smoke done" timestamp="2019-06-05 10:23:46" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dim.o:smoke" timestamp="2019-06-05 10:23:46" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.dim.o():smoke" timestamp="2019-06-05 10:23:50" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="4.5">
+    <testcase time="4.5" classname="dsBetaTestClient_ds.dim.o_smoke" name="simple_dim"/>
     <testcase time="0" classname="dsBetaTestClient_ds.dim.o_smoke" name="simple_dim"/>
     <testcase time="0" classname="dsBetaTestClient_ds.dim.o_smoke" name="simple_dim"/>
     <testcase time="0" classname="dsBetaTestClient_ds.dim.o_smoke" name="simple_dim"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.dim.o:smoke done" timestamp="2019-06-04 13:07:21" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.glm.o 2:smoke" timestamp="2019-06-04 13:07:21" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.glm.o(): Standard Gaussian regression model for piecewise exponential regression analysis:smoke" timestamp="2019-06-04 13:07:25" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="5.41">
-    <testcase time="5.41" classname="dsBetaTestClient_ds.glm.o_Standard_Gaussian_regression_model_for_piecewise_exponential_regression_analysis_smoke" name="glm_gaussian"/>
+  <testsuite name="dsBetaTestClient::ds.dim.o:smoke done" timestamp="2019-06-05 10:23:50" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.glm.o 2:smoke" timestamp="2019-06-05 10:23:50" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.glm.o(): Standard Gaussian regression model for piecewise exponential regression analysis:smoke" timestamp="2019-06-05 10:23:54" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="5.38">
+    <testcase time="5.38" classname="dsBetaTestClient_ds.glm.o_Standard_Gaussian_regression_model_for_piecewise_exponential_regression_analysis_smoke" name="glm_gaussian"/>
     <testcase time="0" classname="dsBetaTestClient_ds.glm.o_Standard_Gaussian_regression_model_for_piecewise_exponential_regression_analysis_smoke" name="glm_gaussian"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.glm.o:smoke done" timestamp="2019-06-04 13:07:26" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.glmSLMA.o:smoke" timestamp="2019-06-04 13:07:26" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.glmSLMA.o():smoke" timestamp="2019-06-04 13:07:31" hostname="fv-az679" tests="36" skipped="0" failures="0" errors="0" time="4.91">
+  <testsuite name="dsBetaTestClient::ds.glm.o:smoke done" timestamp="2019-06-05 10:23:56" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.glmSLMA.o:smoke" timestamp="2019-06-05 10:23:56" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.glmSLMA.o():smoke" timestamp="2019-06-05 10:24:00" hostname="fv-az679" tests="36" skipped="0" failures="0" errors="0" time="4.91">
     <testcase time="4.79" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
     <testcase time="0.03" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
     <testcase time="0.04" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
@@ -293,18 +293,18 @@
     <testcase time="0" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
     <testcase time="0" classname="dsBetaTestClient_ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.glmSLMA.o:smoke done" timestamp="2019-06-04 13:07:31" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.length.o:smoke" timestamp="2019-06-04 13:07:31" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.length.o():smoke" timestamp="2019-06-04 13:07:36" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="4.56">
-    <testcase time="4.56" classname="dsBetaTestClient_ds.length.o_smoke" name="basic_length"/>
+  <testsuite name="dsBetaTestClient::ds.glmSLMA.o:smoke done" timestamp="2019-06-05 10:24:01" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.length.o:smoke" timestamp="2019-06-05 10:24:01" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.length.o():smoke" timestamp="2019-06-05 10:24:05" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="4.51">
+    <testcase time="4.51" classname="dsBetaTestClient_ds.length.o_smoke" name="basic_length"/>
     <testcase time="0" classname="dsBetaTestClient_ds.length.o_smoke" name="basic_length"/>
     <testcase time="0" classname="dsBetaTestClient_ds.length.o_smoke" name="basic_length"/>
     <testcase time="0" classname="dsBetaTestClient_ds.length.o_smoke" name="basic_length"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.length.o:smoke done" timestamp="2019-06-04 13:07:36" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixDet:smoke" timestamp="2019-06-04 13:07:36" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixDet()" timestamp="2019-06-04 13:07:40" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.4">
-    <testcase time="5.87" classname="dsBetaTestClient_ds.matrixDet_" name="simplest_ds.matrixDet"/>
+  <testsuite name="dsBetaTestClient::ds.length.o:smoke done" timestamp="2019-06-05 10:24:05" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixDet:smoke" timestamp="2019-06-05 10:24:05" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixDet()" timestamp="2019-06-05 10:24:09" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.37">
+    <testcase time="5.84" classname="dsBetaTestClient_ds.matrixDet_" name="simplest_ds.matrixDet"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDet_" name="simplest_ds.matrixDet"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDet_" name="simplest_ds.matrixDet"/>
     <testcase time="0.53" classname="dsBetaTestClient_ds.matrixDet_" name="simplest_ds.matrixDet"/>
@@ -312,10 +312,10 @@
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDet_" name="simplest_ds.matrixDet"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDet_" name="simplest_ds.matrixDet"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.matrixDet:smoke done" timestamp="2019-06-04 13:07:42" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixDet.report:smoke" timestamp="2019-06-04 13:07:42" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixDet.report()" timestamp="2019-06-04 13:07:47" hostname="fv-az679" tests="14" skipped="0" failures="0" errors="0" time="5.37">
-    <testcase time="5.37" classname="dsBetaTestClient_ds.matrixDet.report_" name="simplest_ds.matrixDet.report"/>
+  <testsuite name="dsBetaTestClient::ds.matrixDet:smoke done" timestamp="2019-06-05 10:24:11" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixDet.report:smoke" timestamp="2019-06-05 10:24:11" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixDet.report()" timestamp="2019-06-05 10:24:16" hostname="fv-az679" tests="14" skipped="0" failures="0" errors="0" time="5.28">
+    <testcase time="5.28" classname="dsBetaTestClient_ds.matrixDet.report_" name="simplest_ds.matrixDet.report"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDet.report_" name="simplest_ds.matrixDet.report"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDet.report_" name="simplest_ds.matrixDet.report"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDet.report_" name="simplest_ds.matrixDet.report"/>
@@ -330,10 +330,10 @@
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDet.report_" name="simplest_ds.matrixDet.report"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDet.report_" name="simplest_ds.matrixDet.report"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.matrixDet.report:smoke done" timestamp="2019-06-04 13:07:48" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixDimnames:smoke" timestamp="2019-06-04 13:07:48" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixDimnames()" timestamp="2019-06-04 13:07:52" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.4">
-    <testcase time="5.87" classname="dsBetaTestClient_ds.matrixDimnames_" name="simplest_ds.matrixDimnames"/>
+  <testsuite name="dsBetaTestClient::ds.matrixDet.report:smoke done" timestamp="2019-06-05 10:24:17" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixDimnames:smoke" timestamp="2019-06-05 10:24:17" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixDimnames()" timestamp="2019-06-05 10:24:21" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.41">
+    <testcase time="5.88" classname="dsBetaTestClient_ds.matrixDimnames_" name="simplest_ds.matrixDimnames"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDimnames_" name="simplest_ds.matrixDimnames"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDimnames_" name="simplest_ds.matrixDimnames"/>
     <testcase time="0.53" classname="dsBetaTestClient_ds.matrixDimnames_" name="simplest_ds.matrixDimnames"/>
@@ -341,32 +341,32 @@
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDimnames_" name="simplest_ds.matrixDimnames"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixDimnames_" name="simplest_ds.matrixDimnames"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.matrixDimnames:smoke done" timestamp="2019-06-04 13:07:54" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixInvert:smoke" timestamp="2019-06-04 13:07:54" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixInvert()" timestamp="2019-06-04 13:07:59" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.42">
-    <testcase time="5.9" classname="dsBetaTestClient_ds.matrixInvert_" name="simplest_ds.matrixInvert"/>
+  <testsuite name="dsBetaTestClient::ds.matrixDimnames:smoke done" timestamp="2019-06-05 10:24:23" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixInvert:smoke" timestamp="2019-06-05 10:24:23" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixInvert()" timestamp="2019-06-05 10:24:27" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.42">
+    <testcase time="5.88" classname="dsBetaTestClient_ds.matrixInvert_" name="simplest_ds.matrixInvert"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixInvert_" name="simplest_ds.matrixInvert"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixInvert_" name="simplest_ds.matrixInvert"/>
-    <testcase time="0.52" classname="dsBetaTestClient_ds.matrixInvert_" name="simplest_ds.matrixInvert"/>
+    <testcase time="0.54" classname="dsBetaTestClient_ds.matrixInvert_" name="simplest_ds.matrixInvert"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixInvert_" name="simplest_ds.matrixInvert"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixInvert_" name="simplest_ds.matrixInvert"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixInvert_" name="simplest_ds.matrixInvert"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.matrixInvert:smoke done" timestamp="2019-06-04 13:08:01" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixMult:smoke" timestamp="2019-06-04 13:08:01" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixMult()" timestamp="2019-06-04 13:08:05" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="7.21">
-    <testcase time="6.69" classname="dsBetaTestClient_ds.matrixMult_" name="simplest_ds.matrixMult"/>
+  <testsuite name="dsBetaTestClient::ds.matrixInvert:smoke done" timestamp="2019-06-05 10:24:30" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixMult:smoke" timestamp="2019-06-05 10:24:30" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixMult()" timestamp="2019-06-05 10:24:34" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="7.17">
+    <testcase time="6.64" classname="dsBetaTestClient_ds.matrixMult_" name="simplest_ds.matrixMult"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixMult_" name="simplest_ds.matrixMult"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixMult_" name="simplest_ds.matrixMult"/>
-    <testcase time="0.52" classname="dsBetaTestClient_ds.matrixMult_" name="simplest_ds.matrixMult"/>
+    <testcase time="0.53" classname="dsBetaTestClient_ds.matrixMult_" name="simplest_ds.matrixMult"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixMult_" name="simplest_ds.matrixMult"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixMult_" name="simplest_ds.matrixMult"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixMult_" name="simplest_ds.matrixMult"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.matrixMult:smoke done" timestamp="2019-06-04 13:08:08" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrix:smoke" timestamp="2019-06-04 13:08:08" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrix()" timestamp="2019-06-04 13:08:12" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="5.65">
-    <testcase time="5.12" classname="dsBetaTestClient_ds.matrix_" name="simplest_ds.matrix"/>
+  <testsuite name="dsBetaTestClient::ds.matrixMult:smoke done" timestamp="2019-06-05 10:24:37" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrix:smoke" timestamp="2019-06-05 10:24:37" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrix()" timestamp="2019-06-05 10:24:41" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="5.58">
+    <testcase time="5.05" classname="dsBetaTestClient_ds.matrix_" name="simplest_ds.matrix"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrix_" name="simplest_ds.matrix"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrix_" name="simplest_ds.matrix"/>
     <testcase time="0.53" classname="dsBetaTestClient_ds.matrix_" name="simplest_ds.matrix"/>
@@ -374,28 +374,28 @@
     <testcase time="0" classname="dsBetaTestClient_ds.matrix_" name="simplest_ds.matrix"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrix_" name="simplest_ds.matrix"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.matrix:smoke done" timestamp="2019-06-04 13:08:14" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixTranspose:smoke" timestamp="2019-06-04 13:08:14" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.matrixTranspose()" timestamp="2019-06-04 13:08:18" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.39">
-    <testcase time="5.86" classname="dsBetaTestClient_ds.matrixTranspose_" name="simplest_ds.matrixTranspose"/>
+  <testsuite name="dsBetaTestClient::ds.matrix:smoke done" timestamp="2019-06-05 10:24:42" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixTranspose:smoke" timestamp="2019-06-05 10:24:42" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.matrixTranspose()" timestamp="2019-06-05 10:24:47" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.36">
+    <testcase time="5.84" classname="dsBetaTestClient_ds.matrixTranspose_" name="simplest_ds.matrixTranspose"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixTranspose_" name="simplest_ds.matrixTranspose"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixTranspose_" name="simplest_ds.matrixTranspose"/>
-    <testcase time="0.53" classname="dsBetaTestClient_ds.matrixTranspose_" name="simplest_ds.matrixTranspose"/>
+    <testcase time="0.52" classname="dsBetaTestClient_ds.matrixTranspose_" name="simplest_ds.matrixTranspose"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixTranspose_" name="simplest_ds.matrixTranspose"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixTranspose_" name="simplest_ds.matrixTranspose"/>
     <testcase time="0" classname="dsBetaTestClient_ds.matrixTranspose_" name="simplest_ds.matrixTranspose"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.matrixTranspose:smoke done" timestamp="2019-06-04 13:08:20" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.mean.o:smoke" timestamp="2019-06-04 13:08:20" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.mean.o:(type=combine):smoke" timestamp="2019-06-04 13:08:24" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="4.51">
-    <testcase time="4.51" classname="dsBetaTestClient_ds.mean.o_type_combine_smoke" name="mean_values_combine_"/>
+  <testsuite name="dsBetaTestClient::ds.matrixTranspose:smoke done" timestamp="2019-06-05 10:24:49" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.mean.o:smoke" timestamp="2019-06-05 10:24:49" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.mean.o:(type=combine):smoke" timestamp="2019-06-05 10:24:53" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="4.57">
+    <testcase time="4.57" classname="dsBetaTestClient_ds.mean.o_type_combine_smoke" name="mean_values_combine_"/>
     <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_combine_smoke" name="mean_values_combine_"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.mean.o(type=combine) loose:smoke" timestamp="2019-06-04 13:08:24" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="0.27">
+  <testsuite name="dsBetaTestClient::ds.mean.o(type=combine) loose:smoke" timestamp="2019-06-05 10:24:53" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="0.27">
     <testcase time="0.27" classname="dsBetaTestClient_ds.mean.o_type_combine_loose_smoke" name="mean_values_combine_loose"/>
     <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_combine_loose_smoke" name="mean_values_combine_loose"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.mean.o(type=split):smoke" timestamp="2019-06-04 13:08:25" hostname="fv-az679" tests="6" skipped="0" failures="0" errors="0" time="0.27">
+  <testsuite name="dsBetaTestClient::ds.mean.o(type=split):smoke" timestamp="2019-06-05 10:24:54" hostname="fv-az679" tests="6" skipped="0" failures="0" errors="0" time="0.27">
     <testcase time="0.27" classname="dsBetaTestClient_ds.mean.o_type_split_smoke" name="mean_values_split_"/>
     <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_split_smoke" name="mean_values_split_"/>
     <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_split_smoke" name="mean_values_split_"/>
@@ -403,21 +403,21 @@
     <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_split_smoke" name="mean_values_split_"/>
     <testcase time="0" classname="dsBetaTestClient_ds.mean.o_type_split_smoke" name="mean_values_split_"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.mean.o() test errors:smoke" timestamp="2019-06-04 13:08:25" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.83">
-    <testcase time="0.83" classname="dsBetaTestClient_ds.mean.o_test_errors_smoke" name="mean_erros"/>
+  <testsuite name="dsBetaTestClient::ds.mean.o() test errors:smoke" timestamp="2019-06-05 10:24:54" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.84">
+    <testcase time="0.84" classname="dsBetaTestClient_ds.mean.o_test_errors_smoke" name="mean_erros"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.mean.o:smoke done" timestamp="2019-06-04 13:08:26" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rbind.o:smoke" timestamp="2019-06-04 13:08:26" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rbind.o():smoke" timestamp="2019-06-04 13:08:30" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="6.74">
-    <testcase time="6.22" classname="dsBetaTestClient_ds.rbind.o_smoke" name="simple_test"/>
+  <testsuite name="dsBetaTestClient::ds.mean.o:smoke done" timestamp="2019-06-05 10:24:55" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rbind.o:smoke" timestamp="2019-06-05 10:24:55" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rbind.o():smoke" timestamp="2019-06-05 10:24:59" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="6.71">
+    <testcase time="6.18" classname="dsBetaTestClient_ds.rbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rbind.o_smoke" name="simple_test"/>
-    <testcase time="0.52" classname="dsBetaTestClient_ds.rbind.o_smoke" name="simple_test"/>
+    <testcase time="0.53" classname="dsBetaTestClient_ds.rbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rbind.o_smoke" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.rbind.o 1:smoke done" timestamp="2019-06-04 13:08:33" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rBinom.o:smoke" timestamp="2019-06-04 13:08:33" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rBinom.o():smoke simple test" timestamp="2019-06-04 13:08:37" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="6.18">
+  <testsuite name="dsBetaTestClient::ds.rbind.o 1:smoke done" timestamp="2019-06-05 10:25:01" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rBinom.o:smoke" timestamp="2019-06-05 10:25:01" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rBinom.o():smoke simple test" timestamp="2019-06-05 10:25:06" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="6.18">
     <testcase time="6.18" classname="dsBetaTestClient_ds.rBinom.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rBinom.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rBinom.o_smoke_simple_test" name="simple_test"/>
@@ -430,10 +430,10 @@
     <testcase time="0" classname="dsBetaTestClient_ds.rBinom.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rBinom.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.rBinom.o:smoke done" timestamp="2019-06-04 13:08:39" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rm.o:smoke" timestamp="2019-06-04 13:08:39" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rm.o():smoke" timestamp="2019-06-04 13:08:43" hostname="fv-az679" tests="14" skipped="0" failures="0" errors="0" time="6.5">
-    <testcase time="4.55" classname="dsBetaTestClient_ds.rm.o_smoke" name="simple_test"/>
+  <testsuite name="dsBetaTestClient::ds.rBinom.o:smoke done" timestamp="2019-06-05 10:25:08" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rm.o:smoke" timestamp="2019-06-05 10:25:08" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rm.o():smoke" timestamp="2019-06-05 10:25:12" hostname="fv-az679" tests="14" skipped="0" failures="0" errors="0" time="6.52">
+    <testcase time="4.57" classname="dsBetaTestClient_ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rm.o_smoke" name="simple_test"/>
@@ -448,10 +448,10 @@
     <testcase time="0" classname="dsBetaTestClient_ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rm.o_smoke" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.rm.o 1:smoke done" timestamp="2019-06-04 13:08:45" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rNorm.o:smoke" timestamp="2019-06-04 13:08:45" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rNorm.o():smoke simple test" timestamp="2019-06-04 13:08:49" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="6.18">
-    <testcase time="6.18" classname="dsBetaTestClient_ds.rNorm.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="dsBetaTestClient::ds.rm.o 1:smoke done" timestamp="2019-06-05 10:25:14" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rNorm.o:smoke" timestamp="2019-06-05 10:25:14" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rNorm.o():smoke simple test" timestamp="2019-06-05 10:25:18" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="6.17">
+    <testcase time="6.17" classname="dsBetaTestClient_ds.rNorm.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rNorm.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rNorm.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rNorm.o_smoke_simple_test" name="simple_test"/>
@@ -463,10 +463,10 @@
     <testcase time="0" classname="dsBetaTestClient_ds.rNorm.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rNorm.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.rNorm.o:smoke done" timestamp="2019-06-04 13:08:51" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rPois.o:smoke" timestamp="2019-06-04 13:08:51" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rPois.o():smoke simple test" timestamp="2019-06-04 13:08:56" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="6.22">
-    <testcase time="6.22" classname="dsBetaTestClient_ds.rPois.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="dsBetaTestClient::ds.rNorm.o:smoke done" timestamp="2019-06-05 10:25:20" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rPois.o:smoke" timestamp="2019-06-05 10:25:20" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rPois.o():smoke simple test" timestamp="2019-06-05 10:25:25" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="6.15">
+    <testcase time="6.15" classname="dsBetaTestClient_ds.rPois.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rPois.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rPois.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rPois.o_smoke_simple_test" name="simple_test"/>
@@ -478,10 +478,10 @@
     <testcase time="0" classname="dsBetaTestClient_ds.rPois.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rPois.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.rPois.o:smoke done" timestamp="2019-06-04 13:08:58" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rUnif.o:smoke" timestamp="2019-06-04 13:08:58" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.rUnif.o():smoke simple test" timestamp="2019-06-04 13:09:02" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="6.19">
-    <testcase time="6.19" classname="dsBetaTestClient_ds.rUnif.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="dsBetaTestClient::ds.rPois.o:smoke done" timestamp="2019-06-05 10:25:27" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rUnif.o:smoke" timestamp="2019-06-05 10:25:27" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.rUnif.o():smoke simple test" timestamp="2019-06-05 10:25:31" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="6.15">
+    <testcase time="6.15" classname="dsBetaTestClient_ds.rUnif.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rUnif.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rUnif.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rUnif.o_smoke_simple_test" name="simple_test"/>
@@ -493,17 +493,17 @@
     <testcase time="0" classname="dsBetaTestClient_ds.rUnif.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="dsBetaTestClient_ds.rUnif.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.rUnif.o:smoke done" timestamp="2019-06-04 13:09:04" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.seq.o:smoke" timestamp="2019-06-04 13:09:04" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.seq.o()" timestamp="2019-06-04 13:09:08" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="5.02">
-    <testcase time="5.02" classname="dsBetaTestClient_ds.seq.o_" name="simplest_ds.seq.o"/>
+  <testsuite name="dsBetaTestClient::ds.rUnif.o:smoke done" timestamp="2019-06-05 10:25:33" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.seq.o:smoke" timestamp="2019-06-05 10:25:33" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.seq.o()" timestamp="2019-06-05 10:25:37" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.96">
+    <testcase time="4.96" classname="dsBetaTestClient_ds.seq.o_" name="simplest_ds.seq.o"/>
     <testcase time="0" classname="dsBetaTestClient_ds.seq.o_" name="simplest_ds.seq.o"/>
     <testcase time="0" classname="dsBetaTestClient_ds.seq.o_" name="simplest_ds.seq.o"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.seq.o:smoke done" timestamp="2019-06-04 13:09:09" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.setSeed.o:smoke" timestamp="2019-06-04 13:09:09" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.setSeed.o():smoke" timestamp="2019-06-04 13:09:13" hostname="fv-az679" tests="9" skipped="0" failures="0" errors="0" time="4.51">
-    <testcase time="4.51" classname="dsBetaTestClient_ds.setSeed.o_smoke" name="basic_setSeed"/>
+  <testsuite name="dsBetaTestClient::ds.seq.o:smoke done" timestamp="2019-06-05 10:25:38" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.setSeed.o:smoke" timestamp="2019-06-05 10:25:38" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.setSeed.o():smoke" timestamp="2019-06-05 10:25:42" hostname="fv-az679" tests="9" skipped="0" failures="0" errors="0" time="4.47">
+    <testcase time="4.47" classname="dsBetaTestClient_ds.setSeed.o_smoke" name="basic_setSeed"/>
     <testcase time="0" classname="dsBetaTestClient_ds.setSeed.o_smoke" name="basic_setSeed"/>
     <testcase time="0" classname="dsBetaTestClient_ds.setSeed.o_smoke" name="basic_setSeed"/>
     <testcase time="0" classname="dsBetaTestClient_ds.setSeed.o_smoke" name="basic_setSeed"/>
@@ -513,12 +513,12 @@
     <testcase time="0" classname="dsBetaTestClient_ds.setSeed.o_smoke" name="basic_setSeed"/>
     <testcase time="0" classname="dsBetaTestClient_ds.setSeed.o_smoke" name="basic_setSeed"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.setSeed.o:smoke done" timestamp="2019-06-04 13:09:13" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.var.o:smoke" timestamp="2019-06-04 13:09:13" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="dsBetaTestClient::ds.var.o():smoke" timestamp="2019-06-04 13:09:18" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.53">
-    <testcase time="4.53" classname="dsBetaTestClient_ds.var.o_smoke" name="simple_var"/>
+  <testsuite name="dsBetaTestClient::ds.setSeed.o:smoke done" timestamp="2019-06-05 10:25:42" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.var.o:smoke" timestamp="2019-06-05 10:25:42" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.var.o():smoke" timestamp="2019-06-05 10:25:46" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.42">
+    <testcase time="4.42" classname="dsBetaTestClient_ds.var.o_smoke" name="simple_var"/>
     <testcase time="0" classname="dsBetaTestClient_ds.var.o_smoke" name="simple_var"/>
     <testcase time="0" classname="dsBetaTestClient_ds.var.o_smoke" name="simple_var"/>
   </testsuite>
-  <testsuite name="dsBetaTestClient::ds.var.o:smoke done" timestamp="2019-06-04 13:09:18" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsBetaTestClient::ds.var.o:smoke done" timestamp="2019-06-05 10:25:47" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
 </testsuites>
