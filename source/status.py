@@ -126,7 +126,7 @@ print(root.tag)
 
 
 log_file = os.path.basename(devtools_test_output_file)
-gh_log_path = '../logs/' + log_file
+gh_log_url = 'https://github.com/datashield/testStatus/blob/master/logs/' + log_file
 
 # Cycle through the xml line by line. This will have data for ALL tests.
 # The 'context' in testthat is the 'name' in the xml file.
@@ -226,7 +226,7 @@ for this_function in sorted(ds_test_status.keys()):
         this_problems = this_skipped + this_failures + this_errors
 
         if this_problems == 0:
-            h.write('<td class="good"><a href ="' + gh_log_path  + '">' + str(this_number) + "/" + str(this_number) + "</a></td>")
+            h.write('<td class="good"><a href ="' + gh_log_url + '">' + str(this_number) + "/" + str(this_number) + "</a></td>")
         elif this_error > 0:
             h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
     except:
