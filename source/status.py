@@ -1,9 +1,9 @@
 #! /usr/bin/env python3
 
 # Build a testing status web page. Based on:
-# 1) What functions exist in the R folder of the local repo.
-# 2) What test files exist in the testhtat folder in the local repo.
-# 3) Output of devtools::test().
+#   1) What functions exist in the R folder of the local repo.
+#   2) What test files exist in the testhtat folder in the local repo.
+#   3) Output of devtools::test().
 
 # The list of functions in the R folder is the canonical list this script uses.
 
@@ -124,6 +124,10 @@ root= tree.getroot()
 
 print(root.tag)
 
+
+log_file = os.path.basename(devtools_test_output_file)
+gh_log_path = '../logs/' + log_file
+
 # Cycle through the xml line by line. This will have data for ALL tests.
 # The 'context' in testthat is the 'name' in the xml file.
 # The expected format of the context is:
@@ -177,14 +181,17 @@ h.write("<h2>" + repo_name + "</h2>")
 h.write(str(datetime.datetime.now()))
 
 h.write("<table border=1>")
-h.write("<tr><th>Function name</th><th>Smoke test<br/>file exist</th><th>Test file exist</th><th>Smoke test<br/>pass rate</th><th>Functional<br/>pass rate</th><th>Mathematical<br/>pass rate</th></tr>")
+h.write("<tr><th>Function name</th><th>Coverage</th><th>Smoke test<br/>file exist</th><th>Test file exist</th><th>Smoke test<br/>pass rate</th><th>Functional<br/>pass rate</th><th>Mathematical<br/>pass rate</th></tr>")
 
-for this_function in ds_test_status.keys():
+for this_function in sorted(ds_test_status.keys()):
     print('===', this_function)
 
     # Function name with link to repo
     h.write("<tr>")
     h.write('<td><a href="' + remote_repo_path + '/blob/' + branch_name + '/R/' + this_function + '.R" target="_blank">' + this_function + "</a></td>")
+
+    # Coverage columne
+    h.write("<td></td>")
 
     ####################
     # Smoke test
@@ -219,7 +226,7 @@ for this_function in ds_test_status.keys():
         this_problems = this_skipped + this_failures + this_errors
 
         if this_problems == 0:
-            h.write('<td class="good">' + str(this_number) + "/" + str(this_number) + "</td>")
+            h.write('<td class="good"><a href ="' + gh_log_path  + '">' + str(this_number) + "/" + str(this_number) + "</a></td>")
         elif this_error > 0:
             h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
     except:
