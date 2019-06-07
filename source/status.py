@@ -24,8 +24,8 @@ import xml.etree.ElementTree as ET
 __author__ = "Olly Butters"
 __date__ = 4/6/19
 
-# local_root_path = "./"
-local_root_path = "/home/olly/git/"
+local_root_path = "./"
+# local_root_path = "/home/olly/git/"
 remote_root_path = "http://github.com/datashield/"
 repo_name = "dsBetaTestClient"
 branch_name = "master"
