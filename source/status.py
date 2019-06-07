@@ -11,10 +11,16 @@
 # options(testthat.output_file = "somefile")
 # devtools::test('/home/vagrant/dsdev/dsbetatestclient', reporter = "junit")
 
+# Drive everything from the cotext specified in the testthat scripts.
+# The pre-defined format of these is:
+# <function name>()::<test type>::<Optional other info>
+# someFunction()::smoke::extra information.
+
 # To do:
 # - pass in repo and branch name as arguements
 
-
+import argparse
+import datetime
 import glob
 import pprint
 import re
@@ -22,21 +28,33 @@ import os.path
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 4/6/19
+__date__ = 7/6/19
 
-local_root_path = "./"
+# local_root_path = "./"
 # local_root_path = "/home/olly/git/"
 remote_root_path = "http://github.com/datashield/"
 repo_name = "dsBetaTestClient"
 branch_name = "master"
-output_file_name = "status.html"
-devtools_test_output_file = "../logs/test_results.xml"
+# output_file_name = "status.html"
+# devtools_test_output_file = "../logs/test_results.xml"
 # devtools_test_output_file = "test_results.xml"
 
 
+
+parser = argparse.ArgumentParser()
+parser.add_argument("log_file_path", help="Path to the log file.")
+parser.add_argument("output_file_path", help="Path to the output file.")
+parser.add_argument("local_repo_path", help="Path to the locally checked out repository.")
+args = parser.parse_args()
+devtools_test_output_file = args.log_file_path
+output_file_name = args.output_file_path
+local_repo_path = args.local_repo_path
+# print(devtools_test_output_file)
+# exit()
+
 pp = pprint.PrettyPrinter(indent=4)
 
-local_repo_path = local_root_path + repo_name
+# local_repo_path = local_root_path + repo_name
 remote_repo_path = remote_root_path + repo_name
 
 # Check repo exists
@@ -123,7 +141,6 @@ for child in root:
 
     context = child.attrib['name']
     context = context.replace('dsBetaTestClient::','')        # Drop dsBetaTestClient:: from context. Factor this out of real code.
-    #re.sub("([\(\[]).*?([\)\]])", "\g<1>\g<2>", temp_name)   # Drop brackets and contents
 
     print(context)
 
@@ -139,10 +156,12 @@ for child in root:
     except:
         pass
 
-    # Build the dictionary ds_test_status[function_name][test_type]{number, error}
+    # Build the dictionary ds_test_status[function_name][test_type]{number, skipped, failures, errors}
     try:
         ds_test_status[function_name][test_type] = {}
         ds_test_status[function_name][test_type]['number'] = int(child.attrib['tests'])
+        ds_test_status[function_name][test_type]['skipped'] = int(child.attrib['skipped'])
+        ds_test_status[function_name][test_type]['failures'] = int(child.attrib['failures'])
         ds_test_status[function_name][test_type]['errors'] = int(child.attrib['errors'])
     except:
         pass
@@ -159,6 +178,7 @@ h = open(output_file_name, "w")
 h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="status.css">\n</head>\n<body>')
 
 h.write("<h2>" + repo_name + "</h2>")
+h.write(str(datetime.datetime.now()))
 
 h.write("<table border=1>")
 h.write("<tr><th>Function name</th><th>Smoke test<br/>file exist</th><th>Test file exist</th><th>Smoke test<br/>pass rate</th><th>Functional<br/>pass rate</th><th>Mathematical<br/>pass rate</th></tr>")
@@ -168,7 +188,7 @@ for this_function in ds_test_status.keys():
 
     # Function name with link to repo
     h.write("<tr>")
-    h.write("<td><a href=" + remote_repo_path + "/blob/" + branch_name + "/R/" + this_function + ".R>" + this_function + "</a></td>")
+    h.write('<td><a href="' + remote_repo_path + '/blob/' + branch_name + '/R/' + this_function + '.R" target="_blank">' + this_function + "</a></td>")
 
     ####################
     # Smoke test
@@ -176,7 +196,7 @@ for this_function in ds_test_status.keys():
     expected_test_name = "test-smk-"+this_function+'.R'
     print(expected_test_name)
     if expected_test_name in ds_tests:
-        h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '">' + expected_test_name + '</a></td>')
+        h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
     else:
         h.write("<td></td>")
 
@@ -195,13 +215,17 @@ for this_function in ds_test_status.keys():
     ###################
     # Work out the pass rate
     try:
-        this_error = int(ds_test_status[this_function]['smoke']['errors'])
+        this_skipped = int(ds_test_status[this_function]['smoke']['skipped'])
+        this_failures = int(ds_test_status[this_function]['smoke']['failures'])
+        this_errors = int(ds_test_status[this_function]['smoke']['errors'])
         this_number = int(ds_test_status[this_function]['smoke']['number'])
 
-        if this_error == 0:
-            h.write("<td>" + str(this_number) + "/" + str(this_number) + "</td>")
+        this_problems = this_skipped + this_failures + this_errors
+
+        if this_problems == 0:
+            h.write('<td class="good">' + str(this_number) + "/" + str(this_number) + "</td>")
         elif this_error > 0:
-            h.write("<td>" + str(this_number - this_error) + "/" + str(this_number) + "</td>")
+            h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
     except:
         h.write("<td></td>")
 
