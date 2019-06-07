@@ -30,8 +30,8 @@ remote_root_path = "http://github.com/datashield/"
 repo_name = "dsBetaTestClient"
 branch_name = "master"
 output_file_name = "status.html"
-devtools_test_output_file = "../logs/test_results.xml"
-# devtools_test_output_file = "test_results.xml"
+# devtools_test_output_file = "../logs/test_results.xml"
+devtools_test_output_file = "test_results.xml"
 
 
 pp = pprint.PrettyPrinter(indent=4)
