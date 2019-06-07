@@ -1,17 +1,17 @@
 #! /usr/bin/env python3
 
-# Build a testing status web page. Based on
-# What functions exist in R folder
-# what test files exist in the testhtat folder
-# output of devtools::test()
+# Build a testing status web page. Based on:
+# 1) What functions exist in the R folder of the local repo.
+# 2) What test files exist in the testhtat folder in the local repo.
+# 3) Output of devtools::test().
 
-# Currently trying the junit output of devtools::test as I think that is more
-# parseable
+# The list of functions in the R folder is the canonical list this script uses.
 
+# Using the junit output of devtools::test
 # options(testthat.output_file = "somefile")
 # devtools::test('/home/vagrant/dsdev/dsbetatestclient', reporter = "junit")
 
-# Drive everything from the cotext specified in the testthat scripts.
+# Drive everything from the context specified in the testthat scripts.
 # The pre-defined format of these is:
 # <function name>()::<test type>::<Optional other info>
 # someFunction()::smoke::extra information.
@@ -22,9 +22,9 @@
 import argparse
 import datetime
 import glob
+import os.path
 import pprint
 import re
-import os.path
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
@@ -65,7 +65,7 @@ print("remote repo path: " + remote_repo_path)
 
 
 ################################################################################
-# Get list of functions from R folder
+# Get list of functions from R folder in the local repo
 #
 print("\n\n##########")
 ds_functions_path = glob.glob(local_repo_path + "/R/*.R")
@@ -86,14 +86,13 @@ for this_function in ds_functions:
 # Make the test status dictionary
 ds_test_status = {}
 for this_function in ds_functions:
-    # Drop the .R part from the end.
-    this_function = this_function.replace('.R', '')
+    this_function = this_function.replace('.R', '')  # Drop the .R part from the end.
     ds_test_status[this_function] = {}
 
 
 
 ################################################################################
-# Get the list of tests
+# Get the list of tests from the local repo
 print("\n\n##########")
 ds_tests_path = glob.glob(local_repo_path + "/tests/testthat/*.R")
 
@@ -115,32 +114,27 @@ for this_test in ds_tests:
 
 ################################################################################
 # Parse the devtools::tests() log file, this is the output of the testthat tests
-#devtools_h = open(devtools_test_output_file, "r")
-#devtools_results = devtools_h.read()
-#print(devtools_results)
+#
 print("\n\n##########")
 
-print("Parsing XML!!!")
+print("Parsing XML file: " + devtools_test_output_file)
 
 tree = ET.parse(devtools_test_output_file)
 root= tree.getroot()
 
 print(root.tag)
 
-# Define status dictionary and assign zeros for each test (NOTE: this is like ds.cov.R)
-# for this_test in ds_tests:
-#     ds_test_status[this_test] = {'number':0, 'errors':0}
-
 # Cycle through the xml line by line. This will have data for ALL tests.
 # The 'context' in testthat is the 'name' in the xml file.
 # The expected format of the context is:
 # <function name>()::<test type>::<Optional other info>
+# e.g.
 # ds.asFactor.o::smoke
 for child in root:
-    print('\n', child.attrib['name'], child.attrib['tests'], child.attrib['errors'])
+    print('\n', child.attrib['name'], child.attrib['tests'], child.attrib['skipped'], child.attrib['failures'], child.attrib['errors'])
 
     context = child.attrib['name']
-    context = context.replace('dsBetaTestClient::','')        # Drop dsBetaTestClient:: from context. Factor this out of real code.
+    context = context.replace('dsBetaTestClient::','')        # Drop dsBetaTestClient:: from context. Factor this out of testthat code.
 
     print(context)
 
@@ -154,9 +148,11 @@ for child in root:
         print(function_name)
         print(test_type)
     except:
+        print("ERROR with " + context)
         pass
 
     # Build the dictionary ds_test_status[function_name][test_type]{number, skipped, failures, errors}
+    # This should automatically make an entry for each test type specified in the testthat files.
     try:
         ds_test_status[function_name][test_type] = {}
         ds_test_status[function_name][test_type]['number'] = int(child.attrib['tests'])
