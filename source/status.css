@@ -1,2 +1,2 @@
-td.good {background-color:green;}
-td.bad {background-color:red;}
+td.good {background-color:rgba(0,255,0,0.3);}
+td.bad {background-color:rgba(255,0,0,0.3);}
