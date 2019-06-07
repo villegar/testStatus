@@ -207,7 +207,7 @@ for this_function in sorted(ds_test_status.keys()):
     ####################
     # Other tests
     # See if test exists
-    expected_test_name = "test-"+this_function
+    expected_test_name = "test-"+this_function+'.R'
     print(expected_test_name)
     if expected_test_name in ds_tests:
         h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '">' + expected_test_name + '</a></td>')
