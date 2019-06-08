@@ -210,7 +210,7 @@ for this_function in sorted(ds_test_status.keys()):
     expected_test_name = "test-"+this_function+'.R'
     print(expected_test_name)
     if expected_test_name in ds_tests:
-        h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '">' + expected_test_name + '</a></td>')
+        h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
     else:
         h.write("<td></td>")
 
@@ -226,7 +226,7 @@ for this_function in sorted(ds_test_status.keys()):
         this_problems = this_skipped + this_failures + this_errors
 
         if this_problems == 0:
-            h.write('<td class="good"><a href ="' + gh_log_url + '">' + str(this_number) + "/" + str(this_number) + "</a></td>")
+            h.write('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
         elif this_error > 0:
             h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
     except:
@@ -247,7 +247,7 @@ for this_function in sorted(ds_test_status.keys()):
         this_problems = this_skipped + this_failures + this_errors
 
         if this_problems == 0:
-            h.write('<td class="good"><a href ="' + gh_log_url + '">' + str(this_number) + "/" + str(this_number) + "</a></td>")
+            h.write('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
         elif this_error > 0:
             h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
     except:
