@@ -28,7 +28,7 @@ import re
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 7/6/19
+__date__ = 8/6/19
 
 # local_root_path = "./"
 # local_root_path = "/home/olly/git/"
@@ -140,7 +140,7 @@ for child in root:
     context = child.attrib['name']
     context = context.replace('dsBetaTestClient::','')        # Drop dsBetaTestClient:: from context. Factor this out of testthat code.
 
-    print(context)
+    # print(context)
 
     # Split by :: delimiter
     context_parts = context.split('::')
@@ -184,7 +184,7 @@ h.write("<table border=1>")
 h.write("<tr><th>Function name</th><th>Coverage</th><th>Smoke test<br/>file exist</th><th>Test file exist</th><th>Smoke test<br/>pass rate</th><th>Functional<br/>pass rate</th><th>Mathematical<br/>pass rate</th></tr>")
 
 for this_function in sorted(ds_test_status.keys()):
-    print('===', this_function)
+    print('===\n', this_function)
 
     # Function name with link to repo
     h.write("<tr>")
@@ -216,7 +216,7 @@ for this_function in sorted(ds_test_status.keys()):
 
 
     ###################
-    # Work out the pass rate
+    # Work out the smoke pass rate
     try:
         this_skipped = int(ds_test_status[this_function]['smoke']['skipped'])
         this_failures = int(ds_test_status[this_function]['smoke']['failures'])
@@ -233,9 +233,25 @@ for this_function in sorted(ds_test_status.keys()):
         h.write("<td></td>")
 
 
+    # Functinoal
+    h.write("<td></td>")
 
-    h.write("<td></td>")
-    h.write("<td></td>")
+    ###################
+    # Work out the mathematical pass rate
+    try:
+        this_skipped = int(ds_test_status[this_function]['mathematical']['skipped'])
+        this_failures = int(ds_test_status[this_function]['mathematical']['failures'])
+        this_errors = int(ds_test_status[this_function]['mathematical']['errors'])
+        this_number = int(ds_test_status[this_function]['mathematical']['number'])
+
+        this_problems = this_skipped + this_failures + this_errors
+
+        if this_problems == 0:
+            h.write('<td class="good"><a href ="' + gh_log_url + '">' + str(this_number) + "/" + str(this_number) + "</a></td>")
+        elif this_error > 0:
+            h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
+    except:
+        h.write("<td></td>")
 
 
 
