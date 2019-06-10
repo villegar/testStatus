@@ -181,7 +181,7 @@ h.write("<h2>" + repo_name + "</h2>")
 h.write(str(datetime.datetime.now()))
 
 h.write("<table border=1>")
-h.write("<tr><th>Function name</th><th>Coverage</th><th>Smoke test<br/>file exist</th><th>Test file exist</th><th>Smoke test<br/>pass rate</th><th>Functional<br/>pass rate</th><th>Mathematical<br/>pass rate</th></tr>")
+h.write("<tr><th>Function name</th><th>Coverage</th><th>Smoke test<br/>file exist</th><th>Test file exist</th><th>Smoke test<br/>pass rate</th><th>Functional<br/>pass rate</th><th>Mathematical<br/>pass rate</th><th>Forced errors<br/>pass rate</th></tr>")
 
 for this_function in sorted(ds_test_status.keys()):
     print('===\n', this_function)
@@ -253,6 +253,23 @@ for this_function in sorted(ds_test_status.keys()):
     except:
         h.write("<td></td>")
 
+
+    ###################
+    # Work out the forceFail pass rate
+    try:
+        this_skipped = int(ds_test_status[this_function]['forceFail']['skipped'])
+        this_failures = int(ds_test_status[this_function]['forceFail']['failures'])
+        this_errors = int(ds_test_status[this_function]['forceFail']['errors'])
+        this_number = int(ds_test_status[this_function]['forceFail']['number'])
+
+        this_problems = this_skipped + this_failures + this_errors
+
+        if this_problems == 0:
+            h.write('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
+        elif this_error > 0:
+            h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
+    except:
+        h.write("<td></td>")
 
 
     h.write("</tr>\n")
