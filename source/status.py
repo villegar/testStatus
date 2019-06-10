@@ -227,7 +227,7 @@ for this_function in sorted(ds_test_status.keys()):
 
         if this_problems == 0:
             h.write('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
-        elif this_error > 0:
+        elif this_problems > 0:
             h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
     except:
         h.write("<td></td>")
@@ -248,7 +248,7 @@ for this_function in sorted(ds_test_status.keys()):
 
         if this_problems == 0:
             h.write('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
-        elif this_error > 0:
+        elif this_problems > 0:
             h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
     except:
         h.write("<td></td>")
@@ -266,7 +266,7 @@ for this_function in sorted(ds_test_status.keys()):
 
         if this_problems == 0:
             h.write('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
-        elif this_error > 0:
+        elif this_problems > 0:
             h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
     except:
         h.write("<td></td>")
