@@ -28,7 +28,7 @@ import re
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 8/6/19
+__date__ = 10/6/19
 
 # local_root_path = "./"
 # local_root_path = "/home/olly/git/"
@@ -134,10 +134,10 @@ gh_log_url = 'https://github.com/datashield/testStatus/blob/master/logs/' + log_
 # <function name>()::<test type>::<Optional other info>
 # e.g.
 # ds.asFactor.o::smoke
-for child in root:
-    print('\n', child.attrib['name'], child.attrib['tests'], child.attrib['skipped'], child.attrib['failures'], child.attrib['errors'])
+for testsuite in root:
+    print('\n', testsuite.attrib['name'], testsuite.attrib['tests'], testsuite.attrib['skipped'], testsuite.attrib['failures'], testsuite.attrib['errors'])
 
-    context = child.attrib['name']
+    context = testsuite.attrib['name']
     context = context.replace('dsBetaTestClient::','')        # Drop dsBetaTestClient:: from context. Factor this out of testthat code.
 
     # print(context)
@@ -159,10 +159,27 @@ for child in root:
     # This should automatically make an entry for each test type specified in the testthat files.
     try:
         ds_test_status[function_name][test_type] = {}
-        ds_test_status[function_name][test_type]['number'] = int(child.attrib['tests'])
-        ds_test_status[function_name][test_type]['skipped'] = int(child.attrib['skipped'])
-        ds_test_status[function_name][test_type]['failures'] = int(child.attrib['failures'])
-        ds_test_status[function_name][test_type]['errors'] = int(child.attrib['errors'])
+        ds_test_status[function_name][test_type]['number'] = int(testsuite.attrib['tests'])
+        ds_test_status[function_name][test_type]['skipped'] = int(testsuite.attrib['skipped'])
+        ds_test_status[function_name][test_type]['failures'] = int(testsuite.attrib['failures'])
+        ds_test_status[function_name][test_type]['errors'] = int(testsuite.attrib['errors'])
+
+
+        # Parse the text from the failure notice into the ds_test_status dictionary
+        if ds_test_status[function_name][test_type]['failures'] > 0:
+            print("\n\nERRORS")
+            ds_test_status[function_name][test_type]['failureText'] = list()
+            print(testsuite.tag, testsuite.attrib)
+            for testcase in testsuite:
+                print(testcase.tag, testcase.attrib)
+                for failure in testcase:
+                    try:
+                        print(failure.tag, failure.attrib)
+                        print(failure.attrib['message'])
+                        print(failure.text)
+                        ds_test_status[function_name][test_type]['failureText'].append(failure.text)
+                    except:
+                        pass
     except:
         pass
 
@@ -172,19 +189,19 @@ pp.pprint(ds_test_status)
 ################################################################################
 # Make an HTML table of the results.
 # Currently hard coding test types, but could automatically pull these out.
-print("\n\n##########")
+#print("\n\n##########")
 
 h = open(output_file_name, "w")
 h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="status.css">\n</head>\n<body>')
 
 h.write("<h2>" + repo_name + "</h2>")
-h.write(str(datetime.datetime.now()))
+h.write("Made on " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
 h.write("<table border=1>")
 h.write("<tr><th>Function name</th><th>Coverage</th><th>Smoke test<br/>file exist</th><th>Test file exist</th><th>Smoke test<br/>pass rate</th><th>Functional<br/>pass rate</th><th>Mathematical<br/>pass rate</th><th>Forced errors<br/>pass rate</th></tr>")
 
 for this_function in sorted(ds_test_status.keys()):
-    print('===\n', this_function)
+    # print('===\n', this_function)
 
     # Function name with link to repo
     h.write("<tr>")
@@ -197,7 +214,7 @@ for this_function in sorted(ds_test_status.keys()):
     # Smoke test
     # See if test file exists
     expected_test_name = "test-smk-"+this_function+'.R'
-    print(expected_test_name)
+    # print(expected_test_name)
     if expected_test_name in ds_tests:
         h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
     else:
@@ -208,7 +225,7 @@ for this_function in sorted(ds_test_status.keys()):
     # Other tests
     # See if test exists
     expected_test_name = "test-"+this_function+'.R'
-    print(expected_test_name)
+    # print(expected_test_name)
     if expected_test_name in ds_tests:
         h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
     else:
@@ -253,6 +270,7 @@ for this_function in sorted(ds_test_status.keys()):
     except:
         h.write("<td></td>")
 
+    #def
 
     ###################
     # Work out the forceFail pass rate
@@ -267,7 +285,8 @@ for this_function in sorted(ds_test_status.keys()):
         if this_problems == 0:
             h.write('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
         elif this_problems > 0:
-            h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
+            h.write('<td class="bad"><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[this_function]['forceFail']['failureText'])) + '</span></span></td>')
+            #h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
     except:
         h.write("<td></td>")
 
