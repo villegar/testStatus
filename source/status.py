@@ -31,9 +31,10 @@ __author__ = "Olly Butters"
 __date__ = 12/6/19
 
 
+################################################################################
 # Calculate the pass rate of this function and test class, then make a HTML
 # table cell out of it. If there are errors put them in the cell.
-def calculate_pass_rate(ds_test_status, function_name, test_class, gh_log_url, h):
+def calculate_pass_rate(ds_test_status, function_name, test_class, gh_log_url):
     try:
         this_skipped = int(ds_test_status[function_name][test_class]['skipped'])
         this_failures = int(ds_test_status[function_name][test_class]['failures'])
@@ -43,27 +44,18 @@ def calculate_pass_rate(ds_test_status, function_name, test_class, gh_log_url, h
         this_problems = this_skipped + this_failures + this_errors
 
         if this_problems == 0:
-            h.write('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
-            # return('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
+            return('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
         elif this_problems > 0:
-            h.write('<td class="bad"><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[function_name]['forceFail']['failureText'])) + '</span></span></td>')
-            # return('<td class="bad"><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[this_function]['forceFail']['failureText'])) + '</span></span></td>')
-            # h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
+            return('<td class="bad"><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[function_name][test_class]['failureText'])) + '</span></span></td>')
     except:
-        h.write("<td></td>")
-        # return("<td></td>")
+        return("<td></td>")
 
 
 #
 def main(args):
-    # local_root_path = "./"
-    # local_root_path = "/home/olly/git/"
     remote_root_path = "http://github.com/datashield/"
     repo_name = "dsBetaTestClient"
     branch_name = "master"
-    # output_file_name = "status.html"
-    # devtools_test_output_file = "../logs/test_results.xml"
-    # devtools_test_output_file = "test_results.xml"
 
     parser = argparse.ArgumentParser()
     parser.add_argument("log_file_path", help="Path to the log file.")
@@ -73,13 +65,13 @@ def main(args):
     devtools_test_output_file = args.log_file_path
     output_file_name = args.output_file_path
     local_repo_path = args.local_repo_path
-    # print(devtools_test_output_file)
-    # exit()
 
     pp = pprint.PrettyPrinter(indent=4)
 
-    # local_repo_path = local_root_path + repo_name
     remote_repo_path = remote_root_path + repo_name
+
+    log_file = os.path.basename(devtools_test_output_file)
+    gh_log_url = 'https://github.com/datashield/testStatus/blob/master/logs/' + log_file
 
     # Check repo exists
     print("local repo path: " + local_repo_path)
@@ -139,9 +131,6 @@ def main(args):
     root = tree.getroot()
 
     print(root.tag)
-
-    log_file = os.path.basename(devtools_test_output_file)
-    gh_log_url = 'https://github.com/datashield/testStatus/blob/master/logs/' + log_file
 
     # Cycle through the xml line by line. This will have data for ALL tests.
     # The 'context' in testthat is the 'name' in the xml file.
@@ -256,13 +245,9 @@ def main(args):
         else:
             h.write("<td></td>")
 
+        # Cycle through all the test types.
         for this_unique_test_type in unique_test_types:
-            calculate_pass_rate(ds_test_status, this_function, this_unique_test_type, gh_log_url, h)
-
-        #calculate_pass_rate(ds_test_status, this_function, 'smoke', gh_log_url, h)
-        #h.write("<td></td>")
-        #calculate_pass_rate(ds_test_status, this_function, 'mathematical', gh_log_url, h)
-        #calculate_pass_rate(ds_test_status, this_function, 'forceFail', gh_log_url, h)
+            h.write(calculate_pass_rate(ds_test_status, this_function, this_unique_test_type, gh_log_url))
 
         h.write("</tr>\n")
     h.write("</table>\n</body>\n</html>")
