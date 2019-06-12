@@ -204,6 +204,14 @@ def main(args):
     # Currently hard coding test types, but could automatically pull these out.
     # print("\n\n##########")
 
+    # Get a list of unique test types, in aphabetical order
+    test_types = []
+    for this_function in ds_test_status.keys():
+        for this_test_type in ds_test_status[this_function].keys():
+            test_types.append(this_test_type)
+
+    unique_test_types = sorted(set(test_types))
+
     h = open(output_file_name, "w")
     h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="status.css">\n</head>\n<body>')
 
@@ -211,7 +219,12 @@ def main(args):
     h.write("Made on " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
     h.write("<table border=1>")
-    h.write("<tr><th>Function name</th><th>Coverage</th><th>Smoke test<br/>file exist</th><th>Test file exist</th><th>Smoke test<br/>pass rate</th><th>Functional<br/>pass rate</th><th>Mathematical<br/>pass rate</th><th>Forced errors<br/>pass rate</th></tr>")
+
+    # Some fixed named columns to beginw with, then use the unique test types derived from the data.
+    h.write("<tr><th>Function name</th><th>Coverage</th><th>Smoke test<br/>file exist</th><th>Test file exist</th>")
+    for this_unique_test_type in unique_test_types:
+        h.write("<th>" + this_unique_test_type + "<br/>pass rate</th>")
+    h.write("</tr>")
 
     for this_function in sorted(ds_test_status.keys()):
         # print('===\n', this_function)
@@ -243,10 +256,13 @@ def main(args):
         else:
             h.write("<td></td>")
 
-        calculate_pass_rate(ds_test_status, this_function, 'smoke', gh_log_url, h)
-        h.write("<td></td>")
-        calculate_pass_rate(ds_test_status, this_function, 'mathematical', gh_log_url, h)
-        calculate_pass_rate(ds_test_status, this_function, 'forceFail', gh_log_url, h)
+        for this_unique_test_type in unique_test_types:
+            calculate_pass_rate(ds_test_status, this_function, this_unique_test_type, gh_log_url, h)
+
+        #calculate_pass_rate(ds_test_status, this_function, 'smoke', gh_log_url, h)
+        #h.write("<td></td>")
+        #calculate_pass_rate(ds_test_status, this_function, 'mathematical', gh_log_url, h)
+        #calculate_pass_rate(ds_test_status, this_function, 'forceFail', gh_log_url, h)
 
         h.write("</tr>\n")
     h.write("</table>\n</body>\n</html>")
