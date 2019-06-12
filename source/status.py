@@ -24,13 +24,11 @@ import datetime
 import glob
 import os.path
 import pprint
-import re
 import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 11/6/19
-
+__date__ = 12/6/19
 
 
 # Calculate the pass rate of this function and test class, then make a HTML
@@ -46,14 +44,14 @@ def calculate_pass_rate(ds_test_status, function_name, test_class, gh_log_url, h
 
         if this_problems == 0:
             h.write('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
-            #return('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
+            # return('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
         elif this_problems > 0:
             h.write('<td class="bad"><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[function_name]['forceFail']['failureText'])) + '</span></span></td>')
-            #return('<td class="bad"><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[this_function]['forceFail']['failureText'])) + '</span></span></td>')
-            #h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
+            # return('<td class="bad"><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[this_function]['forceFail']['failureText'])) + '</span></span></td>')
+            # h.write('<td class="bad">' + str(this_number - this_problems) + "/" + str(this_number) + "</td>")
     except:
         h.write("<td></td>")
-        #return("<td></td>")
+        # return("<td></td>")
 
 
 #
@@ -87,7 +85,6 @@ def main(args):
     print("local repo path: " + local_repo_path)
     print("remote repo path: " + remote_repo_path)
 
-
     ################################################################################
     # Get list of functions from R folder in the local repo
     #
@@ -102,18 +99,14 @@ def main(args):
 
     ds_functions.sort()
 
-
     for this_function in ds_functions:
         print(this_function)
-
 
     # Make the test status dictionary
     ds_test_status = {}
     for this_function in ds_functions:
         this_function = this_function.replace('.R', '')  # Drop the .R part from the end.
         ds_test_status[this_function] = {}
-
-
 
     ################################################################################
     # Get the list of tests from the local repo
@@ -135,7 +128,6 @@ def main(args):
     for this_test in ds_tests:
         print(this_test)
 
-
     ################################################################################
     # Parse the devtools::tests() log file, this is the output of the testthat tests
     #
@@ -144,10 +136,9 @@ def main(args):
     print("Parsing XML file: " + devtools_test_output_file)
 
     tree = ET.parse(devtools_test_output_file)
-    root= tree.getroot()
+    root = tree.getroot()
 
     print(root.tag)
-
 
     log_file = os.path.basename(devtools_test_output_file)
     gh_log_url = 'https://github.com/datashield/testStatus/blob/master/logs/' + log_file
@@ -162,7 +153,7 @@ def main(args):
         print('\n', testsuite.attrib['name'], testsuite.attrib['tests'], testsuite.attrib['skipped'], testsuite.attrib['failures'], testsuite.attrib['errors'])
 
         context = testsuite.attrib['name']
-        context = context.replace('dsBetaTestClient::','')        # Drop dsBetaTestClient:: from context. Factor this out of testthat code.
+        context = context.replace('dsBetaTestClient::', '')        # Drop dsBetaTestClient:: from context. Factor this out of testthat code.
 
         # print(context)
 
@@ -171,7 +162,7 @@ def main(args):
 
         try:
             function_name = context_parts[0]
-            function_name = function_name.replace('()','') # Drop the brackets from the function name
+            function_name = function_name.replace('()', '')  # Drop the brackets from the function name
             test_type = context_parts[1]
             print(function_name)
             print(test_type)
@@ -187,7 +178,6 @@ def main(args):
             ds_test_status[function_name][test_type]['skipped'] = int(testsuite.attrib['skipped'])
             ds_test_status[function_name][test_type]['failures'] = int(testsuite.attrib['failures'])
             ds_test_status[function_name][test_type]['errors'] = int(testsuite.attrib['errors'])
-
 
             # Parse the text from the failure notice into the ds_test_status dictionary
             if ds_test_status[function_name][test_type]['failures'] > 0:
@@ -209,11 +199,10 @@ def main(args):
 
     pp.pprint(ds_test_status)
 
-
     ################################################################################
     # Make an HTML table of the results.
     # Currently hard coding test types, but could automatically pull these out.
-    #print("\n\n##########")
+    # print("\n\n##########")
 
     h = open(output_file_name, "w")
     h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="status.css">\n</head>\n<body>')
@@ -244,7 +233,6 @@ def main(args):
         else:
             h.write("<td></td>")
 
-
         ####################
         # Other tests
         # See if test exists
@@ -255,7 +243,6 @@ def main(args):
         else:
             h.write("<td></td>")
 
-
         calculate_pass_rate(ds_test_status, this_function, 'smoke', gh_log_url, h)
         h.write("<td></td>")
         calculate_pass_rate(ds_test_status, this_function, 'mathematical', gh_log_url, h)
@@ -263,6 +250,7 @@ def main(args):
 
         h.write("</tr>\n")
     h.write("</table>\n</body>\n</html>")
+
 
 if __name__ == '__main__':
     main(sys.argv[1:])
