@@ -21,6 +21,7 @@
 
 import argparse
 import datetime
+import csv
 import glob
 import os.path
 import pprint
@@ -28,7 +29,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 12/6/19
+__date__ = 20/6/19
 
 
 ################################################################################
@@ -51,6 +52,20 @@ def calculate_pass_rate(ds_test_status, function_name, test_class, gh_log_url):
         return("<td></td>")
 
 
+################################################################################
+# Parse the coverage file, returning a dict of file coverages
+def parse_coverage(coverage_file_path):
+    input_file = csv.reader(open(coverage_file_path))
+    coverage = {}
+    for row in input_file:
+        print(row)
+        this_function_name = row[0].replace("R/","")
+        this_function_name = this_function_name.replace(".R","")
+        coverage[this_function_name] = row[1]
+
+    return coverage
+
+
 #
 def main(args):
     remote_root_path = "http://github.com/datashield/"
@@ -59,10 +74,12 @@ def main(args):
 
     parser = argparse.ArgumentParser()
     parser.add_argument("log_file_path", help="Path to the log file.")
+    parser.add_argument("coverage_file_path", help="Path to the coverage file.")
     parser.add_argument("output_file_path", help="Path to the output file.")
     parser.add_argument("local_repo_path", help="Path to the locally checked out repository.")
     args = parser.parse_args()
     devtools_test_output_file = args.log_file_path
+    coverage_file_path = args.coverage_file_path
     output_file_name = args.output_file_path
     local_repo_path = args.local_repo_path
 
@@ -188,6 +205,10 @@ def main(args):
 
     pp.pprint(ds_test_status)
 
+
+    # Get the coverage
+    coverage = parse_coverage(coverage_file_path)
+
     ################################################################################
     # Make an HTML table of the results.
     # Currently hard coding test types, but could automatically pull these out.
@@ -223,7 +244,10 @@ def main(args):
         h.write('<td><a href="' + remote_repo_path + '/blob/' + branch_name + '/R/' + this_function + '.R" target="_blank">' + this_function + "</a></td>")
 
         # Coverage columne
-        h.write("<td></td>")
+        if this_function in coverage:
+            h.write('<td>' + coverage[this_function] + '</td>')
+        else:
+            h.write('<td></td>')
 
         ####################
         # Smoke test
