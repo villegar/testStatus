@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="ds.asFactor.o()::mathematical::Returns expected numerical value" timestamp="2019-06-20 17:46:33" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="19.2">
-    <testcase time="5.33" classname="ds.asFactor.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="3" classname="ds.asFactor.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="2.84" classname="ds.asFactor.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="2.84" classname="ds.asFactor.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="5.19" classname="ds.asFactor.o_mathematical_Returns_expected_numerical_value" name="every_factor_should_be_unique"/>
+  <testsuite name="ds.asFactor.o()::mathematical::Returns expected numerical value" timestamp="2019-06-16 21:43:00" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="19.66">
+    <testcase time="5.54" classname="ds.asFactor.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="3.08" classname="ds.asFactor.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="2.88" classname="ds.asFactor.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="2.88" classname="ds.asFactor.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="5.28" classname="ds.asFactor.o_mathematical_Returns_expected_numerical_value" name="every_factor_should_be_unique"/>
   </testsuite>
-  <testsuite name="ds.mean.o()::mathematical::Returns expected numerical value" timestamp="2019-06-20 17:46:56" hostname="fv-az679" tests="40" skipped="0" failures="0" errors="0" time="23.74">
-    <testcase time="5.29" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.88" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+  <testsuite name="ds.mean.o()::mathematical::Returns expected numerical value" timestamp="2019-06-16 21:43:24" hostname="fv-az679" tests="40" skipped="0" failures="0" errors="0" time="23.94">
+    <testcase time="5.42" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.89" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
     <testcase time="0.8" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.84" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
     <testcase time="0.81" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
     <testcase time="0.81" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.8" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.81" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.8" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
     <testcase time="0.8" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
@@ -25,49 +25,49 @@
     <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.81" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.8" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.03" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0.8" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.01" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.78" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
-    <testcase time="0.8" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
-    <testcase time="0.8" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
-    <testcase time="0.8" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
-    <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
-    <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.82" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
     <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
     <testcase time="0.81" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.81" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.79" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
+    <testcase time="0.8" classname="ds.mean.o_mathematical_Returns_expected_numerical_value" name="residual_deviation_tends_to_0"/>
   </testsuite>
-  <testsuite name="ds.recodeValues.o()::mathematical::Returns expected numerical value" timestamp="2019-06-20 17:47:16" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.42">
-    <testcase time="6.42" classname="ds.recodeValues.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+  <testsuite name="ds.recodeValues.o()::mathematical::Returns expected numerical value" timestamp="2019-06-16 21:43:43" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.44">
+    <testcase time="6.44" classname="ds.recodeValues.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
   </testsuite>
-  <testsuite name="ds.var.o()::mathematical::Returns expected numerical value" timestamp="2019-06-20 17:47:26" hostname="fv-az679" tests="104" skipped="0" failures="0" errors="0" time="17.24">
-    <testcase time="4.77" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.34" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+  <testsuite name="ds.var.o()::mathematical::Returns expected numerical value" timestamp="2019-06-16 21:43:54" hostname="fv-az679" tests="104" skipped="0" failures="0" errors="0" time="17.42">
+    <testcase time="4.92" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.33" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
     <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
+    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
     <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="combined_data_set"/>
-    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
@@ -76,10 +76,10 @@
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0.01" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
-    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
+    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="split_dataset"/>
@@ -89,6 +89,18 @@
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
@@ -113,29 +125,14 @@
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
-    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="variance_0"/>
     <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
-    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
-    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
+    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
-    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
-    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
@@ -148,18 +145,21 @@
     <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
-    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
+    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
+    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
+    <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
+    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0.01" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
-    <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
+    <testcase time="0.26" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0.27" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
     <testcase time="0" classname="ds.var.o_mathematical_Returns_expected_numerical_value" name="The_variance_is_the_standard_deviation_to_the_power_of_2"/>
   </testsuite>
-  <testsuite name="ds.cov.o()::forceFail" timestamp="2019-06-20 17:47:43" hostname="fv-az679" tests="4" skipped="0" failures="2" errors="0" time="5.44">
-    <testcase time="5.44" classname="ds.cov.o_forceFail" name="simple_test"/>
+  <testsuite name="ds.cov.o()::forceFail" timestamp="2019-06-16 21:44:11" hostname="fv-az679" tests="4" skipped="0" failures="2" errors="0" time="5.6">
+    <testcase time="5.6" classname="ds.cov.o_forceFail" name="simple_test"/>
     <testcase time="0" classname="ds.cov.o_forceFail" name="simple_test">
       <failure type="failure" message="`res` has length 3, not length 100. (@test-fail-ds.cov.o.R#32)">`res` has length 3, not length 100.</failure>
     </testcase>
@@ -171,46 +171,27 @@ x[1]: "matrix"
 y[1]: "horse"</failure>
     </testcase>
   </testsuite>
-  <testsuite name="ds.foobar.o()::fail::aggregate" timestamp="2019-06-20 17:47:49" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="4.05">
-    <testcase time="4.05" classname="ds.foobar.o_fail_aggregate" name="NULL_opal"/>
-  </testsuite>
-  <testsuite name="ds.foobar.o()::fail::aggregate" timestamp="2019-06-20 17:47:49" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0">
-    <testcase time="0" classname="ds.foobar.o_fail_aggregate" name="NULL_expr"/>
-  </testsuite>
-  <testsuite name="ds.foobar.o()::fail::aggregate" timestamp="2019-06-20 17:47:49" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.19">
-    <testcase time="0.19" classname="ds.foobar.o_fail_aggregate" name="non_existent_aggregate_foobarDS"/>
-  </testsuite>
-  <testsuite name="ds.foobar.o()::fail::assign" timestamp="2019-06-20 17:47:49" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0">
-    <testcase time="0" classname="ds.foobar.o_fail_assign" name="NULL_opal"/>
-  </testsuite>
-  <testsuite name="ds.foobar.o()::fail::assign" timestamp="2019-06-20 17:47:49" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0">
-    <testcase time="0" classname="ds.foobar.o_fail_assign" name="NULL_value"/>
-  </testsuite>
-  <testsuite name="ds.foobar.o()::fail::assign" timestamp="2019-06-20 17:47:49" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="0.23">
-    <testcase time="0.23" classname="ds.foobar.o_fail_assign" name="non_existent_assign_foobarDS"/>
-    <testcase time="0" classname="ds.foobar.o_fail_assign" name="non_existent_assign_foobarDS"/>
-  </testsuite>
-  <testsuite name="ds.asCharacter.o()::smoke::simple test" timestamp="2019-06-20 17:47:53" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.87">
-    <testcase time="4.87" classname="ds.asCharacter.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="ds.asCharacter.o()::smoke::simple test" timestamp="2019-06-16 21:44:17" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.92">
+    <testcase time="4.92" classname="ds.asCharacter.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asCharacter.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asCharacter.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.asDataMatrix.o()::smoke::simple test" timestamp="2019-06-20 17:47:58" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.79">
-    <testcase time="4.79" classname="ds.asDataMatrix.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="ds.asDataMatrix.o()::smoke::simple test" timestamp="2019-06-16 21:44:22" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.84">
+    <testcase time="4.84" classname="ds.asDataMatrix.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asDataMatrix.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asDataMatrix.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.asFactor.o()::smoke" timestamp="2019-06-20 17:48:03" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
-  <testsuite name="ds.asFactor.o()::smoke::force.factor.levels" timestamp="2019-06-20 17:48:04" hostname="fv-az679" tests="20" skipped="0" failures="0" errors="0" time="15.35">
-    <testcase time="6.99" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_no_force.factor.levels"/>
+  <testsuite name="ds.asFactor.o()::smoke" timestamp="2019-06-16 21:44:27" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="ds.asFactor.o()::smoke::force.factor.levels" timestamp="2019-06-16 21:44:28" hostname="fv-az679" tests="20" skipped="0" failures="0" errors="0" time="15.53">
+    <testcase time="7.11" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_no_force.factor.levels"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_no_force.factor.levels"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_no_force.factor.levels"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_no_force.factor.levels"/>
-    <testcase time="2.09" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_forced.factor.levels_of_1_6"/>
+    <testcase time="2.12" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_forced.factor.levels_of_1_6"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_forced.factor.levels_of_1_6"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_forced.factor.levels_of_1_6"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_forced.factor.levels_of_1_6"/>
-    <testcase time="2.09" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_0_10"/>
+    <testcase time="2.11" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_0_10"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_0_10"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_0_10"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_0_10"/>
@@ -218,12 +199,12 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_2_3"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_2_3"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_2_3"/>
-    <testcase time="2.09" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
+    <testcase time="2.1" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_force.factor.levels" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
   </testsuite>
-  <testsuite name="ds.asFactor.o()::smoke::fixed.dummy.vars" timestamp="2019-06-20 17:48:14" hostname="fv-az679" tests="6" skipped="0" failures="0" errors="0" time="2.64">
+  <testsuite name="ds.asFactor.o()::smoke::fixed.dummy.vars" timestamp="2019-06-16 21:44:38" hostname="fv-az679" tests="6" skipped="0" failures="0" errors="0" time="2.64">
     <testcase time="1.32" classname="ds.asFactor.o_smoke_fixed.dummy.vars" name="with_fixed.dummy.vars_of_TRUE"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_fixed.dummy.vars" name="with_fixed.dummy.vars_of_TRUE"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_fixed.dummy.vars" name="with_fixed.dummy.vars_of_TRUE"/>
@@ -231,13 +212,13 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.asFactor.o_smoke_fixed.dummy.vars" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
     <testcase time="0" classname="ds.asFactor.o_smoke_fixed.dummy.vars" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
   </testsuite>
-  <testsuite name="ds.asInteger.o()::smoke::simple test" timestamp="2019-06-20 17:48:21" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.79">
-    <testcase time="4.79" classname="ds.asInteger.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="ds.asInteger.o()::smoke::simple test" timestamp="2019-06-16 21:44:45" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.88">
+    <testcase time="4.88" classname="ds.asInteger.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asInteger.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asInteger.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.asList.o()::smoke::simple test" timestamp="2019-06-20 17:48:26" hostname="fv-az679" tests="10" skipped="0" failures="0" errors="0" time="4.23">
-    <testcase time="4.23" classname="ds.asList.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="ds.asList.o()::smoke::simple test" timestamp="2019-06-16 21:44:50" hostname="fv-az679" tests="10" skipped="0" failures="0" errors="0" time="4.41">
+    <testcase time="4.41" classname="ds.asList.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asList.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asList.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asList.o_smoke_simple_test" name="simple_test"/>
@@ -248,30 +229,30 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.asList.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asList.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.asLogical.o()::smoke::simple test" timestamp="2019-06-20 17:48:30" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.75">
-    <testcase time="4.75" classname="ds.asLogical.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="ds.asLogical.o()::smoke::simple test" timestamp="2019-06-16 21:44:54" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.9">
+    <testcase time="4.9" classname="ds.asLogical.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asLogical.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asLogical.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.asMatrix.o()::smoke::simple test" timestamp="2019-06-20 17:48:35" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.7">
-    <testcase time="4.7" classname="ds.asMatrix.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="ds.asMatrix.o()::smoke::simple test" timestamp="2019-06-16 21:44:59" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.85">
+    <testcase time="4.85" classname="ds.asMatrix.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asMatrix.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asMatrix.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.asNumeric.o()::smoke::simple test" timestamp="2019-06-20 17:48:39" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.74">
-    <testcase time="4.74" classname="ds.asNumeric.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="ds.asNumeric.o()::smoke::simple test" timestamp="2019-06-16 21:45:04" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.87">
+    <testcase time="4.87" classname="ds.asNumeric.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asNumeric.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.asNumeric.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.cbind.o()::smoke" timestamp="2019-06-20 17:48:44" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="6.38">
-    <testcase time="5.86" classname="ds.cbind.o_smoke" name="simple_test"/>
+  <testsuite name="ds.cbind.o()::smoke" timestamp="2019-06-16 21:45:09" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="6.54">
+    <testcase time="6.03" classname="ds.cbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.cbind.o_smoke" name="simple_test"/>
-    <testcase time="0.52" classname="ds.cbind.o_smoke" name="simple_test"/>
+    <testcase time="0.51" classname="ds.cbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.cbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.cbind.o_smoke" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.cor.o()::smoke" timestamp="2019-06-20 17:48:51" hostname="fv-az679" tests="19" skipped="0" failures="0" errors="0" time="5.39">
-    <testcase time="5.39" classname="ds.cor.o_smoke" name="simple_test"/>
+  <testsuite name="ds.cor.o()::smoke" timestamp="2019-06-16 21:45:15" hostname="fv-az679" tests="19" skipped="0" failures="0" errors="0" time="5.53">
+    <testcase time="5.53" classname="ds.cor.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.cor.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.cor.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.cor.o_smoke" name="simple_test"/>
@@ -291,8 +272,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.cor.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.cor.o_smoke" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.cov.o()::smoke" timestamp="2019-06-20 17:48:56" hostname="fv-az679" tests="19" skipped="0" failures="0" errors="0" time="5.56">
-    <testcase time="5.56" classname="ds.cov.o_smoke" name="simple_test"/>
+  <testsuite name="ds.cov.o()::smoke" timestamp="2019-06-16 21:45:21" hostname="fv-az679" tests="19" skipped="0" failures="0" errors="0" time="5.68">
+    <testcase time="5.68" classname="ds.cov.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.cov.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.cov.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.cov.o_smoke" name="simple_test"/>
@@ -312,38 +293,38 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.cov.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.cov.o_smoke" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.dataFrame.o()::smoke::create a dataframe" timestamp="2019-06-20 17:49:01" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="5.54">
-    <testcase time="5.54" classname="ds.dataFrame.o_smoke_create_a_dataframe" name="dataframe_exists"/>
+  <testsuite name="ds.dataFrame.o()::smoke::create a dataframe" timestamp="2019-06-16 21:45:27" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="5.65">
+    <testcase time="5.65" classname="ds.dataFrame.o_smoke_create_a_dataframe" name="dataframe_exists"/>
     <testcase time="0" classname="ds.dataFrame.o_smoke_create_a_dataframe" name="dataframe_exists"/>
     <testcase time="0" classname="ds.dataFrame.o_smoke_create_a_dataframe" name="dataframe_exists"/>
   </testsuite>
-  <testsuite name="ds.dataFrame.o()::smoke::errors" timestamp="2019-06-20 17:49:03" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.09">
+  <testsuite name="ds.dataFrame.o()::smoke::errors" timestamp="2019-06-16 21:45:28" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.09">
     <testcase time="0.09" classname="ds.dataFrame.o_smoke_errors" name="dataframe_errors"/>
   </testsuite>
-  <testsuite name="ds.dataFrameSort.o()::smoke::create a sorted dataframe" timestamp="2019-06-20 17:49:07" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="6.09">
-    <testcase time="6.09" classname="ds.dataFrameSort.o_smoke_create_a_sorted_dataframe" name="dataFrameSort_exists"/>
+  <testsuite name="ds.dataFrameSort.o()::smoke::create a sorted dataframe" timestamp="2019-06-16 21:45:32" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="6.21">
+    <testcase time="6.21" classname="ds.dataFrameSort.o_smoke_create_a_sorted_dataframe" name="dataFrameSort_exists"/>
     <testcase time="0" classname="ds.dataFrameSort.o_smoke_create_a_sorted_dataframe" name="dataFrameSort_exists"/>
     <testcase time="0" classname="ds.dataFrameSort.o_smoke_create_a_sorted_dataframe" name="dataFrameSort_exists"/>
   </testsuite>
-  <testsuite name="ds.dataFrameSubset.o()::smoke::create a subset dataframe" timestamp="2019-06-20 17:49:13" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="7.03">
-    <testcase time="7.03" classname="ds.dataFrameSubset.o_smoke_create_a_subset_dataframe" name="dataFrameSubset_exists"/>
+  <testsuite name="ds.dataFrameSubset.o()::smoke::create a subset dataframe" timestamp="2019-06-16 21:45:39" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="7.15">
+    <testcase time="7.15" classname="ds.dataFrameSubset.o_smoke_create_a_subset_dataframe" name="dataFrameSubset_exists"/>
     <testcase time="0" classname="ds.dataFrameSubset.o_smoke_create_a_subset_dataframe" name="dataFrameSubset_exists"/>
     <testcase time="0" classname="ds.dataFrameSubset.o_smoke_create_a_subset_dataframe" name="dataFrameSubset_exists"/>
   </testsuite>
-  <testsuite name="ds.dim.o()::smoke" timestamp="2019-06-20 17:49:20" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="4.2">
-    <testcase time="4.2" classname="ds.dim.o_smoke" name="simple_dim"/>
+  <testsuite name="ds.dim.o()::smoke" timestamp="2019-06-16 21:45:46" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="4.29">
+    <testcase time="4.29" classname="ds.dim.o_smoke" name="simple_dim"/>
     <testcase time="0" classname="ds.dim.o_smoke" name="simple_dim"/>
     <testcase time="0" classname="ds.dim.o_smoke" name="simple_dim"/>
     <testcase time="0" classname="ds.dim.o_smoke" name="simple_dim"/>
   </testsuite>
-  <testsuite name="ds.glm.o()::smoke::Standard Gaussian regression model for piecewise exponential regression analysis" timestamp="2019-06-20 17:49:24" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="5.09">
-    <testcase time="5.09" classname="ds.glm.o_smoke_Standard_Gaussian_regression_model_for_piecewise_exponential_regression_analysis" name="glm_gaussian"/>
+  <testsuite name="ds.glm.o()::smoke::Standard Gaussian regression model for piecewise exponential regression analysis" timestamp="2019-06-16 21:45:50" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="5.19">
+    <testcase time="5.19" classname="ds.glm.o_smoke_Standard_Gaussian_regression_model_for_piecewise_exponential_regression_analysis" name="glm_gaussian"/>
     <testcase time="0" classname="ds.glm.o_smoke_Standard_Gaussian_regression_model_for_piecewise_exponential_regression_analysis" name="glm_gaussian"/>
   </testsuite>
-  <testsuite name="ds.glmSLMA.o()::smoke" timestamp="2019-06-20 17:49:30" hostname="fv-az679" tests="36" skipped="0" failures="0" errors="0" time="4.57">
-    <testcase time="4.47" classname="ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
+  <testsuite name="ds.glmSLMA.o()::smoke" timestamp="2019-06-16 21:45:55" hostname="fv-az679" tests="36" skipped="0" failures="0" errors="0" time="4.71">
+    <testcase time="4.6" classname="ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
     <testcase time="0.03" classname="ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
-    <testcase time="0.02" classname="ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
+    <testcase time="0.03" classname="ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
     <testcase time="0.05" classname="ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
     <testcase time="0" classname="ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
     <testcase time="0" classname="ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
@@ -378,14 +359,14 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
     <testcase time="0" classname="ds.glmSLMA.o_smoke" name="simple_glmSLMA"/>
   </testsuite>
-  <testsuite name="ds.length.o()::smoke" timestamp="2019-06-20 17:49:34" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="4.24">
-    <testcase time="4.24" classname="ds.length.o_smoke" name="basic_length"/>
+  <testsuite name="ds.length.o()::smoke" timestamp="2019-06-16 21:46:00" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="4.28">
+    <testcase time="4.28" classname="ds.length.o_smoke" name="basic_length"/>
     <testcase time="0" classname="ds.length.o_smoke" name="basic_length"/>
     <testcase time="0" classname="ds.length.o_smoke" name="basic_length"/>
     <testcase time="0" classname="ds.length.o_smoke" name="basic_length"/>
   </testsuite>
-  <testsuite name="ds.listDisclosureSettings.o()::smoke::check results" timestamp="2019-06-20 17:49:38" hostname="fv-az679" tests="31" skipped="0" failures="0" errors="0" time="4.27">
-    <testcase time="4.27" classname="ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
+  <testsuite name="ds.listDisclosureSettings.o()::smoke::check results" timestamp="2019-06-16 21:46:04" hostname="fv-az679" tests="31" skipped="0" failures="0" errors="0" time="4.38">
+    <testcase time="4.38" classname="ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
@@ -417,8 +398,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="ds.listDisclosureSettings.o_smoke_check_results" name="check_results"/>
   </testsuite>
-  <testsuite name="ds.listServersideFunctions.o()::smoke::check results" timestamp="2019-06-20 17:49:43" hostname="fv-az679" tests="15" skipped="0" failures="0" errors="0" time="4.12">
-    <testcase time="4.12" classname="ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
+  <testsuite name="ds.listServersideFunctions.o()::smoke::check results" timestamp="2019-06-16 21:46:09" hostname="fv-az679" tests="15" skipped="0" failures="0" errors="0" time="4.17">
+    <testcase time="4.17" classname="ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
@@ -434,8 +415,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
     <testcase time="0" classname="ds.listServersideFunctions.o_smoke_check_results" name="check_results"/>
   </testsuite>
-  <testsuite name="ds.matrixDet()::smoke" timestamp="2019-06-20 17:49:47" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.12">
-    <testcase time="5.6" classname="ds.matrixDet_smoke" name="simplest_ds.matrixDet"/>
+  <testsuite name="ds.matrixDet()::smoke" timestamp="2019-06-16 21:46:13" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.18">
+    <testcase time="5.66" classname="ds.matrixDet_smoke" name="simplest_ds.matrixDet"/>
     <testcase time="0" classname="ds.matrixDet_smoke" name="simplest_ds.matrixDet"/>
     <testcase time="0" classname="ds.matrixDet_smoke" name="simplest_ds.matrixDet"/>
     <testcase time="0.52" classname="ds.matrixDet_smoke" name="simplest_ds.matrixDet"/>
@@ -443,8 +424,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.matrixDet_smoke" name="simplest_ds.matrixDet"/>
     <testcase time="0" classname="ds.matrixDet_smoke" name="simplest_ds.matrixDet"/>
   </testsuite>
-  <testsuite name="ds.matrixDet.report()::smoke" timestamp="2019-06-20 17:49:53" hostname="fv-az679" tests="14" skipped="0" failures="0" errors="0" time="5.06">
-    <testcase time="5.06" classname="ds.matrixDet.report_smoke" name="simplest_ds.matrixDet.report"/>
+  <testsuite name="ds.matrixDet.report()::smoke" timestamp="2019-06-16 21:46:19" hostname="fv-az679" tests="14" skipped="0" failures="0" errors="0" time="5.12">
+    <testcase time="5.12" classname="ds.matrixDet.report_smoke" name="simplest_ds.matrixDet.report"/>
     <testcase time="0" classname="ds.matrixDet.report_smoke" name="simplest_ds.matrixDet.report"/>
     <testcase time="0" classname="ds.matrixDet.report_smoke" name="simplest_ds.matrixDet.report"/>
     <testcase time="0" classname="ds.matrixDet.report_smoke" name="simplest_ds.matrixDet.report"/>
@@ -459,8 +440,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.matrixDet.report_smoke" name="simplest_ds.matrixDet.report"/>
     <testcase time="0" classname="ds.matrixDet.report_smoke" name="simplest_ds.matrixDet.report"/>
   </testsuite>
-  <testsuite name="ds.matrixDimnames()::smoke" timestamp="2019-06-20 17:49:58" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.12">
-    <testcase time="5.6" classname="ds.matrixDimnames_smoke" name="simplest_ds.matrixDimnames"/>
+  <testsuite name="ds.matrixDimnames()::smoke" timestamp="2019-06-16 21:46:24" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.14">
+    <testcase time="5.62" classname="ds.matrixDimnames_smoke" name="simplest_ds.matrixDimnames"/>
     <testcase time="0" classname="ds.matrixDimnames_smoke" name="simplest_ds.matrixDimnames"/>
     <testcase time="0" classname="ds.matrixDimnames_smoke" name="simplest_ds.matrixDimnames"/>
     <testcase time="0.52" classname="ds.matrixDimnames_smoke" name="simplest_ds.matrixDimnames"/>
@@ -468,17 +449,17 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.matrixDimnames_smoke" name="simplest_ds.matrixDimnames"/>
     <testcase time="0" classname="ds.matrixDimnames_smoke" name="simplest_ds.matrixDimnames"/>
   </testsuite>
-  <testsuite name="ds.matrixInvert()::smoke" timestamp="2019-06-20 17:50:04" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.11">
+  <testsuite name="ds.matrixInvert()::smoke" timestamp="2019-06-16 21:46:30" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.12">
     <testcase time="5.6" classname="ds.matrixInvert_smoke" name="simplest_ds.matrixInvert"/>
     <testcase time="0" classname="ds.matrixInvert_smoke" name="simplest_ds.matrixInvert"/>
     <testcase time="0" classname="ds.matrixInvert_smoke" name="simplest_ds.matrixInvert"/>
-    <testcase time="0.51" classname="ds.matrixInvert_smoke" name="simplest_ds.matrixInvert"/>
+    <testcase time="0.52" classname="ds.matrixInvert_smoke" name="simplest_ds.matrixInvert"/>
     <testcase time="0" classname="ds.matrixInvert_smoke" name="simplest_ds.matrixInvert"/>
     <testcase time="0" classname="ds.matrixInvert_smoke" name="simplest_ds.matrixInvert"/>
     <testcase time="0" classname="ds.matrixInvert_smoke" name="simplest_ds.matrixInvert"/>
   </testsuite>
-  <testsuite name="ds.matrixMult()::smoke" timestamp="2019-06-20 17:50:10" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.82">
-    <testcase time="6.3" classname="ds.matrixMult_smoke" name="simplest_ds.matrixMult"/>
+  <testsuite name="ds.matrixMult()::smoke" timestamp="2019-06-16 21:46:36" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.94">
+    <testcase time="6.42" classname="ds.matrixMult_smoke" name="simplest_ds.matrixMult"/>
     <testcase time="0" classname="ds.matrixMult_smoke" name="simplest_ds.matrixMult"/>
     <testcase time="0" classname="ds.matrixMult_smoke" name="simplest_ds.matrixMult"/>
     <testcase time="0.52" classname="ds.matrixMult_smoke" name="simplest_ds.matrixMult"/>
@@ -486,8 +467,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.matrixMult_smoke" name="simplest_ds.matrixMult"/>
     <testcase time="0" classname="ds.matrixMult_smoke" name="simplest_ds.matrixMult"/>
   </testsuite>
-  <testsuite name="ds.matrix()::smoke" timestamp="2019-06-20 17:50:17" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="5.31">
-    <testcase time="4.79" classname="ds.matrix_smoke" name="simplest_ds.matrix"/>
+  <testsuite name="ds.matrix()::smoke" timestamp="2019-06-16 21:46:43" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="5.34">
+    <testcase time="4.82" classname="ds.matrix_smoke" name="simplest_ds.matrix"/>
     <testcase time="0" classname="ds.matrix_smoke" name="simplest_ds.matrix"/>
     <testcase time="0" classname="ds.matrix_smoke" name="simplest_ds.matrix"/>
     <testcase time="0.52" classname="ds.matrix_smoke" name="simplest_ds.matrix"/>
@@ -495,8 +476,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.matrix_smoke" name="simplest_ds.matrix"/>
     <testcase time="0" classname="ds.matrix_smoke" name="simplest_ds.matrix"/>
   </testsuite>
-  <testsuite name="ds.matrixTranspose()::smoke" timestamp="2019-06-20 17:50:22" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.06">
-    <testcase time="5.54" classname="ds.matrixTranspose_smoke" name="simplest_ds.matrixTranspose"/>
+  <testsuite name="ds.matrixTranspose()::smoke" timestamp="2019-06-16 21:46:49" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="6.15">
+    <testcase time="5.63" classname="ds.matrixTranspose_smoke" name="simplest_ds.matrixTranspose"/>
     <testcase time="0" classname="ds.matrixTranspose_smoke" name="simplest_ds.matrixTranspose"/>
     <testcase time="0" classname="ds.matrixTranspose_smoke" name="simplest_ds.matrixTranspose"/>
     <testcase time="0.52" classname="ds.matrixTranspose_smoke" name="simplest_ds.matrixTranspose"/>
@@ -504,8 +485,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.matrixTranspose_smoke" name="simplest_ds.matrixTranspose"/>
     <testcase time="0" classname="ds.matrixTranspose_smoke" name="simplest_ds.matrixTranspose"/>
   </testsuite>
-  <testsuite name="ds.mean.o()::smoke::type=combine" timestamp="2019-06-20 17:50:29" hostname="fv-az679" tests="23" skipped="0" failures="0" errors="0" time="5.54">
-    <testcase time="5.27" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
+  <testsuite name="ds.mean.o()::smoke::type=combine" timestamp="2019-06-16 21:46:55" hostname="fv-az679" tests="23" skipped="0" failures="0" errors="0" time="5.58">
+    <testcase time="5.32" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
@@ -516,7 +497,7 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
-    <testcase time="0.27" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
+    <testcase time="0.26" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
@@ -529,8 +510,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine" name="mean_values_combine_"/>
   </testsuite>
-  <testsuite name="ds.mean.o::smoke::type=split" timestamp="2019-06-20 17:50:30" hostname="fv-az679" tests="31" skipped="0" failures="0" errors="0" time="1.55">
-    <testcase time="1.29" classname="ds.mean.o_smoke_type_split" name="mean_values_split_"/>
+  <testsuite name="ds.mean.o::smoke::type=split" timestamp="2019-06-16 21:46:56" hostname="fv-az679" tests="31" skipped="0" failures="0" errors="0" time="1.56">
+    <testcase time="1.3" classname="ds.mean.o_smoke_type_split" name="mean_values_split_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_split" name="mean_values_split_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_split" name="mean_values_split_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_split" name="mean_values_split_"/>
@@ -562,8 +543,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.mean.o_smoke_type_split" name="mean_values_split_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_split" name="mean_values_split_"/>
   </testsuite>
-  <testsuite name="ds.mean.o::smoke::type=both" timestamp="2019-06-20 17:50:32" hostname="fv-az679" tests="36" skipped="0" failures="0" errors="0" time="1.59">
-    <testcase time="1.33" classname="ds.mean.o_smoke_type_both" name="mean_values_both_"/>
+  <testsuite name="ds.mean.o::smoke::type=both" timestamp="2019-06-16 21:46:58" hostname="fv-az679" tests="36" skipped="0" failures="0" errors="0" time="1.57">
+    <testcase time="1.31" classname="ds.mean.o_smoke_type_both" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both" name="mean_values_both_"/>
@@ -600,8 +581,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.mean.o_smoke_type_both" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both" name="mean_values_both_"/>
   </testsuite>
-  <testsuite name="ds.mean.o()::smoke::type=combine,save.mean.Nvalid=TRUE" timestamp="2019-06-20 17:50:33" hostname="fv-az679" tests="23" skipped="0" failures="0" errors="0" time="3.76">
-    <testcase time="3.5" classname="ds.mean.o_smoke_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+  <testsuite name="ds.mean.o()::smoke::type=combine,save.mean.Nvalid=TRUE" timestamp="2019-06-16 21:47:00" hostname="fv-az679" tests="23" skipped="0" failures="0" errors="0" time="3.8">
+    <testcase time="3.54" classname="ds.mean.o_smoke_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
@@ -625,9 +606,9 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
   </testsuite>
-  <testsuite name="ds.mean.o::smoke::type=split,save.mean.Nvalid=TRUE" timestamp="2019-06-20 17:50:37" hostname="fv-az679" tests="31" skipped="0" failures="0" errors="0" time="3.79">
-    <testcase time="3.53" classname="ds.mean.o_smoke_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
-    <testcase time="0" classname="ds.mean.o_smoke_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+  <testsuite name="ds.mean.o::smoke::type=split,save.mean.Nvalid=TRUE" timestamp="2019-06-16 21:47:04" hostname="fv-az679" tests="31" skipped="0" failures="0" errors="0" time="3.79">
+    <testcase time="3.52" classname="ds.mean.o_smoke_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0.01" classname="ds.mean.o_smoke_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
@@ -658,8 +639,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.mean.o_smoke_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
   </testsuite>
-  <testsuite name="ds.mean.o::smoke::type=both,save.mean.Nvalid=TRUE" timestamp="2019-06-20 17:50:41" hostname="fv-az679" tests="36" skipped="0" failures="0" errors="0" time="2.76">
-    <testcase time="2.48" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+  <testsuite name="ds.mean.o::smoke::type=both,save.mean.Nvalid=TRUE" timestamp="2019-06-16 21:47:07" hostname="fv-az679" tests="36" skipped="0" failures="0" errors="0" time="2.74">
+    <testcase time="2.47" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
@@ -682,7 +663,7 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
-    <testcase time="0.01" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
     <testcase time="0.27" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
@@ -696,27 +677,18 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
     <testcase time="0" classname="ds.mean.o_smoke_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
   </testsuite>
-  <testsuite name="ds.mean.o()::smoke::test errors" timestamp="2019-06-20 17:50:44" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.81">
+  <testsuite name="ds.mean.o()::smoke::test errors" timestamp="2019-06-16 21:47:10" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.81">
     <testcase time="0.81" classname="ds.mean.o_smoke_test_errors" name="mean_erros"/>
   </testsuite>
-  <testsuite name="ds.message.o()::smoke" timestamp="2019-06-20 17:50:49" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="4.28">
-    <testcase time="4.28" classname="ds.message.o_smoke" name="request_message"/>
-    <testcase time="0" classname="ds.message.o_smoke" name="request_message"/>
-    <testcase time="0" classname="ds.message.o_smoke" name="request_message"/>
-    <testcase time="0" classname="ds.message.o_smoke" name="request_message"/>
-  </testsuite>
-  <testsuite name="ds.message.o()::smoke" timestamp="2019-06-20 17:50:49" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0">
-    <testcase time="0" classname="ds.message.o_smoke" name="request_message_for_NULL"/>
-  </testsuite>
-  <testsuite name="ds.rbind.o()::smoke" timestamp="2019-06-20 17:50:53" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="6.49">
-    <testcase time="5.97" classname="ds.rbind.o_smoke" name="simple_test"/>
+  <testsuite name="ds.rbind.o()::smoke" timestamp="2019-06-16 21:47:15" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="6.54">
+    <testcase time="6.02" classname="ds.rbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rbind.o_smoke" name="simple_test"/>
     <testcase time="0.52" classname="ds.rbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rbind.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rbind.o_smoke" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.rBinom.o()::smoke::simple test" timestamp="2019-06-20 17:50:59" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="5.91">
-    <testcase time="5.91" classname="ds.rBinom.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="ds.rBinom.o()::smoke::simple test" timestamp="2019-06-16 21:47:22" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="5.99">
+    <testcase time="5.99" classname="ds.rBinom.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rBinom.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rBinom.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rBinom.o_smoke_simple_test" name="simple_test"/>
@@ -728,8 +700,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.rBinom.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rBinom.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.recodeValues.o()::smoke" timestamp="2019-06-20 17:51:05" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="5.68">
-    <testcase time="5.16" classname="ds.recodeValues.o_smoke" name="simple_test"/>
+  <testsuite name="ds.recodeValues.o()::smoke" timestamp="2019-06-16 21:47:28" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="5.81">
+    <testcase time="5.29" classname="ds.recodeValues.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.recodeValues.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.recodeValues.o_smoke" name="simple_test"/>
     <testcase time="0.52" classname="ds.recodeValues.o_smoke" name="simple_test"/>
@@ -737,15 +709,15 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.recodeValues.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.recodeValues.o_smoke" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.rm.o()::smoke" timestamp="2019-06-20 17:51:11" hostname="fv-az679" tests="14" skipped="0" failures="0" errors="0" time="6.17">
-    <testcase time="4.26" classname="ds.rm.o_smoke" name="simple_test"/>
+  <testsuite name="ds.rm.o()::smoke" timestamp="2019-06-16 21:47:33" hostname="fv-az679" tests="14" skipped="0" failures="0" errors="0" time="6.3">
+    <testcase time="4.4" classname="ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rm.o_smoke" name="simple_test"/>
-    <testcase time="1.91" classname="ds.rm.o_smoke" name="simple_test"/>
+    <testcase time="1.9" classname="ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rm.o_smoke" name="simple_test"/>
@@ -753,11 +725,11 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.rm.o_smoke" name="simple_test"/>
     <testcase time="0" classname="ds.rm.o_smoke" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.rm.o()::smoke::test errors" timestamp="2019-06-20 17:51:13" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0">
+  <testsuite name="ds.rm.o()::smoke::test errors" timestamp="2019-06-16 21:47:36" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0">
     <testcase time="0" classname="ds.rm.o_smoke_test_errors" name="ds.rm.o_erros"/>
   </testsuite>
-  <testsuite name="ds.rNorm.o()::smoke::simple test" timestamp="2019-06-20 17:51:17" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="5.92">
-    <testcase time="5.92" classname="ds.rNorm.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="ds.rNorm.o()::smoke::simple test" timestamp="2019-06-16 21:47:40" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="5.98">
+    <testcase time="5.98" classname="ds.rNorm.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rNorm.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rNorm.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rNorm.o_smoke_simple_test" name="simple_test"/>
@@ -769,8 +741,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.rNorm.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rNorm.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.rPois.o()::smoke::simple test" timestamp="2019-06-20 17:51:23" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="5.9">
-    <testcase time="5.9" classname="ds.rPois.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="ds.rPois.o()::smoke::simple test" timestamp="2019-06-16 21:47:46" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="5.98">
+    <testcase time="5.98" classname="ds.rPois.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rPois.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rPois.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rPois.o_smoke_simple_test" name="simple_test"/>
@@ -782,8 +754,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.rPois.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rPois.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.rUnif.o()::smoke::simple test" timestamp="2019-06-20 17:51:29" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="5.92">
-    <testcase time="5.92" classname="ds.rUnif.o_smoke_simple_test" name="simple_test"/>
+  <testsuite name="ds.rUnif.o()::smoke::simple test" timestamp="2019-06-16 21:47:52" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="6.03">
+    <testcase time="6.03" classname="ds.rUnif.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rUnif.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rUnif.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rUnif.o_smoke_simple_test" name="simple_test"/>
@@ -795,13 +767,13 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.rUnif.o_smoke_simple_test" name="simple_test"/>
     <testcase time="0" classname="ds.rUnif.o_smoke_simple_test" name="simple_test"/>
   </testsuite>
-  <testsuite name="ds.seq.o()::smoke" timestamp="2019-06-20 17:51:35" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.72">
-    <testcase time="4.72" classname="ds.seq.o_smoke" name="simplest_ds.seq.o"/>
+  <testsuite name="ds.seq.o()::smoke" timestamp="2019-06-16 21:47:58" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.88">
+    <testcase time="4.88" classname="ds.seq.o_smoke" name="simplest_ds.seq.o"/>
     <testcase time="0" classname="ds.seq.o_smoke" name="simplest_ds.seq.o"/>
     <testcase time="0" classname="ds.seq.o_smoke" name="simplest_ds.seq.o"/>
   </testsuite>
-  <testsuite name="ds.setSeed.o()::smoke" timestamp="2019-06-20 17:51:40" hostname="fv-az679" tests="9" skipped="0" failures="0" errors="0" time="4.24">
-    <testcase time="4.24" classname="ds.setSeed.o_smoke" name="basic_setSeed"/>
+  <testsuite name="ds.setSeed.o()::smoke" timestamp="2019-06-16 21:48:03" hostname="fv-az679" tests="9" skipped="0" failures="0" errors="0" time="4.33">
+    <testcase time="4.33" classname="ds.setSeed.o_smoke" name="basic_setSeed"/>
     <testcase time="0" classname="ds.setSeed.o_smoke" name="basic_setSeed"/>
     <testcase time="0" classname="ds.setSeed.o_smoke" name="basic_setSeed"/>
     <testcase time="0" classname="ds.setSeed.o_smoke" name="basic_setSeed"/>
@@ -811,32 +783,8 @@ y[1]: "horse"</failure>
     <testcase time="0" classname="ds.setSeed.o_smoke" name="basic_setSeed"/>
     <testcase time="0" classname="ds.setSeed.o_smoke" name="basic_setSeed"/>
   </testsuite>
-  <testsuite name="ds.table2D.o()::smoke" timestamp="2019-06-20 17:51:44" hostname="fv-az679" tests="22" skipped="0" failures="0" errors="0" time="4.82">
-    <testcase time="4.82" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-    <testcase time="0" classname="ds.table2D.o_smoke" name="simple_table2D"/>
-  </testsuite>
-  <testsuite name="ds.var.o()::smoke" timestamp="2019-06-20 17:51:49" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.32">
-    <testcase time="4.32" classname="ds.var.o_smoke" name="simple_var"/>
+  <testsuite name="ds.var.o()::smoke" timestamp="2019-06-16 21:48:07" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="4.31">
+    <testcase time="4.31" classname="ds.var.o_smoke" name="simple_var"/>
     <testcase time="0" classname="ds.var.o_smoke" name="simple_var"/>
     <testcase time="0" classname="ds.var.o_smoke" name="simple_var"/>
   </testsuite>
