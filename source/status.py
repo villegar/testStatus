@@ -29,7 +29,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 20/6/19
+__date__ = 26/6/19
 
 
 ################################################################################
@@ -65,7 +65,7 @@ def parse_coverage(coverage_file_path):
 
     return coverage
 
-
+################################################################################
 #
 def main(args):
     remote_root_path = "http://github.com/datashield/"
@@ -152,7 +152,7 @@ def main(args):
     # Cycle through the xml line by line. This will have data for ALL tests.
     # The 'context' in testthat is the 'name' in the xml file.
     # The expected format of the context is:
-    # <function name>()::<test type>::<Optional other info>
+    # <function name>::<maths|expt|smk|args|disc>::<Optional other info>::<single|multiple>
     # e.g.
     # ds.asFactor.o::smoke
     for testsuite in root:
@@ -166,29 +166,52 @@ def main(args):
         # Split by :: delimiter
         context_parts = context.split('::')
 
+        # Function name
         try:
             function_name = context_parts[0]
             function_name = function_name.replace('()', '')  # Drop the brackets from the function name
-            test_type = context_parts[1]
             print(function_name)
+        except:
+            print("ERROR: function name not parsable in: " + context)
+            pass
+
+        # Test type
+        try:
+            test_type = context_parts[1]
             print(test_type)
         except:
-            print("ERROR with " + context)
-            pass
+            print("ERROR: test type not parsable in: " + context)
+
+
+        try:
+            test_type_extra = context_parts[2]
+            print(test_type_extra)
+        except:
+            print("No extra test type.")
+
 
         # Build the dictionary ds_test_status[function_name][test_type]{number, skipped, failures, errors}
         # This should automatically make an entry for each test type specified in the testthat files.
         try:
-            ds_test_status[function_name][test_type] = {}
-            ds_test_status[function_name][test_type]['number'] = int(testsuite.attrib['tests'])
-            ds_test_status[function_name][test_type]['skipped'] = int(testsuite.attrib['skipped'])
-            ds_test_status[function_name][test_type]['failures'] = int(testsuite.attrib['failures'])
-            ds_test_status[function_name][test_type]['errors'] = int(testsuite.attrib['errors'])
+
+            # If this test_type is not defined then initiate it for this function_name
+            if test_type not in ds_test_status[function_name]:
+                ds_test_status[function_name][test_type] = {}
+                ds_test_status[function_name][test_type]['number'] = 0
+                ds_test_status[function_name][test_type]['skipped'] = 0
+                ds_test_status[function_name][test_type]['failures'] = 0
+                ds_test_status[function_name][test_type]['errors'] = 0
+                ds_test_status[function_name][test_type]['failureText'] = list()
+
+
+            ds_test_status[function_name][test_type]['number'] += int(testsuite.attrib['tests'])
+            ds_test_status[function_name][test_type]['skipped'] += int(testsuite.attrib['skipped'])
+            ds_test_status[function_name][test_type]['failures'] += int(testsuite.attrib['failures'])
+            ds_test_status[function_name][test_type]['errors'] += int(testsuite.attrib['errors'])
 
             # Parse the text from the failure notice into the ds_test_status dictionary
             if ds_test_status[function_name][test_type]['failures'] > 0:
                 print("\n\nERRORS")
-                ds_test_status[function_name][test_type]['failureText'] = list()
                 print(testsuite.tag, testsuite.attrib)
                 for testcase in testsuite:
                     print(testcase.tag, testcase.attrib)
@@ -245,7 +268,13 @@ def main(args):
 
         # Coverage columne
         if this_function in coverage:
-            h.write('<td>' + coverage[this_function] + '</td>')
+            this_coverage = float(coverage[this_function])
+            if this_coverage > 80:
+                h.write('<td class="good">' + str(this_coverage) + '</td>')
+            elif this_coverage > 60:
+                h.write('<td class="ok">' + str(this_coverage) + '</td>')
+            else:
+                h.write('<td class="bad">' + str(this_coverage) + '</td>')
         else:
             h.write('<td></td>')
 
