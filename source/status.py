@@ -13,7 +13,7 @@
 
 # Drive everything from the context specified in the testthat scripts.
 # The pre-defined format of these is:
-# <function name>()::<test type>::<Optional other info>
+# <function name>()::<test type>::<Optional other info>::single
 # someFunction()::smoke::extra information.
 
 # To do:
@@ -29,7 +29,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 26/6/19
+__date__ = 2/7/19
 
 
 ################################################################################
@@ -246,7 +246,7 @@ def main(args):
     unique_test_types = sorted(set(test_types))
 
     h = open(output_file_name, "w")
-    h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="status.css">\n</head>\n<body>')
+    h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="../../status.css">\n</head>\n<body>')
 
     h.write("<h2>" + repo_name + "</h2>")
     h.write("Made on " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
