@@ -116,6 +116,8 @@ def main(args):
     for this_function in ds_functions:
         this_function = this_function.replace('.R', '')  # Drop the .R part from the end.
         ds_test_status[this_function] = {}
+
+        # Differentiate the internal and external functions - makes for prettier sorting later.
         if(this_function.startswith('ds')):
             ds_test_status[this_function]['function_type'] = 'ds'
         else:
@@ -236,18 +238,19 @@ def main(args):
     # Get the coverage
     coverage = parse_coverage(coverage_file_path)
 
-    ################################################################################
-    # Make an HTML table of the results.
-    # Currently hard coding test types, but could automatically pull these out.
-    # print("\n\n##########")
 
-    # Get a list of unique test types, in aphabetical order
+    # Get a list of unique test types (derived from the contexts), in aphabetical order
     test_types = []
     for this_function in ds_test_status.keys():
         for this_test_type in ds_test_status[this_function].keys():
             test_types.append(this_test_type)
 
     unique_test_types = sorted(set(test_types))
+
+    ################################################################################
+    # Make an HTML table of the results.
+    # Currently hard coding test types, but could automatically pull these out.
+    # print("\n\n##########")
 
     h = open(output_file_name, "w")
     h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="../../status.css">\n</head>\n<body>')
@@ -302,6 +305,16 @@ def main(args):
             h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
         else:
             h.write("<td></td>")
+
+        # Cycle through all the test types.
+        #for this_unique_test_type in unique_test_types:
+        #    expected_test_name = "test-" + this_unique_test_type + "-" + this_function+'.R'
+        #    print(expected_test_name)
+        #    if expected_test_name in ds_tests:
+        #        h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
+        #    else:
+        #        h.write("<td></td>")
+
 
         # Cycle through all the test types.
         for this_unique_test_type in unique_test_types:
