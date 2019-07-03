@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="dsClient::ds.asCharacter" timestamp="2019-07-03 16:05:34" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.asCharacter() turn the factor variable 'GENDER' into a character vector" timestamp="2019-07-03 16:05:38" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="5.72">
+    <testcase time="5.69" classname="dsClient_ds.asCharacter_turn_the_factor_variable_GENDER_into_a_character_vector" name="asCharacter_exists"/>
+    <testcase time="0.02" classname="dsClient_ds.asCharacter_turn_the_factor_variable_GENDER_into_a_character_vector" name="asCharacter_exists"/>
+    <testcase time="0.01" classname="dsClient_ds.asCharacter_turn_the_factor_variable_GENDER_into_a_character_vector" name="asCharacter_exists"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.asCharacter() no table or newobj" timestamp="2019-07-03 16:05:39" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="1.35">
+    <testcase time="1.35" classname="dsClient_ds.asCharacter_no_table_or_newobj" name="defualt_Character_exists"/>
+    <testcase time="0" classname="dsClient_ds.asCharacter_no_table_or_newobj" name="defualt_Character_exists"/>
+    <testcase time="0" classname="dsClient_ds.asCharacter_no_table_or_newobj" name="defualt_Character_exists"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.asCharacter() no x" timestamp="2019-07-03 16:05:41" hostname="fv-az670" tests="1" skipped="0" failures="0" errors="0" time="0">
+    <testcase time="0" classname="dsClient_ds.asCharacter_no_x" name="asCharacter_no_x"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.asList" timestamp="2019-07-03 16:05:41" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.asList() turn the data frame D into a list" timestamp="2019-07-03 16:05:45" hostname="fv-az670" tests="1" skipped="0" failures="0" errors="0" time="7.26">
+    <testcase time="7.26" classname="dsClient_ds.asList_turn_the_data_frame_D_into_a_list" name="Is_List"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.asList() test errors" timestamp="2019-07-03 16:05:48" hostname="fv-az670" tests="2" skipped="0" failures="0" errors="0" time="0.55">
+    <testcase time="0.02" classname="dsClient_ds.asList_test_errors" name="asList_erros"/>
+    <testcase time="0.53" classname="dsClient_ds.asList_test_errors" name="asList_erros"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.dataframe" timestamp="2019-07-03 16:05:49" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.dataframe() create a dataframe" timestamp="2019-07-03 16:05:53" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="6.97">
+    <testcase time="6.45" classname="dsClient_ds.dataframe_create_a_dataframe" name="dataframe_exists"/>
+    <testcase time="0.26" classname="dsClient_ds.dataframe_create_a_dataframe" name="dataframe_exists"/>
+    <testcase time="0.26" classname="dsClient_ds.dataframe_create_a_dataframe" name="dataframe_exists"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.dataframe() errors" timestamp="2019-07-03 16:05:55" hostname="fv-az670" tests="1" skipped="0" failures="0" errors="0" time="0.03">
+    <testcase time="0.03" classname="dsClient_ds.dataframe_errors" name="dataframe_errors"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.dim" timestamp="2019-07-03 16:05:56" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.dim()" timestamp="2019-07-03 16:06:00" hostname="fv-az670" tests="4" skipped="0" failures="0" errors="0" time="7.55">
+    <testcase time="5.22" classname="dsClient_ds.dim_" name="test_dim"/>
+    <testcase time="0.78" classname="dsClient_ds.dim_" name="test_dim"/>
+    <testcase time="0.78" classname="dsClient_ds.dim_" name="test_dim"/>
+    <testcase time="0.77" classname="dsClient_ds.dim_" name="test_dim"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.dim() errors" timestamp="2019-07-03 16:06:03" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="1.29">
+    <testcase time="0" classname="dsClient_ds.dim_errors" name="dim_errors"/>
+    <testcase time="0.51" classname="dsClient_ds.dim_errors" name="dim_errors"/>
+    <testcase time="0.78" classname="dsClient_ds.dim_errors" name="dim_errors"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.isNA" timestamp="2019-07-03 16:06:05" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.isNA" timestamp="2019-07-03 16:06:09" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="5.61">
+    <testcase time="5.61" classname="dsClient_ds.isNA" name="isNA"/>
+    <testcase time="0" classname="dsClient_ds.isNA" name="isNA"/>
+    <testcase time="0" classname="dsClient_ds.isNA" name="isNA"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.isNA() errors" timestamp="2019-07-03 16:06:10" hostname="fv-az670" tests="1" skipped="0" failures="0" errors="0" time="0.03">
+    <testcase time="0.03" classname="dsClient_ds.isNA_errors" name="isNA_errors"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.length" timestamp="2019-07-03 16:06:10" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.length()" timestamp="2019-07-03 16:06:14" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="6.64">
+    <testcase time="5.09" classname="dsClient_ds.length_" name="test_length"/>
+    <testcase time="0.78" classname="dsClient_ds.length_" name="test_length"/>
+    <testcase time="0.77" classname="dsClient_ds.length_" name="test_length"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.length() errors" timestamp="2019-07-03 16:06:17" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="1.3">
+    <testcase time="0" classname="dsClient_ds.length_errors" name="length_errors"/>
+    <testcase time="0.53" classname="dsClient_ds.length_errors" name="length_errors"/>
+    <testcase time="0.77" classname="dsClient_ds.length_errors" name="length_errors"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.list" timestamp="2019-07-03 16:06:18" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.list()" timestamp="2019-07-03 16:06:22" hostname="fv-az670" tests="1" skipped="0" failures="0" errors="0" time="6.42">
+    <testcase time="6.42" classname="dsClient_ds.list_" name="Is_List"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.list() test errors" timestamp="2019-07-03 16:06:24" hostname="fv-az670" tests="2" skipped="0" failures="0" errors="0" time="0.02">
+    <testcase time="0.02" classname="dsClient_ds.list_test_errors" name="list_erros"/>
+    <testcase time="0" classname="dsClient_ds.list_test_errors" name="list_erros"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.meanByClass" timestamp="2019-07-03 16:06:25" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.meanByClass() calculate the mean proportion for LAB_HDL across gender categories" timestamp="2019-07-03 16:06:29" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="11.66">
+    <testcase time="11.66" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_categories" name="LAB_HDL_across_gender"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_categories" name="LAB_HDL_across_gender"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_categories" name="LAB_HDL_across_gender"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.meanByClass() LAB_HDL across GENDER categories where both vectors are 'loose'" timestamp="2019-07-03 16:06:36" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="9.07">
+    <testcase time="9.07" classname="dsClient_ds.meanByClass_LAB_HDL_across_GENDER_categories_where_both_vectors_are_loose_" name="LAB_HDL_across_gender_loose"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_LAB_HDL_across_GENDER_categories_where_both_vectors_are_loose_" name="LAB_HDL_across_gender_loose"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_LAB_HDL_across_GENDER_categories_where_both_vectors_are_loose_" name="LAB_HDL_across_gender_loose"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.meanByClass() calculate the mean proportion for LAB_HDL across gender and bmi categories" timestamp="2019-07-03 16:06:45" hostname="fv-az670" tests="5" skipped="0" failures="0" errors="0" time="10.77">
+    <testcase time="10.77" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_and_bmi_categories" name="LAB_HDL_across_gender_bmi"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_and_bmi_categories" name="LAB_HDL_across_gender_bmi"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_and_bmi_categories" name="LAB_HDL_across_gender_bmi"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_and_bmi_categories" name="LAB_HDL_across_gender_bmi"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_and_bmi_categories" name="LAB_HDL_across_gender_bmi"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.meanByClass() calculate the mean proportion for LAB_HDL across gender bmi and diabetes status categories" timestamp="2019-07-03 16:06:56" hostname="fv-az670" tests="6" skipped="0" failures="0" errors="0" time="79.23">
+    <testcase time="79.23" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_bmi_and_diabetes_status_categories" name="LAB_HDL_across_gender_bmi_diabetes"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_bmi_and_diabetes_status_categories" name="LAB_HDL_across_gender_bmi_diabetes"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_bmi_and_diabetes_status_categories" name="LAB_HDL_across_gender_bmi_diabetes"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_bmi_and_diabetes_status_categories" name="LAB_HDL_across_gender_bmi_diabetes"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_bmi_and_diabetes_status_categories" name="LAB_HDL_across_gender_bmi_diabetes"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_bmi_and_diabetes_status_categories" name="LAB_HDL_across_gender_bmi_diabetes"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.meanByClass() calculate the mean proportion for LAB_HDL across gender categories for each study separately" timestamp="2019-07-03 16:08:15" hostname="fv-az670" tests="6" skipped="0" failures="0" errors="0" time="13.35">
+    <testcase time="13.35" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_categories_for_each_study_separately" name="LAB_HDL_across_gender_split"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_categories_for_each_study_separately" name="LAB_HDL_across_gender_split"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_categories_for_each_study_separately" name="LAB_HDL_across_gender_split"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_categories_for_each_study_separately" name="LAB_HDL_across_gender_split"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_categories_for_each_study_separately" name="LAB_HDL_across_gender_split"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_calculate_the_mean_proportion_for_LAB_HDL_across_gender_categories_for_each_study_separately" name="LAB_HDL_across_gender_split"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.meanByClass() test errors" timestamp="2019-07-03 16:08:28" hostname="fv-az670" tests="5" skipped="0" failures="0" errors="0" time="7.55">
+    <testcase time="2.07" classname="dsClient_ds.meanByClass_test_errors" name="meanByClass_erros"/>
+    <testcase time="0.76" classname="dsClient_ds.meanByClass_test_errors" name="meanByClass_erros"/>
+    <testcase time="1.04" classname="dsClient_ds.meanByClass_test_errors" name="meanByClass_erros"/>
+    <testcase time="0" classname="dsClient_ds.meanByClass_test_errors" name="meanByClass_erros"/>
+    <testcase time="3.68" classname="dsClient_ds.meanByClass_test_errors" name="meanByClass_erros"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.mean" timestamp="2019-07-03 16:08:36" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.mean(type=combine)" timestamp="2019-07-03 16:08:40" hostname="fv-az670" tests="2" skipped="0" failures="0" errors="0" time="5.6">
+    <testcase time="5.6" classname="dsClient_ds.mean_type_combine_" name="mean_values_combine_"/>
+    <testcase time="0" classname="dsClient_ds.mean_type_combine_" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.mean(type=combine) loose" timestamp="2019-07-03 16:08:42" hostname="fv-az670" tests="2" skipped="0" failures="0" errors="0" time="1.83">
+    <testcase time="1.83" classname="dsClient_ds.mean_type_combine_loose" name="mean_values_combine_loose"/>
+    <testcase time="0" classname="dsClient_ds.mean_type_combine_loose" name="mean_values_combine_loose"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.mean(type=split)" timestamp="2019-07-03 16:08:43" hostname="fv-az670" tests="6" skipped="0" failures="0" errors="0" time="1.3">
+    <testcase time="1.3" classname="dsClient_ds.mean_type_split_" name="mean_values_split_"/>
+    <testcase time="0" classname="dsClient_ds.mean_type_split_" name="mean_values_split_"/>
+    <testcase time="0" classname="dsClient_ds.mean_type_split_" name="mean_values_split_"/>
+    <testcase time="0" classname="dsClient_ds.mean_type_split_" name="mean_values_split_"/>
+    <testcase time="0" classname="dsClient_ds.mean_type_split_" name="mean_values_split_"/>
+    <testcase time="0" classname="dsClient_ds.mean_type_split_" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.mean() test errors" timestamp="2019-07-03 16:08:45" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="2.83">
+    <testcase time="1.03" classname="dsClient_ds.mean_test_errors" name="mean_erros"/>
+    <testcase time="1.28" classname="dsClient_ds.mean_test_errors" name="mean_erros"/>
+    <testcase time="0.52" classname="dsClient_ds.mean_test_errors" name="mean_erros"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.names" timestamp="2019-07-03 16:08:48" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.names() test errors" timestamp="2019-07-03 16:08:52" hostname="fv-az670" tests="2" skipped="0" failures="0" errors="0" time="5.88">
+    <testcase time="5.37" classname="dsClient_ds.names_test_errors" name="names_erros"/>
+    <testcase time="0.51" classname="dsClient_ds.names_test_errors" name="names_erros"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.names()" timestamp="2019-07-03 16:08:53" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.quantileMean.R" timestamp="2019-07-03 16:08:54" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.quantileMean() standard" timestamp="2019-07-03 16:08:58" hostname="fv-az670" tests="2" skipped="0" failures="0" errors="0" time="5.62">
+    <testcase time="5.62" classname="dsClient_ds.quantileMean_standard" name="quantileMean"/>
+    <testcase time="0" classname="dsClient_ds.quantileMean_standard" name="quantileMean"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.quantileMean() split" timestamp="2019-07-03 16:08:59" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="1.83">
+    <testcase time="1.83" classname="dsClient_ds.quantileMean_split" name="quantileMean_split"/>
+    <testcase time="0" classname="dsClient_ds.quantileMean_split" name="quantileMean_split"/>
+    <testcase time="0" classname="dsClient_ds.quantileMean_split" name="quantileMean_split"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.quantileMean() test errors" timestamp="2019-07-03 16:09:01" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="2.8">
+    <testcase time="1.03" classname="dsClient_ds.quantileMean_test_errors" name="quantileMean_erros"/>
+    <testcase time="1.26" classname="dsClient_ds.quantileMean_test_errors" name="quantileMean_erros"/>
+    <testcase time="0.51" classname="dsClient_ds.quantileMean_test_errors" name="quantileMean_erros"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.dsClient" timestamp="2019-07-03 16:09:04" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsbaseclient::ds.rowcolCalc" timestamp="2019-07-03 16:09:08" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsbaseclient::ds.rowcolCalc()" timestamp="2019-07-03 16:09:12" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="12.91">
+    <testcase time="12.91" classname="dsbaseclient_ds.rowcolCalc_" name="rowColCalc_exists"/>
+    <testcase time="0" classname="dsbaseclient_ds.rowcolCalc_" name="rowColCalc_exists"/>
+    <testcase time="0" classname="dsbaseclient_ds.rowcolCalc_" name="rowColCalc_exists"/>
+  </testsuite>
+  <testsuite name="dsbaseclient::ds.rowcolCalc() no newobj" timestamp="2019-07-03 16:09:17" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="4.34">
+    <testcase time="4.34" classname="dsbaseclient_ds.rowcolCalc_no_newobj" name="rowColCalc_out_exists"/>
+    <testcase time="0" classname="dsbaseclient_ds.rowcolCalc_no_newobj" name="rowColCalc_out_exists"/>
+    <testcase time="0" classname="dsbaseclient_ds.rowcolCalc_no_newobj" name="rowColCalc_out_exists"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.rowColCalc() test errors" timestamp="2019-07-03 16:09:21" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="6.63">
+    <testcase time="0" classname="dsClient_ds.rowColCalc_test_errors" name="rowColCalc_errors"/>
+    <testcase time="3.31" classname="dsClient_ds.rowColCalc_test_errors" name="rowColCalc_errors"/>
+    <testcase time="3.32" classname="dsClient_ds.rowColCalc_test_errors" name="rowColCalc_errors"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.subset" timestamp="2019-07-03 16:09:28" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.subset() generate a subset of the assigned table (by default the table is named 'D') with the first 50 observations and the two first columns refered to by their names" timestamp="2019-07-03 16:09:32" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="6.53">
+    <testcase time="6.53" classname="dsClient_ds.subset_generate_a_subset_of_the_assigned_table_by_default_the_table_is_named_D_with_the_first_50_observations_and_the_two_first_columns_refered_to_by_their_names" name="subD2_exists"/>
+    <testcase time="0" classname="dsClient_ds.subset_generate_a_subset_of_the_assigned_table_by_default_the_table_is_named_D_with_the_first_50_observations_and_the_two_first_columns_refered_to_by_their_names" name="subD2_exists"/>
+    <testcase time="0" classname="dsClient_ds.subset_generate_a_subset_of_the_assigned_table_by_default_the_table_is_named_D_with_the_first_50_observations_and_the_two_first_columns_refered_to_by_their_names" name="subD2_exists"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.summary" timestamp="2019-07-03 16:09:34" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.summary: suummary of a numerical variable" timestamp="2019-07-03 16:09:39" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="7.2">
+    <testcase time="7.2" classname="dsClient_ds.summary_suummary_of_a_numerical_variable" name="summary_numerical_variable"/>
+    <testcase time="0" classname="dsClient_ds.summary_suummary_of_a_numerical_variable" name="summary_numerical_variable"/>
+    <testcase time="0" classname="dsClient_ds.summary_suummary_of_a_numerical_variable" name="summary_numerical_variable"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.summary: suummary of a character variable" timestamp="2019-07-03 16:09:41" hostname="fv-az670" tests="2" skipped="0" failures="0" errors="0" time="2.96">
+    <testcase time="2.96" classname="dsClient_ds.summary_suummary_of_a_character_variable" name="summary_character_variable"/>
+    <testcase time="0" classname="dsClient_ds.summary_suummary_of_a_character_variable" name="summary_character_variable"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.summary: suummary of a factor variable" timestamp="2019-07-03 16:09:44" hostname="fv-az670" tests="5" skipped="0" failures="0" errors="0" time="3.32">
+    <testcase time="3.32" classname="dsClient_ds.summary_suummary_of_a_factor_variable" name="summary_factor_variable"/>
+    <testcase time="0" classname="dsClient_ds.summary_suummary_of_a_factor_variable" name="summary_factor_variable"/>
+    <testcase time="0" classname="dsClient_ds.summary_suummary_of_a_factor_variable" name="summary_factor_variable"/>
+    <testcase time="0" classname="dsClient_ds.summary_suummary_of_a_factor_variable" name="summary_factor_variable"/>
+    <testcase time="0" classname="dsClient_ds.summary_suummary_of_a_factor_variable" name="summary_factor_variable"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.summary: suummary of a data frame" timestamp="2019-07-03 16:09:48" hostname="fv-az670" tests="5" skipped="0" failures="0" errors="0" time="2.6">
+    <testcase time="2.6" classname="dsClient_ds.summary_suummary_of_a_data_frame" name="summary_data_frame"/>
+    <testcase time="0" classname="dsClient_ds.summary_suummary_of_a_data_frame" name="summary_data_frame"/>
+    <testcase time="0" classname="dsClient_ds.summary_suummary_of_a_data_frame" name="summary_data_frame"/>
+    <testcase time="0" classname="dsClient_ds.summary_suummary_of_a_data_frame" name="summary_data_frame"/>
+    <testcase time="0" classname="dsClient_ds.summary_suummary_of_a_data_frame" name="summary_data_frame"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.summary() test errors" timestamp="2019-07-03 16:09:50" hostname="fv-az670" tests="1" skipped="0" failures="0" errors="0" time="1.03">
+    <testcase time="1.03" classname="dsClient_ds.summary_test_errors" name="summary_erros"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.table1d" timestamp="2019-07-03 16:09:51" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.table1D() generate a one dimensional table, outputting combined contingency tables" timestamp="2019-07-03 16:09:56" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="5.1">
+    <testcase time="5.1" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_combined_contingency_tables" name="GENDER_normal"/>
+    <testcase time="0" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_combined_contingency_tables" name="GENDER_normal"/>
+    <testcase time="0" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_combined_contingency_tables" name="GENDER_normal"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.table1D() generate a one dimensional table, outputting combined contingency tables fail" timestamp="2019-07-03 16:09:56" hostname="fv-az670" tests="1" skipped="0" failures="0" errors="0" time="0.83">
+    <testcase time="0.83" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_combined_contingency_tables_fail" name="DIS_CVA_invalid"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.table1D() generate a one dimensional table, outputting combined contingency tables fail split" timestamp="2019-07-03 16:09:57" hostname="fv-az670" tests="1" skipped="0" failures="0" errors="0" time="0.77">
+    <testcase time="0.77" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_combined_contingency_tables_fail_split" name="DIS_CVA_invalid_split"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.table1D() generate a one dimensional table, outputting study specific contingency tables" timestamp="2019-07-03 16:09:58" hostname="fv-az670" tests="4" skipped="0" failures="0" errors="0" time="0.77">
+    <testcase time="0.77" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_study_specific_contingency_tables" name="GENDER_split"/>
+    <testcase time="0" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_study_specific_contingency_tables" name="GENDER_split"/>
+    <testcase time="0" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_study_specific_contingency_tables" name="GENDER_split"/>
+    <testcase time="0" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_study_specific_contingency_tables" name="GENDER_split"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.table1D() generate a one dimensional table, outputting study specific contingency tables for study 1 and 2" timestamp="2019-07-03 16:09:59" hostname="fv-az670" tests="4" skipped="0" failures="0" errors="0" time="0.75">
+    <testcase time="0.75" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_study_specific_contingency_tables_for_study_1_and_2" name="GENDER_split_12"/>
+    <testcase time="0" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_study_specific_contingency_tables_for_study_1_and_2" name="GENDER_split_12"/>
+    <testcase time="0" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_study_specific_contingency_tables_for_study_1_and_2" name="GENDER_split_12"/>
+    <testcase time="0" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_study_specific_contingency_tables_for_study_1_and_2" name="GENDER_split_12"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.table1D() generate a one dimensional table, outputting study specific and combined contingency tables" timestamp="2019-07-03 16:10:00" hostname="fv-az670" tests="3" skipped="0" failures="0" errors="0" time="0.76">
+    <testcase time="0.76" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_study_specific_and_combined_contingency_tables" name="GENDER_normal_2"/>
+    <testcase time="0" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_study_specific_and_combined_contingency_tables" name="GENDER_normal_2"/>
+    <testcase time="0" classname="dsClient_ds.table1D_generate_a_one_dimensional_table_outputting_study_specific_and_combined_contingency_tables" name="GENDER_normal_2"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.table1D() test errors" timestamp="2019-07-03 16:10:00" hostname="fv-az670" tests="2" skipped="0" failures="0" errors="0" time="0.76">
+    <testcase time="0" classname="dsClient_ds.table1D_test_errors" name="table1D_erros"/>
+    <testcase time="0.76" classname="dsClient_ds.table1D_test_errors" name="table1D_erros"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.table2D" timestamp="2019-07-03 16:10:01" hostname="fv-az670" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="dsClient::ds.table2D() generate a two dimensional table, outputting combined contingency tables - default behaviour" timestamp="2019-07-03 16:10:05" hostname="fv-az670" tests="4" skipped="0" failures="0" errors="0" time="5.66">
+    <testcase time="5.66" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_combined_contingency_tables_default_behaviour" name="DIS_DIAB_GENDER"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_combined_contingency_tables_default_behaviour" name="DIS_DIAB_GENDER"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_combined_contingency_tables_default_behaviour" name="DIS_DIAB_GENDER"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_combined_contingency_tables_default_behaviour" name="DIS_DIAB_GENDER"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.table2D() generate a two dimensional table, outputting study specific contingency tables" timestamp="2019-07-03 16:10:07" hostname="fv-az670" tests="6" skipped="0" failures="0" errors="0" time="1.41">
+    <testcase time="1.41" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables" name="DIS_DIAB_GENDER_split"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables" name="DIS_DIAB_GENDER_split"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables" name="DIS_DIAB_GENDER_split"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables" name="DIS_DIAB_GENDER_split"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables" name="DIS_DIAB_GENDER_split"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables" name="DIS_DIAB_GENDER_split"/>
+  </testsuite>
+  <testsuite name="dsClient::ds.table2D() generate a two dimensional table, outputting study specific contingency tables for the first two studies" timestamp="2019-07-03 16:10:08" hostname="fv-az670" tests="6" skipped="0" failures="0" errors="0" time="1.23">
+    <testcase time="1.23" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables_for_the_first_two_studies" name="DIS_DIAB_GENDER_split_12"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables_for_the_first_two_studies" name="DIS_DIAB_GENDER_split_12"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables_for_the_first_two_studies" name="DIS_DIAB_GENDER_split_12"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables_for_the_first_two_studies" name="DIS_DIAB_GENDER_split_12"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables_for_the_first_two_studies" name="DIS_DIAB_GENDER_split_12"/>
+    <testcase time="0" classname="dsClient_ds.table2D_generate_a_two_dimensional_table_outputting_study_specific_contingency_tables_for_the_first_two_studies" name="DIS_DIAB_GENDER_split_12"/>
+  </testsuite>
+</testsuites>
