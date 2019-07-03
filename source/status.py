@@ -29,7 +29,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 2/7/19
+__date__ = 3/7/19
 
 
 ################################################################################
@@ -116,6 +116,10 @@ def main(args):
     for this_function in ds_functions:
         this_function = this_function.replace('.R', '')  # Drop the .R part from the end.
         ds_test_status[this_function] = {}
+        if(this_function.startswith('ds')):
+            ds_test_status[this_function]['function_type'] = 'ds'
+        else:
+            ds_test_status[this_function]['function_type'] = 'internal'
 
     ################################################################################
     # Get the list of tests from the local repo
@@ -259,7 +263,8 @@ def main(args):
         h.write("<th>" + this_unique_test_type + "<br/>pass rate</th>")
     h.write("</tr>")
 
-    for this_function in sorted(ds_test_status.keys()):
+    # Sort the dict so it is separated by ds functions and internal functions, then alphabetically.
+    for this_function in sorted(ds_test_status, key = lambda x: (ds_test_status[x]['function_type'], x)):
         # print('===\n', this_function)
 
         # Function name with link to repo
