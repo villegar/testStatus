@@ -88,7 +88,7 @@ def main(args):
     remote_repo_path = remote_root_path + repo_name
 
     log_file = os.path.basename(devtools_test_output_file)
-    gh_log_url = 'https://github.com/datashield/testStatus/blob/master/logs/' + log_file
+    gh_log_url = 'https://github.com/datashield/testStatus/blob/master/logs/' + repo_name + '/' + log_file
 
     # Check repo exists
     print("local repo path: " + local_repo_path)
