@@ -29,7 +29,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 3/7/19
+__date__ = 4/7/19
 
 
 ################################################################################
@@ -261,7 +261,9 @@ def main(args):
     h.write("<table border=1>")
 
     # Some fixed named columns to beginw with, then use the unique test types derived from the data.
-    h.write("<tr><th>Function name</th><th>Coverage</th><th>Smoke test<br/>file exist</th><th>Test file exist</th>")
+    h.write("<tr><th>Function name</th><th>Coverage</th><th>Test file exist</th>")
+    for this_unique_test_type in unique_test_types:
+        h.write("<th>" + this_unique_test_type + "<br/>test file</th>")
     for this_unique_test_type in unique_test_types:
         h.write("<th>" + this_unique_test_type + "<br/>pass rate</th>")
     h.write("</tr>")
@@ -289,12 +291,12 @@ def main(args):
         ####################
         # Smoke test
         # See if test file exists
-        expected_test_name = "test-smk-"+this_function+'.R'
+        # expected_test_name = "test-smk-"+this_function+'.R'
         # print(expected_test_name)
-        if expected_test_name in ds_tests:
-            h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
-        else:
-            h.write("<td></td>")
+        # if expected_test_name in ds_tests:
+        #    h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
+        # else:
+        #    h.write("<td></td>")
 
         ####################
         # Other tests
@@ -307,13 +309,13 @@ def main(args):
             h.write("<td></td>")
 
         # Cycle through all the test types.
-        #for this_unique_test_type in unique_test_types:
-        #    expected_test_name = "test-" + this_unique_test_type + "-" + this_function+'.R'
-        #    print(expected_test_name)
-        #    if expected_test_name in ds_tests:
-        #        h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
-        #    else:
-        #        h.write("<td></td>")
+        for this_unique_test_type in unique_test_types:
+            expected_test_name = "test-" + this_unique_test_type + "-" + this_function+'.R'
+            print(expected_test_name)
+            if expected_test_name in ds_tests:
+                h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
+            else:
+                h.write("<td></td>")
 
 
         # Cycle through all the test types.
