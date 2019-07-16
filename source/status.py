@@ -1,9 +1,10 @@
-#! /usr/bin/env python3
+#!/usr/bin/env python3
 
 # Build a testing status web page. Based on:
-#   1) What functions exist in the R folder of the local repo.
-#   2) What test files exist in the testhtat folder in the local repo.
+#   1) The functions that exist in the R folder of the local repo.
+#   2) The test files that exist in the testhtat folder in the local repo.
 #   3) Output of devtools::test().
+#   4) Output of covr::package_coverage()
 
 # The list of functions in the R folder is the canonical list this script uses.
 
@@ -29,7 +30,60 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 4/7/19
+__date__ = 16/7/19
+
+
+################################################################################
+# Build summary table
+def build_summary_table(ds_test_status, unique_test_types, pp):
+    summary = {}
+
+    pp.pprint(ds_test_status)
+
+    # Initialize as zero
+    for this_unique_test_type in unique_test_types:
+        summary[this_unique_test_type] = {}
+        summary[this_unique_test_type]['pass'] = 0
+        summary[this_unique_test_type]['problems'] = 0
+        summary[this_unique_test_type]['number'] = 0
+
+    # Totals
+    summary['total'] = {}
+    summary['total']['pass'] = 0
+    summary['total']['problems'] = 0
+    summary['total']['number'] = 0
+
+    pp.pprint(summary)
+
+    for this_function_name in ds_test_status:
+        pp.pprint(this_function_name)
+        for this_unique_test_type in unique_test_types:
+            try:
+
+                this_skipped = int(ds_test_status[this_function_name][this_unique_test_type]['skipped'])
+                this_failures = int(ds_test_status[this_function_name][this_unique_test_type]['failures'])
+                this_errors = int(ds_test_status[this_function_name][this_unique_test_type]['errors'])
+                this_number = int(ds_test_status[this_function_name][this_unique_test_type]['number'])
+
+                this_problems = this_skipped + this_failures + this_errors
+
+                # print(ds_test_status[this_function_name][this_unique_test_type])
+
+                summary[this_unique_test_type]['pass'] += (this_number - this_problems)
+                summary[this_unique_test_type]['problems'] += this_problems
+                summary[this_unique_test_type]['number'] += this_number
+
+                summary['total']['pass'] += (this_number - this_problems)
+                summary['total']['problems'] += this_problems
+                summary['total']['number'] += this_number
+            except:
+                pass
+
+    print("#####################################\nSUMMARY")
+    pp.pprint(summary)
+
+    return summary
+
 
 
 ################################################################################
@@ -59,11 +113,12 @@ def parse_coverage(coverage_file_path):
     coverage = {}
     for row in input_file:
         print(row)
-        this_function_name = row[0].replace("R/","")
-        this_function_name = this_function_name.replace(".R","")
+        this_function_name = row[0].replace("R/", "")
+        this_function_name = this_function_name.replace(".R", "")
         coverage[this_function_name] = row[1]
 
     return coverage
+
 
 ################################################################################
 #
@@ -195,7 +250,6 @@ def main(args):
         except:
             print("No extra test type.")
 
-
         # Build the dictionary ds_test_status[function_name][test_type]{number, skipped, failures, errors}
         # This should automatically make an entry for each test type specified in the testthat files.
         try:
@@ -208,7 +262,6 @@ def main(args):
                 ds_test_status[function_name][test_type]['failures'] = 0
                 ds_test_status[function_name][test_type]['errors'] = 0
                 ds_test_status[function_name][test_type]['failureText'] = list()
-
 
             ds_test_status[function_name][test_type]['number'] += int(testsuite.attrib['tests'])
             ds_test_status[function_name][test_type]['skipped'] += int(testsuite.attrib['skipped'])
@@ -234,10 +287,8 @@ def main(args):
 
     pp.pprint(ds_test_status)
 
-
     # Get the coverage
     coverage = parse_coverage(coverage_file_path)
-
 
     # Get a list of unique test types (derived from the contexts), in aphabetical order
     test_types = []
@@ -248,9 +299,7 @@ def main(args):
     unique_test_types = sorted(set(test_types))
 
     ################################################################################
-    # Make an HTML table of the results.
-    # Currently hard coding test types, but could automatically pull these out.
-    # print("\n\n##########")
+    # Make an HTML file of the results.
 
     h = open(output_file_name, "w")
     h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="../../status.css">\n</head>\n<body>')
@@ -258,10 +307,23 @@ def main(args):
     h.write("<h2>" + repo_name + "</h2>")
     h.write("Made on " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
+    ############################################################################
+    # Summary table
+    summary = build_summary_table(ds_test_status, unique_test_types, pp)
+
+    h.write("<table border=1>")
+    h.write("<tr><th>Test type</th><th>Pass rate</th><th>Number of tests</th></tr>")
+    for this_unique_test_type in summary:
+        h.write("<tr><td>" + this_unique_test_type + "</td><td>" + str(summary[this_unique_test_type]['pass']) + "</td><td>" + str(summary[this_unique_test_type]['number']) + "</td></tr>")
+    h.write("</table>")
+    h.write("<br/><br/>")
+
     h.write("<table border=1>")
 
+    ############################################################################
+    # Main table
     # Some fixed named columns to beginw with, then use the unique test types derived from the data.
-    h.write("<tr><th>Function name</th><th>Coverage</th><th>Test file exist</th>")
+    h.write("<tr><th>Function name</th><th>Coverage</th>")
     for this_unique_test_type in unique_test_types:
         h.write("<th>" + this_unique_test_type + "<br/>test file</th>")
     for this_unique_test_type in unique_test_types:
@@ -269,8 +331,7 @@ def main(args):
     h.write("</tr>")
 
     # Sort the dict so it is separated by ds functions and internal functions, then alphabetically.
-    for this_function in sorted(ds_test_status, key = lambda x: (ds_test_status[x]['function_type'], x)):
-        # print('===\n', this_function)
+    for this_function in sorted(ds_test_status, key=lambda x: (ds_test_status[x]['function_type'], x)):
 
         # Function name with link to repo
         h.write("<tr>")
@@ -288,26 +349,6 @@ def main(args):
         else:
             h.write('<td></td>')
 
-        ####################
-        # Smoke test
-        # See if test file exists
-        # expected_test_name = "test-smk-"+this_function+'.R'
-        # print(expected_test_name)
-        # if expected_test_name in ds_tests:
-        #    h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
-        # else:
-        #    h.write("<td></td>")
-
-        ####################
-        # Other tests
-        # See if test exists
-        expected_test_name = "test-"+this_function+'.R'
-        # print(expected_test_name)
-        if expected_test_name in ds_tests:
-            h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
-        else:
-            h.write("<td></td>")
-
         # Cycle through all the test types.
         for this_unique_test_type in unique_test_types:
             expected_test_name = "test-" + this_unique_test_type + "-" + this_function+'.R'
@@ -316,7 +357,6 @@ def main(args):
                 h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
             else:
                 h.write("<td></td>")
-
 
         # Cycle through all the test types.
         for this_unique_test_type in unique_test_types:
