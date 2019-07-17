@@ -291,7 +291,8 @@ def main(args):
     test_types = []
     for this_function in ds_test_status.keys():
         for this_test_type in ds_test_status[this_function].keys():
-            test_types.append(this_test_type)
+            if this_test_type != 'function_type':
+                test_types.append(this_test_type)
 
     unique_test_types = sorted(set(test_types))
 
