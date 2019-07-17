@@ -67,8 +67,6 @@ def build_summary_table(ds_test_status, unique_test_types, pp):
 
                 this_problems = this_skipped + this_failures + this_errors
 
-                # print(ds_test_status[this_function_name][this_unique_test_type])
-
                 summary[this_unique_test_type]['pass'] += (this_number - this_problems)
                 summary[this_unique_test_type]['problems'] += this_problems
                 summary[this_unique_test_type]['number'] += this_number
@@ -83,7 +81,6 @@ def build_summary_table(ds_test_status, unique_test_types, pp):
     pp.pprint(summary)
 
     return summary
-
 
 
 ################################################################################
@@ -313,8 +310,11 @@ def main(args):
 
     h.write("<table border=1>")
     h.write("<tr><th>Test type</th><th>Pass rate</th><th>Number of tests</th></tr>")
-    for this_unique_test_type in summary:
-        h.write("<tr><td>" + this_unique_test_type + "</td><td>" + str(summary[this_unique_test_type]['pass']) + "</td><td>" + str(summary[this_unique_test_type]['number']) + "</td></tr>")
+    for this_unique_test_type in sorted(summary):
+        if this_unique_test_type != 'total':
+            h.write("<tr><td>" + this_unique_test_type + "</td><td>" + str(summary[this_unique_test_type]['pass']) + "</td><td>" + str(summary[this_unique_test_type]['number']) + "</td></tr>")
+        else:
+            h.write('<tr style="font-weight:bold"><td>Total</td><td>' + str(summary[this_unique_test_type]['pass']) + "</td><td>" + str(summary[this_unique_test_type]['number']) + "</td></tr>")
     h.write("</table>")
     h.write("<br/><br/>")
 
