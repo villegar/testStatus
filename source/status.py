@@ -17,6 +17,8 @@
 # <function name>()::<test type>::<Optional other info>::single
 # someFunction()::smoke::extra information.
 
+# Assuming the locally checked out repo is the branch that I need.
+
 # To do:
 # - pass in repo and branch name as arguements
 
@@ -30,7 +32,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 16/7/19
+__date__ = 24/7/19
 
 
 ################################################################################
@@ -121,28 +123,31 @@ def parse_coverage(coverage_file_path):
 #
 def main(args):
     remote_root_path = "http://github.com/datashield/"
-    repo_name = "dsBetaTestClient"
-    branch_name = "master"
+    # repo_name = "dsBetaTestClient"
+    # branch_name = "master"
 
     parser = argparse.ArgumentParser()
     parser.add_argument("log_file_path", help="Path to the log file.")
     parser.add_argument("coverage_file_path", help="Path to the coverage file.")
     parser.add_argument("output_file_path", help="Path to the output file.")
     parser.add_argument("local_repo_path", help="Path to the locally checked out repository.")
+    parser.add_argument("remote_repo_name", help="Name of the remote repository.")
+    parser.add_argument("branch", help="Branch name.")
     args = parser.parse_args()
     devtools_test_output_file = args.log_file_path
     coverage_file_path = args.coverage_file_path
     output_file_name = args.output_file_path
     local_repo_path = args.local_repo_path
+    remote_repo_name = args.remote_repo_name
+    branch_name = args.branch
 
     pp = pprint.PrettyPrinter(indent=4)
 
-    remote_repo_path = remote_root_path + repo_name
+    remote_repo_path = remote_root_path + remote_repo_name
 
     log_file = os.path.basename(devtools_test_output_file)
-    gh_log_url = 'https://github.com/datashield/testStatus/blob/master/logs/' + repo_name + '/' + log_file
+    gh_log_url = 'https://github.com/datashield/testStatus/blob/master/logs/' + remote_repo_name + '/' + branch_name + '/' + log_file
 
-    # Check repo exists
     print("local repo path: " + local_repo_path)
     print("remote repo path: " + remote_repo_path)
 
@@ -219,8 +224,6 @@ def main(args):
         context = testsuite.attrib['name']
         context = context.replace('dsBetaTestClient::', '')        # Drop dsBetaTestClient:: from context. Factor this out of testthat code.
 
-        # print(context)
-
         # Split by :: delimiter
         context_parts = context.split('::')
 
@@ -239,7 +242,6 @@ def main(args):
             print(test_type)
         except:
             print("ERROR: test type not parsable in: " + context)
-
 
         try:
             test_type_extra = context_parts[2]
@@ -302,7 +304,7 @@ def main(args):
     h = open(output_file_name, "w")
     h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="../../status.css">\n</head>\n<body>')
 
-    h.write("<h2>" + repo_name + "</h2>")
+    h.write("<h2>" + remote_repo_name + " - " + branch_name + "</h2>")
     h.write("Made on " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
     ############################################################################
