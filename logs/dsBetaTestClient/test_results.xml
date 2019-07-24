@@ -1,0 +1,1966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="ds.asCharacter.o::arg::test errors" timestamp="2019-07-24 21:36:33" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.09">
+    <testcase time="6.09" classname="ds.asCharacter.o_arg_test_errors" name="asCharacter_erros"/>
+  </testsuite>
+  <testsuite name="ds.asDataMatrix.o::arg::test errors" timestamp="2019-07-24 21:36:39" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.14">
+    <testcase time="6.14" classname="ds.asDataMatrix.o_arg_test_errors" name="asDataMatrix_erros"/>
+  </testsuite>
+  <testsuite name="ds.asFactor.o::arg::test errors" timestamp="2019-07-24 21:36:45" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="6.04">
+    <testcase time="6" classname="ds.asFactor.o_arg_test_errors" name="asFactor_erros"/>
+    <testcase time="0.03" classname="ds.asFactor.o_arg_test_errors" name="asFactor_erros"/>
+    <testcase time="0.01" classname="ds.asFactor.o_arg_test_errors" name="asFactor_erros"/>
+  </testsuite>
+  <testsuite name="ds.asInteger.o::arg::test errors" timestamp="2019-07-24 21:36:51" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.93">
+    <testcase time="5.93" classname="ds.asInteger.o_arg_test_errors" name="asInteger_erros"/>
+  </testsuite>
+  <testsuite name="ds.asList.o::arg::test errors" timestamp="2019-07-24 21:36:57" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.92">
+    <testcase time="5.92" classname="ds.asList.o_arg_test_errors" name="asList_erros"/>
+  </testsuite>
+  <testsuite name="ds.asLogical.o::arg::test errors" timestamp="2019-07-24 21:37:03" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.94">
+    <testcase time="5.94" classname="ds.asLogical.o_arg_test_errors" name="asLogical_erros"/>
+  </testsuite>
+  <testsuite name="ds.asMatrix.o::arg::test errors" timestamp="2019-07-24 21:37:09" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.96">
+    <testcase time="5.96" classname="ds.asMatrix.o_arg_test_errors" name="asMatrix_erros"/>
+  </testsuite>
+  <testsuite name="ds.asNumeric.o::arg::test errors" timestamp="2019-07-24 21:37:15" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.97">
+    <testcase time="5.97" classname="ds.asNumeric.o_arg_test_errors" name="asNumeric_erros"/>
+  </testsuite>
+  <testsuite name="ds.Boole.o::arg::test errors" timestamp="2019-07-24 21:37:21" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="6.05">
+    <testcase time="6.01" classname="ds.Boole.o_arg_test_errors" name="Boole_erros"/>
+    <testcase time="0.04" classname="ds.Boole.o_arg_test_errors" name="Boole_erros"/>
+    <testcase time="0" classname="ds.Boole.o_arg_test_errors" name="Boole_erros"/>
+    <testcase time="0" classname="ds.Boole.o_arg_test_errors" name="Boole_erros"/>
+  </testsuite>
+  <testsuite name="ds.cbind.o::arg::test errors" timestamp="2019-07-24 21:37:27" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="7.3">
+    <testcase time="6.24" classname="ds.cbind.o_arg_test_errors" name="cbind_erros"/>
+    <testcase time="1.06" classname="ds.cbind.o_arg_test_errors" name="cbind_erros"/>
+  </testsuite>
+  <testsuite name="ds.cor.o::arg::test errors" timestamp="2019-07-24 21:37:34" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="9.47">
+    <testcase time="5.99" classname="ds.cor.o_arg_test_errors" name="cor_erros"/>
+    <testcase time="1.17" classname="ds.cor.o_arg_test_errors" name="cor_erros"/>
+    <testcase time="2.31" classname="ds.cor.o_arg_test_errors" name="cor_erros"/>
+  </testsuite>
+  <testsuite name="ds.cov.o::arg::test errors" timestamp="2019-07-24 21:37:44" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="9.33">
+    <testcase time="5.96" classname="ds.cov.o_arg_test_errors" name="cov_erros"/>
+    <testcase time="1.07" classname="ds.cov.o_arg_test_errors" name="cov_erros"/>
+    <testcase time="2.3" classname="ds.cov.o_arg_test_errors" name="cov_erros"/>
+  </testsuite>
+  <testsuite name="ds.dataFrame.o::arg::test errors" timestamp="2019-07-24 21:37:53" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="7.23">
+    <testcase time="5.96" classname="ds.dataFrame.o_arg_test_errors" name="dataFrame_erros"/>
+    <testcase time="1.27" classname="ds.dataFrame.o_arg_test_errors" name="dataFrame_erros"/>
+  </testsuite>
+  <testsuite name="ds.dataFrameSubset.o::arg::test errors" timestamp="2019-07-24 21:38:00" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.97">
+    <testcase time="5.97" classname="ds.dataFrameSubset.o_arg_test_errors" name="dataFrameSubset_erros"/>
+  </testsuite>
+  <testsuite name="ds.dim.o::arg::test errors" timestamp="2019-07-24 21:38:06" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="7.22">
+    <testcase time="5.99" classname="ds.dim.o_arg_test_errors" name="dim_erros"/>
+    <testcase time="0.97" classname="ds.dim.o_arg_test_errors" name="dim_erros"/>
+    <testcase time="0.26" classname="ds.dim.o_arg_test_errors" name="dim_erros"/>
+  </testsuite>
+  <testsuite name="ds.foobar.o::arg::aggregate" timestamp="2019-07-24 21:38:14" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6">
+    <testcase time="6" classname="ds.foobar.o_arg_aggregate" name="NULL_opal"/>
+  </testsuite>
+  <testsuite name="ds.foobar.o::arg::aggregate" timestamp="2019-07-24 21:38:14" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0">
+    <testcase time="0" classname="ds.foobar.o_arg_aggregate" name="NULL_expr"/>
+  </testsuite>
+  <testsuite name="ds.foobar.o::arg::aggregate" timestamp="2019-07-24 21:38:14" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.18">
+    <testcase time="0.18" classname="ds.foobar.o_arg_aggregate" name="non_existent_aggregate_foobarDS"/>
+  </testsuite>
+  <testsuite name="ds.foobar.o::arg::assign" timestamp="2019-07-24 21:38:14" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0">
+    <testcase time="0" classname="ds.foobar.o_arg_assign" name="NULL_opal"/>
+  </testsuite>
+  <testsuite name="ds.foobar.o::arg::assign" timestamp="2019-07-24 21:38:14" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0">
+    <testcase time="0" classname="ds.foobar.o_arg_assign" name="NULL_value"/>
+  </testsuite>
+  <testsuite name="ds.foobar.o::arg::assign" timestamp="2019-07-24 21:38:14" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="0.23">
+    <testcase time="0.23" classname="ds.foobar.o_arg_assign" name="non_existent_assign_foobarDS"/>
+    <testcase time="0" classname="ds.foobar.o_arg_assign" name="non_existent_assign_foobarDS"/>
+  </testsuite>
+  <testsuite name="ds.glm.o::arg::test errors" timestamp="2019-07-24 21:38:20" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="6.22">
+    <testcase time="5.97" classname="ds.glm.o_arg_test_errors" name="glm_erros"/>
+    <testcase time="0.25" classname="ds.glm.o_arg_test_errors" name="glm_erros"/>
+  </testsuite>
+  <testsuite name="ds.glmSLMA.o::arg::test errors" timestamp="2019-07-24 21:38:26" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.99">
+    <testcase time="5.99" classname="ds.glmSLMA.o_arg_test_errors" name="glmSLMA_erros"/>
+  </testsuite>
+  <testsuite name="ds.length.o::arg::test errors" timestamp="2019-07-24 21:38:32" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="8.71">
+    <testcase time="6.78" classname="ds.length.o_arg_test_errors" name="length_erros"/>
+    <testcase time="0.04" classname="ds.length.o_arg_test_errors" name="length_erros"/>
+    <testcase time="0" classname="ds.length.o_arg_test_errors" name="length_erros"/>
+    <testcase time="0.96" classname="ds.length.o_arg_test_errors" name="length_erros"/>
+    <testcase time="0.93" classname="ds.length.o_arg_test_errors" name="length_erros"/>
+  </testsuite>
+  <testsuite name="ds.lexis.o::arg::test errors" timestamp="2019-07-24 21:38:41" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.95">
+    <testcase time="5.95" classname="ds.lexis.o_arg_test_errors" name="lexis_erros"/>
+  </testsuite>
+  <testsuite name="ds.look.o::arg::test errors" timestamp="2019-07-24 21:38:47" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.98">
+    <testcase time="5.98" classname="ds.look.o_arg_test_errors" name="look_erros"/>
+  </testsuite>
+  <testsuite name="ds.make.o::arg::test errors" timestamp="2019-07-24 21:38:53" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.05">
+    <testcase time="6.05" classname="ds.make.o_arg_test_errors" name="make_erros"/>
+  </testsuite>
+  <testsuite name="ds.matrixDet::arg::test errors" timestamp="2019-07-24 21:38:59" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.13">
+    <testcase time="6.13" classname="ds.matrixDet_arg_test_errors" name="matrixDet_erros"/>
+  </testsuite>
+  <testsuite name="ds.matrixDet.report::arg::test errors" timestamp="2019-07-24 21:39:05" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.98">
+    <testcase time="5.98" classname="ds.matrixDet.report_arg_test_errors" name="ds.matixDet.report_erros"/>
+  </testsuite>
+  <testsuite name="ds.matrixDiag::arg::test errors" timestamp="2019-07-24 21:39:11" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="5.95">
+    <testcase time="5.95" classname="ds.matrixDiag_arg_test_errors" name="matrixDiag_erros"/>
+    <testcase time="0" classname="ds.matrixDiag_arg_test_errors" name="matrixDiag_erros"/>
+  </testsuite>
+  <testsuite name="ds.matrixDimnames::arg::test errors" timestamp="2019-07-24 21:39:17" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.91">
+    <testcase time="5.91" classname="ds.matrixDimnames_arg_test_errors" name="matrixDimnames_erros"/>
+  </testsuite>
+  <testsuite name="ds.matrixInvert::arg::test errors" timestamp="2019-07-24 21:39:23" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.02">
+    <testcase time="6.02" classname="ds.matrixInvert_arg_test_errors" name="matrixInvert_erros"/>
+  </testsuite>
+  <testsuite name="ds.matrixMult::arg::test errors" timestamp="2019-07-24 21:39:29" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.99">
+    <testcase time="5.99" classname="ds.matrixMult_arg_test_errors" name="matrixMult_erros"/>
+  </testsuite>
+  <testsuite name="ds.matrix::arg::test errors" timestamp="2019-07-24 21:39:35" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6">
+    <testcase time="6" classname="ds.matrix_arg_test_errors" name="matrix_erros"/>
+  </testsuite>
+  <testsuite name="ds.matrixTranspose::arg::test errors" timestamp="2019-07-24 21:39:41" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="5.98">
+    <testcase time="5.98" classname="ds.matrixTranspose_arg_test_errors" name="matrixTranspose_erros"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::arg::test errors" timestamp="2019-07-24 21:39:47" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="7.89">
+    <testcase time="6.84" classname="ds.mean.o_arg_test_errors" name="mean_erros"/>
+    <testcase time="0.07" classname="ds.mean.o_arg_test_errors" name="mean_erros"/>
+    <testcase time="0.98" classname="ds.mean.o_arg_test_errors" name="mean_erros"/>
+  </testsuite>
+  <testsuite name="ds.meanSdGp::arg::test errors" timestamp="2019-07-24 21:39:55" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6">
+    <testcase time="6" classname="ds.meanSdGp_arg_test_errors" name="meanSdGp_erros"/>
+  </testsuite>
+  <testsuite name="ds.merge.o::arg::test errors" timestamp="2019-07-24 21:40:01" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="6.01">
+    <testcase time="5.98" classname="ds.merge.o_arg_test_errors" name="merge_erros"/>
+    <testcase time="0.03" classname="ds.merge.o_arg_test_errors" name="merge_erros"/>
+    <testcase time="0" classname="ds.merge.o_arg_test_errors" name="merge_erros"/>
+    <testcase time="0" classname="ds.merge.o_arg_test_errors" name="merge_erros"/>
+    <testcase time="0" classname="ds.merge.o_arg_test_errors" name="merge_erros"/>
+  </testsuite>
+  <testsuite name="ds.message.o::arg" timestamp="2019-07-24 21:40:07" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.12">
+    <testcase time="6.12" classname="ds.message.o_arg" name="request_message_for_NULL"/>
+  </testsuite>
+  <testsuite name="ds.rbind.o::arg::test errors" timestamp="2019-07-24 21:40:13" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.15">
+    <testcase time="6.15" classname="ds.rbind.o_arg_test_errors" name="rbind_erros"/>
+  </testsuite>
+  <testsuite name="ds.rBinom.o::arg::test errors" timestamp="2019-07-24 21:40:19" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="6.06">
+    <testcase time="6.06" classname="ds.rBinom.o_arg_test_errors" name="rBinom_erros"/>
+    <testcase time="0" classname="ds.rBinom.o_arg_test_errors" name="rBinom_erros"/>
+  </testsuite>
+  <testsuite name="ds.recodeValues.o::arg::test errors" timestamp="2019-07-24 21:40:25" hostname="fv-az679" tests="6" skipped="0" failures="0" errors="0" time="6.18">
+    <testcase time="6.13" classname="ds.recodeValues.o_arg_test_errors" name="recodeValues_erros"/>
+    <testcase time="0.05" classname="ds.recodeValues.o_arg_test_errors" name="recodeValues_erros"/>
+    <testcase time="0" classname="ds.recodeValues.o_arg_test_errors" name="recodeValues_erros"/>
+    <testcase time="0" classname="ds.recodeValues.o_arg_test_errors" name="recodeValues_erros"/>
+    <testcase time="0" classname="ds.recodeValues.o_arg_test_errors" name="recodeValues_erros"/>
+    <testcase time="0" classname="ds.recodeValues.o_arg_test_errors" name="recodeValues_erros"/>
+  </testsuite>
+  <testsuite name="ds.reShape.o::arg::test errors" timestamp="2019-07-24 21:40:32" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="6.17">
+    <testcase time="6.14" classname="ds.reShape.o_arg_test_errors" name="reShape_erros"/>
+    <testcase time="0.03" classname="ds.reShape.o_arg_test_errors" name="reShape_erros"/>
+    <testcase time="0" classname="ds.reShape.o_arg_test_errors" name="reShape_erros"/>
+    <testcase time="0" classname="ds.reShape.o_arg_test_errors" name="reShape_erros"/>
+  </testsuite>
+  <testsuite name="ds.rm.o::arg::test errors" timestamp="2019-07-24 21:40:38" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.14">
+    <testcase time="6.14" classname="ds.rm.o_arg_test_errors" name="ds.rm.o_erros"/>
+  </testsuite>
+  <testsuite name="ds.rNorm.o::arg::test errors" timestamp="2019-07-24 21:40:44" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="6.18">
+    <testcase time="6.18" classname="ds.rNorm.o_arg_test_errors" name="rNorm_erros"/>
+    <testcase time="0" classname="ds.rNorm.o_arg_test_errors" name="rNorm_erros"/>
+  </testsuite>
+  <testsuite name="ds.rPois.o::arg::test errors" timestamp="2019-07-24 21:40:50" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="6.14">
+    <testcase time="6.14" classname="ds.rPois.o_arg_test_errors" name="rPois_erros"/>
+    <testcase time="0" classname="ds.rPois.o_arg_test_errors" name="rPois_erros"/>
+  </testsuite>
+  <testsuite name="ds.rUnif.o::arg::test errors" timestamp="2019-07-24 21:40:56" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="6.18">
+    <testcase time="6.18" classname="ds.rUnif.o_arg_test_errors" name="rUnif_erros"/>
+    <testcase time="0" classname="ds.rUnif.o_arg_test_errors" name="rUnif_erros"/>
+  </testsuite>
+  <testsuite name="ds.seq.o::arg::test errors" timestamp="2019-07-24 21:41:02" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.11">
+    <testcase time="6.11" classname="ds.seq.o_arg_test_errors" name="seq_erros"/>
+  </testsuite>
+  <testsuite name="ds.setSeed.o::arg::test errors" timestamp="2019-07-24 21:41:08" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.12">
+    <testcase time="6.12" classname="ds.setSeed.o_arg_test_errors" name="setSeed_erros"/>
+  </testsuite>
+  <testsuite name="ds.table2D.o::arg::test errors" timestamp="2019-07-24 21:41:15" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.1">
+    <testcase time="6.1" classname="ds.table2D.o_arg_test_errors" name="table2D_erros"/>
+  </testsuite>
+  <testsuite name="ds.tapply.assign.o::arg::test errors" timestamp="2019-07-24 21:41:21" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="6.13">
+    <testcase time="6.1" classname="ds.tapply.assign.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.assign.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0.03" classname="ds.tapply.assign.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.assign.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.assign.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.assign.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.assign.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.assign.o_arg_test_errors" name="tapply_erros"/>
+  </testsuite>
+  <testsuite name="ds.tapply.o::arg::test errors" timestamp="2019-07-24 21:41:27" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="6.16">
+    <testcase time="6.16" classname="ds.tapply.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.o_arg_test_errors" name="tapply_erros"/>
+    <testcase time="0" classname="ds.tapply.o_arg_test_errors" name="tapply_erros"/>
+  </testsuite>
+  <testsuite name="ds.testObjExists.o::arg::test errors" timestamp="2019-07-24 21:41:33" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.13">
+    <testcase time="6.13" classname="ds.testObjExists.o_arg_test_errors" name="testObjExists_erros"/>
+  </testsuite>
+  <testsuite name="ds.unList.o::arg::test errors" timestamp="2019-07-24 21:41:39" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.21">
+    <testcase time="6.21" classname="ds.unList.o_arg_test_errors" name="unList_erros"/>
+  </testsuite>
+  <testsuite name="ds.var.o::arg::test errors" timestamp="2019-07-24 21:41:45" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="7.95">
+    <testcase time="6.9" classname="ds.var.o_arg_test_errors" name="var_erros"/>
+    <testcase time="1.05" classname="ds.var.o_arg_test_errors" name="var_erros"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::disc::type=both" timestamp="2019-07-24 21:41:53" hostname="fv-az679" tests="29" skipped="0" failures="0" errors="0" time="9.64">
+    <testcase time="9.38" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0.26" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_disc_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.var.o::disc::type=both" timestamp="2019-07-24 21:42:03" hostname="fv-az679" tests="29" skipped="0" failures="0" errors="0" time="9.62">
+    <testcase time="9.37" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0.25" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+    <testcase time="0" classname="ds.var.o_disc_type_both" name="var_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.asFactor.o()::expt::multiple" timestamp="2019-07-24 21:42:06" hostname="fv-az679" tests="18" skipped="0" failures="0" errors="0" time="13.06">
+    <testcase time="6.78" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0.8" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0.78" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0.78" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0.79" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0.79" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0.78" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0.78" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0.78" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_multiple" name="combined_data_set"/>
+  </testsuite>
+  <testsuite name="ds.asFactor.o()::expt::single" timestamp="2019-07-24 21:42:20" hostname="fv-az679" tests="18" skipped="0" failures="0" errors="0" time="9.92">
+    <testcase time="4.3" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0.7" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0.7" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0.7" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0.7" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0.7" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0.7" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0.71" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0.71" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+    <testcase time="0" classname="ds.asFactor.o_expt_single" name="single_dataset_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o()::expt::combine::multiple" timestamp="2019-07-24 21:42:29" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="15.37">
+    <testcase time="7.08" classname="ds.mean.o_expt_combine_multiple" name="combined_data_set"/>
+    <testcase time="1.19" classname="ds.mean.o_expt_combine_multiple" name="combined_data_set"/>
+    <testcase time="1.18" classname="ds.mean.o_expt_combine_multiple" name="combined_data_set"/>
+    <testcase time="1.18" classname="ds.mean.o_expt_combine_multiple" name="combined_data_set"/>
+    <testcase time="1.18" classname="ds.mean.o_expt_combine_multiple" name="combined_data_set"/>
+    <testcase time="1.19" classname="ds.mean.o_expt_combine_multiple" name="combined_data_set"/>
+    <testcase time="1.18" classname="ds.mean.o_expt_combine_multiple" name="combined_data_set"/>
+    <testcase time="1.19" classname="ds.mean.o_expt_combine_multiple" name="combined_data_set"/>
+  </testsuite>
+  <testsuite name="ds.mean.o()::expt::split::multiple" timestamp="2019-07-24 21:42:45" hostname="fv-az679" tests="24" skipped="0" failures="0" errors="0" time="15.47">
+    <testcase time="7.18" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="1.18" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="1.19" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="1.18" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="1.18" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="1.18" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="1.19" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="1.19" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+    <testcase time="0" classname="ds.mean.o_expt_split_multiple" name="split_data_set"/>
+  </testsuite>
+  <testsuite name="ds.mean.o()::expt::single" timestamp="2019-07-24 21:43:00" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="9.06">
+    <testcase time="4.26" classname="ds.mean.o_expt_single" name="combined_data_set"/>
+    <testcase time="0.69" classname="ds.mean.o_expt_single" name="combined_data_set"/>
+    <testcase time="0.69" classname="ds.mean.o_expt_single" name="combined_data_set"/>
+    <testcase time="0.68" classname="ds.mean.o_expt_single" name="combined_data_set"/>
+    <testcase time="0.68" classname="ds.mean.o_expt_single" name="combined_data_set"/>
+    <testcase time="0.69" classname="ds.mean.o_expt_single" name="combined_data_set"/>
+    <testcase time="0.69" classname="ds.mean.o_expt_single" name="combined_data_set"/>
+    <testcase time="0.68" classname="ds.mean.o_expt_single" name="combined_data_set"/>
+  </testsuite>
+  <testsuite name="ds.mean.o()::expt::large_values::single" timestamp="2019-07-24 21:43:09" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="14.57">
+    <testcase time="4.86" classname="ds.mean.o_expt_large_values_single" name="combined_data_set"/>
+    <testcase time="1.39" classname="ds.mean.o_expt_large_values_single" name="combined_data_set"/>
+    <testcase time="1.4" classname="ds.mean.o_expt_large_values_single" name="combined_data_set"/>
+    <testcase time="1.39" classname="ds.mean.o_expt_large_values_single" name="combined_data_set"/>
+    <testcase time="1.38" classname="ds.mean.o_expt_large_values_single" name="combined_data_set"/>
+    <testcase time="1.38" classname="ds.mean.o_expt_large_values_single" name="combined_data_set"/>
+    <testcase time="1.38" classname="ds.mean.o_expt_large_values_single" name="combined_data_set"/>
+    <testcase time="1.39" classname="ds.mean.o_expt_large_values_single" name="combined_data_set"/>
+  </testsuite>
+  <testsuite name="ds.mean.o()::expt::large_values::multiple" timestamp="2019-07-24 21:43:24" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="21.5">
+    <testcase time="7.84" classname="ds.mean.o_expt_large_values_multiple" name="combined_data_set"/>
+    <testcase time="1.95" classname="ds.mean.o_expt_large_values_multiple" name="combined_data_set"/>
+    <testcase time="1.96" classname="ds.mean.o_expt_large_values_multiple" name="combined_data_set"/>
+    <testcase time="1.96" classname="ds.mean.o_expt_large_values_multiple" name="combined_data_set"/>
+    <testcase time="1.95" classname="ds.mean.o_expt_large_values_multiple" name="combined_data_set"/>
+    <testcase time="1.95" classname="ds.mean.o_expt_large_values_multiple" name="combined_data_set"/>
+    <testcase time="1.94" classname="ds.mean.o_expt_large_values_multiple" name="combined_data_set"/>
+    <testcase time="1.95" classname="ds.mean.o_expt_large_values_multiple" name="combined_data_set"/>
+  </testsuite>
+  <testsuite name="ds.var.o()::expt::multiple" timestamp="2019-07-24 21:43:45" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="15.41">
+    <testcase time="7.14" classname="ds.var.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="1.19" classname="ds.var.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="1.17" classname="ds.var.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="1.18" classname="ds.var.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="1.18" classname="ds.var.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="1.18" classname="ds.var.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="1.18" classname="ds.var.o_expt_multiple" name="combined_data_set"/>
+    <testcase time="1.19" classname="ds.var.o_expt_multiple" name="combined_data_set"/>
+  </testsuite>
+  <testsuite name="ds.var.o()::expt::single" timestamp="2019-07-24 21:44:01" hostname="fv-az679" tests="24" skipped="0" failures="0" errors="0" time="15.44">
+    <testcase time="7.2" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="1.18" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="1.19" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="1.18" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="1.17" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="1.17" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="1.17" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="1.18" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+    <testcase time="0" classname="ds.var.o_expt_single" name="split_data_set"/>
+  </testsuite>
+  <testsuite name="ds.var.o()::expt::large_values::multiple" timestamp="2019-07-24 21:44:16" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="21.74">
+    <testcase time="7.97" classname="ds.var.o_expt_large_values_multiple" name="large_values"/>
+    <testcase time="1.96" classname="ds.var.o_expt_large_values_multiple" name="large_values"/>
+    <testcase time="1.96" classname="ds.var.o_expt_large_values_multiple" name="large_values"/>
+    <testcase time="1.97" classname="ds.var.o_expt_large_values_multiple" name="large_values"/>
+    <testcase time="1.97" classname="ds.var.o_expt_large_values_multiple" name="large_values"/>
+    <testcase time="1.98" classname="ds.var.o_expt_large_values_multiple" name="large_values"/>
+    <testcase time="1.96" classname="ds.var.o_expt_large_values_multiple" name="large_values"/>
+    <testcase time="1.97" classname="ds.var.o_expt_large_values_multiple" name="large_values"/>
+  </testsuite>
+  <testsuite name="ds.var.o()::expt::large_values::single" timestamp="2019-07-24 21:44:38" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="14.69">
+    <testcase time="4.96" classname="ds.var.o_expt_large_values_single" name="large_values"/>
+    <testcase time="1.39" classname="ds.var.o_expt_large_values_single" name="large_values"/>
+    <testcase time="1.38" classname="ds.var.o_expt_large_values_single" name="large_values"/>
+    <testcase time="1.39" classname="ds.var.o_expt_large_values_single" name="large_values"/>
+    <testcase time="1.39" classname="ds.var.o_expt_large_values_single" name="large_values"/>
+    <testcase time="1.39" classname="ds.var.o_expt_large_values_single" name="large_values"/>
+    <testcase time="1.39" classname="ds.var.o_expt_large_values_single" name="large_values"/>
+    <testcase time="1.4" classname="ds.var.o_expt_large_values_single" name="large_values"/>
+  </testsuite>
+  <testsuite name="ds.asFactor.o()::math::multiple" timestamp="2019-07-24 21:44:53" hostname="fv-az679" tests="9" skipped="0" failures="0" errors="0" time="13.02">
+    <testcase time="6.74" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.79" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.78" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.78" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.78" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.79" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.79" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.79" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.78" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+  </testsuite>
+  <testsuite name="ds.asFactor.o()::math::multiple" timestamp="2019-07-24 21:45:06" hostname="fv-az679" tests="9" skipped="0" failures="0" errors="0" time="10">
+    <testcase time="4.36" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.7" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.71" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.71" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.71" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.7" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.7" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.7" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+    <testcase time="0.71" classname="ds.asFactor.o_math_multiple" name="every_factor_should_be_unique"/>
+  </testsuite>
+  <testsuite name="ds.make.o()::math::transformation::multiple" timestamp="2019-07-24 21:45:16" hostname="fv-az679" tests="64" skipped="0" failures="0" errors="0" time="123.11">
+    <testcase time="9.72" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.67" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.68" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.66" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.66" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.67" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.66" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.69" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.66" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.67" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.66" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.65" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.66" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.64" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.65" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.66" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.66" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.67" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.72" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.65" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.66" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.65" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.63" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.65" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.64" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.64" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.65" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.64" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.64" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.65" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.66" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="3.64" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+    <testcase time="0" classname="ds.make.o_math_transformation_multiple" name="transformation"/>
+  </testsuite>
+  <testsuite name="ds.mean.o()::math::residual::multiple" timestamp="2019-07-24 21:47:19" hostname="fv-az679" tests="32" skipped="0" failures="0" errors="0" time="25">
+    <testcase time="7.22" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.19" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.17" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.19" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.2" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.2" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.2" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.19" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_multiple" name="residual_deviation_tends_to_0"/>
+  </testsuite>
+  <testsuite name="ds.mean.o()::math::residual::single" timestamp="2019-07-24 21:47:44" hostname="fv-az679" tests="32" skipped="0" failures="0" errors="0" time="24.83">
+    <testcase time="7.17" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.19" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.17" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.19" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.17" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.17" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.17" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.17" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.17" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="1.18" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+    <testcase time="0" classname="ds.mean.o_math_residual_single" name="residual_deviation_tends_to_0"/>
+  </testsuite>
+  <testsuite name="ds.mean.o()::math::location_parameter::single" timestamp="2019-07-24 21:48:09" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="20.23">
+    <testcase time="5.68" classname="ds.mean.o_math_location_parameter_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.07" classname="ds.mean.o_math_location_parameter_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.08" classname="ds.mean.o_math_location_parameter_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.08" classname="ds.mean.o_math_location_parameter_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.08" classname="ds.mean.o_math_location_parameter_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.1" classname="ds.mean.o_math_location_parameter_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.07" classname="ds.mean.o_math_location_parameter_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.07" classname="ds.mean.o_math_location_parameter_single" name="mean_X_a_mean_X_a"/>
+  </testsuite>
+  <testsuite name="ds.mean.o()::math::location_parameter::multiple" timestamp="2019-07-24 21:48:29" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="31.07">
+    <testcase time="9.08" classname="ds.mean.o_math_location_parameter_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.13" classname="ds.mean.o_math_location_parameter_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.13" classname="ds.mean.o_math_location_parameter_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.14" classname="ds.mean.o_math_location_parameter_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.15" classname="ds.mean.o_math_location_parameter_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.13" classname="ds.mean.o_math_location_parameter_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.15" classname="ds.mean.o_math_location_parameter_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.16" classname="ds.mean.o_math_location_parameter_multiple" name="mean_X_a_mean_X_a"/>
+  </testsuite>
+  <testsuite name="ds.mean.o()::math::scale::multiple" timestamp="2019-07-24 21:49:00" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="31.29">
+    <testcase time="9.26" classname="ds.mean.o_math_scale_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.13" classname="ds.mean.o_math_scale_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.15" classname="ds.mean.o_math_scale_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.16" classname="ds.mean.o_math_scale_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.15" classname="ds.mean.o_math_scale_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.14" classname="ds.mean.o_math_scale_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.15" classname="ds.mean.o_math_scale_multiple" name="mean_X_a_mean_X_a"/>
+    <testcase time="3.15" classname="ds.mean.o_math_scale_multiple" name="mean_X_a_mean_X_a"/>
+  </testsuite>
+  <testsuite name="ds.mean.o()::math::scale::single" timestamp="2019-07-24 21:49:31" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="20.29">
+    <testcase time="5.71" classname="ds.mean.o_math_scale_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.09" classname="ds.mean.o_math_scale_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.08" classname="ds.mean.o_math_scale_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.08" classname="ds.mean.o_math_scale_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.08" classname="ds.mean.o_math_scale_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.09" classname="ds.mean.o_math_scale_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.08" classname="ds.mean.o_math_scale_single" name="mean_X_a_mean_X_a"/>
+    <testcase time="2.08" classname="ds.mean.o_math_scale_single" name="mean_X_a_mean_X_a"/>
+  </testsuite>
+  <testsuite name="ds.recodeValues.o::math::single" timestamp="2019-07-24 21:49:52" hostname="fv-az679" tests="20" skipped="0" failures="3" errors="1" time="32.7">
+    <testcase time="3.58" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="0" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="0" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="0" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="0" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="0" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="0" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="0" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="0" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="6.36" classname="ds.recodeValues.o_math_single" name="difference">
+      <failure type="failure" message="difference%%differences[i] not equal to 0. (@test-math-ds.recodeValues.o.R#24)">difference%%differences[i] not equal to 0.
+1/1 mismatches
+[1] -7400 - 0 == -7400</failure>
+    </testcase>
+    <testcase time="1.87" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="2.77" classname="ds.recodeValues.o_math_single" name="difference">
+      <failure type="failure" message="difference%%differences[i] not equal to 0. (@test-math-ds.recodeValues.o.R#25)">difference%%differences[i] not equal to 0.
+1/1 mismatches
+[1] -999 - 0 == -999</failure>
+    </testcase>
+    <testcase time="1.85" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="2.78" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="1.87" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="2.78" classname="ds.recodeValues.o_math_single" name="difference">
+      <failure type="failure" message="difference%%differences[i] not equal to 0. (@test-math-ds.recodeValues.o.R#27)">difference%%differences[i] not equal to 0.
+1/1 mismatches
+[1] -2467 - 0 == -2467</failure>
+    </testcase>
+    <testcase time="1.86" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="2.78" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="1.87" classname="ds.recodeValues.o_math_single" name="difference"/>
+    <testcase time="2.33" classname="ds.recodeValues.o_math_single" name="difference">
+      <error type="error" message="The input object must be an integer or a numeric vector. (@test-math-ds.recodeValues.o.R#29)">The input object must be an integer or a numeric vector.
+1: .test.differences.in.sets("D$NON_NEGATIVE_INTEGER", "NON_NEGATIVE_INTEGER_recoded", 
+       ds.test_env$local.values.1, 7, values.to.replace) at /home/vsts/work/1/s/tests/testthat/test-math-ds.recodeValues.o.R:29
+2: .calc.distribution.server(variable.recoded)
+3: ds.mean.o(x = name.variable, type = "combine", check = TRUE, save.mean.Nvalid = FALSE, 
+       datasources = ds.test_env$connection.opal)
+4: stop("The input object must be an integer or a numeric vector.", call. = FALSE) at /home/vsts/work/1/s/R/ds.mean.o.R:103</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="ds.recodeValues.o::math::multiple" timestamp="2019-07-24 21:50:24" hostname="fv-az679" tests="3" skipped="0" failures="2" errors="1" time="14.48">
+    <testcase time="10.04" classname="ds.recodeValues.o_math_multiple" name="difference">
+      <failure type="failure" message="difference%%differences[i] not equal to 0. (@test-math-ds.recodeValues.o.R#73)">difference%%differences[i] not equal to 0.
+1/1 mismatches
+[1] -569 - 0 == -569</failure>
+    </testcase>
+    <testcase time="2.47" classname="ds.recodeValues.o_math_multiple" name="difference">
+      <failure type="failure" message="difference%%differences[i] not equal to 0. (@test-math-ds.recodeValues.o.R#73)">difference%%differences[i] not equal to 0.
+1/1 mismatches
+[1] -671 - 0 == -671</failure>
+    </testcase>
+    <testcase time="1.97" classname="ds.recodeValues.o_math_multiple" name="difference">
+      <error type="error" message="The input object must be an integer or a numeric vector. (@test-math-ds.recodeValues.o.R#73)">The input object must be an integer or a numeric vector.
+1: .test.differences.in.sets("D$NEGATIVE_NUMERIC", "NEGATIVE_NUMERIC_recoded", ds.test_env$local.values.1, 
+       13, values.to.replace) at /home/vsts/work/1/s/tests/testthat/test-math-ds.recodeValues.o.R:73
+2: .calc.distribution.server(variable.recoded)
+3: ds.mean.o(x = name.variable, type = "combine", check = TRUE, save.mean.Nvalid = FALSE, 
+       datasources = ds.test_env$connection.opal)
+4: stop("The input object must be an integer or a numeric vector.", call. = FALSE) at /home/vsts/work/1/s/R/ds.mean.o.R:103</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="ds.var.o()::math::positive_result::multiple" timestamp="2019-07-24 21:50:39" hostname="fv-az679" tests="32" skipped="0" failures="0" errors="0" time="25.25">
+    <testcase time="7.45" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.19" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.18" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.19" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.19" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.18" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.18" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.2" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.19" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.19" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.18" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0.01" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.19" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.19" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.18" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.18" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="1.18" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_multiple" name="variance_0"/>
+  </testsuite>
+  <testsuite name="ds.var.o()::math::positive_result::single" timestamp="2019-07-24 21:51:04" hostname="fv-az679" tests="32" skipped="0" failures="0" errors="0" time="14.75">
+    <testcase time="4.39" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.69" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.69" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.68" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.69" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.69" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.7" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.68" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.69" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.69" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.7" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.7" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.69" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.69" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.69" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0.69" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+    <testcase time="0" classname="ds.var.o_math_positive_result_single" name="variance_0"/>
+  </testsuite>
+  <testsuite name="ds.var.o()::math::square_root_std::single" timestamp="2019-07-24 21:51:19" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="5.48">
+    <testcase time="3.81" classname="ds.var.o_math_square_root_std_single" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.28" classname="ds.var.o_math_square_root_std_single" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.23" classname="ds.var.o_math_square_root_std_single" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.24" classname="ds.var.o_math_square_root_std_single" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.23" classname="ds.var.o_math_square_root_std_single" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.23" classname="ds.var.o_math_square_root_std_single" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.23" classname="ds.var.o_math_square_root_std_single" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.23" classname="ds.var.o_math_square_root_std_single" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+  </testsuite>
+  <testsuite name="ds.var.o()::math::square_root_std::multiple" timestamp="2019-07-24 21:51:24" hostname="fv-az679" tests="32" skipped="0" failures="0" errors="0" time="10.24">
+    <testcase time="6.31" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.31" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.26" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.25" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.26" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.26" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.27" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.26" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.27" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.26" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.26" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.25" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.26" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.25" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.25" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0.26" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+    <testcase time="0" classname="ds.var.o_math_square_root_std_multiple" name="variance_is_to_the_power_of_2_of_the_standard_deviation"/>
+  </testsuite>
+  <testsuite name="ds.var.o()::math::location::parameter::single" timestamp="2019-07-24 21:51:35" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="20.3">
+    <testcase time="5.81" classname="ds.var.o_math_location_parameter_single" name="var_X_a_Var_X_"/>
+    <testcase time="2.07" classname="ds.var.o_math_location_parameter_single" name="var_X_a_Var_X_"/>
+    <testcase time="2.07" classname="ds.var.o_math_location_parameter_single" name="var_X_a_Var_X_"/>
+    <testcase time="2.08" classname="ds.var.o_math_location_parameter_single" name="var_X_a_Var_X_"/>
+    <testcase time="2.06" classname="ds.var.o_math_location_parameter_single" name="var_X_a_Var_X_"/>
+    <testcase time="2.06" classname="ds.var.o_math_location_parameter_single" name="var_X_a_Var_X_"/>
+    <testcase time="2.07" classname="ds.var.o_math_location_parameter_single" name="var_X_a_Var_X_"/>
+    <testcase time="2.08" classname="ds.var.o_math_location_parameter_single" name="var_X_a_Var_X_"/>
+  </testsuite>
+  <testsuite name="ds.var.o()::math::location::parameter::multiple" timestamp="2019-07-24 21:51:55" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="31.13">
+    <testcase time="9.14" classname="ds.var.o_math_location_parameter_multiple" name="var_X_a_Var_X_"/>
+    <testcase time="3.13" classname="ds.var.o_math_location_parameter_multiple" name="var_X_a_Var_X_"/>
+    <testcase time="3.13" classname="ds.var.o_math_location_parameter_multiple" name="var_X_a_Var_X_"/>
+    <testcase time="3.16" classname="ds.var.o_math_location_parameter_multiple" name="var_X_a_Var_X_"/>
+    <testcase time="3.14" classname="ds.var.o_math_location_parameter_multiple" name="var_X_a_Var_X_"/>
+    <testcase time="3.14" classname="ds.var.o_math_location_parameter_multiple" name="var_X_a_Var_X_"/>
+    <testcase time="3.14" classname="ds.var.o_math_location_parameter_multiple" name="var_X_a_Var_X_"/>
+    <testcase time="3.15" classname="ds.var.o_math_location_parameter_multiple" name="var_X_a_Var_X_"/>
+  </testsuite>
+  <testsuite name="ds.var.o()::math::scale::single" timestamp="2019-07-24 21:52:26" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="20.23">
+    <testcase time="5.74" classname="ds.var.o_math_scale_single" name="var_aX_a_2Var_X_"/>
+    <testcase time="2.07" classname="ds.var.o_math_scale_single" name="var_aX_a_2Var_X_"/>
+    <testcase time="2.06" classname="ds.var.o_math_scale_single" name="var_aX_a_2Var_X_"/>
+    <testcase time="2.06" classname="ds.var.o_math_scale_single" name="var_aX_a_2Var_X_"/>
+    <testcase time="2.08" classname="ds.var.o_math_scale_single" name="var_aX_a_2Var_X_"/>
+    <testcase time="2.08" classname="ds.var.o_math_scale_single" name="var_aX_a_2Var_X_"/>
+    <testcase time="2.07" classname="ds.var.o_math_scale_single" name="var_aX_a_2Var_X_"/>
+    <testcase time="2.07" classname="ds.var.o_math_scale_single" name="var_aX_a_2Var_X_"/>
+  </testsuite>
+  <testsuite name="ds.var.o()::math::scale::multiple" timestamp="2019-07-24 21:52:46" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="31.04">
+    <testcase time="9.11" classname="ds.var.o_math_scale_multiple" name="var_aX_a_2Var_X_"/>
+    <testcase time="3.13" classname="ds.var.o_math_scale_multiple" name="var_aX_a_2Var_X_"/>
+    <testcase time="3.14" classname="ds.var.o_math_scale_multiple" name="var_aX_a_2Var_X_"/>
+    <testcase time="3.13" classname="ds.var.o_math_scale_multiple" name="var_aX_a_2Var_X_"/>
+    <testcase time="3.13" classname="ds.var.o_math_scale_multiple" name="var_aX_a_2Var_X_"/>
+    <testcase time="3.13" classname="ds.var.o_math_scale_multiple" name="var_aX_a_2Var_X_"/>
+    <testcase time="3.13" classname="ds.var.o_math_scale_multiple" name="var_aX_a_2Var_X_"/>
+    <testcase time="3.14" classname="ds.var.o_math_scale_multiple" name="var_aX_a_2Var_X_"/>
+  </testsuite>
+  <testsuite name="checkClass::smk::simple test" timestamp="2019-07-24 21:53:24" hostname="fv-az679" tests="21" skipped="0" failures="0" errors="0" time="12.29">
+    <testcase time="6.85" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0.68" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0.67" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0.67" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0.72" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0.71" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="simple_test"/>
+    <testcase time="1.99" classname="checkClass_smk_simple_test" name="data.frame_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="data.frame_test"/>
+    <testcase time="0" classname="checkClass_smk_simple_test" name="data.frame_test"/>
+  </testsuite>
+  <testsuite name="ds.asCharacter.o::smk::simple test" timestamp="2019-07-24 21:53:36" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="6.91">
+    <testcase time="6.91" classname="ds.asCharacter.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asCharacter.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asCharacter.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.asDataMatrix.o::smk::simple test" timestamp="2019-07-24 21:53:43" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="6.97">
+    <testcase time="6.97" classname="ds.asDataMatrix.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asDataMatrix.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asDataMatrix.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.asFactor.o::smk" timestamp="2019-07-24 21:53:50" hostname="fv-az679" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+  <testsuite name="ds.asFactor.o::smk::force.factor.levels" timestamp="2019-07-24 21:53:51" hostname="fv-az679" tests="20" skipped="0" failures="0" errors="0" time="17.2">
+    <testcase time="8.97" classname="ds.asFactor.o_smk_force.factor.levels" name="with_no_force.factor.levels"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_no_force.factor.levels"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_no_force.factor.levels"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_no_force.factor.levels"/>
+    <testcase time="2.03" classname="ds.asFactor.o_smk_force.factor.levels" name="with_forced.factor.levels_of_1_6"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_forced.factor.levels_of_1_6"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_forced.factor.levels_of_1_6"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_forced.factor.levels_of_1_6"/>
+    <testcase time="2.03" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_0_10"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_0_10"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_0_10"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_0_10"/>
+    <testcase time="2.02" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_2_3"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_2_3"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_2_3"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_2_3"/>
+    <testcase time="2.15" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_force.factor.levels" name="with_force.factor.levels_of_c_1_2_3_4_a_h_5_"/>
+  </testsuite>
+  <testsuite name="ds.asFactor.o::smk::fixed.dummy.vars" timestamp="2019-07-24 21:54:01" hostname="fv-az679" tests="6" skipped="0" failures="0" errors="0" time="2.59">
+    <testcase time="1.3" classname="ds.asFactor.o_smk_fixed.dummy.vars" name="with_fixed.dummy.vars_of_TRUE"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_fixed.dummy.vars" name="with_fixed.dummy.vars_of_TRUE"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_fixed.dummy.vars" name="with_fixed.dummy.vars_of_TRUE"/>
+    <testcase time="1.29" classname="ds.asFactor.o_smk_fixed.dummy.vars" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_fixed.dummy.vars" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
+    <testcase time="0" classname="ds.asFactor.o_smk_fixed.dummy.vars" name="with_fixed.dummy.vars_of_TRUE_and_baseline.level_of_6"/>
+  </testsuite>
+  <testsuite name="ds.asInteger.o::smk::simple test" timestamp="2019-07-24 21:54:10" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="6.97">
+    <testcase time="6.97" classname="ds.asInteger.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asInteger.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asInteger.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.asList.o::smk::simple test" timestamp="2019-07-24 21:54:16" hostname="fv-az679" tests="10" skipped="0" failures="0" errors="0" time="6.47">
+    <testcase time="6.47" classname="ds.asList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asList.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.asLogical.o::smk::simple test" timestamp="2019-07-24 21:54:23" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="6.93">
+    <testcase time="6.93" classname="ds.asLogical.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asLogical.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asLogical.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.asMatrix.o::smk::simple test" timestamp="2019-07-24 21:54:30" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="6.85">
+    <testcase time="6.85" classname="ds.asMatrix.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asMatrix.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asMatrix.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.asNumeric.o::smk::simple test" timestamp="2019-07-24 21:54:37" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="6.88">
+    <testcase time="6.88" classname="ds.asNumeric.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asNumeric.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.asNumeric.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.Boole.o::smk" timestamp="2019-07-24 21:54:44" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="7.38">
+    <testcase time="7.38" classname="ds.Boole.o_smk" name="simple_boole"/>
+    <testcase time="0" classname="ds.Boole.o_smk" name="simple_boole"/>
+    <testcase time="0" classname="ds.Boole.o_smk" name="simple_boole"/>
+  </testsuite>
+  <testsuite name="ds.cbind.o::smk" timestamp="2019-07-24 21:54:51" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="8.42">
+    <testcase time="7.92" classname="ds.cbind.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.cbind.o_smk" name="simple_test"/>
+    <testcase time="0.5" classname="ds.cbind.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.cbind.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.cbind.o_smk" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.cor.o::smk" timestamp="2019-07-24 21:54:59" hostname="fv-az679" tests="56" skipped="0" failures="0" errors="0" time="14.87">
+    <testcase time="8.33" classname="ds.cor.o_smk" name="simple_test_combine_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_pairwise.complete"/>
+    <testcase time="2.17" classname="ds.cor.o_smk" name="simple_test_combine_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_combine_casewise.complete"/>
+    <testcase time="2.2" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_pairwise.complete"/>
+    <testcase time="2.17" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+    <testcase time="0" classname="ds.cor.o_smk" name="simple_test_split_casewise.complete"/>
+  </testsuite>
+  <testsuite name="ds.cov.o::smk" timestamp="2019-07-24 21:55:15" hostname="fv-az679" tests="28" skipped="0" failures="0" errors="0" time="10.7">
+    <testcase time="8.5" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_split"/>
+    <testcase time="2.2" classname="ds.cov.o_smk" name="simple_test_combine"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_combine"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_combine"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_combine"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_combine"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_combine"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_combine"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_combine"/>
+    <testcase time="0" classname="ds.cov.o_smk" name="simple_test_combine"/>
+  </testsuite>
+  <testsuite name="ds.dataFrame.o::smk::create a dataframe" timestamp="2019-07-24 21:55:25" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="7.94">
+    <testcase time="7.94" classname="ds.dataFrame.o_smk_create_a_dataframe" name="dataframe_exists"/>
+    <testcase time="0" classname="ds.dataFrame.o_smk_create_a_dataframe" name="dataframe_exists"/>
+    <testcase time="0" classname="ds.dataFrame.o_smk_create_a_dataframe" name="dataframe_exists"/>
+  </testsuite>
+  <testsuite name="ds.dataFrame.o::smk::create a dataframe, with DataSHIELD.checks" timestamp="2019-07-24 21:55:27" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="3.4">
+    <testcase time="3.4" classname="ds.dataFrame.o_smk_create_a_dataframe_with_DataSHIELD.checks" name="dataframe_exists_with_DataSHIELD.checks"/>
+    <testcase time="0" classname="ds.dataFrame.o_smk_create_a_dataframe_with_DataSHIELD.checks" name="dataframe_exists_with_DataSHIELD.checks"/>
+    <testcase time="0" classname="ds.dataFrame.o_smk_create_a_dataframe_with_DataSHIELD.checks" name="dataframe_exists_with_DataSHIELD.checks"/>
+  </testsuite>
+  <testsuite name="ds.dataFrameSort.o::smk::create a sorted dataframe" timestamp="2019-07-24 21:55:37" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="8.45">
+    <testcase time="8.45" classname="ds.dataFrameSort.o_smk_create_a_sorted_dataframe" name="dataFrameSort_exists"/>
+    <testcase time="0" classname="ds.dataFrameSort.o_smk_create_a_sorted_dataframe" name="dataFrameSort_exists"/>
+    <testcase time="0" classname="ds.dataFrameSort.o_smk_create_a_sorted_dataframe" name="dataFrameSort_exists"/>
+  </testsuite>
+  <testsuite name="ds.dataFrameSubset.o::smk::create a subset dataframe" timestamp="2019-07-24 21:55:45" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="9.45">
+    <testcase time="9.45" classname="ds.dataFrameSubset.o_smk_create_a_subset_dataframe" name="dataFrameSubset_exists"/>
+    <testcase time="0" classname="ds.dataFrameSubset.o_smk_create_a_subset_dataframe" name="dataFrameSubset_exists"/>
+    <testcase time="0" classname="ds.dataFrameSubset.o_smk_create_a_subset_dataframe" name="dataFrameSubset_exists"/>
+  </testsuite>
+  <testsuite name="ds.dim.o::smk" timestamp="2019-07-24 21:55:55" hostname="fv-az679" tests="13" skipped="0" failures="0" errors="0" time="6.52">
+    <testcase time="6.52" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_both"/>
+  </testsuite>
+  <testsuite name="ds.dim.o::smk" timestamp="2019-07-24 21:55:55" hostname="fv-az679" tests="10" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.dim.o_smk" name="simple_dim_split"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_split"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_split"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_split"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_split"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_split"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_split"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_split"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_split"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_split"/>
+  </testsuite>
+  <testsuite name="ds.dim.o::smk" timestamp="2019-07-24 21:55:55" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="0.27">
+    <testcase time="0.27" classname="ds.dim.o_smk" name="simple_dim_combine"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_combine"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_combine"/>
+    <testcase time="0" classname="ds.dim.o_smk" name="simple_dim_combine"/>
+  </testsuite>
+  <testsuite name="ds.glm.o::smk::binomial" timestamp="2019-07-24 21:56:02" hostname="fv-az679" tests="20" skipped="0" failures="0" errors="0" time="8.91">
+    <testcase time="8.91" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+    <testcase time="0" classname="ds.glm.o_smk_binomial" name="glm_binomial"/>
+  </testsuite>
+  <testsuite name="ds.glm.o::smk::gaussian" timestamp="2019-07-24 21:56:11" hostname="fv-az679" tests="20" skipped="0" failures="0" errors="0" time="7.45">
+    <testcase time="7.45" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_gaussian" name="glm_gaussian"/>
+  </testsuite>
+  <testsuite name="ds.glm.o::smk::poisson" timestamp="2019-07-24 21:56:18" hostname="fv-az679" tests="20" skipped="0" failures="0" errors="0" time="8.61">
+    <testcase time="8.61" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+    <testcase time="0" classname="ds.glm.o_smk_poisson" name="glm_gaussian"/>
+  </testsuite>
+  <testsuite name="ds.glmSLMA.o::smk::gaussian" timestamp="2019-07-24 21:56:27" hostname="fv-az679" tests="40" skipped="0" failures="0" errors="0" time="7.16">
+    <testcase time="7.07" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0.02" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0.02" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0.05" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_gaussian" name="simple_glmSLMA_gaussian"/>
+  </testsuite>
+  <testsuite name="ds.glmSLMA.o::smk::poisson" timestamp="2019-07-24 21:56:28" hostname="fv-az679" tests="36" skipped="0" failures="0" errors="0" time="1.08">
+    <testcase time="0.88" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0.12" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0.03" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0.05" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+    <testcase time="0" classname="ds.glmSLMA.o_smk_poisson" name="simple_glmSLMA_poisson"/>
+  </testsuite>
+  <testsuite name="ds.length.o::smk" timestamp="2019-07-24 21:56:35" hostname="fv-az679" tests="22" skipped="0" failures="0" errors="0" time="10.72">
+    <testcase time="6.55" classname="ds.length.o_smk" name="basic_length_both"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_both"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_both"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_both"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_both"/>
+    <testcase time="0.26" classname="ds.length.o_smk" name="basic_length_split"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_split"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_split"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_split"/>
+    <testcase time="0.25" classname="ds.length.o_smk" name="basic_length_combine"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_combine"/>
+    <testcase time="1.3" classname="ds.length.o_smk" name="basic_length_both"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_both"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_both"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_both"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_both"/>
+    <testcase time="1.18" classname="ds.length.o_smk" name="basic_length_split"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_split"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_split"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_split"/>
+    <testcase time="1.18" classname="ds.length.o_smk" name="basic_length_combine"/>
+    <testcase time="0" classname="ds.length.o_smk" name="basic_length_combine"/>
+  </testsuite>
+  <testsuite name="ds.listDisclosureSettings.o::smk::check results" timestamp="2019-07-24 21:56:46" hostname="fv-az679" tests="31" skipped="0" failures="0" errors="0" time="6.55">
+    <testcase time="6.55" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listDisclosureSettings.o_smk_check_results" name="check_results"/>
+  </testsuite>
+  <testsuite name="ds.listServersideFunctions.o::smk::check results" timestamp="2019-07-24 21:56:52" hostname="fv-az679" tests="15" skipped="0" failures="0" errors="0" time="6.19">
+    <testcase time="6.19" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+    <testcase time="0" classname="ds.listServersideFunctions.o_smk_check_results" name="check_results"/>
+  </testsuite>
+  <testsuite name="ds.look.o::smk" timestamp="2019-07-24 21:56:58" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="6.39">
+    <testcase time="6.39" classname="ds.look.o_smk" name="simple_look"/>
+    <testcase time="0" classname="ds.look.o_smk" name="simple_look"/>
+    <testcase time="0" classname="ds.look.o_smk" name="simple_look"/>
+    <testcase time="0" classname="ds.look.o_smk" name="simple_look"/>
+    <testcase time="0" classname="ds.look.o_smk" name="simple_look"/>
+  </testsuite>
+  <testsuite name="ds.make.o::smk" timestamp="2019-07-24 21:57:05" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="7.08">
+    <testcase time="7.08" classname="ds.make.o_smk" name="simple_make"/>
+    <testcase time="0" classname="ds.make.o_smk" name="simple_make"/>
+    <testcase time="0" classname="ds.make.o_smk" name="simple_make"/>
+  </testsuite>
+  <testsuite name="ds.matrixDet::smk" timestamp="2019-07-24 21:57:12" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="8.48">
+    <testcase time="7.97" classname="ds.matrixDet_smk" name="simplest_ds.matrixDet"/>
+    <testcase time="0" classname="ds.matrixDet_smk" name="simplest_ds.matrixDet"/>
+    <testcase time="0" classname="ds.matrixDet_smk" name="simplest_ds.matrixDet"/>
+    <testcase time="0.51" classname="ds.matrixDet_smk" name="simplest_ds.matrixDet"/>
+    <testcase time="0" classname="ds.matrixDet_smk" name="simplest_ds.matrixDet"/>
+    <testcase time="0" classname="ds.matrixDet_smk" name="simplest_ds.matrixDet"/>
+    <testcase time="0" classname="ds.matrixDet_smk" name="simplest_ds.matrixDet"/>
+  </testsuite>
+  <testsuite name="ds.matrixDet.report::smk" timestamp="2019-07-24 21:57:21" hostname="fv-az679" tests="14" skipped="0" failures="0" errors="0" time="7.4">
+    <testcase time="7.4" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+    <testcase time="0" classname="ds.matrixDet.report_smk" name="simplest_ds.matrixDet.report"/>
+  </testsuite>
+  <testsuite name="ds.matrixDiag::smk" timestamp="2019-07-24 21:57:28" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="7.69">
+    <testcase time="7.13" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0.56" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+  </testsuite>
+  <testsuite name="ds.matrixDiag::smk" timestamp="2019-07-24 21:57:29" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="1.3">
+    <testcase time="0.79" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0.51" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+    <testcase time="0" classname="ds.matrixDiag_smk" name="simplest_ds.matrixDiag"/>
+  </testsuite>
+  <testsuite name="ds.matrixDimnames::smk" timestamp="2019-07-24 21:57:37" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="8.43">
+    <testcase time="7.92" classname="ds.matrixDimnames_smk" name="simplest_ds.matrixDimnames"/>
+    <testcase time="0" classname="ds.matrixDimnames_smk" name="simplest_ds.matrixDimnames"/>
+    <testcase time="0" classname="ds.matrixDimnames_smk" name="simplest_ds.matrixDimnames"/>
+    <testcase time="0.51" classname="ds.matrixDimnames_smk" name="simplest_ds.matrixDimnames"/>
+    <testcase time="0" classname="ds.matrixDimnames_smk" name="simplest_ds.matrixDimnames"/>
+    <testcase time="0" classname="ds.matrixDimnames_smk" name="simplest_ds.matrixDimnames"/>
+    <testcase time="0" classname="ds.matrixDimnames_smk" name="simplest_ds.matrixDimnames"/>
+  </testsuite>
+  <testsuite name="ds.matrixInvert::smk" timestamp="2019-07-24 21:57:45" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="8.4">
+    <testcase time="7.9" classname="ds.matrixInvert_smk" name="simplest_ds.matrixInvert"/>
+    <testcase time="0" classname="ds.matrixInvert_smk" name="simplest_ds.matrixInvert"/>
+    <testcase time="0" classname="ds.matrixInvert_smk" name="simplest_ds.matrixInvert"/>
+    <testcase time="0.5" classname="ds.matrixInvert_smk" name="simplest_ds.matrixInvert"/>
+    <testcase time="0" classname="ds.matrixInvert_smk" name="simplest_ds.matrixInvert"/>
+    <testcase time="0" classname="ds.matrixInvert_smk" name="simplest_ds.matrixInvert"/>
+    <testcase time="0" classname="ds.matrixInvert_smk" name="simplest_ds.matrixInvert"/>
+  </testsuite>
+  <testsuite name="ds.matrixMult::smk" timestamp="2019-07-24 21:57:54" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="9.14">
+    <testcase time="8.64" classname="ds.matrixMult_smk" name="simplest_ds.matrixMult"/>
+    <testcase time="0" classname="ds.matrixMult_smk" name="simplest_ds.matrixMult"/>
+    <testcase time="0" classname="ds.matrixMult_smk" name="simplest_ds.matrixMult"/>
+    <testcase time="0.5" classname="ds.matrixMult_smk" name="simplest_ds.matrixMult"/>
+    <testcase time="0" classname="ds.matrixMult_smk" name="simplest_ds.matrixMult"/>
+    <testcase time="0" classname="ds.matrixMult_smk" name="simplest_ds.matrixMult"/>
+    <testcase time="0" classname="ds.matrixMult_smk" name="simplest_ds.matrixMult"/>
+  </testsuite>
+  <testsuite name="ds.matrix::smk" timestamp="2019-07-24 21:58:03" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="7.56">
+    <testcase time="7.05" classname="ds.matrix_smk" name="simplest_ds.matrix"/>
+    <testcase time="0" classname="ds.matrix_smk" name="simplest_ds.matrix"/>
+    <testcase time="0" classname="ds.matrix_smk" name="simplest_ds.matrix"/>
+    <testcase time="0.51" classname="ds.matrix_smk" name="simplest_ds.matrix"/>
+    <testcase time="0" classname="ds.matrix_smk" name="simplest_ds.matrix"/>
+    <testcase time="0" classname="ds.matrix_smk" name="simplest_ds.matrix"/>
+    <testcase time="0" classname="ds.matrix_smk" name="simplest_ds.matrix"/>
+  </testsuite>
+  <testsuite name="ds.matrixTranspose::smk" timestamp="2019-07-24 21:58:10" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="8.34">
+    <testcase time="7.83" classname="ds.matrixTranspose_smk" name="simplest_ds.matrixTranspose"/>
+    <testcase time="0" classname="ds.matrixTranspose_smk" name="simplest_ds.matrixTranspose"/>
+    <testcase time="0" classname="ds.matrixTranspose_smk" name="simplest_ds.matrixTranspose"/>
+    <testcase time="0.51" classname="ds.matrixTranspose_smk" name="simplest_ds.matrixTranspose"/>
+    <testcase time="0" classname="ds.matrixTranspose_smk" name="simplest_ds.matrixTranspose"/>
+    <testcase time="0" classname="ds.matrixTranspose_smk" name="simplest_ds.matrixTranspose"/>
+    <testcase time="0" classname="ds.matrixTranspose_smk" name="simplest_ds.matrixTranspose"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk::type=combine" timestamp="2019-07-24 21:58:19" hostname="fv-az679" tests="23" skipped="0" failures="0" errors="0" time="7.85">
+    <testcase time="7.6" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0.25" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk::type=split" timestamp="2019-07-24 21:58:20" hostname="fv-az679" tests="31" skipped="0" failures="0" errors="0" time="1.52">
+    <testcase time="1.27" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0.25" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk::type=both" timestamp="2019-07-24 21:58:22" hostname="fv-az679" tests="36" skipped="0" failures="0" errors="0" time="1.53">
+    <testcase time="1.28" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0.25" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk::type=combine,save.mean.Nvalid=TRUE" timestamp="2019-07-24 21:58:24" hostname="fv-az679" tests="23" skipped="0" failures="0" errors="0" time="3.77">
+    <testcase time="3.52" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0.25" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_combine_save.mean.Nvalid_TRUE" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk::type=split,save.mean.Nvalid=TRUE" timestamp="2019-07-24 21:58:27" hostname="fv-az679" tests="31" skipped="0" failures="0" errors="0" time="3.77">
+    <testcase time="3.52" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0.25" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_split_save.mean.Nvalid_TRUE" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk::type=both,save.mean.Nvalid=TRUE" timestamp="2019-07-24 21:58:31" hostname="fv-az679" tests="36" skipped="0" failures="0" errors="0" time="2.79">
+    <testcase time="2.53" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0.26" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+    <testcase time="0" classname="ds.mean.o_smk_type_both_save.mean.Nvalid_TRUE" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.meanSdGp::smk::type=split" timestamp="2019-07-24 21:58:40" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="6.56">
+    <testcase time="6.56" classname="ds.meanSdGp_smk_type_split" name="meanSdGp_values_split_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_split" name="meanSdGp_values_split_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_split" name="meanSdGp_values_split_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_split" name="meanSdGp_values_split_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_split" name="meanSdGp_values_split_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_split" name="meanSdGp_values_split_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_split" name="meanSdGp_values_split_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_split" name="meanSdGp_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.meanSdGp::smk::type=combine" timestamp="2019-07-24 21:58:41" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="0.29">
+    <testcase time="0.29" classname="ds.meanSdGp_smk_type_combine" name="meanSdGp_values_combine_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_combine" name="meanSdGp_values_combine_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_combine" name="meanSdGp_values_combine_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_combine" name="meanSdGp_values_combine_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_combine" name="meanSdGp_values_combine_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_combine" name="meanSdGp_values_combine_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_combine" name="meanSdGp_values_combine_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_combine" name="meanSdGp_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.meanSdGp::smk::type=both" timestamp="2019-07-24 21:58:41" hostname="fv-az679" tests="8" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.meanSdGp_smk_type_both" name="meanSdGp_values_both_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_both" name="meanSdGp_values_both_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_both" name="meanSdGp_values_both_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_both" name="meanSdGp_values_both_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_both" name="meanSdGp_values_both_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_both" name="meanSdGp_values_both_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_both" name="meanSdGp_values_both_"/>
+    <testcase time="0" classname="ds.meanSdGp_smk_type_both" name="meanSdGp_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.merge.o::smk" timestamp="2019-07-24 21:58:48" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="11.45">
+    <testcase time="10.94" classname="ds.merge.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.merge.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.merge.o_smk" name="simple_test"/>
+    <testcase time="0.51" classname="ds.merge.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.merge.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.merge.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.merge.o_smk" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.message.o::smk" timestamp="2019-07-24 21:58:59" hostname="fv-az679" tests="4" skipped="0" failures="0" errors="0" time="6.49">
+    <testcase time="6.49" classname="ds.message.o_smk" name="request_message"/>
+    <testcase time="0" classname="ds.message.o_smk" name="request_message"/>
+    <testcase time="0" classname="ds.message.o_smk" name="request_message"/>
+    <testcase time="0" classname="ds.message.o_smk" name="request_message"/>
+  </testsuite>
+  <testsuite name="ds.rbind.o::smk" timestamp="2019-07-24 21:59:05" hostname="fv-az679" tests="5" skipped="0" failures="0" errors="0" time="8.67">
+    <testcase time="8.16" classname="ds.rbind.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rbind.o_smk" name="simple_test"/>
+    <testcase time="0.51" classname="ds.rbind.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rbind.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rbind.o_smk" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.rBinom.o::smk::simple test" timestamp="2019-07-24 21:59:14" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="8.26">
+    <testcase time="8.26" classname="ds.rBinom.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rBinom.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rBinom.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rBinom.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rBinom.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rBinom.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rBinom.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rBinom.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rBinom.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rBinom.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rBinom.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.recodeValues.o::smk" timestamp="2019-07-24 21:59:22" hostname="fv-az679" tests="7" skipped="0" failures="0" errors="0" time="7.97">
+    <testcase time="7.46" classname="ds.recodeValues.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.recodeValues.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.recodeValues.o_smk" name="simple_test"/>
+    <testcase time="0.51" classname="ds.recodeValues.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.recodeValues.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.recodeValues.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.recodeValues.o_smk" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.reShape.o::smk" timestamp="2019-07-24 21:59:30" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="7.39">
+    <testcase time="7.39" classname="ds.reShape.o_smk" name="simplest_ds.reShape.o_wide"/>
+    <testcase time="0" classname="ds.reShape.o_smk" name="simplest_ds.reShape.o_wide"/>
+    <testcase time="0" classname="ds.reShape.o_smk" name="simplest_ds.reShape.o_wide"/>
+  </testsuite>
+  <testsuite name="ds.rm.o::smk" timestamp="2019-07-24 21:59:38" hostname="fv-az679" tests="14" skipped="0" failures="0" errors="0" time="8.36">
+    <testcase time="6.46" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="1.9" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+    <testcase time="0" classname="ds.rm.o_smk" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.rNorm.o::smk::simple test" timestamp="2019-07-24 21:59:46" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="8.23">
+    <testcase time="8.23" classname="ds.rNorm.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rNorm.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rNorm.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rNorm.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rNorm.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rNorm.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rNorm.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rNorm.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rNorm.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rNorm.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rNorm.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.rPois.o::smk::simple test" timestamp="2019-07-24 21:59:54" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="8.26">
+    <testcase time="8.26" classname="ds.rPois.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rPois.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rPois.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rPois.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rPois.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rPois.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rPois.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rPois.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rPois.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rPois.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rPois.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.rUnif.o::smk::simple test" timestamp="2019-07-24 22:00:03" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="8.29">
+    <testcase time="8.29" classname="ds.rUnif.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rUnif.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rUnif.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rUnif.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rUnif.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rUnif.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rUnif.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rUnif.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rUnif.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rUnif.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.rUnif.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.seq.o::smk" timestamp="2019-07-24 22:00:11" hostname="fv-az679" tests="3" skipped="0" failures="0" errors="0" time="7.28">
+    <testcase time="7.28" classname="ds.seq.o_smk" name="simplest_ds.seq.o"/>
+    <testcase time="0" classname="ds.seq.o_smk" name="simplest_ds.seq.o"/>
+    <testcase time="0" classname="ds.seq.o_smk" name="simplest_ds.seq.o"/>
+  </testsuite>
+  <testsuite name="ds.setSeed.o::smk" timestamp="2019-07-24 22:00:18" hostname="fv-az679" tests="9" skipped="0" failures="0" errors="0" time="6.59">
+    <testcase time="6.59" classname="ds.setSeed.o_smk" name="basic_setSeed"/>
+    <testcase time="0" classname="ds.setSeed.o_smk" name="basic_setSeed"/>
+    <testcase time="0" classname="ds.setSeed.o_smk" name="basic_setSeed"/>
+    <testcase time="0" classname="ds.setSeed.o_smk" name="basic_setSeed"/>
+    <testcase time="0" classname="ds.setSeed.o_smk" name="basic_setSeed"/>
+    <testcase time="0" classname="ds.setSeed.o_smk" name="basic_setSeed"/>
+    <testcase time="0" classname="ds.setSeed.o_smk" name="basic_setSeed"/>
+    <testcase time="0" classname="ds.setSeed.o_smk" name="basic_setSeed"/>
+    <testcase time="0" classname="ds.setSeed.o_smk" name="basic_setSeed"/>
+  </testsuite>
+  <testsuite name="ds.table2D.o::smk" timestamp="2019-07-24 22:00:25" hostname="fv-az679" tests="22" skipped="0" failures="0" errors="0" time="7.28">
+    <testcase time="7.28" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+    <testcase time="0" classname="ds.table2D.o_smk" name="simple_table2D"/>
+  </testsuite>
+  <testsuite name="ds.testObjExists.o::smk" timestamp="2019-07-24 22:00:32" hostname="fv-az679" tests="2" skipped="0" failures="0" errors="0" time="6.57">
+    <testcase time="6.57" classname="ds.testObjExists.o_smk" name="simple_testObjExists"/>
+    <testcase time="0" classname="ds.testObjExists.o_smk" name="simple_testObjExists"/>
+  </testsuite>
+  <testsuite name="ds.unList.o::smk::simple test" timestamp="2019-07-24 22:00:39" hostname="fv-az679" tests="10" skipped="0" failures="0" errors="0" time="6.9">
+    <testcase time="6.9" classname="ds.unList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.unList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.unList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.unList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.unList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.unList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.unList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.unList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.unList.o_smk_simple_test" name="simple_test"/>
+    <testcase time="0" classname="ds.unList.o_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.var.o::smk::split" timestamp="2019-07-24 22:00:46" hostname="fv-az679" tests="19" skipped="0" failures="0" errors="0" time="6.55">
+    <testcase time="6.55" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+    <testcase time="0" classname="ds.var.o_smk_split" name="simple_var_split"/>
+  </testsuite>
+  <testsuite name="ds.var.o::smk::combine" timestamp="2019-07-24 22:00:46" hostname="fv-az679" tests="11" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.var.o_smk_combine" name="simple_var_combine"/>
+    <testcase time="0" classname="ds.var.o_smk_combine" name="simple_var_combine"/>
+    <testcase time="0" classname="ds.var.o_smk_combine" name="simple_var_combine"/>
+    <testcase time="0" classname="ds.var.o_smk_combine" name="simple_var_combine"/>
+    <testcase time="0" classname="ds.var.o_smk_combine" name="simple_var_combine"/>
+    <testcase time="0" classname="ds.var.o_smk_combine" name="simple_var_combine"/>
+    <testcase time="0" classname="ds.var.o_smk_combine" name="simple_var_combine"/>
+    <testcase time="0" classname="ds.var.o_smk_combine" name="simple_var_combine"/>
+    <testcase time="0" classname="ds.var.o_smk_combine" name="simple_var_combine"/>
+    <testcase time="0" classname="ds.var.o_smk_combine" name="simple_var_combine"/>
+    <testcase time="0" classname="ds.var.o_smk_combine" name="simple_var_combine"/>
+  </testsuite>
+  <testsuite name="ds.var.o::smk::both" timestamp="2019-07-24 22:00:46" hostname="fv-az679" tests="24" skipped="0" failures="0" errors="0" time="0.29">
+    <testcase time="0.29" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+    <testcase time="0" classname="ds.var.o_smk_both" name="simple_var_both"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=combine" timestamp="2019-07-24 22:00:53" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="6.75">
+    <testcase time="6.75" classname="ds.mean.o_smk_expt_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=split" timestamp="2019-07-24 22:00:53" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=both" timestamp="2019-07-24 22:00:54" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=combine" timestamp="2019-07-24 22:00:54" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=split" timestamp="2019-07-24 22:00:54" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=both" timestamp="2019-07-24 22:00:54" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=combine" timestamp="2019-07-24 22:00:55" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=split" timestamp="2019-07-24 22:00:55" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=both" timestamp="2019-07-24 22:00:55" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=combine" timestamp="2019-07-24 22:00:55" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=split" timestamp="2019-07-24 22:00:56" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=both" timestamp="2019-07-24 22:00:56" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=combine" timestamp="2019-07-24 22:00:56" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.27">
+    <testcase time="0.27" classname="ds.mean.o_smk_expt_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=split" timestamp="2019-07-24 22:00:56" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.27">
+    <testcase time="0.27" classname="ds.mean.o_smk_expt_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=both" timestamp="2019-07-24 22:00:57" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=combine" timestamp="2019-07-24 22:00:57" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=split" timestamp="2019-07-24 22:00:57" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=both" timestamp="2019-07-24 22:00:57" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=combine" timestamp="2019-07-24 22:00:58" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=split" timestamp="2019-07-24 22:00:58" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=both" timestamp="2019-07-24 22:00:58" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=combine" timestamp="2019-07-24 22:00:59" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=split" timestamp="2019-07-24 22:00:59" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=both" timestamp="2019-07-24 22:00:59" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.27">
+    <testcase time="0.27" classname="ds.mean.o_smk_expt_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=combine" timestamp="2019-07-24 22:00:59" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=split" timestamp="2019-07-24 22:01:00" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.27">
+    <testcase time="0.27" classname="ds.mean.o_smk_expt_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=both" timestamp="2019-07-24 22:01:00" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=combine" timestamp="2019-07-24 22:01:00" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.27">
+    <testcase time="0.27" classname="ds.mean.o_smk_expt_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=split" timestamp="2019-07-24 22:01:00" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=both" timestamp="2019-07-24 22:01:01" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_both" name="mean_values_both_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=combine" timestamp="2019-07-24 22:01:01" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_combine" name="mean_values_combine_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=split" timestamp="2019-07-24 22:01:01" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_split" name="mean_values_split_"/>
+  </testsuite>
+  <testsuite name="ds.mean.o::smk_expt::type=both" timestamp="2019-07-24 22:01:01" hostname="fv-az679" tests="1" skipped="0" failures="0" errors="0" time="0.26">
+    <testcase time="0.26" classname="ds.mean.o_smk_expt_type_both" name="mean_values_both_"/>
+  </testsuite>
+</testsuites>
