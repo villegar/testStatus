@@ -302,7 +302,7 @@ def main(args):
     # Make an HTML file of the results.
 
     h = open(output_file_name, "w")
-    h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="../../status.css">\n</head>\n<body>')
+    h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="../../../status.css">\n</head>\n<body>')
 
     h.write("<h2>" + remote_repo_name + " - " + branch_name + "</h2>")
     h.write("Made on " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
