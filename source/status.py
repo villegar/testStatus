@@ -268,7 +268,8 @@ def main(args):
             ds_test_status[function_name][test_type]['errors'] += int(testsuite.attrib['errors'])
 
             # Parse the text from the failure notice into the ds_test_status dictionary
-            if ds_test_status[function_name][test_type]['failures'] > 0:
+            # if ds_test_status[function_name][test_type]['failures'] > 0:
+            if ds_test_status[function_name][test_type]['failures'] > 0 or ds_test_status[function_name][test_type]['errors'] > 0:
                 print("\n\nERRORS")
                 print(testsuite.tag, testsuite.attrib)
                 for testcase in testsuite:
@@ -279,6 +280,15 @@ def main(args):
                             print(failure.attrib['message'])
                             print(failure.text)
                             ds_test_status[function_name][test_type]['failureText'].append(failure.text)
+                        except:
+                            pass
+
+                    for error in testcase:
+                        try:
+                            print(error.tag, error.attrib)
+                            print(error.attrib['message'])
+                            print(error.text)
+                            ds_test_status[function_name][test_type]['failureText'].append(error.text)
                         except:
                             pass
         except:
