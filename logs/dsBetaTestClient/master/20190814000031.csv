@@ -1,0 +1,10 @@
+"","filecoverage","totalcoverage"
+"R/checkClass.R",66.67,0.74
+"R/ds.rilm.b.R",0,0.74
+"R/ds.tTestF.R",0,0.74
+"R/extract.R",0,0.74
+"R/findLoginObjects.R",0,0.74
+"R/getOpals.R",0,0.74
+"R/isDefined.R",0,0.74
+"R/tTestHelper1.R",0,0.74
+"R/tTestHelper2.R",0,0.74
