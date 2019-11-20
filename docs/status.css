@@ -1,3 +1,21 @@
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td, th {
+  padding:5px;
+  border: 1px;
+  border-right: 1px solid black;
+}
+
+th {
+  background-color: orange;
+}
+
+tr:nth-child(even) {background: #f0f8ff}
+
+
 td.good {background-color:rgba(0,255,0,0.3);}
 td.ok {background-color:rgba(255,255,0,0.3);}
 td.bad {background-color:rgba(255,0,0,0.3);}
