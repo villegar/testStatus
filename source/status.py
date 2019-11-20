@@ -32,7 +32,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 24/7/19
+__date__ = 20/11/19
 
 
 ################################################################################
@@ -61,7 +61,6 @@ def build_summary_table(ds_test_status, unique_test_types, pp):
         pp.pprint(this_function_name)
         for this_unique_test_type in unique_test_types:
             try:
-
                 this_skipped = int(ds_test_status[this_function_name][this_unique_test_type]['skipped'])
                 this_failures = int(ds_test_status[this_function_name][this_unique_test_type]['failures'])
                 this_errors = int(ds_test_status[this_function_name][this_unique_test_type]['errors'])
@@ -219,7 +218,7 @@ def main(args):
     # e.g.
     # ds.asFactor.o::smoke
     for testsuite in root:
-        print('\n', testsuite.attrib['name'], testsuite.attrib['tests'], testsuite.attrib['skipped'], testsuite.attrib['failures'], testsuite.attrib['errors'])
+        print('\n', testsuite.attrib['name'], testsuite.attrib['tests'], testsuite.attrib['skipped'], testsuite.attrib['failures'], testsuite.attrib['errors'], testsuite.attrib['time'])
 
         context = testsuite.attrib['name']
         context = context.replace('dsBetaTestClient::', '')        # Drop dsBetaTestClient:: from context. Factor this out of testthat code.
@@ -249,7 +248,7 @@ def main(args):
         except:
             print("No extra test type.")
 
-        # Build the dictionary ds_test_status[function_name][test_type]{number, skipped, failures, errors}
+        # Build the dictionary ds_test_status[function_name][test_type]{number, skipped, failures, errors, time}
         # This should automatically make an entry for each test type specified in the testthat files.
         try:
 
@@ -266,6 +265,7 @@ def main(args):
             ds_test_status[function_name][test_type]['skipped'] += int(testsuite.attrib['skipped'])
             ds_test_status[function_name][test_type]['failures'] += int(testsuite.attrib['failures'])
             ds_test_status[function_name][test_type]['errors'] += int(testsuite.attrib['errors'])
+            ds_test_status[function_name][test_type]['time'] = testsuite.attrib['time']
 
             # Parse the text from the failure notice into the ds_test_status dictionary
             # if ds_test_status[function_name][test_type]['failures'] > 0:
@@ -322,12 +322,12 @@ def main(args):
     summary = build_summary_table(ds_test_status, unique_test_types, pp)
 
     h.write("<table border=1>")
-    h.write("<tr><th>Test type</th><th>Pass rate</th><th>Number of tests</th></tr>")
+    h.write("<tr><th>Test type</th><th>Number of tests</th><th>Pass rate</th></tr>")
     for this_unique_test_type in sorted(summary):
         if this_unique_test_type != 'total':
-            h.write("<tr><td>" + this_unique_test_type + "</td><td>" + str(summary[this_unique_test_type]['pass']) + "</td><td>" + str(summary[this_unique_test_type]['number']) + "</td></tr>")
+            h.write("<tr><td>" + this_unique_test_type + "</td><td>" + str(summary[this_unique_test_type]['number']) + "</td><td>" + str(summary[this_unique_test_type]['pass']) + "</td></tr>")
         else:
-            h.write('<tr style="font-weight:bold"><td>Total</td><td>' + str(summary[this_unique_test_type]['pass']) + "</td><td>" + str(summary[this_unique_test_type]['number']) + "</td></tr>")
+            h.write('<tr style="font-weight:bold"><td>Total</td><td>' + str(summary[this_unique_test_type]['number']) + '</td><td>' + str(summary[this_unique_test_type]['pass']) + "</td></tr>")
     h.write("</table>")
     h.write("<br/><br/>")
 
@@ -336,11 +336,19 @@ def main(args):
     ############################################################################
     # Main table
     # Some fixed named columns to beginw with, then use the unique test types derived from the data.
-    h.write("<tr><th>Function name</th><th>Coverage</th>")
+    h.write('<tr><th rowspan="2">Function name</th><th rowspan="2">Coverage</th>')
+    h.write('<th colspan="' + str(len(unique_test_types)) + '">Test file links</th>')
+    h.write('<th colspan="' + str(len(unique_test_types)) + '">Pass rate</th>')
+    h.write('<th colspan="' + str(len(unique_test_types)) + '">Test run time</th>')
+    h.write("</tr>")
+
     for this_unique_test_type in unique_test_types:
-        h.write("<th>" + this_unique_test_type + "<br/>test file</th>")
+        h.write("<th>" + this_unique_test_type + "</th>")
     for this_unique_test_type in unique_test_types:
-        h.write("<th>" + this_unique_test_type + "<br/>pass rate</th>")
+        h.write("<th>" + this_unique_test_type + "</th>")
+    for this_unique_test_type in unique_test_types:
+        h.write("<th>" + this_unique_test_type + "</th>")
+
     h.write("</tr>")
 
     # Sort the dict so it is separated by ds functions and internal functions, then alphabetically.
@@ -367,13 +375,21 @@ def main(args):
             expected_test_name = "test-" + this_unique_test_type + "-" + this_function+'.R'
             print(expected_test_name)
             if expected_test_name in ds_tests:
-                h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
+                # h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
+                h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">link</a></td>')
             else:
                 h.write("<td></td>")
 
         # Cycle through all the test types.
         for this_unique_test_type in unique_test_types:
             h.write(calculate_pass_rate(ds_test_status, this_function, this_unique_test_type, gh_log_url))
+
+        # Cycle through all the test types.
+        for this_unique_test_type in unique_test_types:
+            try:
+                h.write('<td>' + ds_test_status[this_function][this_unique_test_type]['time'] + '</td>')
+            except:
+                h.write("<td></td>")
 
         h.write("</tr>\n")
     h.write("</table>\n</body>\n</html>")

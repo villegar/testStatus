@@ -1,3 +1,20 @@
+table {
+  border: 0;
+  border-collapse: collapse;
+
+}
+
+td, th {
+  padding:5px;
+}
+
+th {
+  background-color: orange;
+}
+
+tr:nth-child(even) {background: #f0f8ff}
+
+
 td.good {background-color:rgba(0,255,0,0.3);}
 td.ok {background-color:rgba(255,255,0,0.3);}
 td.bad {background-color:rgba(255,0,0,0.3);}
