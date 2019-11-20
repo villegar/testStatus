@@ -48,12 +48,14 @@ def build_summary_table(ds_test_status, unique_test_types, pp):
         summary[this_unique_test_type]['pass'] = 0
         summary[this_unique_test_type]['problems'] = 0
         summary[this_unique_test_type]['number'] = 0
+        summary[this_unique_test_type]['time'] = 0
 
     # Totals
     summary['total'] = {}
     summary['total']['pass'] = 0
     summary['total']['problems'] = 0
     summary['total']['number'] = 0
+    summary['total']['time'] = 0
 
     pp.pprint(summary)
 
@@ -65,16 +67,19 @@ def build_summary_table(ds_test_status, unique_test_types, pp):
                 this_failures = int(ds_test_status[this_function_name][this_unique_test_type]['failures'])
                 this_errors = int(ds_test_status[this_function_name][this_unique_test_type]['errors'])
                 this_number = int(ds_test_status[this_function_name][this_unique_test_type]['number'])
+                this_time = float(ds_test_status[this_function_name][this_unique_test_type]['time'])
 
                 this_problems = this_skipped + this_failures + this_errors
 
                 summary[this_unique_test_type]['pass'] += (this_number - this_problems)
                 summary[this_unique_test_type]['problems'] += this_problems
                 summary[this_unique_test_type]['number'] += this_number
+                summary[this_unique_test_type]['time'] += this_time
 
                 summary['total']['pass'] += (this_number - this_problems)
                 summary['total']['problems'] += this_problems
                 summary['total']['number'] += this_number
+                summary['total']['time'] += this_time
             except:
                 pass
 
@@ -97,9 +102,9 @@ def calculate_pass_rate(ds_test_status, function_name, test_class, gh_log_url):
         this_problems = this_skipped + this_failures + this_errors
 
         if this_problems == 0:
-            return('<td class="good"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
+            return('<td class="good" style="text-align:center;"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
         elif this_problems > 0:
-            return('<td class="bad"><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[function_name][test_class]['failureText'])) + '</span></span></td>')
+            return('<td class="bad" style="text-align:center;""><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[function_name][test_class]['failureText'])) + '</span></span></td>')
     except:
         return("<td></td>")
 
@@ -107,13 +112,16 @@ def calculate_pass_rate(ds_test_status, function_name, test_class, gh_log_url):
 ################################################################################
 # Parse the coverage file, returning a dict of file coverages
 def parse_coverage(coverage_file_path):
-    input_file = csv.reader(open(coverage_file_path))
     coverage = {}
+    input_file = csv.reader(open(coverage_file_path))
+    # Skip the header
+    next(input_file)
+
     for row in input_file:
         print(row)
         this_function_name = row[0].replace("R/", "")
         this_function_name = this_function_name.replace(".R", "")
-        coverage[this_function_name] = row[1]
+        coverage[this_function_name] = round(float(row[1]), 1)
 
     return coverage
 
@@ -259,13 +267,14 @@ def main(args):
                 ds_test_status[function_name][test_type]['skipped'] = 0
                 ds_test_status[function_name][test_type]['failures'] = 0
                 ds_test_status[function_name][test_type]['errors'] = 0
+                ds_test_status[function_name][test_type]['time'] = 0
                 ds_test_status[function_name][test_type]['failureText'] = list()
 
             ds_test_status[function_name][test_type]['number'] += int(testsuite.attrib['tests'])
             ds_test_status[function_name][test_type]['skipped'] += int(testsuite.attrib['skipped'])
             ds_test_status[function_name][test_type]['failures'] += int(testsuite.attrib['failures'])
             ds_test_status[function_name][test_type]['errors'] += int(testsuite.attrib['errors'])
-            ds_test_status[function_name][test_type]['time'] = testsuite.attrib['time']
+            ds_test_status[function_name][test_type]['time'] += float(testsuite.attrib['time'])
 
             # Parse the text from the failure notice into the ds_test_status dictionary
             # if ds_test_status[function_name][test_type]['failures'] > 0:
@@ -312,7 +321,15 @@ def main(args):
     # Make an HTML file of the results.
 
     h = open(output_file_name, "w")
-    h.write('<!DOCTYPE html>\n<html>\n<head>\n<link rel="stylesheet" href="../../../status.css">\n</head>\n<body>')
+    h.write('<!DOCTYPE html>\n')
+    h.write('<html>\n')
+    h.write('<head>\n')
+    h.write('<link rel="stylesheet" href="../../../status.css">\n')
+    h.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>\n')
+    h.write('<script type="text/javascript" src="jquery.tablesorter.js"></script>\n')
+    h.write("<script>$(function(){$('table').tablesorter({widgets        : ['zebra', 'columns'],usNumberFormat : false,sortReset      : true,sortRestart    : true});});</script>\n")
+    h.write('</head>\n')
+    h.write('<body>\n')
 
     h.write("<h2>" + remote_repo_name + " - " + branch_name + "</h2>")
     h.write("Made on " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
@@ -321,35 +338,37 @@ def main(args):
     # Summary table
     summary = build_summary_table(ds_test_status, unique_test_types, pp)
 
-    h.write("<table border=1>")
-    h.write("<tr><th>Test type</th><th>Number of tests</th><th>Pass rate</th></tr>")
+    h.write("<table>")
+    h.write("<tr><th>Test type</th><th>Number of tests</th><th>Pass rate</th><th>Time taken (s)</th></tr>")
     for this_unique_test_type in sorted(summary):
         if this_unique_test_type != 'total':
-            h.write("<tr><td>" + this_unique_test_type + "</td><td>" + str(summary[this_unique_test_type]['number']) + "</td><td>" + str(summary[this_unique_test_type]['pass']) + "</td></tr>")
+            h.write("<tr><td>" + this_unique_test_type + '</td><td style="text-align:right">' + str(summary[this_unique_test_type]['number']) + '</td><td  style="text-align:right">' + str(summary[this_unique_test_type]['pass']) + '</td><td style="text-align:right">' + str(int(summary[this_unique_test_type]['time'])) + "</td></tr>")
         else:
-            h.write('<tr style="font-weight:bold"><td>Total</td><td>' + str(summary[this_unique_test_type]['number']) + '</td><td>' + str(summary[this_unique_test_type]['pass']) + "</td></tr>")
+            h.write('<tr style="font-weight:bold"><td>Total</td><td style="text-align:right">' + str(summary[this_unique_test_type]['number']) + '</td><td style="text-align:right">' + str(summary[this_unique_test_type]['pass']) + '</td><td style="text-align:right">' + str(int(summary[this_unique_test_type]['time'])) + "</td></tr>")
     h.write("</table>")
     h.write("<br/><br/>")
 
-    h.write("<table border=1>")
+    h.write('<table class="tablesorter">')
+    h.write('<thead>')
 
     ############################################################################
     # Main table
-    # Some fixed named columns to beginw with, then use the unique test types derived from the data.
-    h.write('<tr><th rowspan="2">Function name</th><th rowspan="2">Coverage</th>')
+    # Some fixed named columns to begin with, then use the unique test types derived from the data.
+    h.write('<tr><th rowspan="2">Function name <br/>&uarr;&darr;</th><th rowspan="2">Coverage <br/>&uarr;&darr;</th>')
     h.write('<th colspan="' + str(len(unique_test_types)) + '">Test file links</th>')
     h.write('<th colspan="' + str(len(unique_test_types)) + '">Pass rate</th>')
-    h.write('<th colspan="' + str(len(unique_test_types)) + '">Test run time</th>')
+    h.write('<th colspan="' + str(len(unique_test_types)) + '">Test run time (s)</th>')
     h.write("</tr>")
 
     for this_unique_test_type in unique_test_types:
-        h.write("<th>" + this_unique_test_type + "</th>")
+        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
     for this_unique_test_type in unique_test_types:
-        h.write("<th>" + this_unique_test_type + "</th>")
+        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
     for this_unique_test_type in unique_test_types:
-        h.write("<th>" + this_unique_test_type + "</th>")
+        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
 
     h.write("</tr>")
+    h.write('</thead><tbody>')
 
     # Sort the dict so it is separated by ds functions and internal functions, then alphabetically.
     for this_function in sorted(ds_test_status, key=lambda x: (ds_test_status[x]['function_type'], x)):
@@ -362,15 +381,15 @@ def main(args):
         if this_function in coverage:
             this_coverage = float(coverage[this_function])
             if this_coverage > 80:
-                h.write('<td class="good">' + str(this_coverage) + '</td>')
+                h.write('<td class="good" style="text-align:right;">' + str(this_coverage) + '</td>')
             elif this_coverage > 60:
-                h.write('<td class="ok">' + str(this_coverage) + '</td>')
+                h.write('<td class="ok" style="text-align:right;">' + str(this_coverage) + '</td>')
             else:
-                h.write('<td class="bad">' + str(this_coverage) + '</td>')
+                h.write('<td class="bad" style="text-align:right;">' + str(this_coverage) + '</td>')
         else:
             h.write('<td></td>')
 
-        # Cycle through all the test types.
+        # Cycle through all the test types putting in a link to the test file
         for this_unique_test_type in unique_test_types:
             expected_test_name = "test-" + this_unique_test_type + "-" + this_function+'.R'
             print(expected_test_name)
@@ -380,18 +399,19 @@ def main(args):
             else:
                 h.write("<td></td>")
 
-        # Cycle through all the test types.
+        # Cycle through all the test types putting in the pass rate with a link to the xml file and hover text for any errors.
         for this_unique_test_type in unique_test_types:
             h.write(calculate_pass_rate(ds_test_status, this_function, this_unique_test_type, gh_log_url))
 
-        # Cycle through all the test types.
+        # Cycle through all the test types and put the time taken for each test to run.
         for this_unique_test_type in unique_test_types:
             try:
-                h.write('<td>' + ds_test_status[this_function][this_unique_test_type]['time'] + '</td>')
+                h.write('<td style="text-align:right;">' + str(round(ds_test_status[this_function][this_unique_test_type]['time'], 1)) + '</td>')
             except:
                 h.write("<td></td>")
 
         h.write("</tr>\n")
+    h.write('<tbody>')
     h.write("</table>\n</body>\n</html>")
 
 
