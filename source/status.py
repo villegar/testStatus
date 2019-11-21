@@ -234,6 +234,10 @@ def main(args):
         # Split by :: delimiter
         context_parts = context.split('::')
 
+        function_name = ''
+        test_type = ''
+        test_type_extra = ''
+
         # Function name
         try:
             function_name = context_parts[0]
@@ -270,12 +274,20 @@ def main(args):
                 ds_test_status[function_name][test_type]['errors'] = 0
                 ds_test_status[function_name][test_type]['time'] = 0
                 ds_test_status[function_name][test_type]['failureText'] = list()
+                ds_test_status[function_name][test_type]['contextTimes'] = list()
 
             ds_test_status[function_name][test_type]['number'] += int(testsuite.attrib['tests'])
             ds_test_status[function_name][test_type]['skipped'] += int(testsuite.attrib['skipped'])
             ds_test_status[function_name][test_type]['failures'] += int(testsuite.attrib['failures'])
             ds_test_status[function_name][test_type]['errors'] += int(testsuite.attrib['errors'])
             ds_test_status[function_name][test_type]['time'] += float(testsuite.attrib['time'])
+
+            if test_type_extra != '':
+                context_section = test_type_extra
+            else:
+                context_section = "Main"
+
+            ds_test_status[function_name][test_type]['contextTimes'].append(context_section + ': ' + testsuite.attrib['time'])
 
             # Parse the text from the failure notice into the ds_test_status dictionary
             # if ds_test_status[function_name][test_type]['failures'] > 0:
@@ -407,7 +419,8 @@ def main(args):
         # Cycle through all the test types and put the time taken for each test to run.
         for this_unique_test_type in unique_test_types:
             try:
-                h.write('<td style="text-align:right;">' + str(round(ds_test_status[this_function][this_unique_test_type]['time'], 1)) + '</td>')
+                # h.write('<td style="text-align:right;">' + str(round(ds_test_status[this_function][this_unique_test_type]['time'], 1)) + '</td>')
+                h.write('<td style="text-align:right;"><span class="tooltip">' + str(round(ds_test_status[this_function][this_unique_test_type]['time'], 1)) + '<span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[this_function][this_unique_test_type]['contextTimes'])) + '</span></span></td>')
             except:
                 h.write("<td></td>")
 
