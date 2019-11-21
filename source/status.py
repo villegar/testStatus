@@ -250,6 +250,7 @@ def main(args):
         except:
             print("ERROR: test type not parsable in: " + context)
 
+        # Extra info, like if single or multiple data source. Free form field
         try:
             test_type_extra = context_parts[2]
             print(test_type_extra)
