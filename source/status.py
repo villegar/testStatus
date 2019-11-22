@@ -32,7 +32,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 20/11/19
+__date__ = 22/11/19
 
 
 ################################################################################
@@ -339,7 +339,7 @@ def main(args):
     h.write('<head>\n')
     h.write('<link rel="stylesheet" href="../../../status.css">\n')
     h.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>\n')
-    h.write('<script type="text/javascript" src="jquery.tablesorter.js"></script>\n')
+    h.write('<script type="text/javascript" src="../../../jquery.tablesorter.js"></script>\n')
     h.write("<script>$(function(){$('table').tablesorter({widgets        : ['zebra', 'columns'],usNumberFormat : false,sortReset      : true,sortRestart    : true});});</script>\n")
     h.write('</head>\n')
     h.write('<body>\n')
