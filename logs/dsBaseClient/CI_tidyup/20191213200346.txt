@@ -1,0 +1,4 @@
+branch:CI_tidyup
+os:lsb_release -ds
+R:R --version
+opal:opal system --opal localhost:8080 --user administrator --password datashield_test& --version
