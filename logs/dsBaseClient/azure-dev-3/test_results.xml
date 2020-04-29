@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="ds.asNumeric::arg::test errors" timestamp="2020-04-29T12:39:44Z" hostname="fv-az14" tests="1" skipped="0" failures="0" errors="0" time="4.922">
+    <testcase time="4.922" classname="ds.asNumeric_arg_test_errors" name="asNumeric_erros"/>
+  </testsuite>
+  <testsuite name="ds.asNumeric::smk::setup" timestamp="2020-04-29T12:39:45Z" hostname="fv-az14" tests="3" skipped="0" failures="0" errors="0" time="5.227">
+    <testcase time="5.209" classname="ds.asNumeric_smk_setup" name="setup"/>
+    <testcase time="0.00200000000000244" classname="ds.asNumeric_smk_setup" name="setup"/>
+    <testcase time="0.0159999999999982" classname="ds.asNumeric_smk_setup" name="setup"/>
+  </testsuite>
+  <testsuite name="ds.asNumeric::smk::simple test" timestamp="2020-04-29T12:39:50Z" hostname="fv-az14" tests="3" skipped="0" failures="0" errors="0" time="1.023">
+    <testcase time="1.02" classname="ds.asNumeric_smk_simple_test" name="simple_test"/>
+    <testcase time="0.00200000000000244" classname="ds.asNumeric_smk_simple_test" name="simple_test"/>
+    <testcase time="0.000999999999997669" classname="ds.asNumeric_smk_simple_test" name="simple_test"/>
+  </testsuite>
+  <testsuite name="ds.asNumeric::smk::shutdown" timestamp="2020-04-29T12:39:51Z" hostname="fv-az14" tests="3" skipped="0" failures="0" errors="0" time="0.326">
+    <testcase time="0.324000000000002" classname="ds.asNumeric_smk_shutdown" name="shutdown"/>
+    <testcase time="0.00100000000000122" classname="ds.asNumeric_smk_shutdown" name="shutdown"/>
+    <testcase time="0.000999999999997669" classname="ds.asNumeric_smk_shutdown" name="shutdown"/>
+  </testsuite>
+  <testsuite name="ds.asNumeric::smk::done" timestamp="2020-04-29T12:39:51Z" hostname="fv-az14" tests="0" skipped="0" failures="0" errors="0" time="0"/>
+</testsuites>
