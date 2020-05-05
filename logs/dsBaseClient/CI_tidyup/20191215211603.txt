@@ -1,4 +1,0 @@
-branch:CI_tidyup
-os:Ubuntu 16.04.6 LTS
-R:R version 3.6.2 (2019-12-12) -- "Dark and Stormy Night"
-opal:2.16.0
