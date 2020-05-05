@@ -32,11 +32,21 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 22/11/19
+__date__ = 5/5/20
 
 
 ################################################################################
-# Build summary table
+# Build summary dictionary. Will look something like:
+# summary[smk][pass] = N
+# summary[smk][problems] = N
+# summary[smk][number] = N
+# summary[smk][time] = N
+# for each test class, expt etc. And:
+# summay[total][pass]
+# summay[total][problems]
+# summay[total][number]
+# summay[total][time]
+# Used as the source of data for the HTML summary table at top of page.
 def build_summary_table(ds_test_status, unique_test_types, pp):
     summary = {}
 
@@ -63,13 +73,13 @@ def build_summary_table(ds_test_status, unique_test_types, pp):
         pp.pprint(this_function_name)
         for this_unique_test_type in unique_test_types:
             try:
-                this_skipped = int(ds_test_status[this_function_name][this_unique_test_type]['skipped'])
+                # this_skipped = int(ds_test_status[this_function_name][this_unique_test_type]['skipped'])
                 this_failures = int(ds_test_status[this_function_name][this_unique_test_type]['failures'])
                 this_errors = int(ds_test_status[this_function_name][this_unique_test_type]['errors'])
                 this_number = int(ds_test_status[this_function_name][this_unique_test_type]['number'])
                 this_time = float(ds_test_status[this_function_name][this_unique_test_type]['time'])
 
-                this_problems = this_skipped + this_failures + this_errors
+                this_problems = this_failures + this_errors
 
                 summary[this_unique_test_type]['pass'] += (this_number - this_problems)
                 summary[this_unique_test_type]['problems'] += this_problems
@@ -94,17 +104,19 @@ def build_summary_table(ds_test_status, unique_test_types, pp):
 # table cell out of it. If there are errors put them in the cell.
 def calculate_pass_rate(ds_test_status, function_name, test_class, gh_log_url):
     try:
-        this_skipped = int(ds_test_status[function_name][test_class]['skipped'])
         this_failures = int(ds_test_status[function_name][test_class]['failures'])
         this_errors = int(ds_test_status[function_name][test_class]['errors'])
         this_number = int(ds_test_status[function_name][test_class]['number'])
 
-        this_problems = this_skipped + this_failures + this_errors
+        this_problems = this_failures + this_errors
 
         if this_problems == 0:
             return('<td class="good" style="text-align:center;"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
         elif this_problems > 0:
-            return('<td class="bad" style="text-align:center;""><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[function_name][test_class]['failureText'])) + '</span></span></td>')
+            if len(ds_test_status[function_name][test_class]['failureText']) > 0:
+                return('<td class="bad" style="text-align:center;""><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[function_name][test_class]['failureText'])) + '</span></span></td>')
+            else:
+                return('<td class="bad" style="text-align:center;""><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">No Error/Failure messages found. grep the xml file to check.</span></span></td>')
     except:
         return("<td></td>")
 
@@ -175,7 +187,17 @@ def main(args):
     for this_function in ds_functions:
         print(this_function)
 
-    # Make the test status dictionary
+    # Make the test status dictionary. Ultimately it will look like the below.
+    # The function names are based on the list of R functions in R directory.
+    # ds_test_status[function_name][test_type]['number']
+    # ds_test_status[function_name][test_type]['skipped']
+    # ds_test_status[function_name][test_type]['failures']
+    # ds_test_status[function_name][test_type]['errors']
+    # ds_test_status[function_name][test_type]['time']
+    # ds_test_status[function_name][test_type]['failureText'] = list()
+    # ds_test_status[function_name][test_type]['contextTimes'] = list()
+    # ds_test_status[function_name]['function_type'] = 'ds' or 'internal'
+
     ds_test_status = {}
     for this_function in ds_functions:
         this_function = this_function.replace('.R', '')  # Drop the .R part from the end.
@@ -224,7 +246,7 @@ def main(args):
     # The expected format of the context is:
     # <function name>::<maths|expt|smk|args|disc>::<Optional other info>::<single|multiple>
     # e.g.
-    # ds.asFactor.o::smoke
+    # ds.asFactor::smoke
     for testsuite in root:
         print('\n', testsuite.attrib['name'], testsuite.attrib['tests'], testsuite.attrib['skipped'], testsuite.attrib['failures'], testsuite.attrib['errors'], testsuite.attrib['time'])
 
@@ -282,6 +304,7 @@ def main(args):
             ds_test_status[function_name][test_type]['errors'] += int(testsuite.attrib['errors'])
             ds_test_status[function_name][test_type]['time'] += float(testsuite.attrib['time'])
 
+            # Not every test_type_extra field is set in the test files, so make sure there is a default.
             if test_type_extra != '':
                 context_section = test_type_extra
             else:
@@ -373,6 +396,7 @@ def main(args):
     h.write('<th colspan="' + str(len(unique_test_types)) + '">Test run time (s)</th>')
     h.write("</tr>")
 
+    # Put in the up/down arrows to allow table sorting
     for this_unique_test_type in unique_test_types:
         h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
     for this_unique_test_type in unique_test_types:
