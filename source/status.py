@@ -19,9 +19,6 @@
 
 # Assuming the locally checked out repo is the branch that I need.
 
-# To do:
-# - pass in repo and branch name as arguements
-
 import argparse
 import datetime
 import csv
@@ -32,11 +29,13 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = 5/5/20
+__date__ = 6/5/20
 
 
 ################################################################################
-# Build summary dictionary. Will look something like:
+# Build summary dictionary.
+# Used as the source of data for the HTML summary table at top of page.
+# Will look something like:
 # summary[smk][pass] = N
 # summary[smk][problems] = N
 # summary[smk][number] = N
@@ -46,8 +45,7 @@ __date__ = 5/5/20
 # summay[total][problems]
 # summay[total][number]
 # summay[total][time]
-# Used as the source of data for the HTML summary table at top of page.
-def build_summary_table(ds_test_status, unique_test_types, pp):
+def build_summary_dictionary(ds_test_status, unique_test_types, pp):
     summary = {}
 
     pp.pprint(ds_test_status)
@@ -102,7 +100,7 @@ def build_summary_table(ds_test_status, unique_test_types, pp):
 ################################################################################
 # Calculate the pass rate of this function and test class, then make a HTML
 # table cell out of it. If there are errors put them in the cell.
-def calculate_pass_rate(ds_test_status, function_name, test_class, gh_log_url):
+def build_pass_rate_table_cell(ds_test_status, function_name, test_class, gh_log_url):
     try:
         this_failures = int(ds_test_status[function_name][test_class]['failures'])
         this_errors = int(ds_test_status[function_name][test_class]['errors'])
@@ -113,6 +111,7 @@ def calculate_pass_rate(ds_test_status, function_name, test_class, gh_log_url):
         if this_problems == 0:
             return('<td class="good" style="text-align:center;"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number) + "/" + str(this_number) + "</a></td>")
         elif this_problems > 0:
+            # Sometimes there is no failure text.
             if len(ds_test_status[function_name][test_class]['failureText']) > 0:
                 return('<td class="bad" style="text-align:center;""><span class="tooltip"><a href ="' + gh_log_url + '" target="_blank">' + str(this_number - this_problems) + "/" + str(this_number) + '</a><span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[function_name][test_class]['failureText'])) + '</span></span></td>')
             else:
@@ -142,13 +141,12 @@ def parse_coverage(coverage_file_path):
 #
 def main(args):
     remote_root_path = "http://github.com/datashield/"
-    # repo_name = "dsBetaTestClient"
-    # branch_name = "master"
 
+    # Get all the command line args
     parser = argparse.ArgumentParser()
-    parser.add_argument("log_file_path", help="Path to the log file.")
-    parser.add_argument("coverage_file_path", help="Path to the coverage file.")
-    parser.add_argument("output_file_path", help="Path to the output file.")
+    parser.add_argument("log_file_path", help="Path to the XML JUnit log file.")
+    parser.add_argument("coverage_file_path", help="Path to the csv coverage file.")
+    parser.add_argument("output_file_path", help="Path to the output file. (e.g. output.html)")
     parser.add_argument("local_repo_path", help="Path to the locally checked out repository.")
     parser.add_argument("remote_repo_name", help="Name of the remote repository.")
     parser.add_argument("branch", help="Branch name.")
@@ -203,7 +201,9 @@ def main(args):
         this_function = this_function.replace('.R', '')  # Drop the .R part from the end.
         ds_test_status[this_function] = {}
 
-        # Differentiate the internal and external functions - makes for prettier sorting later.
+        # Differentiate the internal and external functions. The external functions
+        # are ones that users would calle and usually begin with "ds.", whereas internal
+        # functions are called by other functions. Used later to make table sorting nicer.
         if(this_function.startswith('ds')):
             ds_test_status[this_function]['function_type'] = 'ds'
         else:
@@ -251,7 +251,6 @@ def main(args):
         print('\n', testsuite.attrib['name'], testsuite.attrib['tests'], testsuite.attrib['skipped'], testsuite.attrib['failures'], testsuite.attrib['errors'], testsuite.attrib['time'])
 
         context = testsuite.attrib['name']
-        context = context.replace('dsBetaTestClient::', '')        # Drop dsBetaTestClient:: from context. Factor this out of testthat code.
 
         # Split by :: delimiter
         context_parts = context.split('::')
@@ -372,7 +371,7 @@ def main(args):
 
     ############################################################################
     # Summary table
-    summary = build_summary_table(ds_test_status, unique_test_types, pp)
+    summary = build_summary_dictionary(ds_test_status, unique_test_types, pp)
 
     h.write("<table>")
     h.write("<tr><th>Test type</th><th>Number of tests</th><th>Pass rate</th><th>Time taken (s)</th></tr>")
@@ -438,7 +437,7 @@ def main(args):
 
         # Cycle through all the test types putting in the pass rate with a link to the xml file and hover text for any errors.
         for this_unique_test_type in unique_test_types:
-            h.write(calculate_pass_rate(ds_test_status, this_function, this_unique_test_type, gh_log_url))
+            h.write(build_pass_rate_table_cell(ds_test_status, this_function, this_unique_test_type, gh_log_url))
 
         # Cycle through all the test types and put the time taken for each test to run.
         for this_unique_test_type in unique_test_types:
