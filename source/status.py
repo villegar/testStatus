@@ -187,27 +187,37 @@ def main(args):
 
     # Make the test status dictionary. Ultimately it will look like the below.
     # The function names are based on the list of R functions in R directory.
-    # ds_test_status[function_name][test_type]['number']
-    # ds_test_status[function_name][test_type]['skipped']
-    # ds_test_status[function_name][test_type]['failures']
-    # ds_test_status[function_name][test_type]['errors']
-    # ds_test_status[function_name][test_type]['time']
-    # ds_test_status[function_name][test_type]['failureText'] = list()
-    # ds_test_status[function_name][test_type]['contextTimes'] = list()
-    # ds_test_status[function_name]['function_type'] = 'ds' or 'internal'
+    # env is a flag capturing the environment this test belongs to. Currently
+    # this is one of r or vm and indicates if the test is based on the list of
+    # functions in the R folder or doing testing something else.
+    # ds_test_status[env][function_name][test_type]['number']
+    # ds_test_status[env][function_name][test_type]['skipped']
+    # ds_test_status[env][function_name][test_type]['failures']
+    # ds_test_status[env][function_name][test_type]['errors']
+    # ds_test_status[env][function_name][test_type]['time']
+    # ds_test_status[env][function_name][test_type]['failureText'] = list()
+    # ds_test_status[env][function_name][test_type]['contextTimes'] = list()
+    # ds_test_status[env][function_name]['function_type'] = 'ds' or 'internal'
 
+    # Make the dictionary and add the two environments.
     ds_test_status = {}
+    ds_test_status['r'] = {}
+    ds_test_status['vm'] = {}
+
+    # Add all the functions in the R folder to ds_test_status. Do this now (as
+    # opposed to driving this from the xml file), so any functions that exist for
+    # which there is no tests show up in the final table.
     for this_function in ds_functions:
         this_function = this_function.replace('.R', '')  # Drop the .R part from the end.
-        ds_test_status[this_function] = {}
+        ds_test_status['r'][this_function] = {}
 
         # Differentiate the internal and external functions. The external functions
         # are ones that users would calle and usually begin with "ds.", whereas internal
         # functions are called by other functions. Used later to make table sorting nicer.
         if(this_function.startswith('ds')):
-            ds_test_status[this_function]['function_type'] = 'ds'
+            ds_test_status['r'][this_function]['function_type'] = 'ds'
         else:
-            ds_test_status[this_function]['function_type'] = 'internal'
+            ds_test_status['r'][this_function]['function_type'] = 'internal'
 
     ################################################################################
     # Get the list of tests from the local repo
@@ -282,26 +292,39 @@ def main(args):
         except:
             print("No extra test type.")
 
+        # Set the environment as either r or vm depending if this function_name
+        # is in the list of ds_functions - i.e. if it matches a function name
+        # in the R directory.
+        if function_name in ds_functions:
+            env = 'r'
+        else:
+            env = 'vm'
+
         # Build the dictionary ds_test_status[function_name][test_type]{number, skipped, failures, errors, time}
         # This should automatically make an entry for each test type specified in the testthat files.
         try:
 
-            # If this test_type is not defined then initiate it for this function_name
-            if test_type not in ds_test_status[function_name]:
-                ds_test_status[function_name][test_type] = {}
-                ds_test_status[function_name][test_type]['number'] = 0
-                ds_test_status[function_name][test_type]['skipped'] = 0
-                ds_test_status[function_name][test_type]['failures'] = 0
-                ds_test_status[function_name][test_type]['errors'] = 0
-                ds_test_status[function_name][test_type]['time'] = 0
-                ds_test_status[function_name][test_type]['failureText'] = list()
-                ds_test_status[function_name][test_type]['contextTimes'] = list()
+            # Add the function if it already isn't in ds_test_status. This will happen for tests that
+            # are not named to match the R file names.
+            if function_name not in ds_test_status[env]:
+                ds_test_status[env][function_name] = {}
 
-            ds_test_status[function_name][test_type]['number'] += int(testsuite.attrib['tests'])
-            ds_test_status[function_name][test_type]['skipped'] += int(testsuite.attrib['skipped'])
-            ds_test_status[function_name][test_type]['failures'] += int(testsuite.attrib['failures'])
-            ds_test_status[function_name][test_type]['errors'] += int(testsuite.attrib['errors'])
-            ds_test_status[function_name][test_type]['time'] += float(testsuite.attrib['time'])
+            # If this test_type is not defined then initiate it for this function_name
+            if test_type not in ds_test_status[env][function_name]:
+                ds_test_status[env][function_name][test_type] = {}
+                ds_test_status[env][function_name][test_type]['number'] = 0
+                ds_test_status[env][function_name][test_type]['skipped'] = 0
+                ds_test_status[env][function_name][test_type]['failures'] = 0
+                ds_test_status[env][function_name][test_type]['errors'] = 0
+                ds_test_status[env][function_name][test_type]['time'] = 0
+                ds_test_status[env][function_name][test_type]['failureText'] = list()
+                ds_test_status[env][function_name][test_type]['contextTimes'] = list()
+
+            ds_test_status[env][function_name][test_type]['number'] += int(testsuite.attrib['tests'])
+            ds_test_status[env][function_name][test_type]['skipped'] += int(testsuite.attrib['skipped'])
+            ds_test_status[env][function_name][test_type]['failures'] += int(testsuite.attrib['failures'])
+            ds_test_status[env][function_name][test_type]['errors'] += int(testsuite.attrib['errors'])
+            ds_test_status[env][function_name][test_type]['time'] += float(testsuite.attrib['time'])
 
             # Not every test_type_extra field is set in the test files, so make sure there is a default.
             if test_type_extra != '':
@@ -309,11 +332,11 @@ def main(args):
             else:
                 context_section = "Main"
 
-            ds_test_status[function_name][test_type]['contextTimes'].append(context_section + ': ' + testsuite.attrib['time'])
+            ds_test_status[env][function_name][test_type]['contextTimes'].append(context_section + ': ' + testsuite.attrib['time'])
 
             # Parse the text from the failure notice into the ds_test_status dictionary
             # if ds_test_status[function_name][test_type]['failures'] > 0:
-            if ds_test_status[function_name][test_type]['failures'] > 0 or ds_test_status[function_name][test_type]['errors'] > 0:
+            if ds_test_status[env][function_name][test_type]['failures'] > 0 or ds_test_status[env][function_name][test_type]['errors'] > 0:
                 print("\n\nERRORS")
                 print(testsuite.tag, testsuite.attrib)
                 for testcase in testsuite:
@@ -323,7 +346,7 @@ def main(args):
                             print(failure.tag, failure.attrib)
                             print(failure.attrib['message'])
                             print(failure.text)
-                            ds_test_status[function_name][test_type]['failureText'].append(failure.text)
+                            ds_test_status[env][function_name][test_type]['failureText'].append(failure.text)
                         except:
                             pass
 
@@ -332,7 +355,7 @@ def main(args):
                             print(error.tag, error.attrib)
                             print(error.attrib['message'])
                             print(error.text)
-                            ds_test_status[function_name][test_type]['failureText'].append(error.text)
+                            ds_test_status[env][function_name][test_type]['failureText'].append(error.text)
                         except:
                             pass
         except:
@@ -345,8 +368,8 @@ def main(args):
 
     # Get a list of unique test types (derived from the contexts), in aphabetical order
     test_types = []
-    for this_function in ds_test_status.keys():
-        for this_test_type in ds_test_status[this_function].keys():
+    for this_function in ds_test_status[env].keys():
+        for this_test_type in ds_test_status[env][this_function].keys():
             if this_test_type != 'function_type':
                 test_types.append(this_test_type)
 
@@ -407,7 +430,7 @@ def main(args):
     h.write('</thead><tbody>')
 
     # Sort the dict so it is separated by ds functions and internal functions, then alphabetically.
-    for this_function in sorted(ds_test_status, key=lambda x: (ds_test_status[x]['function_type'], x)):
+    for this_function in sorted(ds_test_status[env], key=lambda x: (ds_test_status[env][x]['function_type'], x)):
 
         # Function name with link to repo
         h.write("<tr>")
@@ -437,13 +460,13 @@ def main(args):
 
         # Cycle through all the test types putting in the pass rate with a link to the xml file and hover text for any errors.
         for this_unique_test_type in unique_test_types:
-            h.write(build_pass_rate_table_cell(ds_test_status, this_function, this_unique_test_type, gh_log_url))
+            h.write(build_pass_rate_table_cell(ds_test_status[env], this_function, this_unique_test_type, gh_log_url))
 
         # Cycle through all the test types and put the time taken for each test to run.
         for this_unique_test_type in unique_test_types:
             try:
                 # h.write('<td style="text-align:right;">' + str(round(ds_test_status[this_function][this_unique_test_type]['time'], 1)) + '</td>')
-                h.write('<td style="text-align:right;"><span class="tooltip">' + str(round(ds_test_status[this_function][this_unique_test_type]['time'], 1)) + '<span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[this_function][this_unique_test_type]['contextTimes'])) + '</span></span></td>')
+                h.write('<td style="text-align:right;"><span class="tooltip">' + str(round(ds_test_status[env][this_function][this_unique_test_type]['time'], 1)) + '<span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[env][this_function][this_unique_test_type]['contextTimes'])) + '</span></span></td>')
             except:
                 h.write("<td></td>")
 
