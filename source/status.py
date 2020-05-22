@@ -141,6 +141,95 @@ def parse_coverage(coverage_file_path):
     return coverage
 
 
+############################################################################
+# HTML summary table
+def build_html_summary_table(ds_test_status, unique_test_types, env, pp, h):
+
+    summary = build_summary_dictionary(ds_test_status, unique_test_types, env, pp)
+
+    h.write("<table>")
+    h.write("<tr><th>Test type</th><th>Number of tests</th><th>Pass rate</th><th>Time taken (s)</th></tr>")
+    for this_unique_test_type in sorted(summary):
+        if this_unique_test_type != 'total':
+            h.write("<tr><td>" + this_unique_test_type + '</td><td style="text-align:right">' + str(summary[this_unique_test_type]['number']) + '</td><td  style="text-align:right">' + str(summary[this_unique_test_type]['pass']) + '</td><td style="text-align:right">' + str(int(summary[this_unique_test_type]['time'])) + "</td></tr>")
+        else:
+            h.write('<tr style="font-weight:bold"><td>Total</td><td style="text-align:right">' + str(summary[this_unique_test_type]['number']) + '</td><td style="text-align:right">' + str(summary[this_unique_test_type]['pass']) + '</td><td style="text-align:right">' + str(int(summary[this_unique_test_type]['time'])) + "</td></tr>")
+    h.write("</table>")
+
+
+############################################################################
+# HTML Main table
+def build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_path, branch_name, gh_log_url, coverage, ds_tests):
+
+    h.write('<table class="tablesorter">')
+    h.write('<thead>')
+    # Some fixed named columns to begin with, then use the unique test types derived from the data.
+    h.write('<tr><th rowspan="2">Function name <br/>&uarr;&darr;</th><th rowspan="2">Coverage <br/>&uarr;&darr;</th>')
+    h.write('<th colspan="' + str(len(unique_test_types[env])) + '">Test file links</th>')
+    h.write('<th colspan="' + str(len(unique_test_types[env])) + '">Pass rate</th>')
+    h.write('<th colspan="' + str(len(unique_test_types[env])) + '">Test run time (s)</th>')
+    h.write("</tr>")
+
+    # Put in the up/down arrows to allow table sorting
+    for this_unique_test_type in unique_test_types[env]:
+        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
+    for this_unique_test_type in unique_test_types[env]:
+        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
+    for this_unique_test_type in unique_test_types[env]:
+        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
+
+    h.write("</tr>")
+    h.write('</thead><tbody>')
+
+    # Sort the dict so it is separated by ds functions and internal functions, then alphabetically.
+    for this_function in sorted(ds_test_status[env], key=lambda x: (ds_test_status[env][x]['function_type'], x)):
+
+        # Function name with link to repo
+        h.write("<tr>")
+        h.write('<td><a href="' + remote_repo_path + '/blob/' + branch_name + '/R/' + this_function + '.R" target="_blank">' + this_function + "</a></td>")
+
+        # Coverage columne
+        if this_function in coverage:
+            this_coverage = float(coverage[this_function])
+            if this_coverage > 80:
+                h.write('<td class="good" style="text-align:right;">' + str(this_coverage) + '</td>')
+            elif this_coverage > 60:
+                h.write('<td class="ok" style="text-align:right;">' + str(this_coverage) + '</td>')
+            else:
+                h.write('<td class="bad" style="text-align:right;">' + str(this_coverage) + '</td>')
+        else:
+            h.write('<td></td>')
+
+        # Cycle through all the test types putting in a link to the test file
+        for this_unique_test_type in unique_test_types[env]:
+            expected_test_name = "test-" + this_unique_test_type + "-" + this_function + '.R'
+            print(expected_test_name)
+            if expected_test_name in ds_tests:
+                h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">link</a></td>')
+            else:
+                h.write("<td></td>")
+
+        # Cycle through all the test types putting in the pass rate with a link to the xml file and hover text for any errors.
+        for this_unique_test_type in unique_test_types[env]:
+            h.write(build_pass_rate_table_cell(ds_test_status[env], this_function, this_unique_test_type, gh_log_url))
+
+        # Cycle through all the test types and put the time taken for each test to run.
+        for this_unique_test_type in unique_test_types[env]:
+            try:
+                h.write('<td style="text-align:right;"><span class="tooltip">' + str(round(ds_test_status[env][this_function][this_unique_test_type]['time'], 1)) + '<span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[env][this_function][this_unique_test_type]['contextTimes'])) + '</span></span></td>')
+            except:
+                h.write("<td></td>")
+
+        h.write("</tr>\n")
+    h.write('<tbody>')
+    h.write("</table>")
+
+
+
+
+
+
+
 ################################################################################
 #
 def main(args):
@@ -377,15 +466,6 @@ def main(args):
     coverage = parse_coverage(coverage_file_path)
 
 
-    ############################################################
-    #Need to figure out what to do about r/vm envs
-    ############################################################
-    ############################################################
-    ############################################################
-    ############################################################
-    ############################################################
-    ############################################################
-    ############################################################
 
 
     ################################################################################
@@ -408,8 +488,6 @@ def main(args):
 
 
 
-    env = 'r'
-
     # Get a list of unique test types (derived from the contexts), in aphabetical order for each env
     test_types = {}
     for this_env in ds_test_status.keys():
@@ -427,230 +505,21 @@ def main(args):
         unique_test_types[this_env] = sorted(set(test_types[this_env]))
 
 
-    ############################################################################
-    # Summary table
-    summary = build_summary_dictionary(ds_test_status, unique_test_types, env, pp)
-
-    h.write("<table>")
-    h.write("<tr><th>Test type</th><th>Number of tests</th><th>Pass rate</th><th>Time taken (s)</th></tr>")
-    for this_unique_test_type in sorted(summary):
-        if this_unique_test_type != 'total':
-            h.write("<tr><td>" + this_unique_test_type + '</td><td style="text-align:right">' + str(summary[this_unique_test_type]['number']) + '</td><td  style="text-align:right">' + str(summary[this_unique_test_type]['pass']) + '</td><td style="text-align:right">' + str(int(summary[this_unique_test_type]['time'])) + "</td></tr>")
-        else:
-            h.write('<tr style="font-weight:bold"><td>Total</td><td style="text-align:right">' + str(summary[this_unique_test_type]['number']) + '</td><td style="text-align:right">' + str(summary[this_unique_test_type]['pass']) + '</td><td style="text-align:right">' + str(int(summary[this_unique_test_type]['time'])) + "</td></tr>")
-    h.write("</table>")
     h.write("<br/><br/>")
 
-    h.write('<table class="tablesorter">')
-    h.write('<thead>')
+    env = 'r'
 
-    ############################################################################
-    # Main table
-    # Some fixed named columns to begin with, then use the unique test types derived from the data.
-    h.write('<tr><th rowspan="2">Function name <br/>&uarr;&darr;</th><th rowspan="2">Coverage <br/>&uarr;&darr;</th>')
-    h.write('<th colspan="' + str(len(unique_test_types)) + '">Test file links</th>')
-    h.write('<th colspan="' + str(len(unique_test_types)) + '">Pass rate</th>')
-    h.write('<th colspan="' + str(len(unique_test_types)) + '">Test run time (s)</th>')
-    h.write("</tr>")
-
-    # Put in the up/down arrows to allow table sorting
-    for this_unique_test_type in unique_test_types[env]:
-        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
-    for this_unique_test_type in unique_test_types[env]:
-        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
-    for this_unique_test_type in unique_test_types[env]:
-        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
-
-    h.write("</tr>")
-    h.write('</thead><tbody>')
-
-    # Sort the dict so it is separated by ds functions and internal functions, then alphabetically.
-    for this_function in sorted(ds_test_status[env], key=lambda x: (ds_test_status[env][x]['function_type'], x)):
-
-        # Function name with link to repo
-        h.write("<tr>")
-        h.write('<td><a href="' + remote_repo_path + '/blob/' + branch_name + '/R/' + this_function + '.R" target="_blank">' + this_function + "</a></td>")
-
-        # Coverage columne
-        if this_function in coverage:
-            this_coverage = float(coverage[this_function])
-            if this_coverage > 80:
-                h.write('<td class="good" style="text-align:right;">' + str(this_coverage) + '</td>')
-            elif this_coverage > 60:
-                h.write('<td class="ok" style="text-align:right;">' + str(this_coverage) + '</td>')
-            else:
-                h.write('<td class="bad" style="text-align:right;">' + str(this_coverage) + '</td>')
-        else:
-            h.write('<td></td>')
-
-        # Cycle through all the test types putting in a link to the test file
-        for this_unique_test_type in unique_test_types[env]:
-            expected_test_name = "test-" + this_unique_test_type + "-" + this_function + '.R'
-            print(expected_test_name)
-            if expected_test_name in ds_tests:
-                # h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
-                h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">link</a></td>')
-            else:
-                h.write("<td></td>")
-
-        # Cycle through all the test types putting in the pass rate with a link to the xml file and hover text for any errors.
-        for this_unique_test_type in unique_test_types[env]:
-            h.write(build_pass_rate_table_cell(ds_test_status[env], this_function, this_unique_test_type, gh_log_url))
-
-        # Cycle through all the test types and put the time taken for each test to run.
-        for this_unique_test_type in unique_test_types[env]:
-            try:
-                # h.write('<td style="text-align:right;">' + str(round(ds_test_status[this_function][this_unique_test_type]['time'], 1)) + '</td>')
-                h.write('<td style="text-align:right;"><span class="tooltip">' + str(round(ds_test_status[env][this_function][this_unique_test_type]['time'], 1)) + '<span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[env][this_function][this_unique_test_type]['contextTimes'])) + '</span></span></td>')
-            except:
-                h.write("<td></td>")
-
-        h.write("</tr>\n")
-    h.write('<tbody>')
-    h.write("</table>")
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
+    build_html_summary_table(ds_test_status, unique_test_types, env, pp, h)
+    h.write("<br/><br/>")
+    build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_name, branch_name, gh_log_url, coverage, ds_tests)
+    h.write("<br/><br/>")
 
     env = 'vm'
 
-
-    # Get a list of unique test types (derived from the contexts), in aphabetical order
-    #test_types = []
-    #for this_function in ds_test_status[env].keys():
-    #    for this_test_type in ds_test_status[env][this_function].keys():
-    #        if this_test_type != 'function_type':
-    #            test_types.append(this_test_type)
-
-    #unique_test_types = sorted(set(test_types))
-
-
-    ############################################################################
-    # Summary table
-    summary = build_summary_dictionary(ds_test_status, unique_test_types, env, pp)
-
-    h.write("<table>")
-    h.write("<tr><th>Test type</th><th>Number of tests</th><th>Pass rate</th><th>Time taken (s)</th></tr>")
-    for this_unique_test_type in sorted(summary):
-        if this_unique_test_type != 'total':
-            h.write("<tr><td>" + this_unique_test_type + '</td><td style="text-align:right">' + str(summary[this_unique_test_type]['number']) + '</td><td  style="text-align:right">' + str(summary[this_unique_test_type]['pass']) + '</td><td style="text-align:right">' + str(int(summary[this_unique_test_type]['time'])) + "</td></tr>")
-        else:
-            h.write('<tr style="font-weight:bold"><td>Total</td><td style="text-align:right">' + str(summary[this_unique_test_type]['number']) + '</td><td style="text-align:right">' + str(summary[this_unique_test_type]['pass']) + '</td><td style="text-align:right">' + str(int(summary[this_unique_test_type]['time'])) + "</td></tr>")
-    h.write("</table>")
+    build_html_summary_table(ds_test_status, unique_test_types, env, pp, h)
     h.write("<br/><br/>")
-
-    h.write('<table class="tablesorter">')
-    h.write('<thead>')
-
-    ############################################################################
-    # Main table
-    # Some fixed named columns to begin with, then use the unique test types derived from the data.
-    h.write('<tr><th rowspan="2">Function name <br/>&uarr;&darr;</th><th rowspan="2">Coverage <br/>&uarr;&darr;</th>')
-    h.write('<th colspan="' + str(len(unique_test_types)) + '">Test file links</th>')
-    h.write('<th colspan="' + str(len(unique_test_types)) + '">Pass rate</th>')
-    h.write('<th colspan="' + str(len(unique_test_types)) + '">Test run time (s)</th>')
-    h.write("</tr>")
-
-    # Put in the up/down arrows to allow table sorting
-    for this_unique_test_type in unique_test_types:
-        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
-    for this_unique_test_type in unique_test_types:
-        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
-    for this_unique_test_type in unique_test_types:
-        h.write("<th>" + this_unique_test_type + "<br/>&uarr;&darr;</th>")
-
-    h.write("</tr>")
-    h.write('</thead><tbody>')
-
-    # Sort the dict so it is separated by ds functions and internal functions, then alphabetically.
-    for this_function in sorted(ds_test_status[env], key=lambda x: (ds_test_status[env][x]['function_type'], x)):
-
-        # Function name with link to repo
-        h.write("<tr>")
-        h.write('<td><a href="' + remote_repo_path + '/blob/' + branch_name + '/R/' + this_function + '.R" target="_blank">' + this_function + "</a></td>")
-
-        # Coverage columne
-        if this_function in coverage:
-            this_coverage = float(coverage[this_function])
-            if this_coverage > 80:
-                h.write('<td class="good" style="text-align:right;">' + str(this_coverage) + '</td>')
-            elif this_coverage > 60:
-                h.write('<td class="ok" style="text-align:right;">' + str(this_coverage) + '</td>')
-            else:
-                h.write('<td class="bad" style="text-align:right;">' + str(this_coverage) + '</td>')
-        else:
-            h.write('<td></td>')
-
-        # Cycle through all the test types putting in a link to the test file
-        for this_unique_test_type in unique_test_types[env]:
-            expected_test_name = "test-" + this_unique_test_type + "-" + this_function + '.R'
-            print(expected_test_name)
-            if expected_test_name in ds_tests:
-                # h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">' + expected_test_name + '</a></td>')
-                h.write('<td class="good"><a href="' + remote_repo_path + '/blob/' + branch_name + '/tests/testthat/' + expected_test_name + '" target="_blank">link</a></td>')
-            else:
-                h.write("<td></td>")
-
-        # Cycle through all the test types putting in the pass rate with a link to the xml file and hover text for any errors.
-        for this_unique_test_type in unique_test_types[env]:
-            h.write(build_pass_rate_table_cell(ds_test_status[env], this_function, this_unique_test_type, gh_log_url))
-
-        # Cycle through all the test types and put the time taken for each test to run.
-        for this_unique_test_type in unique_test_types[env]:
-            try:
-                # h.write('<td style="text-align:right;">' + str(round(ds_test_status[this_function][this_unique_test_type]['time'], 1)) + '</td>')
-                h.write('<td style="text-align:right;"><span class="tooltip">' + str(round(ds_test_status[env][this_function][this_unique_test_type]['time'], 1)) + '<span class="tooltiptext">' + '<br/>----------<br/>'.join(map(str, ds_test_status[env][this_function][this_unique_test_type]['contextTimes'])) + '</span></span></td>')
-            except:
-                h.write("<td></td>")
-
-        h.write("</tr>\n")
-    h.write('<tbody>')
-    h.write("</table>")
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
+    build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_name, branch_name, gh_log_url, coverage, ds_tests)
+    h.write("<br/><br/>")
     
     
     h.write("</body>\n</html>")
