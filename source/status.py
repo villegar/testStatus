@@ -21,7 +21,7 @@
 
 # TO DO
 # Name-value arg parsing (with defaults?)
-# Bring in version info - the data is in
+# Add better runtime output/logging control.
 
 import argparse
 import datetime
@@ -141,13 +141,36 @@ def parse_coverage(coverage_file_path):
     return coverage
 
 
+
+
+################################################################################
+# Parse the versions file, returning a dict of file coverages
+def parse_versions_file(versions_file_path, h):
+    versions = {}
+    with open(versions_file_path) as f:
+        
+        for row in f:
+            temp = row.split(':')
+            versions[temp[0]] = temp[1]
+
+    print(versions)
+
+    h.write('<table class="versions">')
+
+    for key in versions:
+        h.write("<tr><td>" + key + "</td><td>" + versions[key] + "</td></tr>")
+
+    h.write("</table>")
+
+
+
 ############################################################################
 # HTML summary table
 def build_html_summary_table(ds_test_status, unique_test_types, envs, pp, h):
 
     summary = build_summary_dictionary(ds_test_status, unique_test_types, envs, pp)
 
-    h.write("<table>")
+    h.write('<table class="summary">')
     h.write("<tr><th>Test type</th><th>Number of tests</th><th>Number of passes</th><th>Time taken (s)</th></tr>")
     for this_unique_test_type in sorted(summary):
         if this_unique_test_type != 'total':
@@ -241,6 +264,7 @@ def main(args):
     parser = argparse.ArgumentParser()
     parser.add_argument("log_file_path", help="Path to the XML JUnit log file.")
     parser.add_argument("coverage_file_path", help="Path to the csv coverage file.")
+    parser.add_argument("versions_file_path", help="Path to the versions file.")
     parser.add_argument("output_file_path", help="Path to the output file. (e.g. output.html)")
     parser.add_argument("local_repo_path", help="Path to the locally checked out repository.")
     parser.add_argument("remote_repo_name", help="Name of the remote repository.")
@@ -248,6 +272,7 @@ def main(args):
     args = parser.parse_args()
     devtools_test_output_file = args.log_file_path
     coverage_file_path = args.coverage_file_path
+    versions_file_path = args.versions_file_path
     output_file_name = args.output_file_path
     local_repo_path = args.local_repo_path
     remote_repo_name = args.remote_repo_name
@@ -352,7 +377,7 @@ def main(args):
     # Cycle through the xml line by line. This will have data for ALL tests.
     # The 'context' in testthat is the 'name' in the xml file.
     # The expected format of the context is:
-    # <function name>::<maths|expt|smk|args|disc>::<Optional other info>::<single|multiple>
+    # <function name>::<maths|expt|smk|args|disc>::<Optional other info>
     # e.g.
     # ds.asFactor::smoke
     for testsuite in root:
@@ -508,8 +533,12 @@ def main(args):
 
 
     h.write("<br/><br/>")
-    build_html_summary_table(ds_test_status, unique_test_types, ['r','vm'], pp, h)    
-    h.write("<br/><br/>")
+
+    h.write('<div style="overflow:auto">')
+    build_html_summary_table(ds_test_status, unique_test_types, ['r','vm'], pp, h)
+    parse_versions_file(versions_file_path, h)
+    h.write("</div>")
+
 
 
     h.write("<h3>Tests based on DataSHIELD functions</h3>")

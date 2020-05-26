@@ -3,6 +3,16 @@ table {
   border: 1px solid black;
 }
 
+table.summary {
+  position: relative;
+  float: left;
+}
+
+table.versions {
+  position: relative;
+  float:right;
+}
+
 td, th {
   padding:5px;
   border: 1px;
