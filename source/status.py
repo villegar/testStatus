@@ -21,7 +21,7 @@
 
 # TO DO
 # Name-value arg parsing (with defaults?)
-# Bring in version info - the data is in filename.txt
+# Bring in version info - the data is in
 
 import argparse
 import datetime
@@ -49,19 +49,20 @@ __date__ = "26/5/20"
 # summay[total][problems]
 # summay[total][number]
 # summay[total][time]
-def build_summary_dictionary(ds_test_status, unique_test_types, this_env, pp):
+def build_summary_dictionary(ds_test_status, unique_test_types, envs, pp):
     summary = {}
 
-    pp.pprint(ds_test_status)
-
-
-    # Initialize as zero
-    for this_unique_test_type in unique_test_types[this_env]:
-        summary[this_unique_test_type] = {}
-        summary[this_unique_test_type]['pass'] = 0
-        summary[this_unique_test_type]['problems'] = 0
-        summary[this_unique_test_type]['number'] = 0
-        summary[this_unique_test_type]['time'] = 0
+    # Initialize as zero. Go through all envs, skipping if there are duplicate test_types across envs
+    for this_env in envs:
+        for this_unique_test_type in unique_test_types[this_env]:
+            try:
+                summary[this_unique_test_type] = {}
+                summary[this_unique_test_type]['pass'] = 0
+                summary[this_unique_test_type]['problems'] = 0
+                summary[this_unique_test_type]['number'] = 0
+                summary[this_unique_test_type]['time'] = 0
+            except:
+                pass
 
     # Totals
     summary['total'] = {}
@@ -70,31 +71,29 @@ def build_summary_dictionary(ds_test_status, unique_test_types, this_env, pp):
     summary['total']['number'] = 0
     summary['total']['time'] = 0
 
-    pp.pprint(summary)
+    for this_env in envs:
+        for this_function_name in ds_test_status[this_env]:
+            pp.pprint(this_function_name)
+            for this_unique_test_type in unique_test_types[this_env]:
+                try:
+                    this_failures = int(ds_test_status[this_env][this_function_name][this_unique_test_type]['failures'])
+                    this_errors = int(ds_test_status[this_env][this_function_name][this_unique_test_type]['errors'])
+                    this_number = int(ds_test_status[this_env][this_function_name][this_unique_test_type]['number'])
+                    this_time = float(ds_test_status[this_env][this_function_name][this_unique_test_type]['time'])
 
-    for this_function_name in ds_test_status[this_env]:
-        pp.pprint(this_function_name)
-        for this_unique_test_type in unique_test_types[this_env]:
-            try:
-                # this_skipped = int(ds_test_status[this_function_name][this_unique_test_type]['skipped'])
-                this_failures = int(ds_test_status[this_env][this_function_name][this_unique_test_type]['failures'])
-                this_errors = int(ds_test_status[this_env][this_function_name][this_unique_test_type]['errors'])
-                this_number = int(ds_test_status[this_env][this_function_name][this_unique_test_type]['number'])
-                this_time = float(ds_test_status[this_env][this_function_name][this_unique_test_type]['time'])
+                    this_problems = this_failures + this_errors
 
-                this_problems = this_failures + this_errors
+                    summary[this_unique_test_type]['pass'] += (this_number - this_problems)
+                    summary[this_unique_test_type]['problems'] += this_problems
+                    summary[this_unique_test_type]['number'] += this_number
+                    summary[this_unique_test_type]['time'] += this_time
 
-                summary[this_unique_test_type]['pass'] += (this_number - this_problems)
-                summary[this_unique_test_type]['problems'] += this_problems
-                summary[this_unique_test_type]['number'] += this_number
-                summary[this_unique_test_type]['time'] += this_time
-
-                summary['total']['pass'] += (this_number - this_problems)
-                summary['total']['problems'] += this_problems
-                summary['total']['number'] += this_number
-                summary['total']['time'] += this_time
-            except:
-                pass
+                    summary['total']['pass'] += (this_number - this_problems)
+                    summary['total']['problems'] += this_problems
+                    summary['total']['number'] += this_number
+                    summary['total']['time'] += this_time
+                except:
+                    pass
 
     print("#####################################\nSUMMARY")
     pp.pprint(summary)
@@ -144,12 +143,12 @@ def parse_coverage(coverage_file_path):
 
 ############################################################################
 # HTML summary table
-def build_html_summary_table(ds_test_status, unique_test_types, env, pp, h):
+def build_html_summary_table(ds_test_status, unique_test_types, envs, pp, h):
 
-    summary = build_summary_dictionary(ds_test_status, unique_test_types, env, pp)
+    summary = build_summary_dictionary(ds_test_status, unique_test_types, envs, pp)
 
     h.write("<table>")
-    h.write("<tr><th>Test type</th><th>Number of tests</th><th>Pass rate</th><th>Time taken (s)</th></tr>")
+    h.write("<tr><th>Test type</th><th>Number of tests</th><th>Number of passes</th><th>Time taken (s)</th></tr>")
     for this_unique_test_type in sorted(summary):
         if this_unique_test_type != 'total':
             h.write("<tr><td>" + this_unique_test_type + '</td><td style="text-align:right">' + str(summary[this_unique_test_type]['number']) + '</td><td  style="text-align:right">' + str(summary[this_unique_test_type]['pass']) + '</td><td style="text-align:right">' + str(int(summary[this_unique_test_type]['time'])) + "</td></tr>")
@@ -160,12 +159,13 @@ def build_html_summary_table(ds_test_status, unique_test_types, env, pp, h):
 
 ############################################################################
 # HTML Main table
-def build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_path, branch_name, gh_log_url, coverage, ds_tests):
+def build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_path, branch_name, gh_log_url, coverage, ds_tests, show_coverage_column):
 
     h.write('<table class="tablesorter">')
     h.write('<thead>')
     # Some fixed named columns to begin with, then use the unique test types derived from the data.
-    h.write('<tr><th rowspan="2">Function name <br/>&uarr;&darr;</th><th rowspan="2">Coverage <br/>&uarr;&darr;</th>')
+    h.write('<tr><th rowspan="2">Function name <br/>&uarr;&darr;</th>')
+    if show_coverage_column: h.write('<th rowspan="2">Coverage <br/>&uarr;&darr;</th>')
     h.write('<th colspan="' + str(len(unique_test_types[env])) + '">Test file links</th>')
     h.write('<th colspan="' + str(len(unique_test_types[env])) + '">Pass rate</th>')
     h.write('<th colspan="' + str(len(unique_test_types[env])) + '">Test run time (s)</th>')
@@ -189,17 +189,18 @@ def build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_
         h.write("<tr>")
         h.write('<td><a href="' + remote_repo_path + '/blob/' + branch_name + '/R/' + this_function + '.R" target="_blank">' + this_function + "</a></td>")
 
-        # Coverage columne
-        if this_function in coverage:
-            this_coverage = float(coverage[this_function])
-            if this_coverage > 80:
-                h.write('<td class="good" style="text-align:right;">' + str(this_coverage) + '</td>')
-            elif this_coverage > 60:
-                h.write('<td class="ok" style="text-align:right;">' + str(this_coverage) + '</td>')
+        if show_coverage_column:
+            # Coverage columne
+            if this_function in coverage:
+                this_coverage = float(coverage[this_function])
+                if this_coverage > 80:
+                    h.write('<td class="good" style="text-align:right;">' + str(this_coverage) + '</td>')
+                elif this_coverage > 60:
+                    h.write('<td class="ok" style="text-align:right;">' + str(this_coverage) + '</td>')
+                else:
+                    h.write('<td class="bad" style="text-align:right;">' + str(this_coverage) + '</td>')
             else:
-                h.write('<td class="bad" style="text-align:right;">' + str(this_coverage) + '</td>')
-        else:
-            h.write('<td></td>')
+                h.write('<td></td>')
 
         # Cycle through all the test types putting in a link to the test file
         for this_unique_test_type in unique_test_types[env]:
@@ -507,18 +508,16 @@ def main(args):
 
 
     h.write("<br/><br/>")
-
-    env = 'r'
-    build_html_summary_table(ds_test_status, unique_test_types, env, pp, h)
-    h.write("<br/><br/>")
-    build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_path, branch_name, gh_log_url, coverage, ds_tests)
+    build_html_summary_table(ds_test_status, unique_test_types, ['r','vm'], pp, h)    
     h.write("<br/><br/>")
 
-    env = 'vm'
-    build_html_summary_table(ds_test_status, unique_test_types, env, pp, h)
+
+    h.write("<h3>Tests based on DataSHIELD functions</h3>")
+    build_html_table(ds_test_status, unique_test_types, 'r', pp, h, remote_repo_path, branch_name, gh_log_url, coverage, ds_tests, True)
     h.write("<br/><br/>")
-    build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_path, branch_name, gh_log_url, coverage, ds_tests)
-    h.write("<br/><br/>")
+
+    h.write("<h3>Tests based on the environment</h3>")
+    build_html_table(ds_test_status, unique_test_types, 'vm', pp, h, remote_repo_path, branch_name, gh_log_url, coverage, ds_tests, False)
     
     
     h.write("</body>\n</html>")
