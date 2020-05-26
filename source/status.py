@@ -144,7 +144,7 @@ def parse_coverage(coverage_file_path):
 
 
 ################################################################################
-# Parse the versions file, returning a dict of file coverages
+# Parse the versions file. Write the html table to file.
 def parse_versions_file(versions_file_path, h):
     versions = {}
     with open(versions_file_path) as f:
