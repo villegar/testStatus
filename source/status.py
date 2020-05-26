@@ -19,8 +19,9 @@
 
 # Assuming the locally checked out repo is the branch that I need.
 
-# TODO
+# TO DO
 # Name-value arg parsing (with defaults?)
+# Bring in version info - the data is in filename.txt
 
 import argparse
 import datetime
@@ -32,7 +33,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 __author__ = "Olly Butters"
-__date__ = "22/5/20"
+__date__ = "26/5/20"
 
 
 ################################################################################
@@ -508,17 +509,15 @@ def main(args):
     h.write("<br/><br/>")
 
     env = 'r'
-
     build_html_summary_table(ds_test_status, unique_test_types, env, pp, h)
     h.write("<br/><br/>")
-    build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_name, branch_name, gh_log_url, coverage, ds_tests)
+    build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_path, branch_name, gh_log_url, coverage, ds_tests)
     h.write("<br/><br/>")
 
     env = 'vm'
-
     build_html_summary_table(ds_test_status, unique_test_types, env, pp, h)
     h.write("<br/><br/>")
-    build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_name, branch_name, gh_log_url, coverage, ds_tests)
+    build_html_table(ds_test_status, unique_test_types, env, pp, h, remote_repo_path, branch_name, gh_log_url, coverage, ds_tests)
     h.write("<br/><br/>")
     
     
