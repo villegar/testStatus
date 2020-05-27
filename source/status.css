@@ -6,11 +6,13 @@ table {
 table.summary {
   position: relative;
   float: left;
+  margin-right: 2em;
+  margin-bottom: 2em;
 }
 
 table.versions {
   position: relative;
-  float:right;
+  float:left;
 }
 
 td, th {
