@@ -1,0 +1,4 @@
+branch:v6.1-dev
+os:Ubuntu 16.04.6 LTS
+R:R version 4.0.1 (2020-06-06) -- "See Things Now"
+opal:3.0.0
