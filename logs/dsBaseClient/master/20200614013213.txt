@@ -1,0 +1,4 @@
+branch:master
+os:Ubuntu 16.04.6 LTS
+R:R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
+opal:3.0.0
