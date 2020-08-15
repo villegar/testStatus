@@ -1,0 +1,4 @@
+branch:master
+os:Ubuntu 16.04.6 LTS
+R:R version 4.0.2 (2020-06-22) -- "Taking Off Again"
+opal:(7, 'Failed to connect to localhost port 8080: Connection refused')
