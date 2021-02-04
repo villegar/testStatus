@@ -1,0 +1,4 @@
+branch:v6.1.1-dev
+os:Ubuntu 16.04.7 LTS
+R:R version 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out"
+opal:3.0.9
