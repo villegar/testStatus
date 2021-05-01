@@ -1,0 +1,4 @@
+branch:v6.2-dev
+os:Ubuntu 16.04.7 LTS
+R:R version 4.0.5 (2021-03-31) -- "Shake and Throw"
+opal:4.1.0
