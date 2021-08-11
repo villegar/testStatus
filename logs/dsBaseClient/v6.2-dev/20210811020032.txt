@@ -1,0 +1,4 @@
+branch:v6.2-dev
+os:Ubuntu 16.04.7 LTS
+R:R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+opal:4.2.4
