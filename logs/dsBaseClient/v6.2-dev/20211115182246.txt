@@ -1,0 +1,4 @@
+branch:v6.2-dev
+os:Ubuntu 20.04.3 LTS
+R:R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+opal:4.2.8
