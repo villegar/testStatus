@@ -1,0 +1,4 @@
+branch:v6.2-dev
+os:Ubuntu 20.04.4 LTS
+R:R version 4.2.0 (2022-04-22) -- "Vigorous Calisthenics"
+opal:(7, 'Failed to connect to localhost port 8443: Connection refused')
