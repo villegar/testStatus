@@ -1,0 +1,4 @@
+branch:v6.2.1-dev
+os:Ubuntu 20.04.5 LTS
+R:R version 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
+opal:
