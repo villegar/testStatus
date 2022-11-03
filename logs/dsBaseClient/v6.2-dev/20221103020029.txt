@@ -1,0 +1,4 @@
+branch:v6.2-dev
+os:Ubuntu 20.04.5 LTS
+R:R version 4.2.2 (2022-10-31) -- "Innocent and Trusting"
+opal:(1, 'Received HTTP/0.9 when not allowed\n')
