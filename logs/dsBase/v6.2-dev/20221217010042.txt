@@ -1,0 +1,4 @@
+branch:v6.2-dev
+os:Ubuntu 22.04.1 LTS
+R:R version 4.2.2 Patched (2022-11-10 r83330) -- "Innocent and Trusting"
+opal:
