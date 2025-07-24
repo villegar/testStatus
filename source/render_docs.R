@@ -18,6 +18,10 @@ if (length(args) >= 2) {
 } else {
   OUTPUT_DIR <- INPUT_DIR
 }
+
+# create directory in case an empty directory is received
+dir.create(INPUT_DIR, recursive = TRUE)
+dir.create(OUTPUT_DIR, recursive = TRUE)
  
 # GENERATE HTML ----
 header_html <- glue::glue(
