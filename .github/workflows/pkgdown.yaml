@@ -39,6 +39,7 @@ jobs:
             cran::purrr
             cran::readr
             cran::stringr
+            cran::git2r
           needs: website
 
       - name: Build site
