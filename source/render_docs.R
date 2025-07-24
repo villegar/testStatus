@@ -18,6 +18,13 @@ if (length(args) >= 2) {
 } else {
   OUTPUT_DIR <- INPUT_DIR
 }
+# 3rd argument: GH_REPO - GitHub repository URL
+if (length(args) >= 3) {
+  GH_REPO <- args[3]
+} else {
+  GH_REPO <- git2r::remote_url() |>
+    basename()
+}
 
 # create directory in case an empty directory is received
 dir.create(INPUT_DIR, recursive = TRUE)
@@ -48,7 +55,7 @@ body_html <- INPUT_DIR |>
     new_section <- paste0(new_section, aux, "\n</ul>\n\n")
   }) |>
   purrr::list_c() |>
-  stringr::str_remove_all(stringr::str_escape(INPUT_DIR)) |>
+  stringr::str_replace_all(stringr::str_escape(INPUT_DIR), GH_REPO) |>
   paste0(collapse = "")
 
 body_html <- paste0(body_html, "\n</body>")
