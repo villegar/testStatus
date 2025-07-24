@@ -115,6 +115,7 @@ tests_tbl_v3 <- tests_tbl_v2 |>
   dplyr::distinct(fn_name, fn_name_sub, test_class, .keep_all = TRUE)
 
 # check/validate URLs
+message("Validating URLs...")
 tests_tbl_v4 <- tests_tbl_v3 |>
   dplyr::mutate(
     valid_github_script_link = github_script_link |>
