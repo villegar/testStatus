@@ -17,7 +17,7 @@ if (length(args) >= 1) {
 if (length(args) >= 2) {
   OUTPUT_DIR <- args[2]
 } else {
-  OUTPUT_DIR <- getwd()
+  OUTPUT_DIR <- INPUT_DIR
 }
 # 3rd argument: GH_REPO - GitHub repository URL
 if (length(args) >= 3) {
@@ -44,6 +44,7 @@ valid_url <- function(URL) {
 }
 
 # LOAD RESULTS ----
+message("Loading results...")
 # Load coverage output
 covr_csv <- file.path(INPUT_DIR, "coveragelist.csv") |>
   readr::read_csv(show_col_types = FALSE) |>
@@ -68,6 +69,7 @@ tests_tbl <- tests_xml |>
   purrr::list_c()
 
 # AGGREGATE RESULTS ----
+message("Aggregating results...")
 tests_tbl_v2 <- tests_tbl |>
   # extract details from testsuite
   dplyr::mutate(
@@ -91,7 +93,15 @@ tests_tbl_v2 <- tests_tbl |>
     test_class = ifelse(has_test_class, test_class, NA)
   ) |>
   # fill in sub-tests with test class
-  t_tbl_v3 <- tests_tbl_v2 |>
+  tidyr::fill(test_class, .direction = "down") |>
+  dplyr::mutate(
+    # create links to function script and test file
+    github_script_link = file.path(GH_REPO, "R", paste0(fn_name, fn_name_sub, ".R")),
+    github_test_link = file.path(GH_REPO, "tests/testthat", paste0("test-", test_class, "-", fn_name, fn_name_sub, ".R"))
+  )
+
+# aggregate results by function name and test class
+tests_tbl_v3 <- tests_tbl_v2 |>
   dplyr::group_by(fn_name, fn_name_sub, test_class) |>
   dplyr::mutate(
     tests = sum(tests, na.rm = TRUE),
@@ -116,6 +126,7 @@ tests_tbl_v4 <- tests_tbl_v3 |>
   )
 
 # ADD TEST COVERAGE ----
+message("Adding test coverage...")
 covr_csv_2 <- covr_csv |>
   dplyr::mutate(
     # extract function name
