@@ -62,6 +62,8 @@ body_html <- INPUT_DIR |>
         list.dirs(full.names = TRUE, recursive = FALSE)
       # detect directories that are not the latest version, avoid cluttering repo
       idx <- stringr::str_detect(list_all_dirs_level_2, "latest", negate = TRUE)
+      message("Deleting unwanted directories: \n", 
+              paste0("- ", list_all_dirs_level_2[idx], collapse = "\n"))
       # delete unwanted directories
       unlink(list_all_dirs_level_2[idx], force = TRUE)
     }
@@ -82,3 +84,7 @@ body_html <- paste0(body_html, "\n</body>")
 # SAVE HTML ----
 paste0(header_html, body_html, collapse = "") |>
   readr::write_lines(file.path(OUTPUT_DIR, "index.html"))
+
+# list files in the current directory
+list.files(INPUT_DIR, recursive = TRUE) |>
+  message()
