@@ -25,6 +25,11 @@ if (length(args) >= 3) {
   CLEAR_DOCS <- FALSE
 }
 
+message("Using the following configuration:",
+        "\n  INPUT_DIR: ", INPUT_DIR,
+        "\n  OUTPUT_DIR: ", OUTPUT_DIR,
+        "\n  CLEAR_DOCS: ", CLEAR_DOCS)
+
 # create directory in case an empty directory is received
 dir.create(INPUT_DIR, recursive = TRUE)
 dir.create(OUTPUT_DIR, recursive = TRUE)
