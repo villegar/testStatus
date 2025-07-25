@@ -20,7 +20,7 @@ if (length(args) >= 2) {
 }
 # 3rd argument: CLEAR_DOCS
 if (length(args) >= 3) {
-  CLEAR_DOCS <- args[3]
+  CLEAR_DOCS <- as.logical(args[3])
 } else {
   CLEAR_DOCS <- FALSE
 }
