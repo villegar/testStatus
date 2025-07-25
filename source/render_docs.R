@@ -18,6 +18,12 @@ if (length(args) >= 2) {
 } else {
   OUTPUT_DIR <- INPUT_DIR
 }
+# 3rd argument: CLEAR_DOCS
+if (length(args) >= 3) {
+  CLEAR_DOCS <- args[3]
+} else {
+  CLEAR_DOCS <- FALSE
+}
 
 # create directory in case an empty directory is received
 dir.create(INPUT_DIR, recursive = TRUE)
@@ -41,6 +47,20 @@ body_html <- INPUT_DIR |>
   list.dirs(full.names = TRUE, recursive = FALSE) |>
   purrr::map(function(d) {
     new_section <- paste0("<h2>", basename(d), "</h2>\n<ul>\n")
+    # clear the documents directory and only keep latest snapshot
+    if (CLEAR_DOCS) {
+      # list directories at level 1
+      list_all_dirs_level_1 <- d |>
+        list.dirs(full.names = TRUE, recursive = FALSE)
+      # list directories at level 2
+      list_all_dirs_level_2 <- list_all_dirs_level_1 |>
+        list.dirs(full.names = TRUE, recursive = FALSE)
+      # detect directories that are not the latest version, avoid cluttering repo
+      idx <- stringr::str_detect(list_all_dirs_level_2, "latest", negate = TRUE)
+      # delete unwanted directories
+      unlink(list_all_dirs_level_2[idx], force = TRUE)
+    }
+    
     aux <- d |>
       list.dirs(full.names = TRUE, recursive = FALSE) |>
       purrr::map(\(sd) paste0("\t<li><a href='", sd, "/latest'>", basename(sd) ,"</a></li>")) |>
