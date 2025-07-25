@@ -33,6 +33,14 @@ message("Using the following configuration:",
 # create directory in case an empty directory is received
 dir.create(INPUT_DIR, recursive = TRUE)
 dir.create(OUTPUT_DIR, recursive = TRUE)
+
+# HELPER FUNCTIONS ----
+clean_url <- function(url, input_dir) {
+  url |>
+    stringr::str_replace_all("\\/\\/", "\\/") |>
+    stringr::str_remove_all(stringr::str_escape(input_dir)) |>
+    stringr::str_remove_all("^[\\/]*")
+}
  
 # GENERATE HTML ----
 header_html <- glue::glue(
@@ -70,13 +78,11 @@ body_html <- INPUT_DIR |>
     
     aux <- d |>
       list.dirs(full.names = TRUE, recursive = FALSE) |>
-      purrr::map(\(sd) paste0("\t<li><a href='", sd, "/latest'>", basename(sd) ,"</a></li>")) |>
+      purrr::map(\(sd) paste0("\t<li><a href='", clean_url(sd, INPUT_DIR), "/latest'>", basename(sd) ,"</a></li>")) |>
       paste0(collapse = "\n")
     new_section <- paste0(new_section, aux, "\n</ul>\n\n")
   }) |>
   purrr::list_c() |>
-  stringr::str_replace_all("\\/\\/", "\\/") |>
-  stringr::str_remove_all(stringr::str_escape(INPUT_DIR)) |>
   paste0(collapse = "")
 
 body_html <- paste0(body_html, "\n</body>")
