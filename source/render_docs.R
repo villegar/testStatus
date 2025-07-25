@@ -44,16 +44,15 @@ clean_url <- function(url, input_dir) {
  
 # GENERATE HTML ----
 header_html <- glue::glue(
-  "<html>
-  <head>
-    <title>DataSHIELD: Latest Test Status</title>
-  </head>
-  <body>
-  <a href='https://datashield.org'><img src='https://i0.wp.com/datashield.org/wp-content/uploads/2024/07/DS-logo-A4.png' alt='DataSHIELD logo' align='right' height=100px/></a>
-  <h1>DataSHIELD: Test suite status</h1>
-  <p>DataSHIELD is an infrastructure and series of R packages that enables the remote and non-disclosive analysis of sensitive research data. DataSHIELD has been used with real world and consented research data for over 10 years.</p>
-  <p>The following are auto-generated reports for testing key DataSHIELD R packages.</p>
-  <p><bf>Last updated:</bf> {Sys.Date()} @ {format(Sys.time(), '%H:%M:%S')}
+  "---
+layout: default
+title: DataSHIELD: Latest Test Status
+---
+<a href='https://datashield.org'><img src='https://i0.wp.com/datashield.org/wp-content/uploads/2024/07/DS-logo-A4.png' alt='DataSHIELD logo' align='right' height=100px/></a>
+<h1>DataSHIELD: Test suite status</h1>
+<p>DataSHIELD is an infrastructure and series of R packages that enables the remote and non-disclosive analysis of sensitive research data. DataSHIELD has been used with real world and consented research data for over 10 years.</p>
+<p>The following are auto-generated reports for testing key DataSHIELD R packages.</p>
+<p><bf>Last updated:</bf> {Sys.Date()} @ {format(Sys.time(), '%H:%M:%S')}
 \n")
 
 body_html <- INPUT_DIR |>
@@ -85,7 +84,7 @@ body_html <- INPUT_DIR |>
   purrr::list_c() |>
   paste0(collapse = "")
 
-body_html <- paste0(body_html, "\n</body>")
+body_html <- paste0(body_html, "\n")
 
 # SAVE HTML ----
 paste0(header_html, body_html, collapse = "") |>
