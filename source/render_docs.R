@@ -65,7 +65,7 @@ body_html <- INPUT_DIR |>
       message("Deleting unwanted directories: \n", 
               paste0("- ", list_all_dirs_level_2[idx], collapse = "\n"))
       # delete unwanted directories
-      unlink(list_all_dirs_level_2[idx], force = TRUE)
+      unlink(list_all_dirs_level_2[idx], force = TRUE, recursive = TRUE)
     }
     
     aux <- d |>
@@ -86,5 +86,5 @@ paste0(header_html, body_html, collapse = "") |>
   readr::write_lines(file.path(OUTPUT_DIR, "index.html"))
 
 # list files in the current directory
-list.files(INPUT_DIR, recursive = TRUE) |>
-  message()
+message("\nFiles that will be deployed:\n",
+        paste0("- ", list.files(INPUT_DIR, recursive = TRUE), collapse = "\n"))
