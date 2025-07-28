@@ -55,8 +55,15 @@ title: DataSHIELD: Latest Test Status
 <p><bf>Last updated:</bf> {Sys.Date()} @ {format(Sys.time(), '%H:%M:%S')}
 \n")
 
-body_html <- INPUT_DIR |>
-  list.dirs(full.names = TRUE, recursive = FALSE) |>
+# list directories inside INPUT_DIR
+dirs_lst <- INPUT_DIR |>
+  list.dirs(full.names = TRUE, recursive = FALSE)
+# filter out subdirectories that don't start with a letter or number
+idx <- dirs_lst |>
+  basename() |>
+  stringr::str_detect(pattern = "^[a-zA-Z0-9]+")
+
+body_html <- dirs_lst[idx] |>
   purrr::map(function(d) {
     new_section <- paste0("<h2>", basename(d), "</h2>\n<ul>\n")
     # clear the documents directory and only keep latest snapshot
