@@ -12,11 +12,11 @@ suite](https://github.com/villegar/dsBase/actions/workflows/dsBase_test_suite.ya
 <!-- badges: end -->
 
 This repository contains scripts to aggregate
-([source/parse_test_report.R](%22source/parse_test_report.R%22)) results
-from [`{testthat}`](https://cran.r-project.org/package=testthat) and
+([source/parse_test_report.R](source/parse_test_report.R)) results from
+[`{testthat}`](https://cran.r-project.org/package=testthat) and
 [`{covr}`](https://cran.r-project.org/package=covr) packages (see the
 workflow: <https://github.com/datashield/.github>). There is a script to
-render ([source/render_docs.R](%22source/render_docs.R%22)) the results
+render ([source/render_docs.R](source/render_docs.R)) the results
 committed by the pipeline to the [logs/](logs/) directory. Also, a
 template for a Quarto report
 ([source/test_report.qmd](source/test_report.qmd)) to present the
