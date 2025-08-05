@@ -47,7 +47,7 @@ valid_url <- function(URL) {
 message("Loading results...")
 # Load coverage output
 covr_csv <- file.path(INPUT_DIR, "coveragelist.csv") |>
-  readr::read_csv(show_col_types = FALSE, 
+  readr::read_csv(show_col_types = FALSE, skip = 1,
                   col_names = c("name", "file_coverage", "total_coverage"))
 
 # Load test results
