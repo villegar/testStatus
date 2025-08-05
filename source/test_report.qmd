@@ -36,6 +36,7 @@ test_files_rds[length(test_files_rds)] |>
                                    
     x_tbl <- x |>
       dplyr::rename(coverage = file_coverage) |>
+      dplyr::mutate(coverage = ifelse(is.na(coverage), 0, coverage)) |>
       dplyr::mutate(
         tests = as.numeric(tests),
         skipped = as.numeric(skipped),
