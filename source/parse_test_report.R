@@ -85,7 +85,8 @@ tests_tbl_v2 <- tests_tbl |>
       stringr::str_remove(FN_TEST_CLASS_PATTERN) |>
       stringr::str_remove(fn_name) |>
       stringr::str_extract("^[^:-]+") |>
-      stringr::str_remove_all("[\\(\\)]"),
+      stringr::str_remove_all("[\\(\\)]") |>
+      stringr::str_replace_na(""),
     # fn_name_sub = ifelse(nchar(fn_name_sub) == 0, NA, fn_name_sub),
     # detect if current record has a test class
     has_test_class = name |>
