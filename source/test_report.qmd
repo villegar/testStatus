@@ -25,7 +25,7 @@ test_files_rds[length(test_files_rds)] |>
     x_overview <- x |>
       dplyr::summarise(
         fn_name = "OVERVIEW",
-        coverage = round(mean(file_coverage, na.rm = TRUE), 2),
+        coverage = round(mean(as.numeric(file_coverage), na.rm = TRUE), 2),
         test_url = "",
         tests = sum(as.numeric(tests), na.rm = TRUE),
         skipped = sum(as.numeric(skipped), na.rm = TRUE),
@@ -36,8 +36,8 @@ test_files_rds[length(test_files_rds)] |>
                                    
     x_tbl <- x |>
       dplyr::rename(coverage = file_coverage) |>
-      dplyr::mutate(coverage = ifelse(is.na(coverage), 0, coverage)) |>
       dplyr::mutate(
+        coverage = ifelse(is.na(coverage), 0, as.numeric(coverage)),
         tests = as.numeric(tests),
         skipped = as.numeric(skipped),
         failures = sum(as.numeric(failures), na.rm = TRUE),
@@ -66,8 +66,8 @@ test_files_rds[length(test_files_rds)] |>
       ) |>
       knitr::kable("html", escape = FALSE) |>
       kableExtra::kable_styling(fixed_thead = TRUE) |>
-      kableExtra::column_spec(2, background = ifelse(x_tbl$coverage >= 80, "#2dc93766",
-                                                     ifelse(x_tbl$coverage >=60, "#e7b41666", "#cc323266"))) |>
+      kableExtra::column_spec(2, 
+                              background = ifelse(is.na(x_tbl$coverage) | x_tbl$coverage < 60, "#cc323266", ifelse(x_tbl$coverage < 80, "#e7b41666", "#2dc93766"))) |>
       kableExtra::row_spec(c(0, nrow(x) + 1), bold = TRUE, color = "white", background = "#173529") |>
       cat()
     
