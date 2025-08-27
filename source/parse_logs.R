@@ -19,6 +19,9 @@ validate_xml <- function(xml_path) {
   })
 }
 
+# dependencies
+# install.packages(c("glue", "kableExtra", "knitr", "purrr", "quarto"))
+
 # remove invalid XMLs
 list.files("logs", ".xml", ignore.case = TRUE, full.names = TRUE, recursive = TRUE) |>
   purrr::walk(function(xml_path) {
@@ -53,7 +56,7 @@ find_latest_version <- function(d) {
 logs_dirs_versions |>
   purrr::map(find_latest_version) |>
   purrr::list_c() |>
-  # dplyr::slice(11) |>
+  # dplyr::slice(18) |>
   purrr::pwalk(function(path, latest) {
     # setup
     INPUT_DIR <- latest
@@ -85,13 +88,13 @@ logs_dirs_versions |>
         RDS_OUTPUT <- file.path(OUTPUT_DIR, paste0(Sys.Date(), "_covr_and_test_results.Rds"))
         # parse test report results
         if (!file.exists(RDS_OUTPUT)) {
-        glue::glue("Rscript source/parse_test_report.R {INPUT_DIR} {OUTPUT_DIR} {GH_REPO}") |>
-          system()
+          glue::glue("Rscript source/parse_test_report.R {INPUT_DIR} {OUTPUT_DIR} {GH_REPO} {glue::single_quote(FN_NAME_PATTERN)} {glue::single_quote(FN_TEST_CLASS_PATTERN)}") |>
+            system()
         }
         
         # generate report with Quarto template
         title <- paste0("DataSHIELD tests\\' overview: ", basename(dirname(path)), "/", basename(path))
-        glue::glue("R -e \"quarto::quarto_render('source/test_report.qmd', execute_params = list(input_dir = '../{OUTPUT_DIR}', title = \'{title}\'))\"") |>
+        glue::glue("R -s -e \"quarto::quarto_render('source/test_report.qmd', execute_params = list(input_dir = '../{OUTPUT_DIR}', title = \'{title}\'))\"") |>
           system()
         
         # delete old version of output
