@@ -1,0 +1,6671 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>test_report</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="test_report_files/libs/clipboard/clipboard.min.js"></script>
+<script src="test_report_files/libs/quarto-html/quarto.js"></script>
+<script src="test_report_files/libs/quarto-html/popper.min.js"></script>
+<script src="test_report_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="test_report_files/libs/quarto-html/anchor.min.js"></script>
+<link href="test_report_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="test_report_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="test_report_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="test_report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="test_report_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="datashield-tests-overview-dsbaseclientv6.1" class="level1">
+<h1>DataSHIELD tests’ overview: dsBaseClient/v6.1</h1>
+<p><strong>Last updated:</strong> 2025-09-04 @ 11:10:00</p>
+<section id="test-type-_" class="level3">
+<h3 class="anchored" data-anchor-id="test-type-_">Test type: <code>_</code></h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Function
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Coverage
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Test
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Tests
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Time
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Skipped
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Failures
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Errors
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+vm
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+0
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1.157
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+OVERVIEW
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+NaN
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+1
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+1.157
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="test-type-arg" class="level3">
+<h3 class="anchored" data-anchor-id="test-type-arg">Test type: <code>arg</code></h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Function
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Coverage
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Test
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Tests
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Time
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Skipped
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Failures
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Errors
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asCharacter.R" style="     " target="_blank">ds.asCharacter</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.asCharacter.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+8.050
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asDataMatrix.R" style="     " target="_blank">ds.asDataMatrix</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.asDataMatrix.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.502
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asFactor.R" style="     " target="_blank">ds.asFactor</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+77.78
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.asFactor.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5.413
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asInteger.R" style="     " target="_blank">ds.asInteger</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.asInteger.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.236
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asList.R" style="     " target="_blank">ds.asList</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.asList.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.132
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asLogical.R" style="     " target="_blank">ds.asLogical</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.asLogical.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.212
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asMatrix.R" style="     " target="_blank">ds.asMatrix</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.asMatrix.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.140
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asNumeric.R" style="     " target="_blank">ds.asNumeric</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.asNumeric.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.138
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.assign.R" style="     " target="_blank">ds.assign</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+87.50
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.assign.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.160
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.Boole.R" style="     " target="_blank">ds.Boole</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+71.62
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.Boole.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+5.270
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.cbind.R" style="     " target="_blank">ds.cbind</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+77.98
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.cbind.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+6.665
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.changeRefGroup.R" style="     " target="_blank">ds.changeRefGroup</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+91.67
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.changeRefGroup.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+6.272
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.class.R" style="     " target="_blank">ds.class</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.class.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.191
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.colnames.R" style="     " target="_blank">ds.colnames</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+90.91
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.colnames.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.169
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.completeCases.R" style="     " target="_blank">ds.completeCases</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+69.23
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.completeCases.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.153
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.cor.R" style="     " target="_blank">ds.cor</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+97.20
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.cor.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+8.835
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.corTest.R" style="     " target="_blank">ds.corTest</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+94.74
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.corTest.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.233
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.cov.R" style="     " target="_blank">ds.cov</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+96.20
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.cov.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+8.669
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.c.R" style="     " target="_blank">ds.c</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+94.44
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.c.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.174
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dataFrameFill.R" style="     " target="_blank">ds.dataFrameFill</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+79.69
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.dataFrameFill.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+6.555
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dataFrame.R" style="     " target="_blank">ds.dataFrame</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+78.05
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.dataFrame.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+6.721
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dataFrameSubset.R" style="     " target="_blank">ds.dataFrameSubset</a>
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+58.65
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.dataFrameSubset.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+5.815
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dim.R" style="     " target="_blank">ds.dim</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+97.44
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.dim.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+6.530
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.exists.R" style="     " target="_blank">ds.exists</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.exists.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.151
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.exp.R" style="     " target="_blank">ds.exp</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+88.89
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.exp.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.134
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ds.foobar
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+0.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.foobar.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:right;">
+6.330
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.glmerSLMA.R" style="     " target="_blank">ds.glmerSLMA</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+78.67
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.glmerSLMA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+10.578
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.glmPredict.R" style="     " target="_blank">ds.glmPredict</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+81.67
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.glmPredict.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:right;">
+8.103
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.glm.R" style="     " target="_blank">ds.glm</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+61.81
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.glm.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.698
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.glmSLMA.R" style="     " target="_blank">ds.glmSLMA</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+77.94
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.glmSLMA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+5.996
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.kurtosis.R" style="     " target="_blank">ds.kurtosis</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+93.44
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.kurtosis.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+5.875
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.length.R" style="     " target="_blank">ds.length</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+97.37
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.length.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+8.076
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.levels.R" style="     " target="_blank">ds.levels</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+93.75
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.levels.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.452
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.lexis.R" style="     " target="_blank">ds.lexis</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+85.71
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.lexis.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.092
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.list.R" style="     " target="_blank">ds.list</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+85.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.list.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.191
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.lmerSLMA.R" style="     " target="_blank">ds.lmerSLMA</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+81.37
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.lmerSLMA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:right;">
+10.641
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.log.R" style="     " target="_blank">ds.log</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+84.21
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.log.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.113
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.look.R" style="     " target="_blank">ds.look</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.look.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.115
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.ls.R" style="     " target="_blank">ds.ls</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.ls.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+5.807
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.make.R" style="     " target="_blank">ds.make</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+68.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.make.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.168
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixDet.R" style="     " target="_blank">ds.matrixDet</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.91
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.matrixDet.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.150
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixDet.report.R" style="     " target="_blank">ds.matrixDet.report</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.matrixDet.report.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.124
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixDiag.R" style="     " target="_blank">ds.matrixDiag</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+68.75
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.matrixDiag.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.158
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixDimnames.R" style="     " target="_blank">ds.matrixDimnames</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.matrixDimnames.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.126
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixInvert.R" style="     " target="_blank">ds.matrixInvert</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.matrixInvert.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.157
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixMult.R" style="     " target="_blank">ds.matrixMult</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+69.81
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.matrixMult.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.138
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrix.R" style="     " target="_blank">ds.matrix</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+67.69
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.matrix.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.161
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixTranspose.R" style="     " target="_blank">ds.matrixTranspose</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.matrixTranspose.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.176
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.meanByClass.R" style="     " target="_blank">ds.meanByClass</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+95.83
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.meanByClass.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+11.280
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.mean.R" style="     " target="_blank">ds.mean</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+98.21
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.mean.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+7.202
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.meanSdGp.R" style="     " target="_blank">ds.meanSdGp</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+89.38
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.meanSdGp.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.185
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.merge.R" style="     " target="_blank">ds.merge</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+75.38
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.merge.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+5.291
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.message.R" style="     " target="_blank">ds.message</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.message.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.212
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.names.R" style="     " target="_blank">ds.names</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.names.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+5.455
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.numNA.R" style="     " target="_blank">ds.numNA</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+90.91
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.numNA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.210
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.quantileMean.R" style="     " target="_blank">ds.quantileMean</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.quantileMean.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+8.895
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rbind.R" style="     " target="_blank">ds.rbind</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+66.36
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.rbind.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.150
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rBinom.R" style="     " target="_blank">ds.rBinom</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+67.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.rBinom.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.218
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.recodeLevels.R" style="     " target="_blank">ds.recodeLevels</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+96.97
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.recodeLevels.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+7.469
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.recodeValues.R" style="     " target="_blank">ds.recodeValues</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.recodeValues.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+5.321
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.replaceNA.R" style="     " target="_blank">ds.replaceNA</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+82.14
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.replaceNA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.260
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rep.R" style="     " target="_blank">ds.rep</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+68.97
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.rep.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.160
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.reShape.R" style="     " target="_blank">ds.reShape</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.reShape.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5.263
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rm.R" style="     " target="_blank">ds.rm</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.rm.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.215
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rNorm.R" style="     " target="_blank">ds.rNorm</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+66.35
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.rNorm.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.167
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rowColCalc.R" style="     " target="_blank">ds.rowColCalc</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+91.89
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.rowColCalc.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+13.080
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rPois.R" style="     " target="_blank">ds.rPois</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+67.35
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.rPois.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.207
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rUnif.R" style="     " target="_blank">ds.rUnif</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+66.02
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.rUnif.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.208
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.sample.R" style="     " target="_blank">ds.sample</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+79.27
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.sample.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5.332
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.seq.R" style="     " target="_blank">ds.seq</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+72.94
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.seq.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.187
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.setSeed.R" style="     " target="_blank">ds.setSeed</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+87.50
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.setSeed.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.210
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.skewness.R" style="     " target="_blank">ds.skewness</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+93.44
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.skewness.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+5.900
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.subsetByClass.R" style="     " target="_blank">ds.subsetByClass</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+96.77
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.subsetByClass.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+6.248
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.subset.R" style="     " target="_blank">ds.subset</a>
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+57.78
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.subset.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.244
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.summary.R" style="     " target="_blank">ds.summary</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+78.82
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.summary.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.217
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.table1D.R" style="     " target="_blank">ds.table1D</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+84.21
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.table1D.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+6.554
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.table2D.R" style="     " target="_blank">ds.table2D</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+82.76
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.table2D.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.217
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.table.R" style="     " target="_blank">ds.table</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+80.35
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.table.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6.690
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.tapply.assign.R" style="     " target="_blank">ds.tapply.assign</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+72.13
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.tapply.assign.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+5.328
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.tapply.R" style="     " target="_blank">ds.tapply</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+94.12
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.tapply.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+5.267
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.testObjExists.R" style="     " target="_blank">ds.testObjExists</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+66.67
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.testObjExists.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.245
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.unList.R" style="     " target="_blank">ds.unList</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.unList.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.212
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.var.R" style="     " target="_blank">ds.var</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.var.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+7.173
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.vectorCalc.R" style="     " target="_blank">ds.vectorCalc</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+90.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-arg-ds.vectorCalc.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5.242
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+OVERVIEW
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+82.23
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+330
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+503.659
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="test-type-datachk" class="level3">
+<h3 class="anchored" data-anchor-id="test-type-datachk">Test type: <code>datachk</code></h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Function
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Coverage
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Test
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Tests
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Time
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Skipped
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Failures
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Errors
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+ANTHRO
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+0
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-datachk-ANTHRO.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+108
+</td>
+<td style="text-align:right;">
+12.458
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CLUSTER_INT
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+0
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-datachk-CLUSTER_INT.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+236
+</td>
+<td style="text-align:right;">
+19.817
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CLUSTER_SLO
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+0
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-datachk-CLUSTER_SLO.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+236
+</td>
+<td style="text-align:right;">
+20.458
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CNSIM
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+0
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-datachk-CNSIM.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+204
+</td>
+<td style="text-align:right;">
+18.150
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DASIM
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+0
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+188
+</td>
+<td style="text-align:right;">
+17.972
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DISCORDANT
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+0
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-datachk-DISCORDANT.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:right;">
+10.572
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FACTOR_LEVELS
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+0
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-datachk-FACTOR_LEVELS.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+188
+</td>
+<td style="text-align:right;">
+17.229
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SURVIVAL_EXPAND_WITH_MISSING
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+0
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-datachk-SURVIVAL_EXPAND_WITH_MISSING.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+204
+</td>
+<td style="text-align:right;">
+18.076
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TESTING
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+0
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-datachk-TESTING.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+316
+</td>
+<td style="text-align:right;">
+24.818
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+OVERVIEW
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+NaN
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+1756
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+159.550
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="test-type-disc" class="level3">
+<h3 class="anchored" data-anchor-id="test-type-disc">Test type: <code>disc</code></h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Function
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Coverage
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Test
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Tests
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Time
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Skipped
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Failures
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Errors
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.cor.R" style="     " target="_blank">ds.cor</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+97.20
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-disc-ds.cor.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+39
+</td>
+<td style="text-align:right;">
+17.278
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.cov.R" style="     " target="_blank">ds.cov</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+96.20
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-disc-ds.cov.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+39
+</td>
+<td style="text-align:right;">
+16.814
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.levels.R" style="     " target="_blank">ds.levels</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+93.75
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-disc-ds.levels.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+5.882
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.meanByClass.R" style="     " target="_blank">ds.meanByClass</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+95.83
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-disc-ds.meanByClass.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.351
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.mean.R" style="     " target="_blank">ds.mean</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+98.21
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-disc-ds.mean.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.316
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rm.R" style="     " target="_blank">ds.rm</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-disc-ds.rm.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+31
+</td>
+<td style="text-align:right;">
+6.457
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.sample.R" style="     " target="_blank">ds.sample</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+79.27
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-disc-ds.sample.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+35
+</td>
+<td style="text-align:right;">
+13.532
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.table.R" style="     " target="_blank">ds.table</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+80.35
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-disc-ds.table.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+10.817
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.var.R" style="     " target="_blank">ds.var</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-disc-ds.var.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5.340
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+OVERVIEW
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+93.42
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+161
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+86.787
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="test-type-expt" class="level3">
+<h3 class="anchored" data-anchor-id="test-type-expt">Test type: <code>expt</code></h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Function
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Coverage
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Test
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Tests
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Time
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Skipped
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Failures
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Errors
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dataFrame.R" style="     " target="_blank">ds.dataFrame</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+78.05
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-expt-ds.dataFrame.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+172
+</td>
+<td style="text-align:right;">
+190.020
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.glmerSLMA.R" style="     " target="_blank">ds.glmerSLMA</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+78.67
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-expt-ds.glmerSLMA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+10.549
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.lmerSLMA.R" style="     " target="_blank">ds.lmerSLMA</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+81.37
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-expt-ds.lmerSLMA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+9.165
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.mean.R" style="     " target="_blank">ds.mean</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+98.21
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-expt-ds.mean.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:right;">
+76.485
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.reShape.R" style="     " target="_blank">ds.reShape</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1.043
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.skewness.R" style="     " target="_blank">ds.skewness</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+93.44
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-expt-ds.skewness.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+43.548
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.var.R" style="     " target="_blank">ds.var</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-expt-ds.var.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+66.996
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+OVERVIEW
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+85.68
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+325
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+397.806
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="test-type-expt_dgr" class="level3">
+<h3 class="anchored" data-anchor-id="test-type-expt_dgr">Test type: <code>expt_dgr</code></h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Function
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Coverage
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Test
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Tests
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Time
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Skipped
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Failures
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Errors
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dataFrameSort.R" style="     " target="_blank">ds.dataFrameSort</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+62.75
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-expt_dgr-ds.dataFrameSort.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+392
+</td>
+<td style="text-align:right;">
+314.958
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dataFrameSubset.R" style="     " target="_blank">ds.dataFrameSubset</a>
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+58.65
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-expt_dgr-ds.dataFrameSubset.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+374
+</td>
+<td style="text-align:right;">
+651.635
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+OVERVIEW
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+60.70
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+766
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+966.593
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="test-type-math" class="level3">
+<h3 class="anchored" data-anchor-id="test-type-math">Test type: <code>math</code></h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Function
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Coverage
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Test
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Tests
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Time
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Skipped
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Failures
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Errors
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.mean.R" style="     " target="_blank">ds.mean</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+98.21
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-math-ds.mean.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+96
+</td>
+<td style="text-align:right;">
+154.949
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.var.R" style="     " target="_blank">ds.var</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-math-ds.var.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+136
+</td>
+<td style="text-align:right;">
+159.517
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+OVERVIEW
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+99.10
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+232
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+314.466
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="test-type-math_dgr" class="level3">
+<h3 class="anchored" data-anchor-id="test-type-math_dgr">Test type: <code>math_dgr</code></h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Function
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Coverage
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Test
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Tests
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Time
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Skipped
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Failures
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Errors
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.skewness.R" style="     " target="_blank">ds.skewness</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+93.44
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-math_dgr-ds.skewness.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+35.531
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+OVERVIEW
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+93.44
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+17
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+35.531
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="test-type-smk" class="level3">
+<h3 class="anchored" data-anchor-id="test-type-smk">Test type: <code>smk</code></h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Function
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Coverage
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Test
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Tests
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Time
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Skipped
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Failures
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Errors
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/checkClass.R" style="     " target="_blank">checkClass</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-checkClass.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+39
+</td>
+<td style="text-align:right;">
+21.826
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.isNA.R" style="     " target="_blank">ds.isNA</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+83.33
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.isNA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+12.936
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.isValid.R" style="     " target="_blank">ds.isValid</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+93.75
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.isValid.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+13.523
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.abs.R" style="     " target="_blank">ds.abs</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+77.78
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.abs.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+8.269
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asCharacter.R" style="     " target="_blank">ds.asCharacter</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.asCharacter.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+6.747
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asDataMatrix.R" style="     " target="_blank">ds.asDataMatrix</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.asDataMatrix.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+6.788
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asFactor.R" style="     " target="_blank">ds.asFactor</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+77.78
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.asFactor.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:right;">
+22.675
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asInteger.R" style="     " target="_blank">ds.asInteger</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.asInteger.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+6.829
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asList.R" style="     " target="_blank">ds.asList</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.asList.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+6.210
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asLogical.R" style="     " target="_blank">ds.asLogical</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.asLogical.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+6.832
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asMatrix.R" style="     " target="_blank">ds.asMatrix</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.asMatrix.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+6.727
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asNumeric.R" style="     " target="_blank">ds.asNumeric</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.asNumeric.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+6.741
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.assign.R" style="     " target="_blank">ds.assign</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+87.50
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.assign.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+6.646
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.Boole.R" style="     " target="_blank">ds.Boole</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+71.62
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.Boole.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+7.143
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.cbind.R" style="     " target="_blank">ds.cbind</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+77.98
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.cbind.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+142
+</td>
+<td style="text-align:right;">
+85.480
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.changeRefGroup.R" style="     " target="_blank">ds.changeRefGroup</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+91.67
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.changeRefGroup.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:right;">
+11.085
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.class.R" style="     " target="_blank">ds.class</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.class.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+7.058
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.colnames.R" style="     " target="_blank">ds.colnames</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+90.91
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.colnames.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+9.903
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.completeCases.R" style="     " target="_blank">ds.completeCases</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+69.23
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.completeCases.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+25.227
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.cor.R" style="     " target="_blank">ds.cor</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+97.20
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.cor.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:right;">
+15.111
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.corTest.R" style="     " target="_blank">ds.corTest</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+94.74
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.corTest.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:right;">
+8.164
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.cov.R" style="     " target="_blank">ds.cov</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+96.20
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.cov.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:right;">
+10.441
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.c.R" style="     " target="_blank">ds.c</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+94.44
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.c.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+7.478
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dataFrameFill.R" style="     " target="_blank">ds.dataFrameFill</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+79.69
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.dataFrameFill.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+24.202
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dataFrame.R" style="     " target="_blank">ds.dataFrame</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+78.05
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.dataFrame.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+96
+</td>
+<td style="text-align:right;">
+50.618
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dataFrameSort.R" style="     " target="_blank">ds.dataFrameSort</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+62.75
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.dataFrameSort.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+9.512
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dataFrameSubset.R" style="     " target="_blank">ds.dataFrameSubset</a>
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+58.65
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.dataFrameSubset.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+17.592
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.dim.R" style="     " target="_blank">ds.dim</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+97.44
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.dim.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+33
+</td>
+<td style="text-align:right;">
+6.879
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.exists.R" style="     " target="_blank">ds.exists</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.exists.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+27
+</td>
+<td style="text-align:right;">
+7.409
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.exp.R" style="     " target="_blank">ds.exp</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+88.89
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.exp.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:right;">
+11.501
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.getWGSR.R" style="     " target="_blank">ds.getWGSR</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+60.34
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.getWGSR.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+27
+</td>
+<td style="text-align:right;">
+10.779
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.glm.R" style="     " target="_blank">ds.glm</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+61.81
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+141
+</td>
+<td style="text-align:right;">
+45.143
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.glmerSLMA.R" style="     " target="_blank">ds.glmerSLMA</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+78.67
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.glmerSLMA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:right;">
+54.767
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.glmPredict.R" style="     " target="_blank">ds.glmPredict</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+81.67
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+774
+</td>
+<td style="text-align:right;">
+44.132
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.glmSLMA.R" style="     " target="_blank">ds.glmSLMA</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+77.94
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.glmSLMA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+140
+</td>
+<td style="text-align:right;">
+15.039
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.glmSummary.R" style="     " target="_blank">ds.glmSummary</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.glmSummary.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+98
+</td>
+<td style="text-align:right;">
+17.419
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.kurtosis.R" style="     " target="_blank">ds.kurtosis</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+93.44
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.kurtosis.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+666
+</td>
+<td style="text-align:right;">
+75.646
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.length.R" style="     " target="_blank">ds.length</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+97.37
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.length.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+10.522
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.levels.R" style="     " target="_blank">ds.levels</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+93.75
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.levels.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+7.188
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.lexis.R" style="     " target="_blank">ds.lexis</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+85.71
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.lexis.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+7.447
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.listClientsideFunctions.R" style="     " target="_blank">ds.listClientsideFunctions</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+85.96
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.listClientsideFunctions.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+104
+</td>
+<td style="text-align:right;">
+6.238
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.listDisclosureSettings.R" style="     " target="_blank">ds.listDisclosureSettings</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.listDisclosureSettings.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:right;">
+6.332
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.list.R" style="     " target="_blank">ds.list</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+85.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.list.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:right;">
+9.669
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.listServersideFunctions.R" style="     " target="_blank">ds.listServersideFunctions</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.listServersideFunctions.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+394
+</td>
+<td style="text-align:right;">
+7.464
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.lmerSLMA.R" style="     " target="_blank">ds.lmerSLMA</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+81.37
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.lmerSLMA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+77
+</td>
+<td style="text-align:right;">
+34.350
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.log.R" style="     " target="_blank">ds.log</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+84.21
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.log.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:right;">
+11.787
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.look.R" style="     " target="_blank">ds.look</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.look.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+6.301
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.ls.R" style="     " target="_blank">ds.ls</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.ls.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+59
+</td>
+<td style="text-align:right;">
+7.484
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.make.R" style="     " target="_blank">ds.make</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+68.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.make.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+6.826
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixDet.R" style="     " target="_blank">ds.matrixDet</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.91
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.matrixDet.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+8.313
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixDet.report.R" style="     " target="_blank">ds.matrixDet.report</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.matrixDet.report.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+7.059
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixDiag.R" style="     " target="_blank">ds.matrixDiag</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+68.75
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.matrixDiag.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+8.813
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixDimnames.R" style="     " target="_blank">ds.matrixDimnames</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.matrixDimnames.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+8.219
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixInvert.R" style="     " target="_blank">ds.matrixInvert</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.matrixInvert.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+8.274
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixMult.R" style="     " target="_blank">ds.matrixMult</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+69.81
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.matrixMult.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+9.071
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrix.R" style="     " target="_blank">ds.matrix</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+67.69
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.matrix.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+7.422
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.matrixTranspose.R" style="     " target="_blank">ds.matrixTranspose</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.matrixTranspose.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+8.283
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.meanByClass.R" style="     " target="_blank">ds.meanByClass</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+95.83
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.meanByClass.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+44.337
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.mean.R" style="     " target="_blank">ds.mean</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+98.21
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.mean.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+186
+</td>
+<td style="text-align:right;">
+21.891
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.meanSdGp.R" style="     " target="_blank">ds.meanSdGp</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+89.38
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.meanSdGp.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+7.021
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.merge.R" style="     " target="_blank">ds.merge</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+75.38
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.merge.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14.181
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.message.R" style="     " target="_blank">ds.message</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.message.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:right;">
+13.384
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.names.R" style="     " target="_blank">ds.names</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.names.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+8.772
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.numNA.R" style="     " target="_blank">ds.numNA</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+90.91
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.numNA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+7.703
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.quantileMean.R" style="     " target="_blank">ds.quantileMean</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.quantileMean.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:right;">
+10.183
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rbind.R" style="     " target="_blank">ds.rbind</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+66.36
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.rbind.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+8.611
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rBinom.R" style="     " target="_blank">ds.rBinom</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+67.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.rBinom.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+8.122
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.recodeLevels.R" style="     " target="_blank">ds.recodeLevels</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+96.97
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.recodeLevels.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+12.053
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.recodeValues.R" style="     " target="_blank">ds.recodeValues</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.recodeValues.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+7.742
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rep.R" style="     " target="_blank">ds.rep</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+68.97
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.rep.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+14.646
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.replaceNA.R" style="     " target="_blank">ds.replaceNA</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+82.14
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.replaceNA.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+15.438
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.reShape.R" style="     " target="_blank">ds.reShape</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.reShape.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+7.070
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rm.R" style="     " target="_blank">ds.rm</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.rm.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+8.215
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rNorm.R" style="     " target="_blank">ds.rNorm</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+66.35
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.rNorm.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+8.173
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rowColCalc.R" style="     " target="_blank">ds.rowColCalc</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+91.89
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.rowColCalc.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15.339
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rPois.R" style="     " target="_blank">ds.rPois</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+67.35
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.rPois.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+8.146
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.rUnif.R" style="     " target="_blank">ds.rUnif</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+66.02
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.rUnif.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+8.174
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.sample.R" style="     " target="_blank">ds.sample</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+79.27
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.sample.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+77
+</td>
+<td style="text-align:right;">
+14.313
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.seq.R" style="     " target="_blank">ds.seq</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+72.94
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.seq.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+7.793
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.setSeed.R" style="     " target="_blank">ds.setSeed</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+87.50
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.setSeed.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+6.337
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.skewness.R" style="     " target="_blank">ds.skewness</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+93.44
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.skewness.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+666
+</td>
+<td style="text-align:right;">
+75.449
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.sqrt.R" style="     " target="_blank">ds.sqrt</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+77.78
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.sqrt.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+8.366
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.subsetByClass.R" style="     " target="_blank">ds.subsetByClass</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+96.77
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.subsetByClass.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+15.422
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.subset.R" style="     " target="_blank">ds.subset</a>
+</td>
+<td style="text-align:right;background-color: rgba(204, 50, 50, 102) !important;">
+57.78
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.subset.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+13.096
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.summary.R" style="     " target="_blank">ds.summary</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+78.82
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.summary.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+23.330
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.table1D.R" style="     " target="_blank">ds.table1D</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+84.21
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.table1D.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:right;">
+13.293
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.table2D.R" style="     " target="_blank">ds.table2D</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+82.76
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.table2D.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+7.102
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.table.R" style="     " target="_blank">ds.table</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+80.35
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.table.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+73
+</td>
+<td style="text-align:right;">
+21.739
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.tapply.assign.R" style="     " target="_blank">ds.tapply.assign</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+72.13
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.tapply.assign.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+38
+</td>
+<td style="text-align:right;">
+11.667
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.tapply.R" style="     " target="_blank">ds.tapply</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+94.12
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.tapply.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:right;">
+8.435
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.testObjExists.R" style="     " target="_blank">ds.testObjExists</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+66.67
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.testObjExists.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+16.550
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.unList.R" style="     " target="_blank">ds.unList</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.unList.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+7.244
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.var.R" style="     " target="_blank">ds.var</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.var.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+7.010
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.vectorCalc.R" style="     " target="_blank">ds.vectorCalc</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+90.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk-ds.vectorCalc.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+9.204
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+OVERVIEW
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+82.31
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+5711
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+1413.090
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="test-type-smk_dgr" class="level3">
+<h3 class="anchored" data-anchor-id="test-type-smk_dgr">Test type: <code>smk_dgr</code></h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Function
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Coverage
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Test
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Tests
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Time
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Skipped
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Failures
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Errors
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.asCharacter.R" style="     " target="_blank">ds.asCharacter</a>
+</td>
+<td style="text-align:right;background-color: rgba(231, 180, 22, 102) !important;">
+70.59
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk_dgr-ds.asCharacter.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+6.663
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.listClientsideFunctions.R" style="     " target="_blank">ds.listClientsideFunctions</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+85.96
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk_dgr-ds.listClientsideFunctions.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+6.162
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.listServersideFunctions.R" style="     " target="_blank">ds.listServersideFunctions</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+100.00
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk_dgr-ds.listServersideFunctions.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:right;">
+6.182
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+OVERVIEW
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+85.52
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+61
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+19.007
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="test-type-smk_expt" class="level3">
+<h3 class="anchored" data-anchor-id="test-type-smk_expt">Test type: <code>smk_expt</code></h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Function
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Coverage
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Test
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Tests
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Time
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Skipped
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Failures
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+Errors
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/R/ds.mean.R" style="     " target="_blank">ds.mean</a>
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;">
+98.21
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/datashield/dsBaseClient/blob/v6.1/tests/testthat/test-smk_expt-ds.mean.R" style="     " target="_blank">Link</a>
+</td>
+<td style="text-align:right;">
+33
+</td>
+<td style="text-align:right;">
+29.958
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+OVERVIEW
+</td>
+<td style="text-align:right;background-color: rgba(45, 201, 55, 102) !important;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+98.21
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+33
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+29.958
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(23, 53, 41, 255) !important;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
