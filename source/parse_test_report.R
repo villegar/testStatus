@@ -47,8 +47,8 @@ valid_url <- function(URL) {
 message("Loading results...")
 # Load coverage output
 covr_csv <- file.path(INPUT_DIR, "coveragelist.csv") |>
-  readr::read_csv(show_col_types = FALSE) |>
-  magrittr::set_names(c("name", "file_coverage", "total_coverage"))
+  readr::read_csv(show_col_types = FALSE, skip = 1,
+                  col_names = c("name", "file_coverage", "total_coverage"))
 
 # Load test results
 tests_xml <- file.path(INPUT_DIR, "test_results.xml") |>
@@ -75,21 +75,28 @@ tests_tbl_v2 <- tests_tbl |>
   dplyr::mutate(
     # extract function name
     fn_name = name |>
+      stringr::str_remove("::test[s]*") |>
       stringr::str_remove(FN_TEST_CLASS_PATTERN) |>
-      stringr::str_extract(FN_NAME_PATTERN),
+      stringr::str_extract(FN_NAME_PATTERN) |>
+      stringr::str_remove_all("[\\(\\)]"),
     # extract any additional components to the test file
     fn_name_sub = name |>
+      stringr::str_remove("::test[s]*") |>
       stringr::str_remove(FN_TEST_CLASS_PATTERN) |>
-      stringr::str_extract("^[^:]+") |>
-      stringr::str_remove(fn_name),
+      stringr::str_remove(fn_name) |>
+      stringr::str_extract("^[^:-]+") |>
+      stringr::str_remove_all("[\\(\\)]") |>
+      stringr::str_replace_na(""),
     # fn_name_sub = ifelse(nchar(fn_name_sub) == 0, NA, fn_name_sub),
     # detect if current record has a test class
     has_test_class = name |>
-      stringr::str_detect("^[a-zA-Z]+-"),
+      stringr::str_detect(FN_TEST_CLASS_PATTERN),
     # extract test class (e.g., arg)
     test_class = name |>
-      stringr::str_extract("^[^-]+") |>
-      stringr::str_remove("-"),
+      stringr::str_remove(fn_name) |>
+      stringr::str_match(FN_TEST_CLASS_PATTERN) |>
+      # (\(x) x[,2])()
+      (\(.) .[, 1])(),
     test_class = ifelse(has_test_class, test_class, NA)
   ) |>
   # fill in sub-tests with test class
