@@ -63,8 +63,8 @@ logs_dirs_versions |>
     OUTPUT_DIR <- INPUT_DIR
     HTML_DIR <- stringr::str_replace(path, "logs/", "docs/") |>
       file.path("latest")
-    repo <- stringr::str_extract(INPUT_DIR, "(?<=logs\\/)(.*)(?=\\/)")
-    version <- stringr::str_extract(INPUT_DIR, paste0("(?<=\\/", repo, "\\/)(.*)(?=\\/*)"))
+    repo <- stringr::str_extract(path, "(?<=logs\\/)(.*)(?=\\/)")
+    version <- stringr::str_extract(path, paste0("(?<=\\/", repo, "\\/)(.*)(?=\\/*)"))
     GH_REPO <- file.path("https://github.com/datashield", repo, "blob", version)
     
     if (stringr::str_detect(repo, "dsBase")) {
