@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write   # we need to push into testStatus
+      
     steps:
       - name: Checkout testStatus
         uses: actions/checkout@v4
@@ -27,7 +28,10 @@ jobs:
         run: |
           cd testStatus
           mkdir -p logs/${{ github.event.workflow_run.head_branch }}/${{ github.event.workflow_run.id }}
-          cp -r ../logs-download/* logs/${{ github.event.workflow_run.head_branch }}/${{ github.event.workflow_run.id }}/
+          mkdir -p docs/${{ github.event.workflow_run.head_branch }}/${{ github.event.workflow_run.id }}
+          
+          cp -r ../logs-download/new/logs/* logs/${{ github.event.workflow_run.head_branch }}/${{ github.event.workflow_run.id }}/
+          cp -r ../logs-download/new/docs/* docs/${{ github.event.workflow_run.head_branch }}/${{ github.event.workflow_run.id }}/
 
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
