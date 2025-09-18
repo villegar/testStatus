@@ -1,0 +1,36 @@
+name: Collect dsBaseClient test suite results
+
+on:
+  workflow_run:
+    workflows: ["dsBaseClient tests' suite"]
+    types:
+      - completed
+
+jobs:
+  collect-results:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # we need to push into testStatus
+    steps:
+      - name: Checkout testStatus
+        uses: actions/checkout@v4
+        with:
+          path: testStatus
+
+      - name: Download logs artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dsbaseclient-logs
+          path: logs-download
+
+      - name: Commit logs into repo
+        run: |
+          cd testStatus
+          mkdir -p logs/${{ github.event.workflow_run.head_branch }}/${{ github.event.workflow_run.id }}
+          cp -r ../logs-download/* logs/${{ github.event.workflow_run.head_branch }}/${{ github.event.workflow_run.id }}/
+
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add .
+          git commit -m "Results from workflow ${{ github.event.workflow_run.id }}" || echo "No changes"
+          git push
