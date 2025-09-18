@@ -62,7 +62,7 @@ tests_tbl <- tests_xml |>
     on.exit(unlink(tmp))
     ts |>
       xml2::xml_attrs() |>
-    tibble::as_tibble_row() |>
+      tibble::as_tibble_row() |>
       readr::write_csv(tmp)
     readr::read_csv(tmp, show_col_types = FALSE)
   }) |>
@@ -193,4 +193,3 @@ covr_and_test_results_v3 |>
 covr_and_test_results_v3 |>
   purrr::reduce(dplyr::bind_rows) |>
   readr::write_excel_csv(file.path(OUTPUT_DIR, paste0(Sys.Date(), "_covr_and_test_results.csv")), na = "")
-
