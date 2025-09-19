@@ -18,9 +18,18 @@ jobs:
         with:
           path: testStatus
 
-      - name: Download logs artifact
-        uses: actions/download-artifact@v4
+      # - name: Download logs artifact
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: dsbaseclient-logs
+      #     path: logs-download
+      - name: Download dsBaseClient artifacts
+        uses: dawidd6/action-download-artifact@v6
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: dsBaseClient tests' suite
+          run_id: ${{ github.event.workflow_run.id }}
+          repo: ${{ github.event.workflow_run.repository.full_name }}
           name: dsbaseclient-logs
           path: logs-download
 
