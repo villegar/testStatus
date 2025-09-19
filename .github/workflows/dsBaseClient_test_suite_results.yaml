@@ -27,7 +27,7 @@ jobs:
       - name: List artifacts from dsBaseClient
         run: |
           curl -s -H "Accept: application/vnd.github+json" \
-               -H "Authorization: Bearer ${{ secrets.GH_TOKEN }}" \
+               -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
                https://api.github.com/repos/villegar/dsBaseClient/actions/artifacts | jq .
 
       - name: Download artifacts
@@ -46,7 +46,8 @@ jobs:
           cd testStatus
           branch="${{ env.TARGET_BRANCH }}"
           base_path="../logs-download/logs/dsBaseClient/${{ env.TARGET_BRANCH }}"
-          runid=$(ls -d "$base_path"/*/ 2>/dev/null | sort -V | tail -n 1)
+          latest_dir=$(ls -d "$base_path"/*/ 2>/dev/null | sort -V | head -n 1)
+          runid=$(basename "$latest_dir")
           
           mkdir -p logs/dsBaseClient/${branch}/${runid}
           mkdir -p docs/dsBaseClient/${branch}/${runid}
