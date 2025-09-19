@@ -48,8 +48,8 @@ jobs:
           mkdir -p docs/dsBaseClient/${branch}/${runid}
           
           # set up latest directory
-          rm -rf docs/dsBaseClient/${branch}/${runid}/latest
-          mkdir -p docs/dsBaseClient/${branch}/${runid}/latest
+          rm -rf docs/dsBaseClient/${branch}/latest
+          mkdir -p docs/dsBaseClient/${branch}/latest
           
           # copy new contents
           cp -r ../logs-download/logs/dsBaseClient/${branch}/${runid}/* logs/dsBaseClient/${branch}/${runid}/
