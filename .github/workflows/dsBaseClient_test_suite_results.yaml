@@ -13,7 +13,7 @@ jobs:
       
     env:
       REPO_OWNER: ${{ github.repository_owner }}
-      TARGET_BRANCH: v6.3.4-dev             # Update to latest version
+      TARGET_BRANCH: v6.3.5-dev             # Update to latest version
       TARGET_OUTPUTS: dsbaseclient-logs
       TARGET_PROJECT: dsBaseClient
       TARGET_WORKFLOW: dsBaseClient_test_suite.yaml
