@@ -2,7 +2,7 @@ name: Collect dsBaseClient test suite results
 
 on:
   schedule:
-    - cron: "36 */1 * * *"     # every 6 hours
+    - cron: "0 */6 * * *"     # every 6 hours
   workflow_dispatch:          # allow manual triggering
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
       - name: Download artifacts
         uses: dawidd6/action-download-artifact@v6
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}
           repo: ${{ env.REPO_OWNER }}/${{ env.TARGET_PROJECT }}
           workflow: ${{ env.TARGET_WORKFLOW }}
           workflow_conclusion: success
