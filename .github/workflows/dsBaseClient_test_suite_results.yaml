@@ -2,7 +2,7 @@ name: Collect dsBaseClient test suite results
 
 on:
   schedule:
-    - cron: "0 */6 * * *"     # every 6 hours
+    - cron: "36 */1 * * *"     # every 6 hours
   workflow_dispatch:          # allow manual triggering
 
 jobs:
