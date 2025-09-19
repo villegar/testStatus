@@ -23,17 +23,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: testStatus
-      
-      - name: List artifacts from dsBaseClient
-        run: |
-          curl -s -H "Accept: application/vnd.github+json" \
-               -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-               https://api.github.com/repos/villegar/dsBaseClient/actions/artifacts | jq .
 
       - name: Download artifacts
         uses: dawidd6/action-download-artifact@v6
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           repo: ${{ env.REPO_OWNER }}/${{ env.TARGET_PROJECT }}
           workflow: ${{ env.TARGET_WORKFLOW }}
           workflow_conclusion: success
@@ -49,12 +43,13 @@ jobs:
           latest_dir=$(ls -d "$base_path"/*/ 2>/dev/null | sort -V | head -n 1)
           runid=$(basename "$latest_dir")
           
+          # set up docs and logs directories
           mkdir -p logs/dsBaseClient/${branch}/${runid}
           mkdir -p docs/dsBaseClient/${branch}/${runid}
-          mkdir -p docs/dsBaseClient/${branch}/${runid}/latest
           
-          # clear the latest directory
-          rm -rf docs/dsBaseClient/${branch}/${runid}/latest/*
+          # set up latest directory
+          rm -rf docs/dsBaseClient/${branch}/${runid}/latest
+          mkdir -p docs/dsBaseClient/${branch}/${runid}/latest
           
           # copy new contents
           cp -r ../logs-download/logs/dsBaseClient/${branch}/${runid}/* logs/dsBaseClient/${branch}/${runid}/
