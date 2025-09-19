@@ -23,6 +23,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: testStatus
+      
+      - name: List artifacts from dsBaseClient
+        run: |
+          curl -s -H "Accept: application/vnd.github+json" \
+               -H "Authorization: Bearer ${{ secrets.GH_TOKEN }}" \
+               https://api.github.com/repos/villegar/dsBaseClient/actions/artifacts | jq .
 
       - name: Download artifacts
         uses: dawidd6/action-download-artifact@v6
