@@ -1,10 +1,9 @@
 name: Collect dsBaseClient test suite results
 
 on:
-  workflow_run:
-    workflows: ["dsBaseClient tests' suite"]
-    types:
-      - completed
+  schedule:
+    - cron: "0 */6 * * *"     # every 6 hours
+  workflow_dispatch:          # allow manual triggering
 
 jobs:
   collect-results:
@@ -12,27 +11,36 @@ jobs:
     permissions:
       contents: write   # we need to push into testStatus
       
+    env:
+      REPO_OWNER: ${{ github.repository_owner }}
+      TARGET_BRANCH: v6.3.4-dev             # Update to latest version
+      TARGET_OUTPUTS: dsbaseclient-logs
+      TARGET_PROJECT: dsBaseClient
+      TARGET_WORKFLOW: dsBaseClient tests' suite
+      
     steps:
       - name: Checkout testStatus
         uses: actions/checkout@v4
         with:
           path: testStatus
 
-      - name: Download dsBaseClient artifacts
+      - name: Download artifacts
         uses: dawidd6/action-download-artifact@v6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: dsBaseClient tests' suite
-          run_id: ${{ github.event.workflow_run.id }}
-          repo: ${{ github.event.workflow_run.repository.full_name }}
-          name: dsbaseclient-logs
+          repo: ${{ env.REPO_OWNER }}/${{ env.TARGET_PROJECT }}
+          workflow: ${{ env.TARGET_WORKFLOW }}
+          workflow_conclusion: success
+          branch: ${{ env.TARGET_BRANCH }}
+          name: ${{ env.TARGET_OUTPUTS }}
           path: logs-download
 
       - name: Commit logs into repo
         run: |
           cd testStatus
-          branch="${{ github.event.workflow_run.head_branch }}"
-          runid="${{ github.event.workflow_run.id }}"
+          branch="${{ env.TARGET_BRANCH }}"
+          base_path="../logs-download/logs/dsBaseClient/${{ env.TARGET_BRANCH }}"
+          runid=$(ls -d "$base_path"/*/ 2>/dev/null | sort -V | tail -n 1)
           
           mkdir -p logs/dsBaseClient/${branch}/${runid}
           mkdir -p docs/dsBaseClient/${branch}/${runid}
