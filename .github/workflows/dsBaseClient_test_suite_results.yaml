@@ -16,7 +16,7 @@ jobs:
       TARGET_BRANCH: v6.3.4-dev             # Update to latest version
       TARGET_OUTPUTS: dsbaseclient-logs
       TARGET_PROJECT: dsBaseClient
-      TARGET_WORKFLOW: dsBaseClient tests' suite
+      TARGET_WORKFLOW: dsBaseClient_test_suite.yaml
       
     steps:
       - name: Checkout testStatus
