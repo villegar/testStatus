@@ -1,4 +1,4 @@
-name: Collect dsBaseClient test suite results
+name: Collect dsBase test suite results
 
 on:
   schedule:
@@ -14,9 +14,9 @@ jobs:
     env:
       REPO_OWNER: ${{ github.repository_owner }}
       TARGET_BRANCH: v6.3.5-dev             # Update to latest version
-      TARGET_OUTPUTS: dsbaseclient-logs
-      TARGET_PROJECT: dsBaseClient
-      TARGET_WORKFLOW: dsBaseClient_test_suite.yaml
+      TARGET_OUTPUTS: dsbase-logs
+      TARGET_PROJECT: dsBase
+      TARGET_WORKFLOW: dsBase_test_suite.yaml
       
     steps:
       - name: Checkout testStatus
@@ -39,22 +39,22 @@ jobs:
         run: |
           cd testStatus
           branch="${{ env.TARGET_BRANCH }}"
-          base_path="../logs-download/logs/dsBaseClient/${{ env.TARGET_BRANCH }}"
+          base_path="../logs-download/logs/dsBase/${{ env.TARGET_BRANCH }}"
           latest_dir=$(ls -d "$base_path"/*/ 2>/dev/null | sort -V | head -n 1)
           runid=$(basename "$latest_dir")
           
           # set up docs and logs directories
-          mkdir -p logs/dsBaseClient/${branch}/${runid}
-          mkdir -p docs/dsBaseClient/${branch}/${runid}
+          mkdir -p logs/dsBase/${branch}/${runid}
+          mkdir -p docs/dsBase/${branch}/${runid}
           
           # set up latest directory
-          rm -rf docs/dsBaseClient/${branch}/latest
-          mkdir -p docs/dsBaseClient/${branch}/latest
+          rm -rf docs/dsBase/${branch}/latest
+          mkdir -p docs/dsBase/${branch}/latest
           
           # copy new contents
-          cp -r ../logs-download/logs/dsBaseClient/${branch}/${runid}/* logs/dsBaseClient/${branch}/${runid}/
-          cp -r ../logs-download/docs/dsBaseClient/${branch}/${runid}/* docs/dsBaseClient/${branch}/${runid}/
-          cp -r ../logs-download/docs/dsBaseClient/${branch}/latest/* docs/dsBaseClient/${branch}/latest/
+          cp -r ../logs-download/logs/dsBase/${branch}/${runid}/* logs/dsBase/${branch}/${runid}/
+          cp -r ../logs-download/docs/dsBase/${branch}/${runid}/* docs/dsBase/${branch}/${runid}/
+          cp -r ../logs-download/docs/dsBase/${branch}/latest/* docs/dsBase/${branch}/latest/
 
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
