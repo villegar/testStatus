@@ -1,0 +1,63 @@
+name: Collect dsBase test suite results
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"     # every 6 hours
+  workflow_dispatch:          # allow manual triggering
+
+jobs:
+  collect-results:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # we need to push into testStatus
+      
+    env:
+      REPO_OWNER: ${{ github.repository_owner }}
+      TARGET_BRANCH: v6.3.5-dev             # Update to latest version
+      TARGET_OUTPUTS: dsbase-logs
+      TARGET_PROJECT: dsBase
+      TARGET_WORKFLOW: dsBase_test_suite.yaml
+      
+    steps:
+      - name: Checkout testStatus
+        uses: actions/checkout@v4
+        with:
+          path: testStatus
+
+      - name: Download artifacts
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repo: ${{ env.REPO_OWNER }}/${{ env.TARGET_PROJECT }}
+          workflow: ${{ env.TARGET_WORKFLOW }}
+          workflow_conclusion: success
+          branch: ${{ env.TARGET_BRANCH }}
+          name: ${{ env.TARGET_OUTPUTS }}
+          path: logs-download
+
+      - name: Commit logs into repo
+        run: |
+          cd testStatus
+          branch="${{ env.TARGET_BRANCH }}"
+          base_path="../logs-download/logs/dsBase/${{ env.TARGET_BRANCH }}"
+          latest_dir=$(ls -d "$base_path"/*/ 2>/dev/null | sort -V | head -n 1)
+          runid=$(basename "$latest_dir")
+          
+          # set up docs and logs directories
+          mkdir -p logs/dsBase/${branch}/${runid}
+          mkdir -p docs/dsBase/${branch}/${runid}
+          
+          # set up latest directory
+          rm -rf docs/dsBase/${branch}/latest
+          mkdir -p docs/dsBase/${branch}/latest
+          
+          # copy new contents
+          cp -r ../logs-download/logs/dsBase/${branch}/${runid}/* logs/dsBase/${branch}/${runid}/
+          cp -r ../logs-download/docs/dsBase/${branch}/${runid}/* docs/dsBase/${branch}/${runid}/
+          cp -r ../logs-download/docs/dsBase/${branch}/latest/* docs/dsBase/${branch}/latest/
+
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add .
+          git commit -m "Results from test suite for ${{ env.TARGET_PROJECT}}/$branch@${runid}. For details, see https://github.com/${{ env.REPO_OWNER }}/${{ env.TARGET_PROJECT}}/actions/runs/${runid} " || echo "No changes"
+          git push
