@@ -1,0 +1,14 @@
+  <testsuite name="ds.foobar::arg::aggregate" timestamp="2025-11-26T19:57:57Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="0.033">
+  <testsuite name="ds.foobar::arg::assign" timestamp="2025-11-26T19:57:57Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="0.028">
+  <testsuite name="ds.abs::perf:0" timestamp="2025-11-26T20:15:53Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="37.322">
+  <testsuite name="ds.asInteger::perf:0" timestamp="2025-11-26T20:16:30Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="37.414">
+  <testsuite name="ds.asList::perf:0" timestamp="2025-11-26T20:17:08Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="37.347">
+  <testsuite name="ds.asNumeric::perf:0" timestamp="2025-11-26T20:17:45Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="37.43">
+  <testsuite name="ds.assign::perf::0" timestamp="2025-11-26T20:18:23Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="37.368">
+  <testsuite name="ds.class::perf::combine:0" timestamp="2025-11-26T20:19:00Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="37.314">
+  <testsuite name="ds.colnames::perf:0" timestamp="2025-11-26T20:19:38Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="37.582">
+  <testsuite name="ds.exists::perf::combine:0" timestamp="2025-11-26T20:20:15Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="37.496">
+  <testsuite name="ds.length::perf::combine:0" timestamp="2025-11-26T20:20:52Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="37.346">
+  <testsuite name="ds.mean::perf::combine:0" timestamp="2025-11-26T20:21:30Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="37.441">
+  <testsuite name="ds.mean::perf::split:0" timestamp="2025-11-26T20:22:00Z" hostname="runnervmg1sw1" tests="2" skipped="0" failures="1" errors="0" time="30.053">
+  <testsuite name="ds.mice::smk::imp2" timestamp="2025-11-26T20:36:21Z" hostname="runnervmg1sw1" tests="36" skipped="0" failures="1" errors="0" time="4.664">
